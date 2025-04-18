@@ -21,6 +21,11 @@
   meaning: to wear/spend/throw
   type: 1st conjugation
 
+- id: can
+  infinitive: can
+  meaning: to sing
+  type: 1st conjugation
+
 - id: ceannaigh
   infinitive: ceannaigh
   meaning: to buy
@@ -101,7 +106,3 @@
   meaning: to take
   type: 1st conjugation
 
-- id: can
-  infinitive: can
-  meaning: to sing
-  type: 1st conjugation
