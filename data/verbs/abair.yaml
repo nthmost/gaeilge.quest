@@ -1,0 +1,85 @@
+conjugations:
+  conditional:
+    autonomous: déarfaí
+    plural:
+      first: déarfaimis
+      second: déarfadh sibh
+      third: déarfadh siad
+    singular:
+      first: déarfainn
+      second: déarfá
+      thirdFem: déarfadh sí
+      thirdMasc: déarfadh sé
+  future:
+    autonomous: déarfar
+    plural:
+      first: déarfaimid
+      second: déarfaidh sibh
+      third: déarfaidh siad
+    singular:
+      first: déarfaidh mé
+      second: déarfaidh tú
+      thirdFem: déarfaidh sí
+      thirdMasc: déarfaidh sé
+  habitual_past:
+    autonomous: deirtí
+    plural:
+      first: deirimis
+      second: deireadh sibh
+      third: deireadh siad
+    singular:
+      first: deirinn
+      second: deirteá
+      thirdFem: deireadh sí
+      thirdMasc: deireadh sé
+  habitual_present:
+    autonomous: deirtear
+    plural:
+      first: deirimid
+      second: deir sibh
+      third: deir siad
+    singular:
+      first: deirim
+      second: deir tú
+      thirdFem: deir sí
+      thirdMasc: deir sé
+  imperative:
+    autonomous: abraítear
+    plural:
+      first: abraimis
+      second: abraigí
+      third: abraíodh siad
+    singular:
+      first: abraim
+      second: abair
+      thirdFem: abraíodh sí
+      thirdMasc: abraíodh sé
+  past:
+    autonomous: dúradh
+    plural:
+      first: dúramar
+      second: dúirt sibh
+      third: dúirt siad
+    singular:
+      first: dúirt mé
+      second: dúirt tú
+      thirdFem: dúirt sí
+      thirdMasc: dúirt sé
+  present:
+    autonomous: deirtear
+    plural:
+      first: deirimid
+      second: deir sibh
+      third: deir siad
+    singular:
+      first: deirim
+      second: deir tú
+      thirdFem: deir sí
+      thirdMasc: deir sé
+infinitive: abair
+meaning: to say/tell
+notes: Abair is an irregular verb meaning 'to say' or 'tell'. Notice how it changes
+  form in different tenses - 'abair' in the imperative, 'deir' in the present, and
+  'dúirt' in the past.
+root: abair
+type: irregular

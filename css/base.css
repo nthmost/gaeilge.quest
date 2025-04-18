@@ -1,0 +1,178 @@
+/* ===== BASE.CSS =====
+   Core styles, variables, typography, reset
+*/
+
+/* ===== VARIABLES ===== */
+:root {
+    /* Color Palette - Irish meets Neo Tokyo */
+    --irish-green: #169b62;
+    --light-green: #9febc1;
+    --orange: #ff883e;
+    --light-orange-pink: #ffb6b9;
+    --silver: #e6e6fa;
+    --gold: #ffd700;
+    --copper: #b87333;
+    --cyber-blue: #00f2ff;
+    --cyber-purple: #ff00ff;
+    --dark-bg: #121212;
+}
+
+/* ===== RESET & GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--silver);
+    background-image: linear-gradient(45deg, #121212 25%, #1a1a1a 25%, #1a1a1a 50%, #121212 50%, #121212 75%, #1a1a1a 75%, #1a1a1a 100%);
+    background-size: 10px 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Uncial Antiqua', cursive;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--cyber-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cyber-purple);
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cyber-blue);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cyber-purple);
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+/* ===== FORM ELEMENTS ===== */
+input, select, textarea, button {
+    font-family: 'Space Mono', monospace;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--copper);
+    border-radius: 5px;
+    color: var(--silver);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--cyber-blue);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, var(--cyber-blue), var(--cyber-purple));
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 242, 255, 0.3);
+}

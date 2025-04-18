@@ -1,0 +1,95 @@
+# imir.yaml - "to play"
+infinitive: imir
+root: imir
+type: 2nd conjugation
+meaning: to play
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: imrím
+      second: imríonn tú
+      thirdMasc: imríonn sé
+      thirdFem: imríonn sí
+    plural:
+      first: imrímid
+      second: imríonn sibh
+      third: imríonn siad
+    autonomous: imrítear
+  
+  past:
+    singular:
+      first: d'imir mé
+      second: d'imir tú
+      thirdMasc: d'imir sé
+      thirdFem: d'imir sí
+    plural:
+      first: d'imríomar
+      second: d'imir sibh
+      third: d'imir siad
+    autonomous: imríodh
+  
+  future:
+    singular:
+      first: imreoidh mé
+      second: imreoidh tú
+      thirdMasc: imreoidh sé
+      thirdFem: imreoidh sí
+    plural:
+      first: imreoimid
+      second: imreoidh sibh
+      third: imreoidh siad
+    autonomous: imreofar
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: imrím
+      second: imríonn tú
+      thirdMasc: imríonn sé
+      thirdFem: imríonn sí
+    plural:
+      first: imrímid
+      second: imríonn sibh
+      third: imríonn siad
+    autonomous: imrítear
+  
+  habitual_past:
+    singular:
+      first: d'imrínn
+      second: d'imríteá
+      thirdMasc: d'imríodh sé
+      thirdFem: d'imríodh sí
+    plural:
+      first: d'imrímis
+      second: d'imríodh sibh
+      third: d'imríodh siad
+    autonomous: d'imrítí
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: d'imreóinn
+      second: d'imreofá
+      thirdMasc: d'imreodh sé
+      thirdFem: d'imreodh sí
+    plural:
+      first: d'imreoimis
+      second: d'imreodh sibh
+      third: d'imreodh siad
+    autonomous: d'imreofaí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: imrím
+      second: imir
+      thirdMasc: imríodh sé
+      thirdFem: imríodh sí
+    plural:
+      first: imrímis
+      second: imrígí
+      third: imrídís
+    autonomous: imrítear
+
+notes: "Imir is a 2nd conjugation verb meaning 'to play'. Note how it becomes 'imrí-' in the present tense and 'imre-' in the future tense. It's used for playing games or sports, for example, 'imir cluiche' (play a game) or 'imir peil' (play football/soccer)."

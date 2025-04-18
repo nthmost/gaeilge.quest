@@ -1,0 +1,85 @@
+conjugations:
+  conditional:
+    autonomous: thiocfaí
+    plural:
+      first: thiocfaimis
+      second: thiocfadh sibh
+      third: thiocfadh siad
+    singular:
+      first: thiocfainn
+      second: thiocfá
+      thirdFem: thiocfadh sí
+      thirdMasc: thiocfadh sé
+  future:
+    autonomous: tiocfar
+    plural:
+      first: tiocfaimid
+      second: tiocfaidh sibh
+      third: tiocfaidh siad
+    singular:
+      first: tiocfaidh mé
+      second: tiocfaidh tú
+      thirdFem: tiocfaidh sí
+      thirdMasc: tiocfaidh sé
+  habitual_past:
+    autonomous: thagtaí
+    plural:
+      first: thagaimis
+      second: thagadh sibh
+      third: thagadh siad
+    singular:
+      first: thagainn
+      second: thagtá
+      thirdFem: thagadh sí
+      thirdMasc: thagadh sé
+  habitual_present:
+    autonomous: tagtar
+    plural:
+      first: tagaimid
+      second: tagann sibh
+      third: tagann siad
+    singular:
+      first: tagaim
+      second: tagann tú
+      thirdFem: tagann sí
+      thirdMasc: tagann sé
+  imperative:
+    autonomous: tagtar
+    plural:
+      first: tagaimis
+      second: tagaigí
+      third: tagadh siad
+    singular:
+      first: tagaim
+      second: tar
+      thirdFem: tagadh sí
+      thirdMasc: tagadh sé
+  past:
+    autonomous: tháinigtheas
+    plural:
+      first: thángamar
+      second: tháinig sibh
+      third: tháinig siad
+    singular:
+      first: tháinig mé
+      second: tháinig tú
+      thirdFem: tháinig sí
+      thirdMasc: tháinig sé
+  present:
+    autonomous: tagtar
+    plural:
+      first: tagaimid
+      second: tagann sibh
+      third: tagann siad
+    singular:
+      first: tagaim
+      second: tagann tú
+      thirdFem: tagann sí
+      thirdMasc: tagann sé
+infinitive: tar
+meaning: to come
+notes: Tar is an irregular verb meaning 'to come'. Note how it changes to 'tháinig'
+  in the past tense and 'tiocfaidh' in the future. The imperative 'tar' is often used
+  in phrases like 'tar isteach' (come in).
+root: tar
+type: irregular

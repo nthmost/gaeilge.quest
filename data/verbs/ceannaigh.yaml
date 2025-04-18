@@ -1,0 +1,48 @@
+# ceannaigh.yaml - "to buy"
+infinitive: ceannaigh
+root: ceann
+type: 2nd conjugation
+meaning: to buy
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: ceannaím
+      second: ceannaíonn tú
+      thirdMasc: ceannaíonn sé
+      thirdFem: ceannaíonn sí
+    plural:
+      first: ceannaímid
+      second: ceannaíonn sibh
+      third: ceannaíonn siad
+    autonomous: ceannaítear
+  
+  past:
+    singular:
+      first: cheannaigh mé
+      second: cheannaigh tú
+      thirdMasc: cheannaigh sé
+      thirdFem: cheannaigh sí
+    plural:
+      first: cheannaíomar
+      second: cheannaigh sibh
+      third: cheannaigh siad
+    autonomous: ceannaíodh
+  
+  future:
+    singular:
+      first: ceannóidh mé
+      second: ceannóidh tú
+      thirdMasc: ceannóidh sé
+      thirdFem: ceannóidh sí
+    plural:
+      first: ceannóimid
+      second: ceannóidh sibh
+      third: ceannóidh siad
+    autonomous: ceannófar
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: ceannaím
+      second: ceannaíonn

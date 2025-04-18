@@ -1,0 +1,86 @@
+conjugations:
+  conditional:
+    autonomous: bheifí
+    plural:
+      first: bheimis
+      second: bheadh sibh
+      third: bheadh siad
+    singular:
+      first: bheinn
+      second: bheifeá
+      thirdFem: bheadh sí
+      thirdMasc: bheadh sé
+  future:
+    autonomous: beifear
+    plural:
+      first: beimid
+      second: beidh sibh
+      third: beidh siad
+    singular:
+      first: beidh mé
+      second: beidh tú
+      thirdFem: beidh sí
+      thirdMasc: beidh sé
+  habitual_past:
+    autonomous: bhítí
+    plural:
+      first: bhímis
+      second: bhíodh sibh
+      third: bhíodh siad
+    singular:
+      first: bhínn
+      second: bhíteá
+      thirdFem: bhíodh sí
+      thirdMasc: bhíodh sé
+  habitual_present:
+    autonomous: bítear
+    plural:
+      first: bímid
+      second: bíonn sibh
+      third: bíonn siad
+    singular:
+      first: bím
+      second: bíonn tú
+      thirdFem: bíonn sí
+      thirdMasc: bíonn sé
+  imperative:
+    autonomous: bítear
+    plural:
+      first: bímis
+      second: bígí
+      third: bíodh siad
+    singular:
+      first: bím
+      second: bí
+      thirdFem: bíodh sí
+      thirdMasc: bíodh sé
+  past:
+    autonomous: bhíothas
+    plural:
+      first: bhíomar
+      second: bhí sibh
+      third: bhí siad
+    singular:
+      first: bhí mé
+      second: bhí tú
+      thirdFem: bhí sí
+      thirdMasc: bhí sé
+  present:
+    autonomous: táthar
+    plural:
+      first: táimid
+      second: tá sibh
+      third: tá siad
+    singular:
+      first: táim
+      second: tá tú
+      thirdFem: tá sí
+      thirdMasc: tá sé
+infinitive: bí
+meaning: to be
+notes: Bí is the most important verb in Irish. The imperative ('bí') is used to command
+  someone to be in a certain state. The habitual present ('bíonn') is used for recurring
+  actions or permanent states, while the present tense ('tá') is used for temporary
+  states.
+root: b
+type: irregular

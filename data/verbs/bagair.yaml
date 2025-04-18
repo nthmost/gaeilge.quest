@@ -1,0 +1,95 @@
+# bagair.yaml - "to threaten"
+infinitive: bagair
+root: bagair
+type: 2nd conjugation
+meaning: to threaten
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: bagraím
+      second: bagraíonn tú
+      thirdMasc: bagraíonn sé
+      thirdFem: bagraíonn sí
+    plural:
+      first: bagraímid
+      second: bagraíonn sibh
+      third: bagraíonn siad
+    autonomous: bagraítear
+  
+  past:
+    singular:
+      first: bhagair mé
+      second: bhagair tú
+      thirdMasc: bhagair sé
+      thirdFem: bhagair sí
+    plural:
+      first: bhagaíomar
+      second: bhagair sibh
+      third: bhagair siad
+    autonomous: bagraíodh
+  
+  future:
+    singular:
+      first: bagrófaidh mé
+      second: bagrófaidh tú
+      thirdMasc: bagrófaidh sé
+      thirdFem: bagrófaidh sí
+    plural:
+      first: bagrófaimid
+      second: bagrófaidh sibh
+      third: bagrófaidh siad
+    autonomous: bagrófar
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: bagraím
+      second: bagraíonn tú
+      thirdMasc: bagraíonn sé
+      thirdFem: bagraíonn sí
+    plural:
+      first: bagraímid
+      second: bagraíonn sibh
+      third: bagraíonn siad
+    autonomous: bagraítear
+  
+  habitual_past:
+    singular:
+      first: bhagrínn
+      second: bhagraíteá
+      thirdMasc: bhagríodh sé
+      thirdFem: bhagríodh sí
+    plural:
+      first: bhagríomais
+      second: bhagríodh sibh
+      third: bhagríodh siad
+    autonomous: bhagraítí
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: bhagrófainn
+      second: bhagrófá
+      thirdMasc: bhagrófadh sé
+      thirdFem: bhagrófadh sí
+    plural:
+      first: bhagrófaimis
+      second: bhagrófadh sibh
+      third: bhagrófadh siad
+    autonomous: bhagrófaí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: bagraím
+      second: bagair
+      thirdMasc: bagríodh sé
+      thirdFem: bagríodh sí
+    plural:
+      first: bagríomis
+      second: bagríigí
+      third: bagríodís
+    autonomous: bagraítear
+
+notes: "Bagair is a 2nd conjugation verb meaning 'to threaten'. Note how the stem changes in different forms - in the present tense it becomes 'bagraí-', and in the future and conditional it becomes 'bagró-'. This is a common pattern in 2nd conjugation verbs."

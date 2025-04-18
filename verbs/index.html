@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Verb Conjugations - Gaeilge Quest</title>
+    <!-- Base and layout styles -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="/css/verbs.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Space+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Include js-yaml library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <img src="/assets/images/harp.png" alt="Irish Harp Logo">
+                    <div class="site-title">Gaeilge Quest</div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/verbs/" class="active">Verb Tenses</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Irish Verb Conjugations</h1>
+                    <p>Master the art of verb conjugation with our interactive guide</p>
+                </div>
+            </section>
+
+            <div class="verbs-container">
+                <!-- Sidebar with verb list -->
+                <aside class="verb-sidebar">
+                    <h3>Verbs</h3>
+                    <div class="search-container">
+                        <input type="text" id="verb-search" placeholder="Search verbs...">
+                    </div>
+                    <ul id="verb-list" class="verb-list">
+                        <!-- Verb list items will be populated by JavaScript -->
+                    </ul>
+                </aside>
+
+                <!-- Main content area -->
+                <div class="verb-content">
+				<!-- Mode and Tense selectors with reordered dropdowns -->
+				<div class="verb-selectors">
+					<div class="tense-selector">
+						<label for="tense-dropdown">Tense:</label>
+						<select id="tense-dropdown" class="cyber-dropdown">
+						<!-- Tense options will be dynamically populated based on mood selection -->
+						</select>
+					</div>
+
+					<div class="mood-selector">
+						<label for="mood-dropdown">Mood:</label>
+						<select id="mood-dropdown" class="cyber-dropdown">
+						<option value="indicative">Indicative</option>
+						<option value="imperative">Imperative</option>
+						<option value="conditional">Conditional</option>
+						<option value="habitual">Habitual</option>
+						</select>
+					</div>
+				</div>
+
+                    <!-- Verb header and display -->
+                    <div class="verb-display-area">
+                        <div id="verb-header" class="verb-header">
+                            <h2>Choose a Verb</h2>
+                            <p class="verb-meaning">Choose a verb from the list to see its conjugations</p>
+                        </div>
+
+                        <div id="conjugation-display" class="conjugation-display">
+                            <div class="placeholder-message">
+                                <p>Select a verb from the list to view its conjugations</p>
+                                <div class="cyber-decoration">
+                                    <div class="deco-line"></div>
+                                    <div class="deco-circle"></div>
+                                    <div class="deco-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notes section -->
+                    <div class="verb-notes">
+                        <h3>Notes</h3>
+                        <div id="verb-notes-content">
+                            <p>Select a verb to see notes and usage examples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Gaeilge Quest © 2025 | <a href="https://github.com/nthmost">Created by Naomi Most</a></p>
+        </footer>
+    </div>
+
+    <!-- Load javascript -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/data-loader.js"></script>
+    <script src="/js/verbs/verbs-data.js"></script>
+    <script src="/js/verbs/verbs-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+# index.yaml - Alphabetized list of all available verbs with basic metadata
+# This file serves as an index for the verb files
+
+- id: abair
+  infinitive: abair
+  meaning: to say/tell
+  type: irregular
+
+- id: bagair
+  infinitive: bagair
+  meaning: to threaten
+  type: 2nd conjugation
+
+- id: bi
+  infinitive: bí
+  meaning: to be
+  type: irregular
+
+- id: caith
+  infinitive: caith
+  meaning: to wear/spend/throw
+  type: 1st conjugation
+
+- id: ceannaigh
+  infinitive: ceannaigh
+  meaning: to buy
+  type: 2nd conjugation
+
+- id: deanaimh
+  infinitive: déan
+  meaning: to do/make
+  type: 2nd conjugation
+
+- id: diol
+  infinitive: díol
+  meaning: to sell
+  type: 1st conjugation
+
+- id: feic
+  infinitive: feic
+  meaning: to see
+  type: irregular
+
+- id: foghlaim
+  infinitive: foghlaim
+  meaning: to learn
+  type: 2nd conjugation
+
+- id: goid
+  infinitive: goid
+  meaning: to steal
+  type: 1st conjugation
+
+- id: imir
+  infinitive: imir
+  meaning: to play
+  type: 2nd conjugation
+
+- id: insigh
+  infinitive: insigh
+  meaning: to tell
+  type: 2nd conjugation
+
+- id: ith
+  infinitive: ith
+  meaning: to eat
+  type: 1st conjugation
+
+- id: plearail
+  infinitive: pléaráil
+  meaning: to discuss
+  type: 2nd conjugation
+
+- id: rith
+  infinitive: rith
+  meaning: to run
+  type: 1st conjugation
+
+- id: tar
+  infinitive: tar
+  meaning: to come
+  type: irregular
+
+- id: teigh
+  infinitive: téigh
+  meaning: to go
+  type: irregular
+
+- id: tog
+  infinitive: tóg
+  meaning: to take/build
+  type: 1st conjugation
+
+- id: tabhair
+  infinitive: tabhair
+  meaning: to give
+  type: irregular
+
+- id: tog
+  infinitive: tóg
+  meaning: to take
+  type: 1st conjugation
+
+- id: can
+  infinitive: can
+  meaning: to sing
+  type: 1st conjugation
