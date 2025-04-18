@@ -83,48 +83,69 @@ function updateTenseDropdown(mood) {
     }
 }
 
+
 /**
- * Load verb data and populate the UI
+ * Update the initialization order for dropdowns to handle Tense first, Mood second
  */
-async function loadAndPopulateVerbData() {
+function loadAndPopulateVerbData() {
     try {
-        // Initialize mood dropdown
-        populateMoodDropdown();
-        
-        // Update tense dropdown for default mood
-        const moodDropdown = GQUtils.getEl('mood-dropdown');
-        const defaultMood = moodDropdown ? moodDropdown.value : 'indicative';
-        updateTenseDropdown(defaultMood);
-        
-        // Load verbs
-        const verbs = await VerbsData.loadVerbList();
-        
-        // Populate the verb list
-        populateVerbList(verbs);
-        
+        // First load the verbs to populate the list
+        VerbsData.loadVerbList()
+            .then(verbs => {
+                // Populate the verb list
+                populateVerbList(verbs);
+
+                // Initialize mood dropdown
+                populateMoodDropdown();
+
+                // Update tense dropdown for default mood
+                const moodDropdown = GQUtils.getEl('mood-dropdown');
+                const defaultMood = moodDropdown ? moodDropdown.value : 'indicative';
+                updateTenseDropdown(defaultMood);
+            })
+            .catch(error => {
+                console.error('Error loading verb list:', error);
+                showErrorMessage('Failed to load verb list');
+            });
     } catch (error) {
         console.error('Error loading verb data:', error);
-        
-        // Show error message to user
-        const verbDisplay = GQUtils.getEl('conjugation-display');
-        if (verbDisplay) {
-            GQUtils.setHTML(verbDisplay, `
-                <div class="placeholder-message">
-                    <p>Failed to load verb data. Please try refreshing the page.</p>
-                    <div class="cyber-decoration">
-                        <div class="deco-line"></div>
-                        <div class="deco-circle"></div>
-                        <div class="deco-line"></div>
-                    </div>
-                    <p class="error-details">Error: ${error.message}</p>
-                </div>
-            `);
-        }
-        
-        // Show notification
-        GQUI.showNotification('Failed to load verb data. Please try refreshing the page.', 'error');
+        showErrorMessage('Failed to load verb data');
     }
 }
+
+/**
+ * Since we now have tense first and mood second, the relationship is reversed
+ * This function needs to update what tenses are available for a given mood
+ */
+function setupEventListeners() {
+    // Mood dropdown change
+    const moodDropdown = GQUtils.getEl('mood-dropdown');
+    if (moodDropdown) {
+        moodDropdown.addEventListener('change', function() {
+            const selectedMood = this.value;
+            // When mood changes, we need to update the tenses available
+            updateTenseDropdown(selectedMood);
+            updateVerbDisplay();
+        });
+    }
+
+    // Tense dropdown change
+    const tenseDropdown = GQUtils.getEl('tense-dropdown');
+    if (tenseDropdown) {
+        tenseDropdown.addEventListener('change', function() {
+            updateVerbDisplay();
+        });
+    }
+
+    // Verb search
+    const verbSearch = GQUtils.getEl('verb-search');
+    if (verbSearch) {
+        verbSearch.addEventListener('input', GQUtils.debounce(function() {
+            filterVerbs(this.value.toLowerCase());
+        }, 300));
+    }
+}
+
 
 /**
  * Populate the mood dropdown
@@ -272,27 +293,75 @@ function displayVerbConjugations(verb) {
     updateVerbNotes(verb, mood, tense);
 }
 
+
+
+
 /**
- * Update the verb display when mood or tense changes
+ * Display an error message to the user
+ * @param {string} message - The error message
+ */
+function showErrorMessage(message) {
+    const verbDisplay = GQUtils.getEl('conjugation-display');
+    if (verbDisplay) {
+        GQUtils.setHTML(verbDisplay, `
+            <div class="placeholder-message">
+                <p>${message}. Please try refreshing the page.</p>
+                <div class="cyber-decoration">
+                    <div class="deco-line"></div>
+                    <div class="deco-circle"></div>
+                    <div class="deco-line"></div>
+                </div>
+            </div>
+        `);
+    }
+
+    // Show notification if available
+    if (GQUI && GQUI.showNotification) {
+        GQUI.showNotification(message, 'error');
+    }
+}
+
+
+/**
+ * Enhanced update verb display function
+ * Gets current mood and tense, and displays the appropriate conjugations
  */
 function updateVerbDisplay() {
     const verbList = GQUtils.getEl('verb-list');
     const activeVerb = verbList ? verbList.querySelector('.active') : null;
-    
+
     if (activeVerb) {
         const verbId = activeVerb.dataset.verbId;
-        
+
+        // Get the current mood and tense
+        const moodDropdown = GQUtils.getEl('mood-dropdown');
+        const tenseDropdown = GQUtils.getEl('tense-dropdown');
+
+        const mood = moodDropdown ? moodDropdown.value : 'indicative';
+        const tense = tenseDropdown ? tenseDropdown.value : 'present';
+
         // Load the full verb data and update display
         VerbsData.loadVerb(verbId)
             .then(verb => {
-                displayVerbConjugations(verb);
+                // Update header
+                updateVerbHeader(verb);
+
+                // Get the conjugation key for this mood and tense
+                const conjugationKey = VerbsData.getConjugationKey(mood, tense);
+
+                // Display conjugations
+                displayConjugationsForMoodAndTense(verb, conjugationKey);
+
+                // Update notes
+                updateVerbNotes(verb, mood, tense);
             })
             .catch(error => {
                 console.error('Error updating verb display:', error);
-                GQUI.showNotification('Error updating verb display.', 'error');
+                showErrorMessage('Error updating verb display');
             });
     }
 }
+
 
 /**
  * Update the verb header with the selected verb
