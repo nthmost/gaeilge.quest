@@ -1,0 +1,84 @@
+infinitive: beir
+root: beir
+type: irregular
+meaning: to catch, to carry, to bear
+conjugations:
+  present:
+    singular:
+      first: beirim
+      second: beireann tú
+      thirdMasc: beireann sé
+      thirdFem: beireann sí
+    plural:
+      first: beirimid
+      second: beireann sibh
+      third: beireann siad
+    autonomous: beirtear
+  past:
+    singular:
+      first: rug mé
+      second: rug tú
+      thirdMasc: rug sé
+      thirdFem: rug sí
+    plural:
+      first: rugamar
+      second: rug sibh
+      third: rug siad
+    autonomous: rugadh
+  future:
+    singular:
+      first: béarfaidh mé
+      second: béarfaidh tú
+      thirdMasc: béarfaidh sé
+      thirdFem: béarfaidh sí
+    plural:
+      first: béarfaimid
+      second: béarfaidh sibh
+      third: béarfaidh siad
+    autonomous: béarfar
+  habitual_present:
+    singular:
+      first: beirim
+      second: beireann tú
+      thirdMasc: beireann sé
+      thirdFem: beireann sí
+    plural:
+      first: beirimid
+      second: beireann sibh
+      third: beireann siad
+    autonomous: beirtear
+  habitual_past:
+    singular:
+      first: bheirinn
+      second: bheirteá
+      thirdMasc: bheireadh sé
+      thirdFem: bheireadh sí
+    plural:
+      first: bheirimis
+      second: bheireadh sibh
+      third: bheireadh siad
+    autonomous: bheirtí
+  conditional:
+    singular:
+      first: bhéarfainn
+      second: bhéarfá
+      thirdMasc: bhéarfadh sé
+      thirdFem: bhéarfadh sí
+    plural:
+      first: bhéarfaimis
+      second: bhéarfadh sibh
+      third: bhéarfadh siad
+    autonomous: bhéarfaí
+  imperative:
+    singular:
+      first: beirim
+      second: beir
+      thirdMasc: beireadh sé
+      thirdFem: beireadh sí
+    plural:
+      first: beirimis
+      second: beirigí
+      third: beireadh siad
+    autonomous: beirtear
+notes: Beir is an irregular verb meaning 'to catch' or 'to bear'. It uses 'rug' in the past and 'béarfaidh' in the future.
+

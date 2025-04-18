@@ -11,6 +11,11 @@
   meaning: to threaten
   type: 2nd conjugation
 
+- id: beir
+  infinitive: beir
+  meaning: to catch, to carry, to bear
+  type: irregular
+
 - id: bi
   infinitive: bí
   meaning: to be
@@ -31,6 +36,11 @@
   meaning: to buy
   type: 2nd conjugation
 
+- id: clois
+  infinitive: clois
+  meaning: to hear
+  type: irregular
+
 - id: deanaimh
   infinitive: déan
   meaning: to do/make
@@ -40,6 +50,11 @@
   infinitive: díol
   meaning: to sell
   type: 1st conjugation
+
+- id: faigh
+  infinitive: faigh
+  meaning: to get, to find
+  type: irregular
 
 - id: feic
   infinitive: feic
