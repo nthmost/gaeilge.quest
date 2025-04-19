@@ -61,22 +61,22 @@ function setupEventListeners() {
 function updateTenseDropdown(mood) {
     const tenseDropdown = GQUtils.getEl('tense-dropdown');
     if (!tenseDropdown) return;
-    
+
     // Clear existing options
     tenseDropdown.innerHTML = '';
-    
+
     // Get tenses for the selected mood
     const tenses = VerbsData.getTenses(mood);
-    
+
     // Add option elements
     tenses.forEach(tense => {
         const option = GQUtils.createEl('option', {
             value: tense.value
         }, tense.text);
-        
+
         tenseDropdown.appendChild(option);
     });
-    
+
     // Select first option by default
     if (tenseDropdown.options.length > 0) {
         tenseDropdown.selectedIndex = 0;
@@ -153,19 +153,19 @@ function setupEventListeners() {
 function populateMoodDropdown() {
     const moodDropdown = GQUtils.getEl('mood-dropdown');
     if (!moodDropdown) return;
-    
+
     // Clear existing options
     moodDropdown.innerHTML = '';
-    
+
     // Get moods
     const moods = VerbsData.getMoods();
-    
+
     // Add option elements
     moods.forEach(mood => {
         const option = GQUtils.createEl('option', {
             value: mood.value
         }, mood.text);
-        
+
         moodDropdown.appendChild(option);
     });
 }
@@ -192,14 +192,14 @@ async function filterVerbs(searchTerm) {
 function updateVerbList(verbs, searchTerm) {
     const verbList = GQUtils.getEl('verb-list');
     if (!verbList) return;
-    
+
     // Get currently active verb if any
     const activeVerb = verbList.querySelector('.active');
     const activeVerbId = activeVerb ? activeVerb.dataset.verbId : null;
-    
+
     // Clear the list
     verbList.innerHTML = '';
-    
+
     // Add each verb to the list
     verbs.forEach(verb => {
         const li = GQUtils.createEl('li', {
@@ -215,31 +215,31 @@ function updateVerbList(verbs, searchTerm) {
             GQUtils.createEl('span', { className: 'verb-irish' }, verb.infinitive),
             GQUtils.createEl('span', { className: 'verb-english' }, verb.meaning)
         ]);
-        
+
         // Re-select active verb if it's in the filtered list
         if (verb.id === activeVerbId) {
             li.classList.add('active');
         }
-        
+
         verbList.appendChild(li);
     });
-    
+
     // Show message if no verbs match
     const noResultsMsg = GQUtils.getEl('no-results-message');
-    
+
     if (verbs.length === 0 && searchTerm) {
         if (!noResultsMsg) {
             const newMsg = GQUtils.createEl('div', {
                 id: 'no-results-message',
                 className: 'no-results'
             }, `No verbs match "${searchTerm}"`);
-            
+
             verbList.parentNode.appendChild(newMsg);
         }
     } else if (noResultsMsg) {
         noResultsMsg.remove();
     }
-    
+
     // Select first verb if no verb is selected
     if (!verbList.querySelector('.active') && verbList.firstChild) {
         selectVerb(verbList.firstChild);
@@ -254,15 +254,15 @@ async function selectVerb(verbElement) {
     // Remove active class from all verbs
     const allVerbs = GQUtils.getEls('#verb-list li');
     allVerbs.forEach(v => v.classList.remove('active'));
-    
+
     // Add active class to selected verb
     verbElement.classList.add('active');
-    
+
     try {
         // Load the full verb data
         const verbId = verbElement.dataset.verbId;
         const verb = await VerbsData.loadVerb(verbId);
-        
+
         // Display verb conjugations
         displayVerbConjugations(verb);
     } catch (error) {
@@ -278,17 +278,17 @@ async function selectVerb(verbElement) {
 function displayVerbConjugations(verb) {
     // Update header
     updateVerbHeader(verb);
-    
+
     // Get current mood and tense
     const moodDropdown = GQUtils.getEl('mood-dropdown');
     const tenseDropdown = GQUtils.getEl('tense-dropdown');
-    
+
     const mood = moodDropdown ? moodDropdown.value : 'indicative';
     const tense = tenseDropdown ? tenseDropdown.value : 'present';
-    
+
     // Display conjugations
     displayConjugationsForMoodAndTense(verb, mood, tense);
-    
+
     // Update notes
     updateVerbNotes(verb, mood, tense);
 }
@@ -346,11 +346,8 @@ function updateVerbDisplay() {
                 // Update header
                 updateVerbHeader(verb);
 
-                // Get the conjugation key for this mood and tense
-                const conjugationKey = VerbsData.getConjugationKey(mood, tense);
-
-                // Display conjugations
-                displayConjugationsForMoodAndTense(verb, conjugationKey);
+                // Display conjugations with separate mood and tense parameters
+                displayConjugationsForMoodAndTense(verb, mood, tense);
 
                 // Update notes
                 updateVerbNotes(verb, mood, tense);
@@ -370,7 +367,7 @@ function updateVerbDisplay() {
 function updateVerbHeader(verb) {
     const verbHeader = GQUtils.getEl('verb-header');
     if (!verbHeader) return;
-    
+
     GQUtils.setHTML(verbHeader, `
         <h2>${verb.infinitive}</h2>
         <p class="verb-meaning">${verb.meaning} <span class="verb-type">(${verb.type})</span></p>
@@ -386,10 +383,10 @@ function updateVerbHeader(verb) {
 function displayConjugationsForMoodAndTense(verb, mood, tense) {
     const conjugationDisplay = GQUtils.getEl('conjugation-display');
     if (!conjugationDisplay) return;
-    
+
     // Get the conjugations
     const conjugations = VerbsData.getConjugations(verb, mood, tense);
-    
+
     if (!conjugations) {
         GQUtils.setHTML(conjugationDisplay, `
             <div class="placeholder-message">
@@ -403,10 +400,10 @@ function displayConjugationsForMoodAndTense(verb, mood, tense) {
         `);
         return;
     }
-    
+
     // Create HTML for conjugations
     let html = '';
-    
+
     // Singular section
     if (conjugations.singular) {
         html += `
@@ -414,33 +411,33 @@ function displayConjugationsForMoodAndTense(verb, mood, tense) {
                 <h3>Singular</h3>
                 <div class="conjugation-list">
         `;
-        
+
         // First person singular
         if (conjugations.singular.first) {
             html += createConjugationItem('I', conjugations.singular.first, verb);
         }
-        
+
         // Second person singular
         if (conjugations.singular.second) {
             html += createConjugationItem('You', conjugations.singular.second, verb);
         }
-        
+
         // Third person singular (he)
         if (conjugations.singular.thirdMasc) {
             html += createConjugationItem('He', conjugations.singular.thirdMasc, verb);
         }
-        
+
         // Third person singular (she)
         if (conjugations.singular.thirdFem) {
             html += createConjugationItem('She', conjugations.singular.thirdFem, verb);
         }
-        
+
         html += `
                 </div>
             </div>
         `;
     }
-    
+
     // Plural section
     if (conjugations.plural) {
         html += `
@@ -448,28 +445,28 @@ function displayConjugationsForMoodAndTense(verb, mood, tense) {
                 <h3>Plural</h3>
                 <div class="conjugation-list">
         `;
-        
+
         // First person plural
         if (conjugations.plural.first) {
             html += createConjugationItem('We', conjugations.plural.first, verb);
         }
-        
+
         // Second person plural
         if (conjugations.plural.second) {
             html += createConjugationItem('You (pl)', conjugations.plural.second, verb);
         }
-        
+
         // Third person plural
         if (conjugations.plural.third) {
             html += createConjugationItem('They', conjugations.plural.third, verb);
         }
-        
+
         html += `
                 </div>
             </div>
         `;
     }
-    
+
     // Autonomous/Passive form if available
     if (conjugations.autonomous) {
         html += `
@@ -481,7 +478,7 @@ function displayConjugationsForMoodAndTense(verb, mood, tense) {
             </div>
         `;
     }
-    
+
     conjugationDisplay.innerHTML = html;
 }
 
@@ -495,19 +492,19 @@ function displayConjugationsForMoodAndTense(verb, mood, tense) {
 function createConjugationItem(pronoun, conjugation, verb) {
     // Highlight root vs. ending if possible
     let displayForm = conjugation;
-    
+
     // Extract root and ending based on verb type (basic implementation)
     if (verb.root && conjugation.includes(verb.root)) {
         const rootIndex = conjugation.indexOf(verb.root);
         const endingIndex = rootIndex + verb.root.length;
-        
+
         const root = conjugation.substring(rootIndex, endingIndex);
         const ending = conjugation.substring(endingIndex);
         const prefix = conjugation.substring(0, rootIndex);
-        
+
         displayForm = `${prefix}<span class="verb-root">${root}</span><span class="verb-ending">${ending}</span>`;
     }
-    
+
     return `
         <div class="conjugation-item">
             <div class="pronoun">${pronoun}</div>
@@ -525,13 +522,13 @@ function createConjugationItem(pronoun, conjugation, verb) {
 function updateVerbNotes(verb, mood, tense) {
     const notesContent = GQUtils.getEl('verb-notes-content');
     if (!notesContent) return;
-    
+
     if (verb.notes) {
         GQUtils.setHTML(notesContent, `<p>${verb.notes}</p>`);
     } else {
         const tenseName = VerbsData.getTenseName(mood, tense);
         let genericNote = `<p>The verb <span class="note-highlight">${verb.infinitive}</span> (${verb.meaning}) `;
-        
+
         // Customize note based on mood and tense
         if (mood === 'imperative') {
             genericNote += `is used in the imperative mood to give commands or instructions.`;
@@ -542,9 +539,9 @@ function updateVerbNotes(verb, mood, tense) {
         } else {
             genericNote += `follows the standard conjugation pattern for ${verb.type} verbs in the ${tenseName.toLowerCase()}.`;
         }
-        
+
         genericNote += `</p>`;
-        
+
         GQUtils.setHTML(notesContent, genericNote);
     }
 }
@@ -555,13 +552,13 @@ function updateVerbNotes(verb, mood, tense) {
  */
 function populateVerbList(verbs) {
     const verbList = GQUtils.getEl('verb-list');
-    
+
     // Exit if element not found
     if (!verbList) return;
-    
+
     // Clear the list first
     verbList.innerHTML = '';
-    
+
     // Add each verb to the list
     verbs.forEach(verb => {
         const li = GQUtils.createEl('li', {
@@ -577,10 +574,10 @@ function populateVerbList(verbs) {
             GQUtils.createEl('span', { className: 'verb-irish' }, verb.infinitive),
             GQUtils.createEl('span', { className: 'verb-english' }, verb.meaning)
         ]);
-        
+
         verbList.appendChild(li);
     });
-    
+
     // Select the first verb by default
     if (verbs.length > 0 && verbList.firstChild) {
         selectVerb(verbList.firstChild);
@@ -599,7 +596,7 @@ function initCyberEffects() {
             pulseInterval: 5000
         });
     }
-    
+
     // Add subtle animation to deco elements
     const decoCircle = document.querySelector('.deco-circle');
     if (decoCircle) {
@@ -608,7 +605,7 @@ function initCyberEffects() {
             pulseInterval: 3000
         });
     }
-    
+
     // Add subtle effects to verb list items
     const verbItems = GQUtils.getEls('.verb-list li');
     if (verbItems.length > 0) {
@@ -617,7 +614,7 @@ function initCyberEffects() {
                 item.style.borderColor = 'var(--cyber-blue)';
                 item.style.transform = 'translateX(5px)';
             });
-            
+
             item.addEventListener('mouseleave', () => {
                 if (!item.classList.contains('active')) {
                     item.style.borderColor = 'transparent';
