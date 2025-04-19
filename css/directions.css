@@ -8,12 +8,8 @@
     gap: 2rem;
 }
 
-/* Selection panel styles */
+/* Selection panel styles - UPDATED */
 .selection-panel {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
     padding: 1.5rem;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 0.9));
     border: 1px solid var(--copper);
@@ -21,16 +17,53 @@
     box-shadow: 0 0 15px rgba(184, 115, 51, 0.3);
 }
 
-.category-selector, .level-selector {
+.selection-title {
+    color: var(--light-orange-pink);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.selection-instruction {
+    color: var(--silver);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.selection-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.selection-box {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(184, 115, 51, 0.5);
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.selection-box-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(184, 115, 51, 0.3);
+}
+
+.selection-box-header h3 {
+    text-align: center;
+    color: var(--cyber-blue);
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .cyber-buttons {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin-top: 1rem;
 }
 
 .category-btn, .level-btn {
@@ -38,22 +71,23 @@
     padding: 0.75rem 1rem;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.8));
     border: 1px solid var(--copper);
-    color: var(--silver);
-    font-family: 'Space Mono', monospace;
-    font-size: 0.9rem;
+    color: var(--light-orange-pink);
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 1.1rem;
     text-align: left;
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
     border-radius: 4px;
+    line-height: 1.4;
 }
 
 .category-btn:hover, .level-btn:hover {
     background: linear-gradient(135deg, rgba(30, 30, 30, 0.7), rgba(40, 40, 40, 0.9));
-    border-color: var(--cyber-blue);
-    color: var(--cyber-blue);
+    border-color: var(--gold);
+    color: var(--gold);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 242, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
 }
 
 .category-btn.selected, .level-btn.selected {
@@ -75,6 +109,91 @@
 
 .category-btn.selected .btn-deco, .level-btn.selected .btn-deco {
     background: linear-gradient(90deg, transparent, rgba(0, 242, 255, 0.3));
+}
+
+/* Selection status styles - NEW */
+.selection-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-label {
+    color: var(--silver);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.status-value {
+    padding: 0.3rem 0.8rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    color: rgba(255, 80, 80, 0.9);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.status-value.selected {
+    color: var(--cyber-blue);
+    background: rgba(0, 242, 255, 0.1);
+    border: 1px solid rgba(0, 242, 255, 0.3);
+}
+
+.start-activity-btn {
+    margin-left: auto;
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0.9));
+    border: 1px solid var(--cyber-blue);
+    border-radius: 4px;
+    color: var(--cyber-blue);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-activity-btn:hover:not(.disabled) {
+    background: linear-gradient(135deg, rgba(40, 40, 40, 0.8), rgba(60, 60, 60, 1));
+    border-color: var(--cyber-blue);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.start-activity-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: rgba(184, 115, 51, 0.5);
+    color: rgba(184, 115, 51, 0.5);
+}
+
+.start-activity-btn.ready {
+    animation: pulse-ready 2s infinite;
+    color: var(--light-orange-pink);
+    border-color: var(--light-orange-pink);
+}
+
+@keyframes pulse-ready {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 182, 185, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 182, 185, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 182, 185, 0);
+    }
 }
 
 /* Introduction panel styles */
@@ -490,9 +609,24 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .selection-panel {
+    .selection-boxes {
         flex-direction: column;
         gap: 1.5rem;
+    }
+    
+    .selection-status {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .status-item {
+        justify-content: space-between;
+    }
+    
+    .start-activity-btn {
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
     }
     
     .direction-grid {
@@ -506,6 +640,7 @@
     .completion-actions {
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
     }
 }
 

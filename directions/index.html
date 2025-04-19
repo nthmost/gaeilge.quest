@@ -46,46 +46,7 @@
             </section>
 
             <div class="directions-container">
-                <!-- Category and Level Selection -->
-                <section class="selection-panel">
-                    <div class="category-selector">
-                        <h3>Choose a Category</h3>
-                        <div class="cyber-buttons">
-                            <button class="category-btn" data-category="weather">
-                                <span class="btn-text">An Aimsir & Na Séasúir</span>
-                                <div class="btn-deco"></div>
-                            </button>
-                            <button class="category-btn" data-category="home">
-                                <span class="btn-text">Sa Bhaile</span>
-                                <div class="btn-deco"></div>
-                            </button>
-                            <button class="category-btn" data-category="travel">
-                                <span class="btn-text">Ag Taisteal</span>
-                                <div class="btn-deco"></div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="level-selector">
-                        <h3>Choose a Level</h3>
-                        <div class="cyber-buttons">
-                            <button class="level-btn" data-level="beginner">
-                                <span class="btn-text">Tosaitheoirí</span>
-                                <div class="btn-deco"></div>
-                            </button>
-                            <button class="level-btn" data-level="intermediate">
-                                <span class="btn-text">Meánleibhéal</span>
-                                <div class="btn-deco"></div>
-                            </button>
-                            <button class="level-btn" data-level="advanced">
-                                <span class="btn-text">Ardleibhéal</span>
-                                <div class="btn-deco"></div>
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Introduction to Directions -->
+                <!-- Introduction to Directions - MOVED ABOVE SELECTION PANEL -->
                 <section class="intro-panel">
                     <h2>Understanding Irish Directional Words</h2>
                     <p>In Irish, directional words depend on the speaker's position and the direction of movement. This makes them more complex than in English, but also more precise!</p>
@@ -129,10 +90,73 @@
                     </div>
                 </section>
 
+                <!-- Category and Level Selection - REDESIGNED WITH BOXES -->
+                <section class="selection-panel">
+                    <h2 class="selection-title">Practice Your Skills</h2>
+                    <p class="selection-instruction">Choose one option from each category below to begin</p>
+                    
+                    <div class="selection-boxes">
+                        <div class="selection-box category-box">
+                            <div class="selection-box-header">
+                                <h3>Choose a Category</h3>
+                            </div>
+                            <div class="cyber-buttons">
+                                <button class="category-btn" data-category="weather">
+                                    <span class="btn-text">An Aimsir & Na Séasúir (Weather & Seasons)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="category-btn" data-category="home">
+                                    <span class="btn-text">Sa Bhaile (At Home)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="category-btn" data-category="travel">
+                                    <span class="btn-text">Ag Taisteal (Traveling)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="selection-box level-box">
+                            <div class="selection-box-header">
+                                <h3>Choose a Level</h3>
+                            </div>
+                                <div class="cyber-buttons">
+                                <button class="level-btn" data-level="beginner">
+                                    <span class="btn-text">Bunleibhéal (Beginner)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="level-btn" data-level="intermediate">
+                                    <span class="btn-text">Meánleibhéal (Intermediate)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="level-btn" data-level="advanced">
+                                    <span class="btn-text">Ardleibhéal (Advanced)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Selection status indicator -->
+                    <div class="selection-status">
+                        <div class="status-item category-status">
+                            <div class="status-label">Category:</div>
+                            <div id="category-status-value" class="status-value">Not selected</div>
+                        </div>
+                        <div class="status-item level-status">
+                            <div class="status-label">Level:</div>
+                            <div id="level-status-value" class="status-value">Not selected</div>
+                        </div>
+                        <div id="start-activity" class="start-activity-btn disabled">
+                            Begin Practice
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Interactive Activity Area -->
                 <section id="activity-area" class="activity-area">
                     <div class="activity-placeholder">
-                        <p>Select a category and level to begin practicing!</p>
+                        <p>Select a category and level above to begin practicing!</p>
                         <div class="cyber-decoration">
                             <div class="deco-line"></div>
                             <div class="deco-circle"></div>
