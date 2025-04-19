@@ -1,0 +1,432 @@
+/* directions.css - Styles for the Irish directions learning page */
+
+/* General layout and containers */
+.directions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Selection panel styles */
+.selection-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.1), inset 0 0 8px rgba(0, 255, 165, 0.1);
+}
+
+.category-selector, .level-selector {
+    flex: 1;
+    min-width: 250px;
+}
+
+.cyber-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.category-btn, .level-btn {
+    position: relative;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.8));
+    border: 1px solid rgba(255, 165, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.category-btn:hover, .level-btn:hover {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.7), rgba(40, 40, 40, 0.9));
+    border-color: rgba(255, 165, 0, 0.7);
+    color: rgba(255, 165, 0, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 165, 0.15);
+}
+
+.category-btn.selected, .level-btn.selected {
+    background: linear-gradient(135deg, rgba(40, 40, 40, 0.8), rgba(60, 60, 60, 1));
+    border-color: rgba(0, 255, 165, 0.7);
+    color: rgba(0, 255, 165, 0.9);
+    box-shadow: 0 0 15px rgba(0, 255, 165, 0.3), inset 0 0 8px rgba(0, 255, 165, 0.2);
+}
+
+.btn-deco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.2));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.category-btn.selected .btn-deco, .level-btn.selected .btn-deco {
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 165, 0.3));
+}
+
+/* Introduction panel styles */
+.intro-panel {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.1), inset 0 0 8px rgba(0, 255, 165, 0.1);
+}
+
+.direction-basics {
+    margin-top: 1.5rem;
+}
+
+.direction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.direction-card {
+    padding: 1rem;
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid rgba(0, 255, 165, 0.3);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.direction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 165, 0.2);
+    border-color: rgba(0, 255, 165, 0.6);
+}
+
+.direction-term {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 1.1rem;
+    color: rgba(0, 255, 165, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.direction-meaning {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Activity area styles */
+.activity-area {
+    min-height: 400px;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.1), inset 0 0 8px rgba(0, 255, 165, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cyber-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.deco-line {
+    height: 1px;
+    width: 50px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 165, 0.5), transparent);
+}
+
+.deco-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 255, 165, 0.7);
+    margin: 0 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 255, 165, 0.5);
+}
+
+/* Scenario styles */
+.scenario {
+    display: none; /* Hidden by default, shown by JS */
+    width: 100%;
+}
+
+.scenario-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgba(0, 255, 165, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.scenario-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.8) brightness(0.9);
+    transition: all 0.5s ease;
+}
+
+.scenario:hover .scenario-image {
+    filter: saturate(1) brightness(1);
+}
+
+.hotspot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 165, 0, 0.5);
+    border: 2px solid rgba(255, 165, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite;
+    z-index: 5;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 165, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 165, 0, 0);
+    }
+}
+
+.scenario-description {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.scenario-exercise {
+    padding: 1.5rem;
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid rgba(0, 255, 165, 0.3);
+    border-radius: 4px;
+}
+
+.exercise-sentence {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.word-slot {
+    position: relative;
+    display: inline-block;
+    min-width: 120px;
+    padding: 0.4rem 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px dashed rgba(255, 165, 0, 0.5);
+    border-radius: 4px;
+    color: rgba(0, 255, 165, 0.9);
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    cursor: pointer;
+}
+
+.word-selector {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.95);
+    border: 1px solid rgba(0, 255, 165, 0.5);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+
+.word-option {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.word-option:hover {
+    background: rgba(0, 255, 165, 0.2);
+}
+
+.word-option:last-child {
+    border-bottom: none;
+}
+
+.check-answer-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0.9));
+    border: 1px solid rgba(0, 255, 165, 0.5);
+    border-radius: 4px;
+    color: rgba(0, 255, 165, 0.9);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.check-answer-btn:hover {
+    background: linear-gradient(135deg, rgba(40, 40, 40, 0.8), rgba(60, 60, 60, 1));
+    border-color: rgba(0, 255, 165, 0.8);
+    box-shadow: 0 0 10px rgba(0, 255, 165, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Feedback area styles */
+.feedback-area {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.1), inset 0 0 8px rgba(0, 255, 165, 0.1);
+}
+
+.feedback-message {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    min-height: 2rem;
+}
+
+.feedback-message.correct {
+    color: rgba(0, 255, 165, 0.9);
+}
+
+.feedback-message.incorrect {
+    color: rgba(255, 80, 80, 0.9);
+}
+
+.progress-tracker {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background: rgba(20, 20, 20, 0.6);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 165, 0, 0.7), rgba(0, 255, 165, 0.7));
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.progress-count {
+    font-family: 'Space Mono', monospace;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(30, 30, 30, 0.95);
+    border: 2px solid rgba(0, 255, 165, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 255, 165, 0.3);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: rgba(255, 80, 80, 0.9);
+}
+
+#modal-continue {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0.9));
+    border: 1px solid rgba(0, 255, 165, 0.5);
+    border-radius: 4px;
+    color: rgba(0, 255, 165, 0.9);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#modal-continue:hover {
+    background: linear-gradient(135deg, rgba(40, 40, 40, 0.8), rgba(60, 60, 60, 1));
+    border-color: rgba(0, 255, 165, 0.8);
+    box-shadow: 0 0 10px rgba(0, 255, 165, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .selection-panel {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .direction-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .scenario-image-container {
+        height: 200px;
+    }
+}
