@@ -760,7 +760,7 @@
     "id": "relative-clauses",
     "title": "Relative Clauses",
     "category": "syntax",
-    "difficulty": "C1",
+    "difficulty": "B2",
     "tags": [
       "relative clauses",
       "a",
@@ -2355,6 +2355,380 @@
       "conditional-sentences",
       "verb-bi",
       "indirect-speech"
+    ]
+  },
+  {
+    "id": "habitual-past",
+    "title": "Habitual Past: Aimsir Ghnáthchaite",
+    "category": "verbs",
+    "difficulty": "B2",
+    "tags": [
+      "habitual past",
+      "aimsir ghnáthchaite",
+      "used to",
+      "d'óladh",
+      "bhíodh",
+      "imperfect"
+    ],
+    "summary": "The habitual past (aimsir ghnáthchaite) expresses repeated or habitual actions in the past — 'used to do'. Every verb has a distinct habitual past form.",
+    "content": "The habitual past expresses what someone used to do, or what regularly happened in the past. It is a distinct tense in Irish — not formed from the simple past.\n\nFormation — 1st conjugation (broad):\n  Stem + adh/eadh + personal endings\n  óladh (used to drink): d'ólainn, d'ólaidís, d'óladh sé/sí\n  ól → past habitual stem: óladh\n  Personal forms:\n    1sg: d'ólainn       I used to drink\n    2sg: d'ólaidís tú   (analytic) / d'ólaitéa (archaic synthetic)\n    3sg: d'óladh sé/sí  he/she used to drink\n    1pl: d'ólamar / d'ólaimis  we used to drink\n    2pl: d'óladh sibh   you (pl) used to drink\n    3pl: d'óladh siad / d'ólaidís  they used to drink\n\nFormation — 1st conjugation (slender):\n  ith → d'ithinn, d'itheadh sé\n  léigh → léinn, léadh sé\n\nFormation — 2nd conjugation:\n  ceannaigh → cheannaínn, cheannaíodh sé\n  éirigh → d'éirinn, d'éiríodh sé\n\nBí habitual past — bhíodh:\n  bhínn   I used to be\n  bhíodh sé   he used to be\n  bhíodh siad  they used to be\n  Negative: ní bhíodh\n  Question: an mbíodh?\n\nAll habitual past forms:\n  - Take 'd'' prefix before vowels and f: d'óladh, d'fhoghlaimíodh\n  - Take lenition (not d') before consonants after ní: ní óladh\n  - Question: an + eclipsis: an óladh?\n  - Negative: ní + lenition: ní óladh\n\nAutonomous habitual past:\n  1st conj. broad:   óltaí   (one used to drink)\n  2nd conj.:         ceannaítí (one used to buy)\n  bí:                bhítí    (one used to be)",
+    "examples": [
+      {
+        "irish": "D'óladh sé pionta gach oíche.",
+        "english": "He used to drink a pint every night.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhíodh muid ag imirt sa pháirc.",
+        "english": "We used to play in the park.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'éirínn go luath gach maidin.",
+        "english": "I used to get up early every morning.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cheannaíodh sí nuachtán gach lá.",
+        "english": "She used to buy a newspaper every day.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní bhíodh muid ag caint faoi.",
+        "english": "We didn't used to talk about it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Théadh siad go Gaillimh gach samhradh.",
+        "english": "They used to go to Galway every summer.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhíodh an siopa oscailte go dtí a deich.",
+        "english": "The shop used to be open until ten.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'fhoghlaimíodh na páistí filíocht de ghlanmheabhair.",
+        "english": "The children used to learn poetry by heart.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An mbíodh tú ag an gcluiche?",
+        "english": "Used you to be at the match?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhínn óg uair amháin.",
+        "english": "I used to be young once.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The habitual past pairs naturally with the habitual present (bíonn): bhíodh = used to be, bíonn = is habitually. The habitual past is essential for talking about childhood memories, past routines, and how things used to be. Note that irregular verbs have irregular habitual past forms: téigh → théadh, tar → thagadh, déan → dhéanadh.",
+    "see_also": [
+      "habitual-present",
+      "verb-tenses-regular",
+      "verb-irregular"
+    ]
+  },
+  {
+    "id": "indirect-relative",
+    "title": "Indirect Relative Clauses",
+    "category": "sentence structure",
+    "difficulty": "B2",
+    "tags": [
+      "relative clause",
+      "indirect relative",
+      "prepositional relative",
+      "resumptive pronoun",
+      "a",
+      "ar",
+      "ina"
+    ],
+    "summary": "Indirect relative clauses relate to a noun through a preposition or as a genitive. They use eclipsis (not lenition) and require a resumptive pronoun to carry the preposition.",
+    "content": "Irish has two types of relative clause:\n\n1. DIRECT relative — the head noun is the subject or direct object of the verb:\n   an fear a chonaic mé    the man (whom) I saw\n   an fear a tháinig       the man who came\n   (particle 'a' + lenition — independent verb form)\n\n2. INDIRECT relative — the head noun is linked through a preposition, or is a genitive:\n   an fear ar thug mé airgead dó    the man to whom I gave money\n   an teach ina bhfuil sé           the house in which he is\n   (particle 'a' + eclipsis — dependent verb form + resumptive pronoun)\n\nThe resumptive pronoun restores the role of the head noun inside the clause:\n  ag + é → aige (at him)   → an fear ar thug mé €10 dó (the man I gave €10 to)\n  i  + sé → ann           → an teach ina bhfuil sé (the house in which he is)\n  le + í → léi            → an bhean ar labhair mé léi (the woman I spoke with)\n\nPrepositions contract with the relative particle 'a':\n  ag + a → ar a (at whose/which)   an teach ar a bhfuil dídean (a house giving shelter)\n  i  + a → ina  an teach ina gcónaíonn siad (the house in which they live)\n  ar + a → ar a  an ábhar ar a bhfuil tú ag smaoineamh (the subject you're thinking about)\n  le + a → lena  an duine lena labhraíonn sí (the person with whom she speaks)\n  do + a → dá   an leanbh dá dtugtar an leabhar (the child to whom the book is given)\n  faoi + a → faoina  an rud faoina bhfuil siad ag caint (the thing they're talking about)\n\nGenitive indirect relative:\n  an fear a bhfuil a mhac sa scoil   the man whose son is in school\n  (a bhfuil = present dependent; a mhac = his son, resumptive poss.)\n\nPast indirect relative uses 'ar' (not 'a') + lenition:\n  an fear ar labhair mé leis      the man I spoke with (past)\n  an teach ar chónaigh siad ann   the house in which they lived",
+    "examples": [
+      {
+        "irish": "Sin é an fear ar thug mé an leabhar dó.",
+        "english": "That is the man to whom I gave the book.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An teach ina gcónaíonn siad.",
+        "english": "The house in which they live.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is í sin an bhean ar labhair mé léi.",
+        "english": "That is the woman with whom I spoke.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An rud faoina bhfuil siad ag caint.",
+        "english": "The thing they are talking about.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An fear a bhfuil a iníon ina dochtúir.",
+        "english": "The man whose daughter is a doctor.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An cúrsa ar chláraigh mé leis.",
+        "english": "The course I registered for.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Sin an áit ina rugadh mé.",
+        "english": "That is the place where I was born.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An duine dá dtabharfainn é.",
+        "english": "The person to whom I would give it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An fáth ar fhág sé.",
+        "english": "The reason he left.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An lá ar tháinig siad.",
+        "english": "The day they came.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The key distinction: direct relative uses 'a' + lenition + independent verb; indirect relative uses 'a'/'ar' + eclipsis + dependent verb + resumptive pronoun. Learners often forget the resumptive pronoun — 'an fear ar thug mé airgead' is wrong; 'dó' must be added to show 'to him'. This construction is B2 because it requires tracking two things simultaneously: the relative particle and the resumptive pronoun.",
+    "see_also": [
+      "relative-clauses",
+      "prepositional-pronouns",
+      "initial-mutations"
+    ]
+  },
+  {
+    "id": "vocative-case",
+    "title": "The Vocative Case (Tuiseal Gairmeach)",
+    "category": "nouns",
+    "difficulty": "B2",
+    "tags": [
+      "vocative",
+      "tuiseal gairmeach",
+      "a",
+      "direct address",
+      "a Sheáin",
+      "a chara"
+    ],
+    "summary": "The vocative case is used for direct address. It is marked by the particle 'a' (triggering lenition) and, for masculine nouns of the first declension, a slenderised ending.",
+    "content": "When calling out to or addressing someone by name or title, Irish uses the vocative case with the particle 'a':\n\n  a + [lenited noun/name]\n\nThe particle 'a' triggers lenition on the following word:\n  Seán  → a Sheáin    (Hello, Seán / Hey Seán)\n  Máire → a Mháire    (Hello, Máire)\n  fear  → a fhir      (man! / hey man)\n  bean  → a bhean     (woman! / hey woman)\n\nMasculine nouns of the 1st declension are ALSO slenderised in the vocative:\n  fear (man)      → a fhir\n  mac (son)       → a mhic\n  cara (friend)   → a chara   (cara is irregular — no slenderisation in vocative)\n  Seán            → a Sheáin  (slenderised: Seán → Seáin)\n  Pádraig         → a Phádraic\n\nFeminine nouns are lenited but NOT slenderised:\n  Máire   → a Mháire\n  bean    → a bhean\n  cailín  → a chailín\n\nPlural vocative — lenite, add 'a':\n  a fheara!    men! (calling a group)\n  a chairde!   friends!\n  a pháistí!   children!\n\nFixed and common vocative expressions:\n  a chara          dear friend (common letter salutation)\n  a chairde         dear friends\n  a Dhia!           Oh God! (exclamation)\n  a Thiarna!        Oh Lord!\n  a mhamaí!         Mammy!\n  a dhaideo!        Granddad!\n  a mhúinteoir!     Teacher! (calling out to teacher)\n  a dhuine uasail   Sir / Madam (formal)\n  a dhaoine uaisle  Ladies and Gentlemen\n\nIn letters:\n  A chara, … Is mise, le meas, …\n  (Dear …, … Yours sincerely, …)",
+    "examples": [
+      {
+        "irish": "A Sheáin, tar anseo!",
+        "english": "Seán, come here!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A Mháire, an bhfuil tú réidh?",
+        "english": "Máire, are you ready?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A chairde, fáilte romhaibh!",
+        "english": "Friends, welcome!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A chara, …",
+        "english": "Dear friend, … (letter salutation)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A dhaoine uaisle, …",
+        "english": "Ladies and gentlemen, …",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A Dhia, cuidigh liom!",
+        "english": "Oh God, help me!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A mhic, éist liom.",
+        "english": "Son, listen to me.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A mhúinteoir, tá ceist agam.",
+        "english": "Teacher, I have a question.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A Phádraig, cá raibh tú?",
+        "english": "Pádraig, where were you?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "A pháistí, bígí ciúin!",
+        "english": "Children, be quiet!",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The vocative is one of the few living cases in modern Irish alongside the genitive. The particle 'a' before a name or title is the unmistakable sign of direct address. Note: 'a' (vocative particle) is different from 'a' (relative particle) and 'a' (possessive — his). Context always disambiguates.",
+    "see_also": [
+      "nouns-gender",
+      "initial-mutations",
+      "genitive-case"
+    ]
+  },
+  {
+    "id": "modal-expressions",
+    "title": "Modal Expressions: Ability, Obligation, Permission",
+    "category": "sentence structure",
+    "difficulty": "B2",
+    "tags": [
+      "modal",
+      "is féidir",
+      "caithfidh",
+      "ba chóir",
+      "ní mór",
+      "ability",
+      "obligation",
+      "permission",
+      "féad"
+    ],
+    "summary": "Irish expresses modality (can, must, should, may) through fixed constructions rather than modal verbs. The main constructions use is féidir, caithfidh, ba chóir, ní mór, and féad.",
+    "content": "Irish has no modal verbs like English 'can', 'must', 'should'. Instead, modality is expressed through fixed copula or verbal constructions.\n\nABILITY — 'can / be able to'\n\n  Is féidir le X + verbal noun\n  Is féidir liom Gaeilge a labhairt.   I can speak Irish.\n  Is féidir leat é a dhéanamh.         You can do it.\n  Ní féidir liom é a dhéanamh.         I can't do it.\n  An féidir leat cabhrú liom?           Can you help me?\n\n  Alternatively: féad (a verb — to be able):\n  Féadann sé teacht.     He can come.\n  Ní fhéadann sí dul.    She can't go.\n\nOBLIGATION — 'must / have to'\n\n  Caithfidh + subject + verbal noun\n  Caithfidh mé imeacht.      I must leave.\n  Caithfidh tú é a dhéanamh. You have to do it.\n  Ní chaithfidh sé fanacht.  He doesn't have to stay.\n\n  Ní mór do X + verbal noun  (more formal/written)\n  Ní mór dom imeacht.        I must leave.\n  Ní mór duit é a léamh.     You must read it.\n\nSHOULD / OUGHT TO\n\n  Ba chóir do X + verbal noun\n  Ba chóir duit dul ann.       You should go there.\n  Ba chóir dó leithscéal a ghabháil.  He should apologise.\n  Níor chóir duit é sin a rá.  You shouldn't say that.\n\nPERMISSION — 'may / allowed to'\n\n  Is cead do X + verbal noun\n  Is cead duit imeacht anois.  You may leave now.\n  Ní cead duit caitheamh anseo.  You may not smoke here.\n  An cead dom suí anseo?        May I sit here?\n\nPROBABILITY / LIKELIHOOD\n\n  Is dócha go…    It is likely that…\n  Is cosúil go…   It seems that…\n  B'fhéidir go…   Perhaps / Maybe…\n  Is cinnte go…   It is certain that…",
+    "examples": [
+      {
+        "irish": "Is féidir liom Gaeilge a labhairt.",
+        "english": "I can speak Irish.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní féidir leis teacht inniu.",
+        "english": "He can't come today.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An féidir leat cabhrú liom?",
+        "english": "Can you help me?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Caithfidh mé imeacht anois.",
+        "english": "I have to leave now.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní mór duit é a dhéanamh.",
+        "english": "You must do it. (formal)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ba chóir duit leithscéal a ghabháil.",
+        "english": "You should apologise.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Níor chóir duit é sin a rá.",
+        "english": "You shouldn't say that.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is cead duit imeacht anois.",
+        "english": "You may leave now.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "B'fhéidir go mbeidh sé ann.",
+        "english": "Perhaps he will be there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is dócha go dtiocfaidh sí.",
+        "english": "It is likely that she will come.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Is féidir / ní féidir is by far the most common way to express 'can / can't' in everyday Irish. Caithfidh is strong obligation (must); ba chóir is softer (should). Ní mór is formal/written. B'fhéidir (maybe) takes the conditional, not the present: 'b'fhéidir go mbeadh' not 'go bhfuil'.",
+    "see_also": [
+      "copula-is",
+      "verbal-noun",
+      "indirect-speech"
+    ]
+  },
+  {
+    "id": "noun-plurals",
+    "title": "Noun Plural Formation",
+    "category": "nouns",
+    "difficulty": "B2",
+    "tags": [
+      "plurals",
+      "declension",
+      "iolta",
+      "weak plural",
+      "strong plural",
+      "noun forms"
+    ],
+    "summary": "Irish noun plurals are formed in several ways depending on the noun's declension class. The main patterns are: slenderisation, -a, -ta/-tha, -acha/-eacha, -í, and irregular forms.",
+    "content": "Irish nouns form their plurals in various ways. There is no single rule — the plural must be learned with each noun, but patterns exist by declension.\n\nMain plural formation patterns:\n\n1. SLENDERISATION (adding -e or just slenderising the final consonant)\n   Mostly 1st declension masculine nouns:\n   fear (man)    → fir\n   cat (cat)     → cait\n   bád (boat)    → báid\n   fear → fir, leabhar → leabhair, mac → mic, crann → crainn\n\n2. ADD -A (or -e after slender consonant)\n   Mostly 2nd declension and some others:\n   bróg (shoe)   → bróga\n   páirc (field) → páirceanna (see pattern 4)\n   cloch (stone) → clocha\n   lámh (hand)   → lámha\n   cos (foot/leg) → cosa\n\n3. ADD -TA / -THA / -TE / -THE (or -ANN/-EANN)\n   oíche (night) → oícheanta\n   teach (house) → tithe  (irregular)\n   áit (place)   → áiteanna\n\n4. ADD -ACHA / -EACHA (very common, especially 3rd/4th declension)\n   páirc (field)    → páirceacha\n   bliain (year)    → blianta (irregular)\n   cailín (girl)    → cailíní  (see pattern 5)\n   rang (class)     → ranganna\n   leaba (bed)      → leapacha\n\n5. ADD -Í (slender consonant + í)\n   cailín (girl)  → cailíní\n   múinteoir (teacher) → múinteoirí\n   dochtúir (doctor)   → dochtúirí\n   oifig (office)      → oifigí\n   príomhoide (principal) → príomhoidí\n\n6. IRREGULAR PLURALS (must be memorised)\n   bean (woman)    → mná\n   duine (person)  → daoine\n   teach (house)   → tithe\n   bó (cow)        → ba\n   lá (day)        → laethanta\n   mí (month)      → míonna\n   bliain (year)   → blianta\n   caora (sheep)   → caoirigh\n   capall (horse)  → capaill\n   leanbh (child)  → leanaí\n\nWeak plural vs. strong plural:\n  Weak plural: the plural form is the same as the genitive singular\n    leabhar (book) → plural: leabhair (= genitive singular)\n  Strong plural: distinct from genitive singular\n    bróg (shoe)   → plural: bróga (genitive singular: bróige)",
+    "examples": [
+      {
+        "irish": "na fir mhóra",
+        "english": "the big men (slenderised plural)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na bróga nua",
+        "english": "the new shoes (-a plural)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na cailíní óga",
+        "english": "the young girls (-í plural)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na múinteoirí",
+        "english": "the teachers (-í plural)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na tithe móra",
+        "english": "the big houses (irregular plural)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na mná",
+        "english": "the women (irregular plural of bean)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na daoine",
+        "english": "the people (irregular plural of duine)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "trí lá / na laethanta",
+        "english": "three days / the days (irregular)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na páirceacha glasa",
+        "english": "the green fields (-eacha plural)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "na ranganna Gaeilge",
+        "english": "the Irish classes (-anna plural)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "There is no single rule for Irish plurals — they must be learned with each noun. The most productive modern pattern is -í for agent nouns (múinteoirí, dochtúirí) and -anna/-eacha for newer/longer nouns. The weak/strong plural distinction matters for the genitive plural: weak plurals have zero genitive plural ending (same form as nominative singular); strong plurals maintain their plural form in the genitive.",
+    "see_also": [
+      "nouns-gender",
+      "genitive-case",
+      "articles"
     ]
   }
 ]
