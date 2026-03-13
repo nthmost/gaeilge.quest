@@ -1,0 +1,340 @@
+{
+  "meta": {
+    "groups": [
+      {"id": "irregular", "label": "Irregular Verbs"},
+      {"id": "reg1b",     "label": "1st Conj. — Broad"},
+      {"id": "reg1s",     "label": "1st Conj. — Slender"},
+      {"id": "reg2igh",   "label": "2nd Conj. — -aigh/-igh"},
+      {"id": "reg2other", "label": "2nd Conj. — Other"}
+    ],
+    "tenses": [
+      {"id": "present",     "irish": "Aimsir Láithreach",   "english": "Present",       "default": true},
+      {"id": "past",        "irish": "Aimsir Chaite",        "english": "Past",           "default": true},
+      {"id": "future",      "irish": "Aimsir Fháistineach",  "english": "Future",         "default": true},
+      {"id": "past_hab",    "irish": "Aimsir Ghnáthchaite",  "english": "Past Habitual",  "default": false},
+      {"id": "conditional", "irish": "Modh Coinníollach",    "english": "Conditional",    "default": false},
+      {"id": "imperative",  "irish": "Modh Ordaitheach",     "english": "Imperative",     "default": false}
+    ],
+    "persons": [
+      {"id": "1sg",  "pronoun": "mé",    "english": "I"},
+      {"id": "2sg",  "pronoun": "tú",    "english": "you"},
+      {"id": "3sg",  "pronoun": "sé/sí", "english": "he/she"},
+      {"id": "1pl",  "pronoun": "muid",  "english": "we"},
+      {"id": "2pl",  "pronoun": "sibh",  "english": "you (pl)"},
+      {"id": "3pl",  "pronoun": "siad",  "english": "they"},
+      {"id": "auto", "pronoun": "—",     "english": "one / is …ed"}
+    ]
+  },
+
+  "verbs": [
+
+    {
+      "id": "bi", "irish": "bí", "english": "be (state/existence)", "group": "irregular",
+      "verbal_noun": "bheith", "verbal_adjective": "—",
+      "notes": "The most irregular verb in Irish. The present tense uses the suppletive root tá; the habitual and imperative use bí. Negative: níl (present), ní raibh (past), ní bheidh (future).",
+      "forms": {
+        "present":     {"1sg": {"f":"táim",    "s":"tá mé"},   "2sg": {"f":"tá tú"},      "3sg": {"f":"tá sé/sí"},    "1pl": {"f":"táimid",  "s":"tá muid"},   "2pl": {"f":"tá sibh"},    "3pl": {"f":"tá siad"},    "auto": {"f":"táthar"}},
+        "past":        {"1sg": {"f":"bhí mé",  "m":"bhíos"},   "2sg": {"f":"bhí tú"},     "3sg": {"f":"bhí sé/sí"},   "1pl": {"f":"bhí muid","m":"bhíomar"},  "2pl": {"f":"bhí sibh"},   "3pl": {"f":"bhí siad"},   "auto": {"f":"bhíothas"}},
+        "future":      {"1sg": {"f":"beidh mé","m":"bead"},    "2sg": {"f":"beidh tú"},   "3sg": {"f":"beidh sé/sí"}, "1pl": {"f":"beimid",  "s":"beidh muid"},"2pl": {"f":"beidh sibh"}, "3pl": {"f":"beidh siad"}, "auto": {"f":"beifear"}},
+        "past_hab":    {"1sg": {"f":"bhínn"},                  "2sg": {"f":"bhítá"},      "3sg": {"f":"bhíodh sé/sí"},"1pl": {"f":"bhímis",  "s":"bhíodh muid"},"2pl": {"f":"bhíodh sibh"},"3pl": {"f":"bhídís",  "s":"bhíodh siad"},"auto": {"f":"bhítí"}},
+        "conditional": {"1sg": {"f":"bheinn"},                 "2sg": {"f":"bheifá"},     "3sg": {"f":"bheadh sé/sí"},"1pl": {"f":"bheimis", "s":"bheadh muid"},"2pl": {"f":"bheadh sibh"},"3pl": {"f":"bheidís","s":"bheadh siad"},"auto": {"f":"bheifí"}},
+        "imperative":  {"1sg": {"f":"bím"},                    "2sg": {"f":"bí!"},        "3sg": {"f":"bíodh sé/sí"}, "1pl": {"f":"bímis!"},                    "2pl": {"f":"bígí!"},      "3pl": {"f":"bídís!"},     "auto": {"f":"bítear"}}
+      }
+    },
+
+    {
+      "id": "abair", "irish": "abair", "english": "say", "group": "irregular",
+      "verbal_noun": "rá", "verbal_adjective": "ráite",
+      "notes": "Present stem is deir-; past is dúirt (suppletive, no lenition); future/conditional use déarfaidh-. Negative present: ní deir → ní dhéarfaidh (future).",
+      "forms": {
+        "present":     {"1sg": {"f":"deirim"},              "2sg": {"f":"deir tú"},     "3sg": {"f":"deir sé/sí"},  "1pl": {"f":"deirimid","s":"deir muid"},  "2pl": {"f":"deir sibh"},   "3pl": {"f":"deir siad"},    "auto": {"f":"deirtear"}},
+        "past":        {"1sg": {"f":"dúirt mé","m":"dúras"},"2sg": {"f":"dúirt tú"},    "3sg": {"f":"dúirt sé/sí"}, "1pl": {"f":"dúirt muid","m":"dúramar"},"2pl": {"f":"dúirt sibh"},  "3pl": {"f":"dúirt siad"},   "auto": {"f":"dúradh"}},
+        "future":      {"1sg": {"f":"déarfaidh mé","m":"déarfad"},"2sg": {"f":"déarfaidh tú"},"3sg": {"f":"déarfaidh sé/sí"},"1pl": {"f":"déarfaimid","s":"déarfaidh muid"},"2pl": {"f":"déarfaidh sibh"},"3pl": {"f":"déarfaidh siad"},"auto": {"f":"déarfar"}},
+        "past_hab":    {"1sg": {"f":"deirinn"},              "2sg": {"f":"deirteá"},     "3sg": {"f":"deireadh sé/sí"},"1pl": {"f":"deirimis","s":"deireadh muid"},"2pl": {"f":"deireadh sibh"},"3pl": {"f":"deiridís","s":"deireadh siad"},"auto": {"f":"deirtí"}},
+        "conditional": {"1sg": {"f":"déarfainn"},           "2sg": {"f":"déarfá"},      "3sg": {"f":"déarfadh sé/sí"},"1pl": {"f":"déarfaimis","s":"déarfadh muid"},"2pl": {"f":"déarfadh sibh"},"3pl": {"f":"déarfaidís","s":"déarfadh siad"},"auto": {"f":"déarfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                   "2sg": {"f":"abair!"},      "3sg": {"f":"abradh sé/sí"},"1pl": {"f":"abraimis!"},                  "2pl": {"f":"abraigí!"},    "3pl": {"f":"abraidís!"},    "auto": {"f":"abrófar"}}
+      }
+    },
+
+    {
+      "id": "beir", "irish": "beir", "english": "catch; bear", "group": "irregular",
+      "verbal_noun": "breith", "verbal_adjective": "beirthe",
+      "notes": "Past uses suppletive stem rug (starts with r, so no lenition marker). Future uses béarfaidh-.",
+      "forms": {
+        "present":     {"1sg": {"f":"beirim"},              "2sg": {"f":"beireann tú"},  "3sg": {"f":"beireann sé/sí"},"1pl": {"f":"beirimid","s":"beireann muid"},"2pl": {"f":"beireann sibh"},"3pl": {"f":"beireann siad"},"auto": {"f":"beirtear"}},
+        "past":        {"1sg": {"f":"rug mé"},              "2sg": {"f":"rug tú"},       "3sg": {"f":"rug sé/sí"},     "1pl": {"f":"rug muid","m":"rugamar"},    "2pl": {"f":"rug sibh"},    "3pl": {"f":"rug siad"},     "auto": {"f":"rugadh"}},
+        "future":      {"1sg": {"f":"béarfaidh mé","m":"béarfad"},"2sg": {"f":"béarfaidh tú"},"3sg": {"f":"béarfaidh sé/sí"},"1pl": {"f":"béarfaimid","s":"béarfaidh muid"},"2pl": {"f":"béarfaidh sibh"},"3pl": {"f":"béarfaidh siad"},"auto": {"f":"béarfar"}},
+        "past_hab":    {"1sg": {"f":"bheirinn"},            "2sg": {"f":"bheirteá"},     "3sg": {"f":"bheireadh sé/sí"},"1pl": {"f":"bheirimis","s":"bheireadh muid"},"2pl": {"f":"bheireadh sibh"},"3pl": {"f":"bheiridís","s":"bheireadh siad"},"auto": {"f":"bheirtí"}},
+        "conditional": {"1sg": {"f":"bhéarfainn"},          "2sg": {"f":"bhéarfá"},      "3sg": {"f":"bhéarfadh sé/sí"},"1pl": {"f":"bhéarfaimis","s":"bhéarfadh muid"},"2pl": {"f":"bhéarfadh sibh"},"3pl": {"f":"bhéarfaidís","s":"bhéarfadh siad"},"auto": {"f":"bhéarfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                   "2sg": {"f":"beir!"},        "3sg": {"f":"beireadh sé/sí"},"1pl": {"f":"beirimis!"},                  "2pl": {"f":"beirigí!"},    "3pl": {"f":"beiridís!"},    "auto": {"f":"beirtear"}}
+      }
+    },
+
+    {
+      "id": "clois", "irish": "clois / cluin", "english": "hear", "group": "irregular",
+      "verbal_noun": "cloisteáil", "verbal_adjective": "cloiste",
+      "notes": "Munster uses cluin (VN: cluinstin); Connacht and Ulster use clois. Past uses suppletive stem chuala. Both roots are given for present/future.",
+      "forms": {
+        "present":     {"1sg": {"f":"cloisim","m":"cluinim"},        "2sg": {"f":"cloiseann tú","m":"cluineann tú"},"3sg": {"f":"cloiseann sé/sí","m":"cluineann sé/sí"},"1pl": {"f":"cloisimid","s":"cloiseann muid"},"2pl": {"f":"cloiseann sibh"},"3pl": {"f":"cloiseann siad"},"auto": {"f":"cloistear"}},
+        "past":        {"1sg": {"f":"chuala mé"},                    "2sg": {"f":"chuala tú"},    "3sg": {"f":"chuala sé/sí"},  "1pl": {"f":"chuala muid","m":"chualamar"},"2pl": {"f":"chuala sibh"},"3pl": {"f":"chuala siad"},  "auto": {"f":"chualathas"}},
+        "future":      {"1sg": {"f":"cloisfidh mé","m":"cloisfead"}, "2sg": {"f":"cloisfidh tú"},"3sg": {"f":"cloisfidh sé/sí"},"1pl": {"f":"cloisfimid","s":"cloisfidh muid"},"2pl": {"f":"cloisfidh sibh"},"3pl": {"f":"cloisfidh siad"},"auto": {"f":"cloisfear"}},
+        "past_hab":    {"1sg": {"f":"chlosinn"},                     "2sg": {"f":"chlosteá"},     "3sg": {"f":"chloisteadh sé/sí"},"1pl": {"f":"chlosimis","s":"chloisteadh muid"},"2pl": {"f":"chloisteadh sibh"},"3pl": {"f":"chlosidís","s":"chloisteadh siad"},"auto": {"f":"chloistí"}},
+        "conditional": {"1sg": {"f":"chloisfinn"},                   "2sg": {"f":"chloisfá"},     "3sg": {"f":"chloisfadh sé/sí"},"1pl": {"f":"chloisfimis","s":"chloisfadh muid"},"2pl": {"f":"chloisfadh sibh"},"3pl": {"f":"chloisfidís","s":"chloisfadh siad"},"auto": {"f":"chloisfí"}},
+        "imperative":  {"1sg": {"f":"—"},                            "2sg": {"f":"clois!"},       "3sg": {"f":"cloiseadh sé/sí"},"1pl": {"f":"cloisimis!"},                      "2pl": {"f":"cloisigí!"},   "3pl": {"f":"cloisidís!"},   "auto": {"f":"cloistear"}}
+      }
+    },
+
+    {
+      "id": "dean", "irish": "déan", "english": "do; make", "group": "irregular",
+      "verbal_noun": "déanamh", "verbal_adjective": "déanta",
+      "notes": "Past uses suppletive stem rinne (Connacht/Ulster) or dhein (Munster). Future/conditional use déanfaidh-. Present and past habitual use déan- stem.",
+      "forms": {
+        "present":     {"1sg": {"f":"déanaim"},                "2sg": {"f":"déanann tú"},   "3sg": {"f":"déanann sé/sí"}, "1pl": {"f":"déanaimid","s":"déanann muid"},"2pl": {"f":"déanann sibh"},"3pl": {"f":"déanann siad"},  "auto": {"f":"déantar"}},
+        "past":        {"1sg": {"f":"rinne mé","m":"dhein mé"},"2sg": {"f":"rinne tú"},     "3sg": {"f":"rinne sé/sí"},   "1pl": {"f":"rinne muid","m":"dheineamar"},"2pl": {"f":"rinne sibh"},"3pl": {"f":"rinne siad"},    "auto": {"f":"rinneadh"}},
+        "future":      {"1sg": {"f":"déanfaidh mé","m":"déanfad"},"2sg": {"f":"déanfaidh tú"},"3sg": {"f":"déanfaidh sé/sí"},"1pl": {"f":"déanfaimid","s":"déanfaidh muid"},"2pl": {"f":"déanfaidh sibh"},"3pl": {"f":"déanfaidh siad"},"auto": {"f":"déanfar"}},
+        "past_hab":    {"1sg": {"f":"dhéanainn"},              "2sg": {"f":"dhéantá"},      "3sg": {"f":"dhéanadh sé/sí"},"1pl": {"f":"dhéanaimis","s":"dhéanadh muid"},"2pl": {"f":"dhéanadh sibh"},"3pl": {"f":"dhéanaidís","s":"dhéanadh siad"},"auto": {"f":"dhéantaí"}},
+        "conditional": {"1sg": {"f":"dhéanfainn"},             "2sg": {"f":"dhéanfá"},      "3sg": {"f":"dhéanfadh sé/sí"},"1pl": {"f":"dhéanfaimis","s":"dhéanfadh muid"},"2pl": {"f":"dhéanfadh sibh"},"3pl": {"f":"dhéanfaidís","s":"dhéanfadh siad"},"auto": {"f":"dhéanfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                      "2sg": {"f":"déan!"},        "3sg": {"f":"déanadh sé/sí"}, "1pl": {"f":"déanaimis!"},                    "2pl": {"f":"déanaigí!"},   "3pl": {"f":"déanaidís!"},    "auto": {"f":"déantar"}}
+      }
+    },
+
+    {
+      "id": "faigh", "irish": "faigh", "english": "get; find", "group": "irregular",
+      "verbal_noun": "fáil", "verbal_adjective": "faighte",
+      "notes": "Three suppletive stems: faigh- (present/past hab/imperative), fuair (past), gheobh- (future/conditional). Negative future: ní bhfaighidh. Negative present: ní bhfaighim.",
+      "forms": {
+        "present":     {"1sg": {"f":"faighim"},                "2sg": {"f":"faigheann tú"},  "3sg": {"f":"faigheann sé/sí"}, "1pl": {"f":"faighimid","s":"faigheann muid"},"2pl": {"f":"faigheann sibh"},"3pl": {"f":"faigheann siad"}, "auto": {"f":"faightear"}},
+        "past":        {"1sg": {"f":"fuair mé","m":"fuaireas"},"2sg": {"f":"fuair tú"},      "3sg": {"f":"fuair sé/sí"},     "1pl": {"f":"fuair muid","m":"fuaireamar"},  "2pl": {"f":"fuair sibh"},    "3pl": {"f":"fuair siad"},     "auto": {"f":"fuarthas"}},
+        "future":      {"1sg": {"f":"gheobhaidh mé","m":"gheobhad"},"2sg": {"f":"gheobhaidh tú"},"3sg": {"f":"gheobhaidh sé/sí"},"1pl": {"f":"gheobhaimid","s":"gheobhaidh muid"},"2pl": {"f":"gheobhaidh sibh"},"3pl": {"f":"gheobhaidh siad"},"auto": {"f":"gheofar"}},
+        "past_hab":    {"1sg": {"f":"d'fhaighinn"},            "2sg": {"f":"d'fhaighteá"},   "3sg": {"f":"d'fhaigheadh sé/sí"},"1pl": {"f":"d'fhaighimis","s":"d'fhaigheadh muid"},"2pl": {"f":"d'fhaigheadh sibh"},"3pl": {"f":"d'fhaighidís","s":"d'fhaigheadh siad"},"auto": {"f":"d'fhaightí"}},
+        "conditional": {"1sg": {"f":"gheobhainn"},             "2sg": {"f":"gheofá"},        "3sg": {"f":"gheobhadh sé/sí"}, "1pl": {"f":"gheobhaimis","s":"gheobhadh muid"},"2pl": {"f":"gheobhadh sibh"},"3pl": {"f":"gheobhaidís","s":"gheobhadh siad"},"auto": {"f":"gheofaí"}},
+        "imperative":  {"1sg": {"f":"—"},                      "2sg": {"f":"faigh!"},        "3sg": {"f":"faigheadh sé/sí"}, "1pl": {"f":"faighimis!"},                     "2pl": {"f":"faighigí!"},    "3pl": {"f":"faighidís!"},     "auto": {"f":"faightear"}}
+      }
+    },
+
+    {
+      "id": "feic", "irish": "feic", "english": "see", "group": "irregular",
+      "verbal_noun": "feiceáil", "verbal_adjective": "feicthe",
+      "notes": "Past uses suppletive stem chonaic (already lenited). Past habitual and conditional add d' prefix (feic → fheic, which is silent, requiring d').",
+      "forms": {
+        "present":     {"1sg": {"f":"feicim"},                "2sg": {"f":"feiceann tú"},   "3sg": {"f":"feiceann sé/sí"}, "1pl": {"f":"feicimid","s":"feiceann muid"},"2pl": {"f":"feiceann sibh"},"3pl": {"f":"feiceann siad"},  "auto": {"f":"feictear"}},
+        "past":        {"1sg": {"f":"chonaic mé","m":"chonacas"},"2sg": {"f":"chonaic tú"}, "3sg": {"f":"chonaic sé/sí"},  "1pl": {"f":"chonaic muid","m":"chonaiceamar"},"2pl": {"f":"chonaic sibh"},"3pl": {"f":"chonaic siad"},  "auto": {"f":"chonacthas"}},
+        "future":      {"1sg": {"f":"feicfidh mé","m":"feicfead"},"2sg": {"f":"feicfidh tú"},"3sg": {"f":"feicfidh sé/sí"},"1pl": {"f":"feicfimid","s":"feicfidh muid"},"2pl": {"f":"feicfidh sibh"},"3pl": {"f":"feicfidh siad"}, "auto": {"f":"feicfear"}},
+        "past_hab":    {"1sg": {"f":"d'fheicinn"},            "2sg": {"f":"d'fheicteá"},    "3sg": {"f":"d'fheiceadh sé/sí"},"1pl": {"f":"d'fheicimis","s":"d'fheiceadh muid"},"2pl": {"f":"d'fheiceadh sibh"},"3pl": {"f":"d'fheicidís","s":"d'fheiceadh siad"},"auto": {"f":"d'fheictí"}},
+        "conditional": {"1sg": {"f":"d'fheicfinn"},           "2sg": {"f":"d'fheicfeá"},    "3sg": {"f":"d'fheicfeadh sé/sí"},"1pl": {"f":"d'fheicfimis","s":"d'fheicfeadh muid"},"2pl": {"f":"d'fheicfeadh sibh"},"3pl": {"f":"d'fheicfidís","s":"d'fheicfeadh siad"},"auto": {"f":"d'fheicfí"}},
+        "imperative":  {"1sg": {"f":"—"},                     "2sg": {"f":"feic!"},         "3sg": {"f":"feiceadh sé/sí"},  "1pl": {"f":"feicimis!"},                     "2pl": {"f":"feicigí!"},    "3pl": {"f":"feicidís!"},      "auto": {"f":"feictear"}}
+      }
+    },
+
+    {
+      "id": "ith", "irish": "ith", "english": "eat", "group": "irregular",
+      "verbal_noun": "ithe", "verbal_adjective": "ite",
+      "notes": "Starts with a vowel — past takes d' prefix (d'ith). Future/conditional use suppletive stem íos-.",
+      "forms": {
+        "present":     {"1sg": {"f":"ithim"},                "2sg": {"f":"itheann tú"},   "3sg": {"f":"itheann sé/sí"},  "1pl": {"f":"ithimid","s":"itheann muid"},   "2pl": {"f":"itheann sibh"},  "3pl": {"f":"itheann siad"},   "auto": {"f":"itear"}},
+        "past":        {"1sg": {"f":"d'ith mé","m":"d'itheas"},"2sg": {"f":"d'ith tú"},   "3sg": {"f":"d'ith sé/sí"},    "1pl": {"f":"d'ith muid","m":"d'itheamar"},  "2pl": {"f":"d'ith sibh"},    "3pl": {"f":"d'ith siad"},     "auto": {"f":"itheadh"}},
+        "future":      {"1sg": {"f":"íosfaidh mé","m":"íosfad"},"2sg": {"f":"íosfaidh tú"},"3sg": {"f":"íosfaidh sé/sí"},"1pl": {"f":"íosfaimid","s":"íosfaidh muid"},"2pl": {"f":"íosfaidh sibh"},"3pl": {"f":"íosfaidh siad"},  "auto": {"f":"íosfar"}},
+        "past_hab":    {"1sg": {"f":"d'ithinn"},             "2sg": {"f":"d'iteá"},       "3sg": {"f":"d'itheadh sé/sí"}, "1pl": {"f":"d'ithimis","s":"d'itheadh muid"},"2pl": {"f":"d'itheadh sibh"},"3pl": {"f":"d'ithidís","s":"d'itheadh siad"},"auto": {"f":"d'ití"}},
+        "conditional": {"1sg": {"f":"d'íosfainn"},           "2sg": {"f":"d'íosfá"},      "3sg": {"f":"d'íosfadh sé/sí"}, "1pl": {"f":"d'íosfaimis","s":"d'íosfadh muid"},"2pl": {"f":"d'íosfadh sibh"},"3pl": {"f":"d'íosfaidís","s":"d'íosfadh siad"},"auto": {"f":"d'íosfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                    "2sg": {"f":"ith!"},          "3sg": {"f":"itheadh sé/sí"},   "1pl": {"f":"ithimis!"},                     "2pl": {"f":"ithigí!"},       "3pl": {"f":"ithidís!"},       "auto": {"f":"itear"}}
+      }
+    },
+
+    {
+      "id": "tabhair", "irish": "tabhair", "english": "give; bring", "group": "irregular",
+      "verbal_noun": "tabhairt", "verbal_adjective": "tugtha",
+      "notes": "Three distinct stems: tug- (present, past habitual, imperative 3sg/1pl/2pl), thug- (past), tabhair-/thabhairt- (future, conditional, imperative 2sg). Shows the most stem variation of any irregular verb.",
+      "forms": {
+        "present":     {"1sg": {"f":"tugaim"},                 "2sg": {"f":"tugann tú"},     "3sg": {"f":"tugann sé/sí"},    "1pl": {"f":"tugaimid","s":"tugann muid"},   "2pl": {"f":"tugann sibh"},   "3pl": {"f":"tugann siad"},    "auto": {"f":"tugtar"}},
+        "past":        {"1sg": {"f":"thug mé","m":"thugas"},   "2sg": {"f":"thug tú"},       "3sg": {"f":"thug sé/sí"},      "1pl": {"f":"thug muid","m":"thugamar"},     "2pl": {"f":"thug sibh"},     "3pl": {"f":"thug siad"},      "auto": {"f":"tugadh"}},
+        "future":      {"1sg": {"f":"tabharfaidh mé","m":"tabharfad"},"2sg": {"f":"tabharfaidh tú"},"3sg": {"f":"tabharfaidh sé/sí"},"1pl": {"f":"tabharfaimid","s":"tabharfaidh muid"},"2pl": {"f":"tabharfaidh sibh"},"3pl": {"f":"tabharfaidh siad"},"auto": {"f":"tabharfar"}},
+        "past_hab":    {"1sg": {"f":"thugainn"},               "2sg": {"f":"thugtá"},        "3sg": {"f":"thugadh sé/sí"},   "1pl": {"f":"thugaimis","s":"thugadh muid"}, "2pl": {"f":"thugadh sibh"},  "3pl": {"f":"thugaidís","s":"thugadh siad"},"auto": {"f":"thugtaí"}},
+        "conditional": {"1sg": {"f":"thabharfainn"},           "2sg": {"f":"thabharfá"},     "3sg": {"f":"thabharfadh sé/sí"},"1pl": {"f":"thabharfaimis","s":"thabharfadh muid"},"2pl": {"f":"thabharfadh sibh"},"3pl": {"f":"thabharfaidís","s":"thabharfadh siad"},"auto": {"f":"thabharfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                      "2sg": {"f":"tabhair!"},      "3sg": {"f":"tugadh sé/sí"},    "1pl": {"f":"tugaimis!"},                    "2pl": {"f":"tugaigí!"},      "3pl": {"f":"tugaidís!"},      "auto": {"f":"tugtar"}}
+      }
+    },
+
+    {
+      "id": "tar", "irish": "tar", "english": "come", "group": "irregular",
+      "verbal_noun": "teacht", "verbal_adjective": "tagtha",
+      "notes": "Past: tháinig (suppletive, all dialects). Future: tiocfaidh- (suppletive). Past habitual and present use tag- stem. Munster 1pl past: thángamar.",
+      "forms": {
+        "present":     {"1sg": {"f":"tagaim"},                "2sg": {"f":"tagann tú"},    "3sg": {"f":"tagann sé/sí"},   "1pl": {"f":"tagaimid","s":"tagann muid"},   "2pl": {"f":"tagann sibh"},   "3pl": {"f":"tagann siad"},   "auto": {"f":"tagtar"}},
+        "past":        {"1sg": {"f":"tháinig mé"},            "2sg": {"f":"tháinig tú"},   "3sg": {"f":"tháinig sé/sí"},  "1pl": {"f":"tháinig muid","m":"thángamar"},"2pl": {"f":"tháinig sibh"},  "3pl": {"f":"tháinig siad"},  "auto": {"f":"tháingthas"}},
+        "future":      {"1sg": {"f":"tiocfaidh mé","m":"tiocfad"},"2sg": {"f":"tiocfaidh tú"},"3sg": {"f":"tiocfaidh sé/sí"},"1pl": {"f":"tiocfaimid","s":"tiocfaidh muid"},"2pl": {"f":"tiocfaidh sibh"},"3pl": {"f":"tiocfaidh siad"},"auto": {"f":"tiocfar"}},
+        "past_hab":    {"1sg": {"f":"thagainn"},              "2sg": {"f":"thagtá"},       "3sg": {"f":"thagadh sé/sí"},  "1pl": {"f":"thagaimis","s":"thagadh muid"}, "2pl": {"f":"thagadh sibh"},  "3pl": {"f":"thagaidís","s":"thagadh siad"},"auto": {"f":"thagtaí"}},
+        "conditional": {"1sg": {"f":"thiocfainn"},            "2sg": {"f":"thiocfá"},      "3sg": {"f":"thiocfadh sé/sí"},"1pl": {"f":"thiocfaimis","s":"thiocfadh muid"},"2pl": {"f":"thiocfadh sibh"},"3pl": {"f":"thiocfaidís","s":"thiocfadh siad"},"auto": {"f":"thiocfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                     "2sg": {"f":"tar!"},         "3sg": {"f":"tagadh sé/sí"},   "1pl": {"f":"tagaimis!"},                    "2pl": {"f":"tagaigí!"},      "3pl": {"f":"tagaidís!"},     "auto": {"f":"tagtar"}}
+      }
+    },
+
+    {
+      "id": "teigh", "irish": "téigh", "english": "go", "group": "irregular",
+      "verbal_noun": "dul", "verbal_adjective": "dulta",
+      "notes": "Three suppletive stems: téigh/té- (present, past habitual, imperative), chuaigh (past), rach- (future, conditional). Past habitual uses thé- (lenited). Munster 1pl past: chuamar.",
+      "forms": {
+        "present":     {"1sg": {"f":"téim"},                  "2sg": {"f":"téann tú"},     "3sg": {"f":"téann sé/sí"},    "1pl": {"f":"téimid","s":"téann muid"},      "2pl": {"f":"téann sibh"},    "3pl": {"f":"téann siad"},    "auto": {"f":"téitear"}},
+        "past":        {"1sg": {"f":"chuaigh mé"},            "2sg": {"f":"chuaigh tú"},   "3sg": {"f":"chuaigh sé/sí"},  "1pl": {"f":"chuaigh muid","m":"chuamar"},  "2pl": {"f":"chuaigh sibh"},  "3pl": {"f":"chuaigh siad"},  "auto": {"f":"chuathas"}},
+        "future":      {"1sg": {"f":"rachaidh mé","m":"rachad"},"2sg": {"f":"rachaidh tú"},"3sg": {"f":"rachaidh sé/sí"}, "1pl": {"f":"rachaimid","s":"rachaidh muid"},"2pl": {"f":"rachaidh sibh"},"3pl": {"f":"rachaidh siad"}, "auto": {"f":"rachfar"}},
+        "past_hab":    {"1sg": {"f":"théinn"},                "2sg": {"f":"théiteá"},      "3sg": {"f":"théadh sé/sí"},   "1pl": {"f":"théimis","s":"théadh muid"},    "2pl": {"f":"théadh sibh"},   "3pl": {"f":"théidís","s":"théadh siad"},"auto": {"f":"théití"}},
+        "conditional": {"1sg": {"f":"rachainn"},              "2sg": {"f":"rachfá"},       "3sg": {"f":"rachadh sé/sí"},  "1pl": {"f":"rachaimis","s":"rachadh muid"}, "2pl": {"f":"rachadh sibh"},  "3pl": {"f":"rachaidís","s":"rachadh siad"},"auto": {"f":"rachfaí"}},
+        "imperative":  {"1sg": {"f":"—"},                     "2sg": {"f":"téigh!"},       "3sg": {"f":"téadh sé/sí"},    "1pl": {"f":"téimis!"},                      "2pl": {"f":"téigí!"},        "3pl": {"f":"téidís!"},       "auto": {"f":"téitear"}}
+      }
+    },
+
+    {
+      "id": "mol", "irish": "mol", "english": "praise", "group": "reg1b",
+      "verbal_noun": "moladh", "verbal_adjective": "molta",
+      "notes": "The standard teaching example for 1st conjugation broad verbs. All other broad 1st conj. verbs follow this pattern.",
+      "forms": {
+        "present":     {"1sg": {"f":"molaim",    "s":"molann mé"},  "2sg": {"f":"molann tú"},   "3sg": {"f":"molann sé/sí"},  "1pl": {"f":"molaimid",  "s":"molann muid"},  "2pl": {"f":"molann sibh"},  "3pl": {"f":"molann siad"},  "auto": {"f":"moltar"}},
+        "past":        {"1sg": {"f":"mhol mé",   "m":"mholas"},     "2sg": {"f":"mhol tú"},     "3sg": {"f":"mhol sé/sí"},    "1pl": {"f":"mhol muid", "m":"mholamar"},     "2pl": {"f":"mhol sibh"},    "3pl": {"f":"mhol siad"},    "auto": {"f":"moladh"}},
+        "future":      {"1sg": {"f":"molfaidh mé","m":"molfad"},    "2sg": {"f":"molfaidh tú"}, "3sg": {"f":"molfaidh sé/sí"},"1pl": {"f":"molfaimid", "s":"molfaidh muid"},"2pl": {"f":"molfaidh sibh"},"3pl": {"f":"molfaidh siad"},"auto": {"f":"molfar"}},
+        "past_hab":    {"1sg": {"f":"mholainn"},                    "2sg": {"f":"mholtá"},      "3sg": {"f":"mholadh sé/sí"}, "1pl": {"f":"mholaimis", "s":"mholadh muid"}, "2pl": {"f":"mholadh sibh"}, "3pl": {"f":"mholdís",   "s":"mholadh siad"}, "auto": {"f":"mholtaí"}},
+        "conditional": {"1sg": {"f":"mholfainn"},                   "2sg": {"f":"mholfá"},      "3sg": {"f":"mholfadh sé/sí"},"1pl": {"f":"mholfaimis","s":"mholfadh muid"},"2pl": {"f":"mholfadh sibh"},"3pl": {"f":"mholfaidís","s":"mholfadh siad"},"auto": {"f":"mholfaí"}},
+        "imperative":  {"1sg": {"f":"molaim"},                      "2sg": {"f":"mol!"},        "3sg": {"f":"moladh sé/sí"},  "1pl": {"f":"molaimis!"},                     "2pl": {"f":"molaigí!"},     "3pl": {"f":"molaidís!"},    "auto": {"f":"moltar"}}
+      }
+    },
+
+    {
+      "id": "tog", "irish": "tóg", "english": "take; raise; build", "group": "reg1b",
+      "verbal_noun": "tógáil", "verbal_adjective": "tógtha",
+      "notes": "Regular 1st conjugation broad. Identical pattern to mol.",
+      "forms": {
+        "present":     {"1sg": {"f":"tógaim",    "s":"tógann mé"},  "2sg": {"f":"tógann tú"},   "3sg": {"f":"tógann sé/sí"},  "1pl": {"f":"tógaimid",  "s":"tógann muid"},  "2pl": {"f":"tógann sibh"},  "3pl": {"f":"tógann siad"},  "auto": {"f":"tógtar"}},
+        "past":        {"1sg": {"f":"thóg mé",   "m":"thógas"},     "2sg": {"f":"thóg tú"},     "3sg": {"f":"thóg sé/sí"},    "1pl": {"f":"thóg muid", "m":"thógamar"},     "2pl": {"f":"thóg sibh"},    "3pl": {"f":"thóg siad"},    "auto": {"f":"tógadh"}},
+        "future":      {"1sg": {"f":"tógfaidh mé","m":"tógfad"},    "2sg": {"f":"tógfaidh tú"}, "3sg": {"f":"tógfaidh sé/sí"},"1pl": {"f":"tógfaimid", "s":"tógfaidh muid"},"2pl": {"f":"tógfaidh sibh"},"3pl": {"f":"tógfaidh siad"},"auto": {"f":"tógfar"}},
+        "past_hab":    {"1sg": {"f":"thógainn"},                    "2sg": {"f":"thógtá"},      "3sg": {"f":"thógadh sé/sí"}, "1pl": {"f":"thógaimis", "s":"thógadh muid"}, "2pl": {"f":"thógadh sibh"}, "3pl": {"f":"thógaidís",  "s":"thógadh siad"},  "auto": {"f":"thógtaí"}},
+        "conditional": {"1sg": {"f":"thógfainn"},                   "2sg": {"f":"thógfá"},      "3sg": {"f":"thógfadh sé/sí"},"1pl": {"f":"thógfaimis","s":"thógfadh muid"},"2pl": {"f":"thógfadh sibh"},"3pl": {"f":"thógfaidís","s":"thógfadh siad"},"auto": {"f":"thógfaí"}},
+        "imperative":  {"1sg": {"f":"tógaim"},                      "2sg": {"f":"tóg!"},        "3sg": {"f":"tógadh sé/sí"},  "1pl": {"f":"tógaimis!"},                     "2pl": {"f":"tógaigí!"},     "3pl": {"f":"tógaidís!"},    "auto": {"f":"tógtar"}}
+      }
+    },
+
+    {
+      "id": "fan", "irish": "fan", "english": "wait; stay", "group": "reg1b",
+      "verbal_noun": "fanacht", "verbal_adjective": "fanta",
+      "notes": "Starts with f — lenition gives fh (silent), so past/past habitual/conditional take d' prefix.",
+      "forms": {
+        "present":     {"1sg": {"f":"fanaim",       "s":"fanann mé"}, "2sg": {"f":"fanann tú"},    "3sg": {"f":"fanann sé/sí"},   "1pl": {"f":"fanaimid",   "s":"fanann muid"},   "2pl": {"f":"fanann sibh"},   "3pl": {"f":"fanann siad"},   "auto": {"f":"fantar"}},
+        "past":        {"1sg": {"f":"d'fhan mé",    "m":"d'fhanas"},  "2sg": {"f":"d'fhan tú"},    "3sg": {"f":"d'fhan sé/sí"},   "1pl": {"f":"d'fhan muid","m":"d'fhanamar"},   "2pl": {"f":"d'fhan sibh"},   "3pl": {"f":"d'fhan siad"},   "auto": {"f":"fanadh"}},
+        "future":      {"1sg": {"f":"fanfaidh mé",  "m":"fanfad"},    "2sg": {"f":"fanfaidh tú"},  "3sg": {"f":"fanfaidh sé/sí"}, "1pl": {"f":"fanfaimid",  "s":"fanfaidh muid"}, "2pl": {"f":"fanfaidh sibh"}, "3pl": {"f":"fanfaidh siad"}, "auto": {"f":"fanfar"}},
+        "past_hab":    {"1sg": {"f":"d'fhanainn"},                    "2sg": {"f":"d'fhantá"},     "3sg": {"f":"d'fhanadh sé/sí"},"1pl": {"f":"d'fhanaimis","s":"d'fhanadh muid"},"2pl": {"f":"d'fhanadh sibh"},"3pl": {"f":"d'fhanaidís","s":"d'fhanadh siad"},"auto": {"f":"d'fhantaí"}},
+        "conditional": {"1sg": {"f":"d'fhanfainn"},                   "2sg": {"f":"d'fhanfá"},     "3sg": {"f":"d'fhanfadh sé/sí"},"1pl": {"f":"d'fhanfaimis","s":"d'fhanfadh muid"},"2pl": {"f":"d'fhanfadh sibh"},"3pl": {"f":"d'fhanfaidís","s":"d'fhanfadh siad"},"auto": {"f":"d'fhanfaí"}},
+        "imperative":  {"1sg": {"f":"fanaim"},                        "2sg": {"f":"fan!"},         "3sg": {"f":"fanadh sé/sí"},   "1pl": {"f":"fanaimis!"},                       "2pl": {"f":"fanaigí!"},      "3pl": {"f":"fanaidís!"},     "auto": {"f":"fantar"}}
+      }
+    },
+
+    {
+      "id": "bris", "irish": "bris", "english": "break", "group": "reg1s",
+      "verbal_noun": "briseadh", "verbal_adjective": "briste",
+      "notes": "Standard teaching example for 1st conjugation slender verbs. Slender endings use -eann, -imid, -fidh, etc.",
+      "forms": {
+        "present":     {"1sg": {"f":"brisim",    "s":"briseann mé"}, "2sg": {"f":"briseann tú"},  "3sg": {"f":"briseann sé/sí"}, "1pl": {"f":"brisimid",  "s":"briseann muid"},  "2pl": {"f":"briseann sibh"},  "3pl": {"f":"briseann siad"},  "auto": {"f":"bristear"}},
+        "past":        {"1sg": {"f":"bhris mé",  "m":"bhrisis"},     "2sg": {"f":"bhris tú"},     "3sg": {"f":"bhris sé/sí"},    "1pl": {"f":"bhris muid","m":"bhriseamar"},     "2pl": {"f":"bhris sibh"},     "3pl": {"f":"bhris siad"},     "auto": {"f":"briseadh"}},
+        "future":      {"1sg": {"f":"brisfidh mé","m":"brisfead"},   "2sg": {"f":"brisfidh tú"},  "3sg": {"f":"brisfidh sé/sí"}, "1pl": {"f":"brisfimid", "s":"brisfidh muid"},  "2pl": {"f":"brisfidh sibh"},  "3pl": {"f":"brisfidh siad"},  "auto": {"f":"brisfear"}},
+        "past_hab":    {"1sg": {"f":"bhrisinn"},                     "2sg": {"f":"bhristeá"},     "3sg": {"f":"bhriseadh sé/sí"},"1pl": {"f":"bhrisimis", "s":"bhriseadh muid"}, "2pl": {"f":"bhriseadh sibh"}, "3pl": {"f":"bhrisidís",  "s":"bhriseadh siad"}, "auto": {"f":"bhristeaí"}},
+        "conditional": {"1sg": {"f":"bhrisfinn"},                    "2sg": {"f":"bhrisfá"},      "3sg": {"f":"bhrisfadh sé/sí"},"1pl": {"f":"bhrisfimis","s":"bhrisfadh muid"}, "2pl": {"f":"bhrisfadh sibh"}, "3pl": {"f":"bhrisfidís","s":"bhrisfadh siad"}, "auto": {"f":"bhrisfí"}},
+        "imperative":  {"1sg": {"f":"brisim"},                       "2sg": {"f":"bris!"},        "3sg": {"f":"briseadh sé/sí"}, "1pl": {"f":"brisimis!"},                       "2pl": {"f":"brisigí!"},       "3pl": {"f":"brisidís!"},      "auto": {"f":"bristear"}}
+      }
+    },
+
+    {
+      "id": "caith", "irish": "caith", "english": "throw; wear; spend", "group": "reg1s",
+      "verbal_noun": "caitheamh", "verbal_adjective": "caite",
+      "notes": "Regular 1st conjugation slender. Note: caithfidh also means 'must/will have to' in common usage — context distinguishes the future tense from the obligation sense.",
+      "forms": {
+        "present":     {"1sg": {"f":"caithim",     "s":"caitheann mé"}, "2sg": {"f":"caitheann tú"},  "3sg": {"f":"caitheann sé/sí"}, "1pl": {"f":"caithimid",   "s":"caitheann muid"},  "2pl": {"f":"caitheann sibh"},  "3pl": {"f":"caitheann siad"},  "auto": {"f":"caitear"}},
+        "past":        {"1sg": {"f":"chaith mé",   "m":"chaiteas"},     "2sg": {"f":"chaith tú"},     "3sg": {"f":"chaith sé/sí"},    "1pl": {"f":"chaith muid", "m":"chaitheamar"},     "2pl": {"f":"chaith sibh"},     "3pl": {"f":"chaith siad"},     "auto": {"f":"caitheadh"}},
+        "future":      {"1sg": {"f":"caithfidh mé","m":"caithfead"},    "2sg": {"f":"caithfidh tú"},  "3sg": {"f":"caithfidh sé/sí"}, "1pl": {"f":"caithfimid",  "s":"caithfidh muid"},  "2pl": {"f":"caithfidh sibh"},  "3pl": {"f":"caithfidh siad"},  "auto": {"f":"caithfear"}},
+        "past_hab":    {"1sg": {"f":"chaitheainn"},                     "2sg": {"f":"chaitheá"},      "3sg": {"f":"chaitheadh sé/sí"},"1pl": {"f":"chaitheamis", "s":"chaitheadh muid"}, "2pl": {"f":"chaitheadh sibh"}, "3pl": {"f":"chaitheaidís","s":"chaitheadh siad"},"auto": {"f":"chaití"}},
+        "conditional": {"1sg": {"f":"chaithfinn"},                      "2sg": {"f":"chaithfeá"},     "3sg": {"f":"chaithfeadh sé/sí"},"1pl": {"f":"chaithfimis","s":"chaithfeadh muid"},"2pl": {"f":"chaithfeadh sibh"},"3pl": {"f":"chaithfidís","s":"chaithfeadh siad"},"auto": {"f":"chaithfí"}},
+        "imperative":  {"1sg": {"f":"caithim"},                         "2sg": {"f":"caith!"},        "3sg": {"f":"caitheadh sé/sí"}, "1pl": {"f":"caithimis!"},                       "2pl": {"f":"caithigí!"},       "3pl": {"f":"caithidís!"},      "auto": {"f":"caitear"}}
+      }
+    },
+
+    {
+      "id": "ceannaigh", "irish": "ceannaigh", "english": "buy", "group": "reg2igh",
+      "verbal_noun": "ceannach", "verbal_adjective": "ceannaíthe",
+      "notes": "Standard example for 2nd conjugation broad -aigh verbs. Future/conditional drop -aigh and add -óidh/-óinn etc. Present uses -aíonn/-aím.",
+      "forms": {
+        "present":     {"1sg": {"f":"ceannaím",      "s":"ceannaíonn mé"}, "2sg": {"f":"ceannaíonn tú"},  "3sg": {"f":"ceannaíonn sé/sí"}, "1pl": {"f":"ceannaímid",  "s":"ceannaíonn muid"},  "2pl": {"f":"ceannaíonn sibh"},  "3pl": {"f":"ceannaíonn siad"},  "auto": {"f":"ceannaítear"}},
+        "past":        {"1sg": {"f":"cheannaigh mé"},                     "2sg": {"f":"cheannaigh tú"},  "3sg": {"f":"cheannaigh sé/sí"}, "1pl": {"f":"cheannaigh muid","m":"cheannaíomar"}, "2pl": {"f":"cheannaigh sibh"},  "3pl": {"f":"cheannaigh siad"},  "auto": {"f":"ceannaíodh"}},
+        "future":      {"1sg": {"f":"ceannóidh mé",  "m":"ceannód"},      "2sg": {"f":"ceannóidh tú"},   "3sg": {"f":"ceannóidh sé/sí"},  "1pl": {"f":"ceannóimid",  "s":"ceannóidh muid"},   "2pl": {"f":"ceannóidh sibh"},   "3pl": {"f":"ceannóidh siad"},   "auto": {"f":"ceannófar"}},
+        "past_hab":    {"1sg": {"f":"cheannaínn"},                        "2sg": {"f":"cheannaíteá"},    "3sg": {"f":"cheannaíodh sé/sí"},"1pl": {"f":"cheannaímis", "s":"cheannaíodh muid"}, "2pl": {"f":"cheannaíodh sibh"}, "3pl": {"f":"cheannaídís","s":"cheannaíodh siad"},"auto": {"f":"cheannaítí"}},
+        "conditional": {"1sg": {"f":"cheannóinn"},                        "2sg": {"f":"cheannóifá"},     "3sg": {"f":"cheannódh sé/sí"},  "1pl": {"f":"cheannóimis", "s":"cheannódh muid"},   "2pl": {"f":"cheannódh sibh"},   "3pl": {"f":"cheannóidís","s":"cheannódh siad"},  "auto": {"f":"cheannófaí"}},
+        "imperative":  {"1sg": {"f":"ceannaím"},                          "2sg": {"f":"ceannaigh!"},     "3sg": {"f":"ceannaíodh sé/sí"}, "1pl": {"f":"ceannaímis!"},                          "2pl": {"f":"ceannaígí!"},       "3pl": {"f":"ceannaídís!"},      "auto": {"f":"ceannaítear"}}
+      }
+    },
+
+    {
+      "id": "eirigh", "irish": "éirigh", "english": "rise; get up", "group": "reg2igh",
+      "verbal_noun": "éirí", "verbal_adjective": "éirithe",
+      "notes": "2nd conjugation slender -igh verb. Starts with a vowel (é-), so past takes d' prefix. Future/conditional use -eoidh/-eoinn stem.",
+      "forms": {
+        "present":     {"1sg": {"f":"éirím",       "s":"éiríonn mé"}, "2sg": {"f":"éiríonn tú"},   "3sg": {"f":"éiríonn sé/sí"},  "1pl": {"f":"éirímid",   "s":"éiríonn muid"},  "2pl": {"f":"éiríonn sibh"},   "3pl": {"f":"éiríonn siad"},   "auto": {"f":"éirítear"}},
+        "past":        {"1sg": {"f":"d'éirigh mé"},                   "2sg": {"f":"d'éirigh tú"},  "3sg": {"f":"d'éirigh sé/sí"}, "1pl": {"f":"d'éirigh muid","m":"d'éiríomar"}, "2pl": {"f":"d'éirigh sibh"},  "3pl": {"f":"d'éirigh siad"},  "auto": {"f":"d'éiríodh"}},
+        "future":      {"1sg": {"f":"éireoidh mé", "m":"éireod"},     "2sg": {"f":"éireoidh tú"},  "3sg": {"f":"éireoidh sé/sí"}, "1pl": {"f":"éireoimid",  "s":"éireoidh muid"}, "2pl": {"f":"éireoidh sibh"},  "3pl": {"f":"éireoidh siad"},  "auto": {"f":"éireofar"}},
+        "past_hab":    {"1sg": {"f":"d'éirínn"},                      "2sg": {"f":"d'éiríteá"},    "3sg": {"f":"d'éiríodh sé/sí"},"1pl": {"f":"d'éirímis",  "s":"d'éiríodh muid"},"2pl": {"f":"d'éiríodh sibh"}, "3pl": {"f":"d'éirídís","s":"d'éiríodh siad"},"auto": {"f":"d'éirítí"}},
+        "conditional": {"1sg": {"f":"d'éireoinn"},                    "2sg": {"f":"d'éireofá"},    "3sg": {"f":"d'éireodh sé/sí"},"1pl": {"f":"d'éireoimis","s":"d'éireodh muid"},"2pl": {"f":"d'éireodh sibh"}, "3pl": {"f":"d'éireoidís","s":"d'éireodh siad"},"auto": {"f":"d'éireofaí"}},
+        "imperative":  {"1sg": {"f":"éirím"},                         "2sg": {"f":"éirigh!"},      "3sg": {"f":"éiríodh sé/sí"},  "1pl": {"f":"éirímis!"},                       "2pl": {"f":"éirígí!"},        "3pl": {"f":"éirídís!"},       "auto": {"f":"éirítear"}}
+      }
+    },
+
+    {
+      "id": "imigh", "irish": "imigh", "english": "go away; leave", "group": "reg2igh",
+      "verbal_noun": "imeacht", "verbal_adjective": "imithe",
+      "notes": "2nd conjugation slender -igh. Same pattern as éirigh. Starts with vowel (i-), so d' prefix in past.",
+      "forms": {
+        "present":     {"1sg": {"f":"imím"},                 "2sg": {"f":"imíonn tú"},    "3sg": {"f":"imíonn sé/sí"},  "1pl": {"f":"imímid",   "s":"imíonn muid"},   "2pl": {"f":"imíonn sibh"},   "3pl": {"f":"imíonn siad"},   "auto": {"f":"imítear"}},
+        "past":        {"1sg": {"f":"d'imigh mé"},           "2sg": {"f":"d'imigh tú"},   "3sg": {"f":"d'imigh sé/sí"}, "1pl": {"f":"d'imigh muid","m":"d'imíomar"},   "2pl": {"f":"d'imigh sibh"},  "3pl": {"f":"d'imigh siad"},  "auto": {"f":"d'imíodh"}},
+        "future":      {"1sg": {"f":"imeoidh mé","m":"imeod"},"2sg": {"f":"imeoidh tú"},  "3sg": {"f":"imeoidh sé/sí"}, "1pl": {"f":"imeoimid",  "s":"imeoidh muid"},  "2pl": {"f":"imeoidh sibh"},  "3pl": {"f":"imeoidh siad"},  "auto": {"f":"imeofar"}},
+        "past_hab":    {"1sg": {"f":"d'imínn"},              "2sg": {"f":"d'imíteá"},     "3sg": {"f":"d'imíodh sé/sí"},"1pl": {"f":"d'imímis",  "s":"d'imíodh muid"}, "2pl": {"f":"d'imíodh sibh"}, "3pl": {"f":"d'imídís","s":"d'imíodh siad"},"auto": {"f":"d'imítí"}},
+        "conditional": {"1sg": {"f":"d'imeoinn"},            "2sg": {"f":"d'imeofá"},     "3sg": {"f":"d'imeodh sé/sí"},"1pl": {"f":"d'imeoimis","s":"d'imeodh muid"}, "2pl": {"f":"d'imeodh sibh"}, "3pl": {"f":"d'imeoidís","s":"d'imeodh siad"},"auto": {"f":"d'imeofaí"}},
+        "imperative":  {"1sg": {"f":"imím"},                 "2sg": {"f":"imigh!"},       "3sg": {"f":"imíodh sé/sí"},  "1pl": {"f":"imímis!"},                        "2pl": {"f":"imígí!"},        "3pl": {"f":"imídís!"},       "auto": {"f":"imítear"}}
+      }
+    },
+
+    {
+      "id": "oscail", "irish": "oscail", "english": "open", "group": "reg2other",
+      "verbal_noun": "oscailt", "verbal_adjective": "oscailte",
+      "notes": "2nd conjugation -ail verb. Stem syncopates to oscl- (drop -ail, keep root consonant). Past: d'oscail (unchanged form + d' prefix). Future: osclóidh (oscl- + óidh).",
+      "forms": {
+        "present":     {"1sg": {"f":"osclaím"},              "2sg": {"f":"osclaíonn tú"},  "3sg": {"f":"osclaíonn sé/sí"}, "1pl": {"f":"osclaímid",  "s":"osclaíonn muid"},  "2pl": {"f":"osclaíonn sibh"},  "3pl": {"f":"osclaíonn siad"},  "auto": {"f":"osclaítear"}},
+        "past":        {"1sg": {"f":"d'oscail mé"},          "2sg": {"f":"d'oscail tú"},   "3sg": {"f":"d'oscail sé/sí"},  "1pl": {"f":"d'oscail muid","m":"d'osclaíomar"}, "2pl": {"f":"d'oscail sibh"},   "3pl": {"f":"d'oscail siad"},   "auto": {"f":"d'osclaíodh"}},
+        "future":      {"1sg": {"f":"osclóidh mé","m":"osclód"},"2sg": {"f":"osclóidh tú"},"3sg": {"f":"osclóidh sé/sí"}, "1pl": {"f":"osclóimid",  "s":"osclóidh muid"},   "2pl": {"f":"osclóidh sibh"},   "3pl": {"f":"osclóidh siad"},   "auto": {"f":"osclófar"}},
+        "past_hab":    {"1sg": {"f":"d'osclaínn"},           "2sg": {"f":"d'osclaíteá"},   "3sg": {"f":"d'osclaíodh sé/sí"},"1pl": {"f":"d'osclaímis","s":"d'osclaíodh muid"},"2pl": {"f":"d'osclaíodh sibh"},"3pl": {"f":"d'osclaídís","s":"d'osclaíodh siad"},"auto": {"f":"d'osclaítí"}},
+        "conditional": {"1sg": {"f":"d'osclóinn"},           "2sg": {"f":"d'osclófá"},     "3sg": {"f":"d'osclódh sé/sí"}, "1pl": {"f":"d'osclóimis","s":"d'osclódh muid"}, "2pl": {"f":"d'osclódh sibh"},  "3pl": {"f":"d'osclóidís","s":"d'osclódh siad"}, "auto": {"f":"d'osclófaí"}},
+        "imperative":  {"1sg": {"f":"osclaím"},              "2sg": {"f":"oscail!"},       "3sg": {"f":"osclaíodh sé/sí"}, "1pl": {"f":"osclaímis!"},                       "2pl": {"f":"osclaígí!"},       "3pl": {"f":"osclaídís!"},      "auto": {"f":"osclaítear"}}
+      }
+    },
+
+    {
+      "id": "inis", "irish": "inis", "english": "tell; relate", "group": "reg2other",
+      "verbal_noun": "insint", "verbal_adjective": "insithe",
+      "notes": "2nd conjugation -is verb. Starts with vowel (i-), so d' prefix in past. Stem for conjugation: ins- (drop -is). Future: inseoidh.",
+      "forms": {
+        "present":     {"1sg": {"f":"insím"},                "2sg": {"f":"insíonn tú"},    "3sg": {"f":"insíonn sé/sí"},  "1pl": {"f":"insímid",   "s":"insíonn muid"},   "2pl": {"f":"insíonn sibh"},   "3pl": {"f":"insíonn siad"},   "auto": {"f":"insítear"}},
+        "past":        {"1sg": {"f":"d'inis mé"},            "2sg": {"f":"d'inis tú"},     "3sg": {"f":"d'inis sé/sí"},   "1pl": {"f":"d'inis muid","m":"d'insíomar"},    "2pl": {"f":"d'inis sibh"},    "3pl": {"f":"d'inis siad"},    "auto": {"f":"d'insíodh"}},
+        "future":      {"1sg": {"f":"inseoidh mé","m":"inseod"},"2sg": {"f":"inseoidh tú"},"3sg": {"f":"inseoidh sé/sí"}, "1pl": {"f":"inseoimid",  "s":"inseoidh muid"},  "2pl": {"f":"inseoidh sibh"},  "3pl": {"f":"inseoidh siad"},  "auto": {"f":"inseofar"}},
+        "past_hab":    {"1sg": {"f":"d'insínn"},             "2sg": {"f":"d'insíteá"},     "3sg": {"f":"d'insíodh sé/sí"},"1pl": {"f":"d'insímis",  "s":"d'insíodh muid"}, "2pl": {"f":"d'insíodh sibh"}, "3pl": {"f":"d'insídís","s":"d'insíodh siad"},"auto": {"f":"d'insítí"}},
+        "conditional": {"1sg": {"f":"d'inseoinn"},           "2sg": {"f":"d'inseofá"},     "3sg": {"f":"d'inseodh sé/sí"},"1pl": {"f":"d'inseoimis","s":"d'inseodh muid"},"2pl": {"f":"d'inseodh sibh"}, "3pl": {"f":"d'inseoidís","s":"d'inseodh siad"},"auto": {"f":"d'inseofaí"}},
+        "imperative":  {"1sg": {"f":"insím"},                "2sg": {"f":"inis!"},         "3sg": {"f":"insíodh sé/sí"},  "1pl": {"f":"insímis!"},                        "2pl": {"f":"insígí!"},        "3pl": {"f":"insídís!"},       "auto": {"f":"insítear"}}
+      }
+    },
+
+    {
+      "id": "freagair", "irish": "freagair", "english": "answer; respond", "group": "reg2other",
+      "verbal_noun": "freagairt", "verbal_adjective": "freagartha",
+      "notes": "2nd conjugation -air verb. Starts with f — lenition gives fh (silent), so past/past habitual/conditional take d' prefix. Stem syncopates to freagr- (drop -air). Future: freagróidh.",
+      "forms": {
+        "present":     {"1sg": {"f":"freagraím"},                   "2sg": {"f":"freagraíonn tú"},  "3sg": {"f":"freagraíonn sé/sí"}, "1pl": {"f":"freagraímid",  "s":"freagraíonn muid"},  "2pl": {"f":"freagraíonn sibh"},  "3pl": {"f":"freagraíonn siad"},  "auto": {"f":"freagraítear"}},
+        "past":        {"1sg": {"f":"d'fhreagair mé"},              "2sg": {"f":"d'fhreagair tú"},  "3sg": {"f":"d'fhreagair sé/sí"}, "1pl": {"f":"d'fhreagair muid","m":"d'fhreagraíomar"},"2pl": {"f":"d'fhreagair sibh"},  "3pl": {"f":"d'fhreagair siad"},  "auto": {"f":"d'fhreagraíodh"}},
+        "future":      {"1sg": {"f":"freagróidh mé","m":"freagród"},"2sg": {"f":"freagróidh tú"},  "3sg": {"f":"freagróidh sé/sí"},  "1pl": {"f":"freagróimid",  "s":"freagróidh muid"},   "2pl": {"f":"freagróidh sibh"},   "3pl": {"f":"freagróidh siad"},   "auto": {"f":"freagróifar"}},
+        "past_hab":    {"1sg": {"f":"d'fhreagraínn"},               "2sg": {"f":"d'fhreagraíteá"}, "3sg": {"f":"d'fhreagraíodh sé/sí"},"1pl": {"f":"d'fhreagraímis","s":"d'fhreagraíodh muid"},"2pl": {"f":"d'fhreagraíodh sibh"},"3pl": {"f":"d'fhreagraídís","s":"d'fhreagraíodh siad"},"auto": {"f":"d'fhreagraítí"}},
+        "conditional": {"1sg": {"f":"d'fhreagróinn"},               "2sg": {"f":"d'fhreagróifá"},  "3sg": {"f":"d'fhreagródh sé/sí"}, "1pl": {"f":"d'fhreagróimis","s":"d'fhreagródh muid"}, "2pl": {"f":"d'fhreagródh sibh"},  "3pl": {"f":"d'fhreagróidís","s":"d'fhreagródh siad"}, "auto": {"f":"d'fhreagróifaí"}},
+        "imperative":  {"1sg": {"f":"freagraím"},                   "2sg": {"f":"freagair!"},      "3sg": {"f":"freagraíodh sé/sí"},  "1pl": {"f":"freagraímis!"},                           "2pl": {"f":"freagraígí!"},        "3pl": {"f":"freagraídís!"},      "auto": {"f":"freagraítear"}}
+      }
+    }
+
+  ]
+}

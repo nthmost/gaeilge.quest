@@ -1,0 +1,21 @@
+[Unit]
+Description=gaeilge.quest Irish grammar site
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/gaeilge.quest
+ExecStart=/var/www/gaeilge.quest/venv/bin/gunicorn \
+    --bind 127.0.0.1:5200 \
+    --workers 2 \
+    --timeout 30 \
+    --access-logfile /var/log/gaeilge-quest-access.log \
+    --error-logfile /var/log/gaeilge-quest-error.log \
+    backend.api:app
+Restart=always
+RestartSec=5
+EnvironmentFile=/etc/gaeilge-quest.env
+
+[Install]
+WantedBy=multi-user.target

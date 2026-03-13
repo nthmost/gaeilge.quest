@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irish Verb Conjugations — gaeilge.quest</title>
+  <meta name="description" content="Complete Irish verb conjugation tables for irregular and regular verbs, all tenses, synthetic and analytic forms.">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/verbs.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">gaeilge<span>.quest</span></a>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">Grammar</a>
+      <a href="/verbs" class="nav-link active">Verbs</a>
+    </nav>
+  </div>
+</header>
+
+<div class="verbs-body">
+  <!-- Sidebar: verb groups + verb list -->
+  <aside class="verbs-sidebar">
+    <div id="verb-groups">
+      <!-- populated by JS -->
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="verbs-main">
+    <div class="verbs-hero">
+      <h1>Irish Verb Conjugations</h1>
+      <p>All tenses, all persons. Spoken (synthetic) forms shown by default.</p>
+    </div>
+
+    <!-- Controls -->
+    <div class="verbs-controls">
+      <!-- Mode toggle -->
+      <div class="control-group">
+        <span class="control-label">View</span>
+        <div class="mode-toggle">
+          <button class="mode-btn active" id="mode-by-verb" data-mode="verb">By Verb</button>
+          <button class="mode-btn" id="mode-by-tense" data-mode="tense">By Tense</button>
+        </div>
+      </div>
+
+      <!-- Tense toggles -->
+      <div class="control-group">
+        <span class="control-label">Tenses</span>
+        <div class="tense-toggles" id="tense-toggles">
+          <!-- populated by JS -->
+        </div>
+      </div>
+
+      <!-- Form toggle -->
+      <div class="control-group">
+        <span class="control-label">Forms</span>
+        <div class="form-toggle">
+          <label class="toggle-switch">
+            <input type="checkbox" id="show-analytic">
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">Show standard/analytic</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table container -->
+    <div id="verb-table-container">
+      <!-- populated by JS -->
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>
+    <strong>gaeilge.quest</strong> — an Irish grammar reference for learners.
+    Content is curated by hand; AI answers are provided by
+    <a href="https://anthropic.com" rel="noopener">Anthropic Claude</a>.
+    <br>Mistakes? <a href="mailto:naomi@nthmost.com">let me know</a>.
+  </p>
+</footer>
+
+<script>window.__VERBS__ = {{ verbs_json | safe }};</script>
+<script src="/static/js/verbs.js" defer></script>
+</body>
+</html>

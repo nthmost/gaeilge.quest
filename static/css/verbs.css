@@ -1,0 +1,376 @@
+/* gaeilge.quest — Verb conjugation page styles */
+
+/* Page layout */
+.verbs-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Sidebar */
+.verbs-sidebar {
+  position: sticky;
+  top: 80px;
+}
+
+.verb-group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  padding: 0.5rem 0.5rem 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.verb-group-label:first-child { margin-top: 0; }
+
+.verb-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.35rem 0.75rem;
+  border: none;
+  background: none;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s;
+  line-height: 1.4;
+}
+
+.verb-btn:hover { background: var(--border); }
+.verb-btn.active { background: var(--green); color: white; }
+
+.verb-btn .verb-english {
+  font-size: 0.75rem;
+  color: var(--muted);
+  display: block;
+}
+
+.verb-btn.active .verb-english { color: rgba(255,255,255,0.75); }
+
+/* Hero */
+.verbs-hero {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--mid) 100%);
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.verbs-hero h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+.verbs-hero p { opacity: 0.8; }
+
+/* Controls */
+.verbs-controls {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.control-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Mode toggle */
+.mode-toggle {
+  display: flex;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.mode-btn {
+  padding: 0.3rem 0.9rem;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.15s, color 0.15s;
+}
+
+.mode-btn.active { background: var(--green); color: white; }
+.mode-btn:not(.active):hover { background: var(--light); }
+
+/* Tense toggles */
+.tense-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tense-btn {
+  padding: 0.25rem 0.7rem;
+  border-radius: 16px;
+  border: 1.5px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.tense-btn:hover { border-color: var(--green); }
+.tense-btn.active { background: var(--green); border-color: var(--green); color: white; }
+.tense-btn.optional { border-style: dashed; }
+.tense-btn.optional.active { border-style: solid; }
+
+/* Form toggle switch */
+.form-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--border);
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.toggle-switch input:checked + .toggle-slider { background: var(--green); }
+.toggle-switch input:checked + .toggle-slider::before { transform: translateX(16px); }
+
+.toggle-label { font-size: 0.85rem; color: var(--text); }
+
+/* Verb conjugation table */
+.verb-header {
+  margin-bottom: 1rem;
+}
+
+.verb-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.verb-title-english {
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.verb-meta {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.verb-meta-item strong { color: var(--text); }
+
+.verb-notes {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  background: #fff8e8;
+  border-left: 3px solid var(--orange);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Conjugation table */
+.conj-table-wrap {
+  overflow-x: auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.conj-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.conj-table th {
+  padding: 0.6rem 1rem;
+  background: var(--dark);
+  color: white;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.conj-table th.person-col { min-width: 120px; }
+.conj-table th.tense-col { min-width: 140px; }
+
+.conj-table td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.conj-table tr:last-child td { border-bottom: none; }
+.conj-table tr:hover td { background: #f8f8fc; }
+
+.person-cell {
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 120px;
+}
+
+.person-cell .pronoun {
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.form-primary {
+  color: var(--green);
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.form-primary:hover { text-decoration: underline; }
+.form-primary.empty { color: var(--muted); font-weight: normal; font-style: normal; }
+
+.form-analytic {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+.form-munster {
+  display: block;
+  font-size: 0.78rem;
+  color: #b04a00;
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+.form-munster::before {
+  content: "M: ";
+  font-style: normal;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+/* By-tense mode: verb rows */
+.tense-section {
+  margin-bottom: 2rem;
+}
+
+.tense-section-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--green);
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.tense-section-irish {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.conj-table td.verb-label-cell {
+  font-weight: bold;
+  color: var(--text);
+  white-space: nowrap;
+  width: 110px;
+}
+
+.conj-table td.verb-label-cell .verb-english-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .verbs-body {
+    grid-template-columns: 1fr;
+  }
+
+  .verbs-sidebar {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .verb-group-label { display: none; }
+
+  .verb-btn {
+    width: auto;
+    border: 1.5px solid var(--border);
+    padding: 0.25rem 0.65rem;
+    border-radius: 16px;
+  }
+
+  .verb-btn .verb-english { display: none; }
+  .verb-btn.active { border-color: var(--green); }
+
+  .verbs-controls { flex-direction: column; align-items: flex-start; }
+}
