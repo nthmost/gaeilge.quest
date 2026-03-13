@@ -1630,5 +1630,236 @@
       "question-words",
       "dialects"
     ]
+  },
+  {
+    "id": "prep-article-contractions",
+    "title": "Preposition + Article Contractions",
+    "category": "prepositions",
+    "difficulty": "A2",
+    "tags": [
+      "prepositions",
+      "article",
+      "contractions",
+      "sa",
+      "san",
+      "den",
+      "don",
+      "leis an",
+      "ar an",
+      "faoin"
+    ],
+    "summary": "When certain prepositions meet the definite article 'an', they fuse into contracted forms. These contractions are everywhere in everyday Irish.",
+    "content": "Several prepositions contract with the singular definite article 'an':\n\n  de + an  → den      (of the)\n  do + an  → don      (to/for the)\n  i  + an  → sa/san   (in the)\n  faoi + an → faoin   (under/about the)\n  ó  + an  → ón      (from the)\n  trí + an → tríd an  (through the)\n\nPrepositions that do NOT contract — they keep 'an' but trigger eclipsis:\n  ag an, ar an, as an, chuig an, le, roimh an, thar an, um an\n  (These take eclipsis in the standard; lenition in Connacht)\n\nThe sa/san rule:\n  sa  — before consonants:   sa bhaile (at home), sa siopa (in the shop)\n  san — before vowels:       san oíche (in the night), san ospidéal (in the hospital)\n  Both trigger lenition on the following consonant.\n\nEclipsis after ag an / ar an / leis an / etc. (standard):\n  ag an mbord     at the table     (b → mb)\n  ar an gcathaoir on the chair     (c → gc)\n  leis an bhfear  with the man     (f → bhf)\n\nConnacht variant — lenition instead of eclipsis after ag an / ar an:\n  ag an bhord / ar an chathaoir   (Connacht)\n\nWith plural 'na' — no contraction, but 'na' after most prepositions:\n  ag na daoine, ar na sráideanna, sna tithe (i + na = sna)",
+    "examples": [
+      {
+        "irish": "Tá mé sa bhaile.",
+        "english": "I am at home. (i + an → sa; lenition on b)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "San oíche a tharla sé.",
+        "english": "It happened in the night. (san before vowel)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuaigh sé den charraig.",
+        "english": "He fell off the rock. (de + an → den)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Thug sí don pháiste é.",
+        "english": "She gave it to the child. (do + an → don)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Faoin mbord atá sé.",
+        "english": "It is under the table. (faoi + an → faoin; eclipsis on m)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ón gCaisleán Nua.",
+        "english": "From Castlebar / Newcastle. (ó + an → ón; eclipsis)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ag an mbord.",
+        "english": "At the table. (ag + an; eclipsis — standard)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ag an bhord.",
+        "english": "At the table. (ag + an; lenition — Connacht)",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Ar an gcathaoir.",
+        "english": "On the chair. (ar + an; eclipsis)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Sna tithe.",
+        "english": "In the houses. (i + na → sna)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Leis an bhfear mór.",
+        "english": "With the big man. (le + an; eclipsis on f)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The key rule: de+an=den, do+an=don, i+an=sa/san, faoi+an=faoin, ó+an=ón. All other prepositions keep 'an' separate and trigger eclipsis (standard) or lenition (Connacht) on the following noun. The Connacht/standard difference only applies to the non-contracting prepositions (ag an, ar an, etc.).",
+    "see_also": [
+      "initial-mutations",
+      "articles",
+      "prepositional-pronouns"
+    ]
+  },
+  {
+    "id": "telling-time",
+    "title": "Telling the Time",
+    "category": "numbers",
+    "difficulty": "A2",
+    "tags": [
+      "time",
+      "clock",
+      "a chlog",
+      "cén t-am",
+      "leathuair",
+      "ceathrú"
+    ],
+    "summary": "Telling time in Irish uses 'a chlog' (o'clock), 'tar éis' or 'i ndiaidh' (past), and 'chun' or 'go dtí' (to). Hours 1–12, with dialect variation.",
+    "content": "Asking the time:\n  Cén t-am é?          What time is it?\n  Cén t-am atá sé?     What time is it?\n\nO'clock — the number + 'a chlog':\n  tá sé a haon a chlog     it is 1 o'clock\n  tá sé a dó a chlog       it is 2 o'clock\n  tá sé a trí a chlog      it is 3 o'clock\n  tá sé a ceathair a chlog it is 4 o'clock\n  tá sé a cúig a chlog     it is 5 o'clock\n  tá sé a sé a chlog       it is 6 o'clock\n  tá sé a seacht a chlog   it is 7 o'clock\n  tá sé a hocht a chlog    it is 8 o'clock\n  tá sé a naoi a chlog     it is 9 o'clock\n  tá sé a deich a chlog    it is 10 o'clock\n  tá sé a haon déag a chlog it is 11 o'clock\n  tá sé a dó dhéag a chlog it is 12 o'clock\n  meán lae / nóin          noon\n  meán oíche               midnight\n\nHalf past — leathuair tar éis / leathuair i ndiaidh:\n  leathuair tar éis a trí   half past three (standard)\n  leathuair i ndiaidh a trí half past three (also used)\n\nQuarter — ceathrú:\n  ceathrú tar éis a dó      quarter past two\n  ceathrú chun a ceathair   quarter to four\n\nMinutes past / to:\n  fiche nóiméad tar éis a sé   twenty past six\n  deich nóiméad chun a hocht   ten to eight\n\nMorning/afternoon/evening:\n  ar maidin    in the morning\n  tráthnóna    in the afternoon/evening\n  san oíche    at night\n\nDialect variants for 'past':\n  tar éis (standard/Munster)   i ndiaidh (Connacht/Ulster)\n  Both are widely understood.",
+    "examples": [
+      {
+        "irish": "Cén t-am é?",
+        "english": "What time is it?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé a trí a chlog.",
+        "english": "It is three o'clock.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé leathuair tar éis a seacht.",
+        "english": "It is half past seven.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé leathuair i ndiaidh a seacht.",
+        "english": "It is half past seven.",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Tá sé ceathrú tar éis a dó.",
+        "english": "It is quarter past two.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé ceathrú chun a cúig.",
+        "english": "It is quarter to five.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé fiche nóiméad tar éis a sé.",
+        "english": "It is twenty past six.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé deich nóiméad chun a naoi.",
+        "english": "It is ten to nine.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ag a hocht a chlog ar maidin.",
+        "english": "At eight o'clock in the morning.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an traein ag imeacht ar a dó dhéag.",
+        "english": "The train is leaving at twelve o'clock.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The hours 1–12 use a special 'clock number' form with the prefix 'a': a haon, a dó, a trí… Note that 1 and 8 use 'h-' prefix: a haon, a hocht. This 'a' is not the verbal particle — it is a prefix specific to counting hours. For minutes, use 'nóiméad' (minute) or 'soicind' (second).",
+    "see_also": [
+      "numbers",
+      "question-words"
+    ]
+  },
+  {
+    "id": "comparative-adjectives",
+    "title": "Comparative & Superlative Adjectives",
+    "category": "adjectives",
+    "difficulty": "A2",
+    "tags": [
+      "adjectives",
+      "comparative",
+      "superlative",
+      "níos",
+      "is",
+      "níos mó",
+      "níos fearr",
+      "is fearr"
+    ],
+    "summary": "Irish forms comparatives with 'níos' + comparative form of the adjective, and superlatives with 'is' + the same form. Many adjectives have irregular comparative forms.",
+    "content": "Comparative (more X / X-er):\n  níos + [comparative form of adjective]\n\n  Tá sé níos mó.      It is bigger.\n  Tá sí níos fearr.   She is better.\n  Tá sé níos faide.   It is longer.\n\nThe comparative form is usually the adjective with slenderisation or a suffix:\n  mór   → níos mó        big → bigger\n  beag  → níos lú        small → smaller\n  fada  → níos faide     long → longer\n  gearr → níos giorra    short → shorter\n  ard   → níos airde     tall/high → taller\n  íseal → níos ísle      low → lower\n  te    → níos teo       hot → hotter\n  fuar  → níos fuaire    cold → colder\n  tapa  → níos tapúla    fast → faster\n  luath → níos luaithe   early/fast → earlier/faster\n  deas  → níos deise     nice → nicer\n  óg    → níos óige      young → younger\n  sean  → níos sine      old → older\n\nIrregular comparatives (must be learned):\n  maith (good)  → níos fearr   (better)\n  olc   (bad)   → níos measa  (worse)\n  mór   (big)   → níos mó     (bigger)\n  beag  (small) → níos lú     (smaller)\n  fada  (long)  → níos faide  (longer)\n  furasta (easy) → níos fusa  (easier)\n\nSuperlative (most X / the X-est):\n  is + [same comparative form] — used with the copula\n\n  Is é an ceann is fearr é.    It is the best one.\n  An rud is mó.                The biggest thing.\n  An duine is óige.            The youngest person.\n\nComparisons:\n  níos + adj + ná    (more X than)\n  Tá sé níos mó ná mise.   He is bigger than me.\n  Tá sí níos fearr ná é.   She is better than him.\n\n  chomh + adj + le   (as X as)\n  Tá sé chomh mór liom.    He is as big as me.\n  Níl sé chomh fada leis.  It is not as long as it.",
+    "examples": [
+      {
+        "irish": "Tá an teach seo níos mó ná an ceann sin.",
+        "english": "This house is bigger than that one.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá Gaeilge níos deacra ná Béarla.",
+        "english": "Irish is harder than English.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is fearr liom tae ná caife.",
+        "english": "I prefer tea to coffee. (lit. Tea is better with me than coffee.)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An rud is fearr.",
+        "english": "The best thing. (superlative)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is í Máire is óige.",
+        "english": "Máire is the youngest.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé níos fearr anois.",
+        "english": "It is better now.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Níl sé chomh fuar inniu.",
+        "english": "It is not as cold today.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé chomh maith céanna.",
+        "english": "It is just as good.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is í an leabhar is fearr é.",
+        "english": "It is the best book.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá Seán níos airde ná Pádraig.",
+        "english": "Seán is taller than Pádraig.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The superlative uses the copula 'is', not 'tá' — this is a common mistake. 'Is fearr' (is/copula + fearr) vs 'níos fearr' (comparative with tá). The irregular forms maith→fearr, olc→measa, mór→mó, beag→lú are used constantly and must be memorised.",
+    "see_also": [
+      "adjective-agreement",
+      "copula-is"
+    ]
   }
 ]
