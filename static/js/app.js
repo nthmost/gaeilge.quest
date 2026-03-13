@@ -3,6 +3,7 @@
 let constructions = [];
 let activeCategory = 'all';
 let activeDialect = 'all';
+let activeDifficulty = 'all';
 
 // Load constructions — use server-injected data if available, else fetch
 async function loadConstructions() {
@@ -14,10 +15,11 @@ async function loadConstructions() {
   }
 
   // Pre-filter from URL param e.g. /?cat=verbs
-  const catParam = new URLSearchParams(window.location.search).get('cat');
-  if (catParam) activeCategory = catParam;
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('cat')) activeCategory = params.get('cat');
 
   renderCategories();
+  renderDifficultyFilter();
   renderDialectFilter();
   applyFilters();
 }
@@ -27,7 +29,7 @@ function renderCategories() {
   const ul = document.getElementById('category-list');
   ul.innerHTML = cats.map(cat => `
     <li><a href="#" class="cat-link ${cat === activeCategory ? 'active' : ''}" data-cat="${cat}">
-      ${cat === 'all' ? '📚 All topics' : capitalise(cat)}
+      ${cat === 'all' ? 'All topics' : capitalise(cat)}
     </a></li>
   `).join('');
 
@@ -35,6 +37,27 @@ function renderCategories() {
     a.addEventListener('click', e => {
       e.preventDefault();
       activeCategory = a.dataset.cat;
+      ul.querySelectorAll('.cat-link').forEach(x => x.classList.remove('active'));
+      a.classList.add('active');
+      applyFilters();
+    });
+  });
+}
+
+function renderDifficultyFilter() {
+  const levels = ['all', 'beginner', 'intermediate', 'advanced'];
+  const labels = { all: 'All levels', beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' };
+  const ul = document.getElementById('difficulty-list');
+  ul.innerHTML = levels.map(d => `
+    <li><a href="#" class="cat-link ${d === activeDifficulty ? 'active' : ''}" data-diff="${d}">
+      ${labels[d]}
+    </a></li>
+  `).join('');
+
+  ul.querySelectorAll('.cat-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      activeDifficulty = a.dataset.diff;
       ul.querySelectorAll('.cat-link').forEach(x => x.classList.remove('active'));
       a.classList.add('active');
       applyFilters();
@@ -71,15 +94,12 @@ function renderConstructions(items) {
   }
   container.innerHTML = items.map(c => constructionCard(c)).join('');
 
-  // Card expand/collapse
   container.querySelectorAll('.construction-card').forEach(card => {
     card.querySelector('.card-header').addEventListener('click', () => {
-      const body = card.querySelector('.card-body');
-      body.classList.toggle('open');
+      card.querySelector('.card-body').classList.toggle('open');
     });
   });
 
-  // Word-click linking to teanglann.ie — delegate from container
   container.addEventListener('click', handleWordClick);
 }
 
@@ -88,13 +108,11 @@ function handleWordClick(e) {
   const td = e.target.closest('td.irish-cell');
   if (!td) return;
 
-  // Get the word nearest to the click
   const selection = window.getSelection();
   let word = '';
   if (selection && selection.toString().trim()) {
     word = selection.toString().trim();
   } else {
-    // Try to extract word from click position via range
     const range = document.caretRangeFromPoint
       ? document.caretRangeFromPoint(e.clientX, e.clientY)
       : null;
@@ -103,7 +121,6 @@ function handleWordClick(e) {
       word = range.toString().trim();
     }
   }
-  // Strip punctuation
   word = word.replace(/[^a-záéíóúÁÉÍÓÚ]/gi, '');
   if (word.length > 1) {
     window.open(`https://www.teanglann.ie/en/fgb/${encodeURIComponent(word)}`, '_blank', 'noopener');
@@ -124,7 +141,6 @@ const DIFFICULTY_LABELS = {
 };
 
 function constructionCard(c) {
-  // Filter examples by active dialect
   const examples = (c.examples || []).filter(ex => {
     if (activeDialect === 'all') return true;
     const d = (ex.dialect || 'standard').toLowerCase();
@@ -147,13 +163,11 @@ function constructionCard(c) {
     `;
   }).join('');
 
-  // Difficulty badge
   const diffInfo = DIFFICULTY_LABELS[c.difficulty] || null;
   const diffBadge = diffInfo
     ? `<span class="diff-badge ${diffInfo.cls}">${diffInfo.label}</span>`
     : '';
 
-  // see_also links
   const seeAlsoHtml = (c.see_also && c.see_also.length)
     ? `<div class="see-also">
         <span class="see-also-label">See also:</span>
@@ -189,7 +203,6 @@ function constructionCard(c) {
   `;
 }
 
-// Open a card by id and scroll to it
 function openCard(id) {
   const card = document.getElementById('card-' + id);
   if (!card) return;
@@ -198,19 +211,21 @@ function openCard(id) {
   setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
 }
 
-// Build a lookup map: id -> title
 function titleForId(id) {
   const c = constructions.find(x => x.id === id);
   return c ? c.title : id;
 }
 
-// Search
 function applyFilters() {
   const query = document.getElementById('search-input').value.toLowerCase().trim();
   let filtered = constructions;
 
   if (activeCategory !== 'all') {
     filtered = filtered.filter(c => c.category === activeCategory);
+  }
+
+  if (activeDifficulty !== 'all') {
+    filtered = filtered.filter(c => (c.difficulty || '') === activeDifficulty);
   }
 
   if (query) {
@@ -229,6 +244,43 @@ function applyFilters() {
   renderConstructions(filtered);
 }
 
+// ── Ask Claude ─────────────────────────────────────────────────────────────
+
+async function askClaude(question) {
+  const panel = document.getElementById('answer-panel');
+  const content = document.getElementById('answer-panel-content');
+  const btn = document.getElementById('ask-btn-hero');
+
+  btn.disabled = true;
+  btn.textContent = 'Asking…';
+  content.textContent = '';
+  panel.classList.add('visible');
+  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  try {
+    const resp = await fetch('/api/ask', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question }),
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error || `Server error ${resp.status}`);
+    }
+
+    const data = await resp.json();
+    content.textContent = data.answer;
+  } catch (err) {
+    content.textContent = `Couldn't get an answer: ${err.message}`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Ask Claude';
+  }
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+
 document.addEventListener('DOMContentLoaded', () => {
   loadConstructions();
 
@@ -239,48 +291,25 @@ document.addEventListener('DOMContentLoaded', () => {
     searchTimer = setTimeout(applyFilters, 200);
   });
 
-  // Ask Claude form
-  const form = document.getElementById('ask-form');
-  const questionInput = document.getElementById('question-input');
-  const answerBox = document.getElementById('answer-box');
-  const answerContent = document.getElementById('answer-content');
-  const submitBtn = document.getElementById('ask-submit');
-
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-    const question = questionInput.value.trim();
-    if (!question) return;
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Asking…';
-    answerBox.classList.remove('visible');
-
-    try {
-      const resp = await fetch('/api/ask', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question }),
-      });
-
-      if (!resp.ok) {
-        const err = await resp.json().catch(() => ({}));
-        throw new Error(err.error || `Server error ${resp.status}`);
-      }
-
-      const data = await resp.json();
-      answerContent.textContent = data.answer;
-      answerBox.classList.add('visible');
-    } catch (err) {
-      answerContent.textContent = `Sorry, couldn't get an answer: ${err.message}`;
-      answerBox.classList.add('visible');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Ask';
+  searchInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      const q = searchInput.value.trim();
+      if (q) askClaude(q);
     }
+  });
+
+  document.getElementById('ask-btn-hero').addEventListener('click', () => {
+    const q = searchInput.value.trim();
+    if (q) askClaude(q);
+  });
+
+  document.getElementById('answer-panel-close').addEventListener('click', () => {
+    document.getElementById('answer-panel').classList.remove('visible');
   });
 });
 
-// Utilities
+// ── Utilities ──────────────────────────────────────────────────────────────
+
 function escHtml(str) {
   return String(str)
     .replace(/&/g, '&amp;')
