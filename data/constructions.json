@@ -2057,5 +2057,304 @@
       "question-words",
       "relative-clauses"
     ]
+  },
+  {
+    "id": "autonomous-verb",
+    "title": "The Autonomous Verb (Briathar Saor)",
+    "category": "verbs",
+    "difficulty": "B2",
+    "tags": [
+      "autonomous",
+      "passive",
+      "briathar saor",
+      "impersonal",
+      "déantar",
+      "rinneadh"
+    ],
+    "summary": "The autonomous (impersonal/passive) form of the verb expresses an action without naming the agent. Every Irish verb has one. It translates as 'one does X' or 'X is done'.",
+    "content": "Every Irish verb has an autonomous form — a single inflected form meaning 'one does X' or 'it is done' without specifying who does it. It is not a passive in the full English sense; it simply omits the agent.\n\nFormation — present tense:\n  1st conj. broad:   -tar    óltar (one drinks / drinking is done)\n  1st conj. slender: -tear   ithear (one eats)\n  2nd conj.:         -aítear / -ítear  ceannaítear (one buys)\n\nFormation — past tense:\n  1st conj. broad:   -adh    óladh (one drank)\n  1st conj. slender: -eadh   itheadh (one ate)\n  2nd conj.:         -aíodh  ceannaíodh (one bought)\n  (Past: initial mutation — lenition normally; but autonomous past does not lenite)\n\nFormation — future tense:\n  1st conj. broad:   -far    ólfar (one will drink)\n  1st conj. slender: -fear   ithfear (one will eat)\n  2nd conj.:         -ófar   ceannófar (one will buy)\n\nFormation — conditional:\n  1st conj. broad:   -faí    ólfaí (one would drink)\n  1st conj. slender: -fí     ithfí\n  2nd conj.:         -ófaí   ceannófaí\n\nIrregular autonomous forms (must be learned):\n  bí:    táthar (one is) / bhíothas (one was) / beifear (one will be)\n  déan:  déantar / rinneadh / déanfar\n  téigh: téitear / chuathas / rachfar\n  tar:   tagtar / thángthas / tiocfar\n  abair: deirtear / dúradh / déarfar\n  faigh: faightear / fuarthas / gheofar\n  feic:  feictear / chonacthas / feicfear\n  ith:   ithear / itheadh / ithfear\n  beir:  beirtear / rugadh / béarfar\n  clois: cloistear / chualathas / cloisfear\n  tabhair: tugtar / tugadh / tabharfar\n\nTo express 'by whom' (the agent), use 'ag':\n  Rinneadh é ag Seán.    It was done by Seán.\n  (Less common — Irish often restructures to avoid this)",
+    "examples": [
+      {
+        "irish": "Déantar é sin gach lá.",
+        "english": "That is done every day. (present autonomous)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rinneadh an obair inné.",
+        "english": "The work was done yesterday. (past autonomous)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ólfar sláinte na mná.",
+        "english": "A toast will be drunk to the woman. (future autonomous)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dúradh liom imeacht.",
+        "english": "I was told to leave. (lit. It was said to me to leave.)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Feictear dom go bhfuil sé ceart.",
+        "english": "It seems to me that it is right. (lit. It is seen to me…)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Buaileadh é.",
+        "english": "He was hit. (past autonomous of buail)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ceannófar bia don teach.",
+        "english": "Food will be bought for the house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cloistear ceol sa halla.",
+        "english": "Music is heard in the hall.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tugadh cuireadh dóibh.",
+        "english": "They were given an invitation.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ná déantar aon dearmad.",
+        "english": "Let no mistake be made.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The autonomous is not the same as the English passive. 'Rinneadh é' means 'it was done / one did it' — there is no grammatical subject at all. It is widely used in formal writing, news, and everyday speech. 'Feictear dom' (it seems to me) and 'deirtear' (it is said / they say) are extremely common fixed usages.",
+    "see_also": [
+      "verb-tenses-regular",
+      "verb-irregular",
+      "verbal-adjective"
+    ]
+  },
+  {
+    "id": "verbal-adjective",
+    "title": "The Verbal Adjective (Aidiacht Bhriathartha)",
+    "category": "verbs",
+    "difficulty": "B2",
+    "tags": [
+      "verbal adjective",
+      "aidiacht bhriathartha",
+      "past participle",
+      "déanta",
+      "briste",
+      "passive state"
+    ],
+    "summary": "The verbal adjective (similar to a past participle) describes a state resulting from an action. Formed with suffixes -ta/-te/-tha/-the. Used with 'tá' to express completed states.",
+    "content": "The verbal adjective (aidiacht bhriathartha) expresses the resulting state of an action — like an English past participle used as an adjective.\n\nFormation:\n  -ta  after broad consonant:    bris → briste (broken)\n  -te  after slender consonant:  léigh → léite (read)\n  -tha after broad f, vowel:     dún → dúnta (closed); glan → glanta (cleaned)\n  -the after slender f, vowel:   cuir → curtha (put, placed)\n  -ta  after -áil, -áin verbs:   oscail → oscailte (opened)\n\nCommon verbal adjectives:\n  briste      broken          (bris)\n  dúnta       closed/shut     (dún)\n  oscailte    opened          (oscail)\n  déanta      done/made       (déan)\n  scríofa     written         (scríobh)\n  ite         eaten           (ith)\n  ólta        drunk           (ól)\n  ceannaíthe  bought          (ceannaigh)\n  foghlamtha  learned         (foghlaim)\n  curtha      put/placed      (cuir)\n  tugtha      given           (tabhair)\n  fágtha      left            (fág)\n  caillte     lost            (caill)\n  críochnaithe finished       (críochnaigh)\n  réidh / réitithe ready / prepared\n\nUsed with tá to express a resulting state:\n  Tá an doras dúnta.       The door is closed.\n  Tá an obair déanta.      The work is done.\n  Tá sé briste.            It is broken.\n\nThe verbal adjective agrees with the noun in gender and number:\n  Tá an leabhar scríofa.   The book is written. (m.)\n  Tá na leabhair scríofa.  The books are written. (pl. — same form usually)\n  Tá an litir scríofa.     The letter is written. (f. — same form usually)\n\nWith 'tar éis' (just done — perfect aspect):\n  Tá mé tar éis é a dhéanamh.   I have just done it.\n  (This uses the verbal noun, not the verbal adjective — contrast with the state construction above.)",
+    "examples": [
+      {
+        "irish": "Tá an doras dúnta.",
+        "english": "The door is closed.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an obair déanta.",
+        "english": "The work is done.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé briste.",
+        "english": "It is broken.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an litir scríofa agam.",
+        "english": "I have the letter written. (I've written the letter.)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá siad caillte.",
+        "english": "They are lost.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an béile réidh.",
+        "english": "The meal is ready.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Fuair mé é déanta.",
+        "english": "I got it done.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an teach díolta.",
+        "english": "The house is sold.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá na soithí nite.",
+        "english": "The dishes are washed.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé curtha in iúl dom.",
+        "english": "It has been made known to me.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The construction 'tá X déanta agam' (lit. X is done at me) is how Irish expresses 'I have done X' — the perfect. This is distinct from 'tá mé tar éis X a dhéanamh' (I have just done X — recent perfect). Both are important and both use the verbal adjective or verbal noun with bí.",
+    "see_also": [
+      "autonomous-verb",
+      "verbal-noun",
+      "progressive-aspect"
+    ]
+  },
+  {
+    "id": "cleft-sentences",
+    "title": "Cleft Sentences (Is é / Is í … a …)",
+    "category": "sentence structure",
+    "difficulty": "B2",
+    "tags": [
+      "cleft",
+      "focus",
+      "emphasis",
+      "is é",
+      "is í",
+      "is iad",
+      "a rinne",
+      "fronting"
+    ],
+    "summary": "Cleft sentences use the copula to bring an element into focus. 'Is é Seán a rinne é' means 'It is Seán who did it'. One of the most characteristic constructions in Irish.",
+    "content": "A cleft sentence splits a simple sentence into two clauses, placing focus on one element. It uses the copula (is) + a pronoun + a relative clause.\n\nBasic structure:\n  Is + [pronoun agreeing with focus] + [focus element] + a/ar + [relative verb]\n\n  Is é Seán a rinne é.         It is Seán who did it.\n  Is í Máire a bhí ann.        It is Máire who was there.\n  Is iad na páistí a d'ith é.  It is the children who ate it.\n\nPronouns in cleft sentences:\n  é   — masculine singular\n  í   — feminine singular\n  iad — plural\n  é sin / é seo — 'that' / 'this' (when the focus is a demonstrative or clause)\n\nClefting different elements:\n  Subject focus:  Is é Seán a dhíol an carr.    It is Seán who sold the car.\n  Object focus:   Is é an carr a dhíol Seán.    It is the car that Seán sold.\n  Time focus:     Is inné a tháinig sé.          It was yesterday that he came.\n  Place focus:    Is sa bhaile a bhí sí.         It was at home that she was.\n  Reason focus:   Is ar mhaithe leat é.          It is for your good (that it is).\n\nWith the past relative — the dependent form is used after 'a':\n  Present:  a dhéanann, a bhíonn, atá\n  Past:     a rinne, a bhí, a tháinig (lenition — direct relative past)\n\nNegative cleft:\n  Ní hé Seán a rinne é.    It is not Seán who did it.\n  Ní hí Máire atá ann.     It is not Máire who is there.\n  (Note: ní + é/í/iad → ní hé / ní hí / ní hiad with h-prefix)\n\nQuestion cleft:\n  Cé hé a rinne é?         Who is it that did it?\n  Cad é a tharla?          What is it that happened?",
+    "examples": [
+      {
+        "irish": "Is é Seán a rinne é.",
+        "english": "It is Seán who did it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is í an Ghaeilge is fearr liom.",
+        "english": "It is Irish that I like best.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is ansin a chónaíonn siad.",
+        "english": "It is there that they live.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is inné a chuaigh sé ann.",
+        "english": "It was yesterday that he went there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní hé Pádraig a bhí ann.",
+        "english": "It was not Pádraig who was there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is ar mhaithe leis a rinne sí é.",
+        "english": "It was for his sake that she did it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is é an t-am is fearr é.",
+        "english": "It is the best time.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is iad na múinteoirí is fearr iad.",
+        "english": "They are the best teachers.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé hé a dúirt é?",
+        "english": "Who is it that said it?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is anseo a rugadh mé.",
+        "english": "It is here that I was born.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Cleft sentences are extremely common in spoken Irish — more so than in English. Irish speakers use them to give information stress that English achieves through intonation. Getting comfortable with cleft sentences is a major marker of fluency. The copula in clefts is always 'is' (present) or 'ba' (past): 'Ba é Seán a rinne é' — it was Seán who did it.",
+    "see_also": [
+      "copula-is",
+      "copula-vs-bi",
+      "relative-clauses"
+    ]
+  },
+  {
+    "id": "subjunctive",
+    "title": "The Subjunctive Mood (Modh Foshuiteach)",
+    "category": "verbs",
+    "difficulty": "B2",
+    "tags": [
+      "subjunctive",
+      "modh foshuiteach",
+      "go raibh",
+      "nár",
+      "wishes",
+      "prayers",
+      "go mbeannaí"
+    ],
+    "summary": "The Irish subjunctive expresses wishes, prayers, blessings, and possibility. It survives mainly in fixed phrases but is also used productively after certain conjunctions.",
+    "content": "The subjunctive (modh foshuiteach) expresses wishes, blessings, possibility, and hypothetical states. In modern Irish it is used in two main contexts:\n\n1. Fixed expressions (blessings, curses, toasts, prayers)\n2. After certain conjunctions: go (until/that), sula (before), mura (unless), cé go (although)\n\nPresent subjunctive forms:\n  bí:    go raibh / nár raibh\n  Other verbs — same as the imperative 2sg in most cases:\n  1st conj. broad:   go n-ól (that he drink)\n  1st conj. slender: go n-ith (that he eat)\n  2nd conj.:         go gceannaí (that he buy)\n\nAll present subjunctive verbs take eclipsis after 'go'.\n\nPast subjunctive — same as conditional mood of bí:\n  dá mbeadh (if there were) — see conditional sentences card\n\nFixed expressions with present subjunctive of bí (go raibh / nár lagaí):\n  Go raibh maith agat.        Thank you. (lit. May there be good at you.)\n  Go raibh maith agaibh.      Thank you (pl.).\n  Nár lagaí Dia thú.          May God not weaken you. (said in admiration)\n  Go méadaí Dia do stór.      May God increase your store.\n  Go gcumhdaí Dia thú.        May God protect you.\n  Go mbeannaí Dia duit.       God bless you.\n  Nár fhága an t-ádh tú.      May luck never leave you.\n  Go n-éirí an bóthar leat.   May the road rise to meet you.\n  Bail ó Dhia ort.            God's blessing on you. (on seeing good work)\n\nAfter conjunctions:\n  Fan go dté sé abhaile.      Wait until he goes home.\n  Sula n-imí tú, ith rud éigin.  Before you go, eat something.\n  Cé go mbí sé deacair…      Although it may be difficult…\n  Mura mbí sé ann…            Unless he is there…",
+    "examples": [
+      {
+        "irish": "Go raibh maith agat.",
+        "english": "Thank you. (lit. May good be at you.)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nár lagaí Dia thú.",
+        "english": "May God not weaken you. (said admiringly)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Go n-éirí an bóthar leat.",
+        "english": "May the road rise to meet you.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Go mbeannaí Dia duit.",
+        "english": "God bless you.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Fan go dté sé abhaile.",
+        "english": "Wait until he goes home.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Sula n-imí tú, labhair liom.",
+        "english": "Before you leave, speak with me.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bail ó Dhia ar an obair.",
+        "english": "God's blessing on the work.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Go dtuga Dia ciall dó.",
+        "english": "May God give him sense.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nár fhága sláinte tú go brách.",
+        "english": "May health never leave you.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Go gcumhdaí Dia sinn go léir.",
+        "english": "May God protect us all.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Most learners encounter the subjunctive first in 'Go raibh maith agat' — the everyday thank-you — without realising it is a subjunctive. The subjunctive is productive after 'go' (until), 'sula' (before), 'mura' (unless), and 'cé go' (although). Outside of fixed expressions, it sounds formal/literary in everyday speech.",
+    "see_also": [
+      "conditional-sentences",
+      "verb-bi",
+      "indirect-speech"
+    ]
   }
 ]
