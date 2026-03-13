@@ -2730,5 +2730,391 @@
       "genitive-case",
       "articles"
     ]
+  },
+  {
+    "id": "dependent-independent-forms",
+    "title": "Dependent & Independent Verb Forms",
+    "category": "verbs",
+    "difficulty": "C1",
+    "tags": [
+      "dependent",
+      "independent",
+      "particles",
+      "nach",
+      "an",
+      "ní",
+      "go",
+      "verb forms",
+      "lenition",
+      "eclipsis"
+    ],
+    "summary": "Irish verbs have two sets of forms: independent (used in plain statements) and dependent (used after particles like ní, an, go, nach, má, sula). Getting these right is essential for fluency.",
+    "content": "Irish verbs inflect differently depending on what precedes them. The two main sets are:\n\nINDEPENDENT — used in plain affirmative statements:\n  Ólann sé.       He drinks.\n  Chonaic mé é.   I saw it.\n  Déanfaidh sí é. She will do it.\n\nDEPENDENT — used after particles: ní, an, nach, go, nach, ó, má, mura, sula, dá, a (relative), nuair a, cé go, etc.\n  Ní ólann sé.         He doesn't drink.\n  An bhfeiceann tú?    Do you see?\n  Nach dtuigeann sé?   Doesn't he understand?\n  Tá a fhios agam go bhfuil sé ann.  I know he is there.\n\nThe change between independent and dependent varies by tense and verb:\n\nVerb BÍ:\n  Present:  tá (indep.) / bhfuil (dep.)\n    Tá sé. / Ní bhfuil sé. / An bhfuil sé?\n  Past:     bhí (indep.) / raibh (dep.)\n    Bhí sé. / Ní raibh sé. / An raibh sé?\n  Future:   beidh (indep.) / mbeidh (dep.)\n    Beidh sé. / Ní bheidh sé. / An mbeidh sé?\n  Habitual: bíonn (indep.) / mbíonn (dep.)\n\nRegular verbs — most tenses:\n  Present:  same form, but particles trigger lenition/eclipsis on initial consonant\n    ólann sé → ní ólann / an ólann? / nach n-ólann?\n  Past:     independent has lenition + d'; dependent keeps lenition:\n    d'ól sé (indep.) → níor ól / ar ól? / nár ól?\n    Note: past dependent uses níor/ar/nár (not ní/an/nach)\n  Future:   -faidh/-fidh (indep.) → eclipsis in dependent:\n    ólfaidh → ní ólfaidh / an ólfaidh? (less change here)\n\nIrregular verb dependent forms (distinct stems):\n  feic:   chonaic (past indep.) → bhfaca (dep.) — An bhfaca tú?\n  abair:  dúirt (past indep.) → ndúirt (dep.) — Ní dúirt / Ar dúirt?\n  faigh:  fuair (past indep.) → bhfuair (dep.) — An bhfuair tú?\n  téigh:  chuaigh (past indep.) → ndeachaigh (dep.) — An ndeachaigh?\n  tar:    tháinig (past indep.) → dtáinig (dep.) — An dtáinig?\n  beir:   rug (past indep.) → ndearna? (actually: ar rug) — varies\n  tabhair: thug (past indep.) → dtug (dep.) — An dtug?\n  déan:   rinne (past indep.) → ndearna (dep.) — An ndearna tú?\n  ith:    d'ith (past indep.) → ndearna? — ar ith tú? (lenition only)\n\nParticles and their effects:\n  ní / níor   → lenition (present/future: ní; past: níor)\n  an / ar     → eclipsis (present/future: an; past: ar)\n  nach / nár  → eclipsis/lenition (present: nach + eclipsis; past: nár + lenition)\n  go / gur    → eclipsis (present: go; past: gur)\n  a (relative) → lenition (direct) / eclipsis (indirect)\n  má          → lenition\n  mura        → eclipsis\n  sula        → eclipsis",
+    "examples": [
+      {
+        "irish": "Tá sé ann. / Ní bhfuil sé ann.",
+        "english": "He is there. / He is not there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chonaic mé é. / Ní fhaca mé é.",
+        "english": "I saw it. / I didn't see it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuaigh sé. / An ndeachaigh sé?",
+        "english": "He went. / Did he go?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rinne sí é. / Ní dhearna sí é.",
+        "english": "She did it. / She didn't do it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Fuair mé é. / Ní bhfuair mé é.",
+        "english": "I got it. / I didn't get it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tháinig sé. / Nach dtáinig sé?",
+        "english": "He came. / Didn't he come?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dúirt sí. / Níor dhúirt sí.",
+        "english": "She said. / She didn't say.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá a fhios agam go bhfuil sé fíor.",
+        "english": "I know that it is true. (go + dep. form)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Feicim nach dtuigeann tú.",
+        "english": "I see that you don't understand.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ar ith tú do dhinnéar?",
+        "english": "Did you eat your dinner? (ar + past dep.)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The dependent/independent distinction is pervasive — it affects every sentence with a negative, question, or subordinating particle. The most important pairs to master: tá/bhfuil, bhí/raibh, beidh/mbeidh, chonaic/bhfaca, chuaigh/ndeachaigh, rinne/ndearna, fuair/bhfuair, tháinig/dtáinig. These irregular dependent stems must be memorised.",
+    "see_also": [
+      "negation",
+      "question-words",
+      "indirect-speech",
+      "relative-clauses"
+    ]
+  },
+  {
+    "id": "relative-future",
+    "title": "The Relative Future & Autonomous Relative",
+    "category": "verbs",
+    "difficulty": "C1",
+    "tags": [
+      "relative future",
+      "aimsir fháistineach choibhneasta",
+      "relative clause",
+      "autonomous relative",
+      "synthetic forms",
+      "a dhéanfas"
+    ],
+    "summary": "In relative clauses with future or habitual meaning, Irish uses special relative forms — 'a dhéanfas', 'a bheidh', 'a ólas'. These differ from the ordinary future tense forms.",
+    "content": "When a future or habitual verb appears in a relative clause, Irish traditionally uses a special RELATIVE form, distinct from the ordinary future tense.\n\nOrdinary future: ólfaidh sé     he will drink\nRelative future: an fear a ólas  the man who will drink\n\nRelative future formation — 1st conjugation:\n  broad:   -as    ólann → a ólas   (who drinks/will drink)\n  slender: -eas   itheann → a itheas  (who eats)\n\nRelative future formation — 2nd conjugation:\n  ceannaigh → a cheannós\n  éirigh → a éireós\n\nIrregular relative futures:\n  bí:    a bheidh  (who will be) — same as ordinary future\n  déan:  a dhéanfas  (who will do)\n  téigh: a rachfas  (who will go)\n  tar:   a thiocfas  (who will come)\n  abair: a déarfas  (who will say)\n  faigh: a gheobhas  (who will get)\n  feic:  a fheicfeas (who will see)\n\nThe relative future is used:\n1. In subject/object relative clauses with future meaning:\n   an duine a thiocfas    the person who will come\n   an rud a dhéanfas tú  the thing you will do\n   an lá a bheidh muid ann  the day we will be there\n\n2. In proverbs and general truths (habitual relative):\n   An té a bheidh thuas, óltar deoch air; an té a bheidh thíos, buailfear cic air.\n   He who is up gets a drink; he who is down gets a kick.\n\n3. After certain conjunctions with future/habitual reference:\n   nuair a thiocfas sé    when he comes\n   sula n-imeochaidh sé   before he goes\n   más maith leat         if you like (relative of 'is')\n\nNote: In modern spoken Irish, the ordinary future form is frequently used in place of the relative future, especially outside formal/literary contexts. The relative future sounds more formal and is more common in writing, prayers, proverbs, and Munster Irish.",
+    "examples": [
+      {
+        "irish": "An fear a thiocfas ar dtús.",
+        "english": "The man who will come first.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An rud a dhéanfas tú amárach.",
+        "english": "The thing you will do tomorrow.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nuair a thiocfas sé abhaile.",
+        "english": "When he comes home.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An té a bheidh ann.",
+        "english": "The one who will be there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An duine a ólas an iomarca.",
+        "english": "The person who drinks too much.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Gach rud a gheobhas tú.",
+        "english": "Everything you will get.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An lá a rachfas muid go hÉirinn.",
+        "english": "The day we will go to Ireland.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An té a léas é, tuigfidh sé.",
+        "english": "Whoever reads it will understand. (Munster)",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Cibé a déarfas sé.",
+        "english": "Whatever he will say.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Sula n-imeochaidh tú.",
+        "english": "Before you go.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The relative future is one of the markers that distinguishes formal/literary Irish from everyday speech. It is very common in Munster Irish and in traditional texts, prayers, and proverbs. Learners at C1 should be able to recognise and produce it, even if they default to the ordinary future in casual speech.",
+    "see_also": [
+      "relative-clauses",
+      "indirect-relative",
+      "verb-tenses-regular"
+    ]
+  },
+  {
+    "id": "word-formation",
+    "title": "Word Formation: Prefixes & Suffixes",
+    "category": "nouns",
+    "difficulty": "C1",
+    "tags": [
+      "word formation",
+      "prefixes",
+      "suffixes",
+      "derivation",
+      "ath-",
+      "mí-",
+      "ró-",
+      "neamh-",
+      "-acht",
+      "-óir",
+      "-ín"
+    ],
+    "summary": "Irish has a rich system of prefixes and suffixes for forming new words. Knowing these allows you to expand vocabulary systematically and understand unfamiliar words.",
+    "content": "PREFIXES — added to the beginning of a word:\n\nNegating / reversing:\n  mí-    bad, mis-, un-    míshásta (unhappy), míchuí (inappropriate)\n  neamh- non-, un-        neamhspleách (independent), neamhfhoirmiúil (informal)\n  an-    very, intensive  an-mhaith (very good), an-mhór (very big)\n         [note: an- triggers lenition]\n  ró-    too, over-       rómhall (too slow), rómhór (too big)\n\nRepetition / back:\n  ath-   re-, again       athléamh (re-reading), athnuachan (renewal)\n\nFormer / past:\n  iar-   former, ex-      iar-uachtarán (former president), iarchéimí (postgraduate)\n  sean-  old, former      seanfhocal (proverb, lit. old word), seanduine (old person)\n\nHalf / co-:\n  leath- half             leathuair (half hour), leathchéad (fifty, lit. half hundred)\n  comh-  co-, jointly     comhairle (advice/council), comhoibriú (cooperation)\n\nSUFFIXES — added to the end of a word:\n\nNouns from adjectives / verbal roots:\n  -acht  (f.) abstract noun   saoire → saorántacht (citizenship)\n                              Gaeilge → Gaeilgeacht (Irish-speaking area/culture)\n                              flaithiúil → flaithiúlacht (generosity)\n  -as    (m.) abstract noun   líonmhar → líonmharas (abundance)\n\nAgent nouns (person who does X):\n  -óir/-eoir  dochtúir? No — óir is the suffix:\n              múin → múinteoir (teacher)\n              ól → óltóir (drinker)\n              léigh → léitheoir (reader)\n              scríobh → scríbhneoir (writer)\n  -aí/-í      ceolaí (musician), ealaíontóir (artist, from ealaín)\n\nDiminutives (small / affectionate):\n  -ín   cailín (girl, from caile), leabhrán? — mostly lexicalised\n        bádín (little boat), Máirín (little Máire — a name)\n        Pádraigín (nickname/diminutive of Pádraig)\n  -án   gasúrán (little boy), ciotán (left-hander, from ciotach)\n\nPlace / abstract:\n  -lann  place for an activity  leabharlann (library), pictiúrlann (cinema)\n                                ospidéal ← Latin; but bialann (restaurant, from bia+lann)\n  -ach   person from / relating to  Éireannach (Irish person), Francach (French person)\n\nVerb-forming suffix:\n  -aigh/-igh  form verbs from nouns/adjectives:\n              glan (clean, adj.) → glanaigh (to clean)\n              nua (new) → nuaigh? — not all work",
+    "examples": [
+      {
+        "irish": "Tá sé míshásta leis an gcinneadh.",
+        "english": "He is unhappy with the decision. (mí- prefix)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tír neamhspleách.",
+        "english": "An independent country. (neamh- prefix)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé ró-dheacair.",
+        "english": "It is too difficult. (ró- prefix + lenition)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé an-mhaith ar fad.",
+        "english": "It is very good altogether. (an- prefix + lenition)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Athnuachan an chonartha.",
+        "english": "Renewal of the contract. (ath- prefix)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An léitheoir cumasach.",
+        "english": "The capable reader. (-eoir suffix)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An scríbhneoir cáiliúil.",
+        "english": "The famous writer. (-eoir suffix)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Leabharlann na cathrach.",
+        "english": "The city library. (-lann suffix)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bialann mhaith.",
+        "english": "A good restaurant. (bia + lann)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Flaithiúlacht mhór.",
+        "english": "Great generosity. (-acht suffix)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The suffix -acht is extremely productive for abstract nouns and is worth learning as a pattern: any adjective can potentially take -acht to form an abstract noun. The -óir/-eoir suffix is the main agent noun suffix. The prefix an- (very) is ubiquitous in speech but triggers lenition — 'an-mhaith', not 'an-maith'.",
+    "see_also": [
+      "nouns-gender",
+      "noun-plurals",
+      "adjective-agreement"
+    ]
+  },
+  {
+    "id": "genitive-chains",
+    "title": "Genitive Chains & Complex Noun Phrases",
+    "category": "nouns",
+    "difficulty": "C1",
+    "tags": [
+      "genitive",
+      "noun phrase",
+      "genitive chain",
+      "compound noun",
+      "complex NP",
+      "possession"
+    ],
+    "summary": "Irish builds complex noun phrases by chaining genitives. Only the final noun in the chain takes the definite article; the intermediate nouns are in genitive without an article.",
+    "content": "In a genitive chain, one noun modifies another in the genitive case. The rules:\n\n1. Only the LAST element in a chain can take the definite article\n2. Intermediate nouns appear in the genitive without an article\n3. The first noun is in the nominative; each subsequent noun is in the genitive of the preceding one\n\nSimple two-noun genitive:\n  teach an fhir     the man's house\n  (nominative: teach; genitive: an fhir)\n\nThree-noun chain:\n  teach mháthair an fhir     the house of the man's mother\n  (teach = nom; mháthair = gen of máthair; an fhir = gen of fear)\n  Note: máthair has no article — only the final noun gets it\n\nFour-noun chain (formal/written):\n  ceannaire an choiste stiúrtha    chairman of the steering committee\n  (ceannaire = nom; an choiste = gen; stiúrtha = gen of stiúrú)\n\nKey rules:\n  - Masculine genitive singular: usually slenderise final consonant\n    fear → fir;  bord → boird;  Rí → Rí (vowel-final, no change)\n  - Feminine genitive singular: lenition, often -e suffix\n    bean → mná (irreg.);  súil → súla;  léim → léime\n  - Definite genitive: an + lenition (masc.) / na + h- before vowel (fem.)\n    an fhir (the man's);  na mná (the woman's);  na hoíche (of the night)\n  - Indefinite genitive: no article, same lenition/slenderisation\n    teach fir (a man's house)\n  - Verbal noun genitive objects:\n    ag léamh leabhair    reading a book  (leabhair = gen of leabhar)\n    ag ól uisce          drinking water  (uisce = gen of uisce; vowel, no change)\n    ag déanamh oibre     doing work      (oibre = gen of obair)\n\nCompound nouns — the modifying noun goes in genitive:\n  clár ama         timetable    (clár + gen. of am)\n  lá breithe       birthday     (lá + gen. of breith)\n  rang Gaeilge     Irish class  (rang + gen. of Gaeilge)\n  teach ósta       hotel        (teach + gen. of ósta)\n  baile mór        town         (lit. big town — adjective, not genitive)\n  ceol tíre        country music (ceol + gen. of tír)\n  cúrsaí oideachais  educational matters  (cúrsaí + gen. of oideachas)",
+    "examples": [
+      {
+        "irish": "Teach an fhir.",
+        "english": "The man's house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Carr mháthair Sheáin.",
+        "english": "Seán's mother's car. (three-noun chain)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ceannaire an choiste stiúrtha.",
+        "english": "Chairman of the steering committee.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ag léamh leabhair.",
+        "english": "Reading a book. (verbal noun + genitive object)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ag déanamh oibre.",
+        "english": "Doing work.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rang Gaeilge.",
+        "english": "Irish class. (compound noun)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Lá breithe sona duit!",
+        "english": "Happy birthday! (lá + gen. of breith)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Clár ama na scoile.",
+        "english": "The school's timetable. (three-noun chain)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Doras an tí mhóir.",
+        "english": "The door of the big house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ceol tíre na hÉireann.",
+        "english": "The country music of Ireland.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The 'only the last noun gets the article' rule catches learners constantly — 'an teach an fhir' is wrong; it must be 'teach an fhir'. Similarly with verbal nouns: 'ag léamh an leabhair' (reading the book — definite) vs. 'ag léamh leabhair' (reading a book — indefinite genitive). Genitive chains are ubiquitous in formal and written Irish.",
+    "see_also": [
+      "genitive-case",
+      "articles",
+      "noun-plurals",
+      "verbal-noun"
+    ]
+  },
+  {
+    "id": "complex-conjunctions",
+    "title": "Complex Conjunctions: Concessive, Causal & Temporal",
+    "category": "sentence structure",
+    "difficulty": "C1",
+    "tags": [
+      "conjunctions",
+      "concessive",
+      "causal",
+      "cé go",
+      "ó tharla",
+      "d'ainneoin",
+      "os rud é",
+      "nuair",
+      "fad is",
+      "chomh luath agus"
+    ],
+    "summary": "Beyond the basic conjunctions (agus, ach, mar), Irish has a rich set of complex conjunctions for expressing concession, cause, condition, and time. These are essential for expressing nuanced ideas.",
+    "content": "CONCESSIVE — 'although / even though / despite'\n\n  cé go + eclipsis     although (+ present/future)\n  cé gur + lenition    although (+ past)\n  cé go raibh          although (+ past bí)\n  in ainneoin go       despite the fact that\n  d'ainneoin go        despite / notwithstanding\n  fiú agus             even though\n  ach oiread           no more than, not even\n\n  Cé go bhfuil sé deacair, is fiú é.    Although it is difficult, it is worth it.\n  D'ainneoin go raibh sé tuirseach, lean sé air.\n    Despite being tired, he continued.\n\nCAUSAL — 'because / since / given that'\n\n  mar     because (most common, informal)\n  toisc   because, owing to (+ go/gur)\n  ó       since, because (often used for logical reason)\n  ó tharla (go)  since it happened that / given that\n  de bharr go    because of, due to\n  de bhrí go     because, for the reason that (formal)\n  os rud é go    seeing as, given that (formal)\n\n  Ní raibh sé ann mar bhí sé tinn.    He wasn't there because he was sick.\n  Ó tharla go raibh sé ann, labhair mé leis.   Since he was there, I spoke to him.\n  Os rud é go bhfuil sé déanta, lean ar aghaidh.   Since it is done, continue.\n\nTEMPORASL — 'when / while / until / before / after / as soon as'\n\n  nuair a + dep.         when (specific event)\n  fad is / fad a         while, as long as\n  go dtí go              until (+ eclipsis)\n  sula / sara + eclipsis before\n  tar éis do X + VN      after X does/did\n  chomh luath agus       as soon as\n  i ndiaidh do X + VN    after X does/did\n  ón uair go             since (temporal: from the time that)\n\n  Nuair a thiocfaidh sé, abair leis fanacht.\n    When he comes, tell him to wait.\n  Fan go dtí go dtagann sé.    Wait until he comes.\n  Chomh luath agus a tháinig sé, d'imigh sí.\n    As soon as he arrived, she left.\n  Tar éis dó imeacht, bhí ciúnas ann.\n    After he left, there was silence.\n\nCOMPARATIVE / PROPORTIONAL:\n  dá + comparative…, is + comparative…\n  Dá mhéad airgid atá agat, is mó a chaithfidh tú.\n  The more money you have, the more you will spend.",
+    "examples": [
+      {
+        "irish": "Cé go bhfuil sé deacair, is fiú é a fhoghlaim.",
+        "english": "Although it is difficult, it is worth learning.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'ainneoin go raibh sé tuirseach, d'oibrigh sé go dian.",
+        "english": "Despite being tired, he worked hard.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní raibh sé ann mar bhí sé tinn.",
+        "english": "He wasn't there because he was sick.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ó tharla go bhfuil tú anseo, cuidigh liom.",
+        "english": "Since you're here, help me.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Os rud é go bhfuil sé ráite, ná habair a thuilleadh.",
+        "english": "Since it has been said, say no more.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Fan go dtí go dtagann sé abhaile.",
+        "english": "Wait until he comes home.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Fad is a bheidh mé beo.",
+        "english": "As long as I am alive.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chomh luath agus a chonaic sí é, rith sí.",
+        "english": "As soon as she saw him, she ran.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tar éis dó an leabhar a léamh, thit sé ina chodladh.",
+        "english": "After reading the book, he fell asleep.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dá mhéad a chanaim, is fearr a éistim.",
+        "english": "The more I sing, the better I listen.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The 'tar éis do X + verbal noun' construction is very important — it is one of the main ways to express 'after doing something'. The dá...is (the more...the more) construction is a calque of a pan-Celtic pattern. Os rud é go and ó tharla go are formal register markers that signal a careful, educated speaker.",
+    "see_also": [
+      "conditional-sentences",
+      "indirect-speech",
+      "relative-clauses",
+      "habitual-past"
+    ]
   }
 ]
