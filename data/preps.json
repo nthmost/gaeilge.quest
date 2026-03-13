@@ -26,6 +26,15 @@
         {"irish": "Tá Gaeilge aige.", "english": "He knows Irish (lit. Irish is at him)."},
         {"irish": "Tá siad ag caint.", "english": "They are talking."}
       ],
+      "phrases": [
+        {"irish": "ag baile", "english": "at home"},
+        {"irish": "ag an doras", "english": "at the door"},
+        {"irish": "ag an Aifreann", "english": "at Mass"},
+        {"irish": "ag bainis", "english": "at a wedding"},
+        {"irish": "ag obair", "english": "at work / working"},
+        {"irish": "ag dul abhaile", "english": "dying (idiom: going home)"},
+        {"irish": "ag iarraidh abhrais", "english": "attempting the impossible (lit. looking for tow)"}
+      ],
       "forms": {
         "1sg":   {"f": "agam"},
         "2sg":   {"f": "agat"},
@@ -46,6 +55,28 @@
         {"irish": "Tá áthas orm.", "english": "I am happy (happiness is on me)."},
         {"irish": "Tá ocras uirthi.", "english": "She is hungry."},
         {"irish": "Cad atá ort?", "english": "What's wrong with you? / What's on you?"}
+      ],
+      "phrases": [
+        {"irish": "ar meisce", "english": "drunk"},
+        {"irish": "ar seachrán", "english": "astray / lost"},
+        {"irish": "ar a shuaimhneas", "english": "at his ease"},
+        {"irish": "ar fud na tíre", "english": "throughout the country"},
+        {"irish": "ar cairde", "english": "on credit"},
+        {"irish": "ar iasacht", "english": "on loan"},
+        {"irish": "ar aghaidh", "english": "forward / ahead"},
+        {"irish": "ar gcúl", "english": "backwards"},
+        {"irish": "ar deis", "english": "to the right"},
+        {"irish": "ar clé", "english": "to the left"},
+        {"irish": "ar crith", "english": "trembling / shaking"},
+        {"irish": "ar crochadh", "english": "hanging"},
+        {"irish": "ar díol", "english": "for sale / on sale"},
+        {"irish": "ar maidin", "english": "in the morning"},
+        {"irish": "ar cuairt", "english": "on a visit"},
+        {"irish": "ar eagla", "english": "for fear (of)"},
+        {"irish": "ar fad", "english": "entirely / altogether"},
+        {"irish": "ar son", "english": "for the sake of"},
+        {"irish": "ar a fheabhas", "english": "excellent / at its best"},
+        {"irish": "ar oilithreacht", "english": "on a pilgrimage"}
       ],
       "forms": {
         "1sg":   {"f": "orm"},
@@ -68,6 +99,15 @@
         {"irish": "Is as Éirinn mé.", "english": "I am from Ireland."},
         {"irish": "Tá sé as obair.", "english": "He is out of work."}
       ],
+      "phrases": [
+        {"irish": "as obair", "english": "out of work / unemployed"},
+        {"irish": "as baile", "english": "away from home"},
+        {"irish": "as a meabhair", "english": "out of her mind / crazy"},
+        {"irish": "as ord", "english": "out of order"},
+        {"irish": "as láimh", "english": "in hand / dealt with"},
+        {"irish": "as radharc", "english": "out of sight"},
+        {"irish": "as béal a chéile", "english": "one after another (lit. out of each other's mouths)"}
+      ],
       "forms": {
         "1sg":   {"f": "asam"},
         "2sg":   {"f": "asat"},
@@ -88,6 +128,13 @@
         {"irish": "Scríobh sí chugam.", "english": "She wrote to me."},
         {"irish": "Téigh chuige.", "english": "Go to him."},
         {"irish": "Seol teachtaireacht chugainn.", "english": "Send a message to us."}
+      ],
+      "phrases": [
+        {"irish": "litir chugat", "english": "a letter to you"},
+        {"irish": "glao chuig duine", "english": "a call to someone"},
+        {"irish": "chuig an dochtúir", "english": "to the doctor"},
+        {"irish": "chuig an gcruinniú", "english": "to the meeting"},
+        {"irish": "tar chuige féin", "english": "come to oneself / recover"}
       ],
       "forms": {
         "1sg":   {"f": "chugam"},
@@ -110,6 +157,20 @@
         {"irish": "De bharr na drochaimsire...", "english": "Because of the bad weather..."},
         {"irish": "Tá sé tuirseach díobh.", "english": "He is tired of them."}
       ],
+      "phrases": [
+        {"irish": "de ghnáth", "english": "usually / as a rule"},
+        {"irish": "de bharr", "english": "because of / as a result of"},
+        {"irish": "de réir", "english": "according to"},
+        {"irish": "de bhrí", "english": "by reason of / because"},
+        {"irish": "de dhíobháil", "english": "for lack of / through want of"},
+        {"irish": "de dheoin nó d'ainneoin", "english": "willingly or unwillingly"},
+        {"irish": "de ghlór ard", "english": "in a loud voice"},
+        {"irish": "de léim", "english": "with a jump / leaping"},
+        {"irish": "de do thoil féin", "english": "of your own free will"},
+        {"irish": "den duine an t-éadach", "english": "clothes make the man"},
+        {"irish": "scoir de", "english": "stop (doing something) / give up"},
+        {"irish": "buíoch de", "english": "grateful to / thankful for"}
+      ],
       "forms": {
         "1sg":   {"f": "díom"},
         "2sg":   {"f": "díot"},
@@ -130,6 +191,16 @@
         {"irish": "Thug mé leabhar dó.", "english": "I gave a book to him."},
         {"irish": "Cad is ainm duit?", "english": "What is your name? (lit. What is a name to you?)"},
         {"irish": "Rinne sí gar dúinn.", "english": "She did us a favour."}
+      ],
+      "phrases": [
+        {"irish": "aire a thabhairt do", "english": "to take care of / to mind"},
+        {"irish": "b'éigean dó", "english": "he had to / he was forced to"},
+        {"irish": "is maith duit é", "english": "it serves you right"},
+        {"irish": "is méanar dóibh", "english": "happy are they / lucky them"},
+        {"irish": "oíche mhaith duit", "english": "good night (to you)"},
+        {"irish": "ní foláir dom", "english": "I must / I need to"},
+        {"irish": "maith dom", "english": "forgive me"},
+        {"irish": "gar a dhéanamh do dhuine", "english": "to do someone a favour"}
       ],
       "forms": {
         "1sg":   {"f": "dom"},
@@ -152,6 +223,21 @@
         {"irish": "Labhair siad fúithi.", "english": "They spoke about her."},
         {"irish": "Cad atá fút?", "english": "What are you planning? (lit. What is under you?)"}
       ],
+      "phrases": [
+        {"irish": "faoi smacht", "english": "under control"},
+        {"irish": "faoi bhrón", "english": "sorrowful / in grief"},
+        {"irish": "faoi áthas", "english": "joyful / delighted"},
+        {"irish": "faoi imní", "english": "anxious / worried"},
+        {"irish": "faoi árachas", "english": "insured"},
+        {"irish": "faoi arm", "english": "under arms / armed"},
+        {"irish": "faoi bhéal an aeir", "english": "in the open air"},
+        {"irish": "faoi cheann seachtaine", "english": "within a week / in a week's time"},
+        {"irish": "faoi deara", "english": "noticed (tabhair faoi deara = notice/observe)"},
+        {"irish": "tabhair faoi", "english": "tackle / undertake / have a go at"},
+        {"irish": "bain faoi", "english": "settle down / stay put"},
+        {"irish": "faoi dheireadh", "english": "at last / finally"},
+        {"irish": "faoi lán seoil", "english": "in full sail / at full speed"}
+      ],
       "forms": {
         "1sg":   {"f": "fúm"},
         "2sg":   {"f": "fút"},
@@ -172,6 +258,22 @@
         {"irish": "Tá mé i mo chónaí i mBaile Átha Cliath.", "english": "I live in Dublin."},
         {"irish": "An bhfuil aon airgead ionat?", "english": "Do you have any money? (lit. Is there money in you?)"},
         {"irish": "Tá sé ann.", "english": "It/he is there (lit. is in it)."}
+      ],
+      "phrases": [
+        {"irish": "i bhfiacha", "english": "in debt"},
+        {"irish": "i ngrá le", "english": "in love with"},
+        {"irish": "i gcumhacht", "english": "in power"},
+        {"irish": "i bpian", "english": "in pain"},
+        {"irish": "i mbrón", "english": "in sorrow"},
+        {"irish": "i bhfaiteadh na súl", "english": "in the twinkling of an eye"},
+        {"irish": "i gcogar", "english": "in a whisper"},
+        {"irish": "i bhfeabhas", "english": "improving / on the mend"},
+        {"irish": "i mí na Bealtaine", "english": "in the month of May"},
+        {"irish": "i gceann seachtaine", "english": "in a week's time"},
+        {"irish": "i bhfoirm leabhair", "english": "in book form"},
+        {"irish": "i mo shuí", "english": "sitting (lit. in my sitting)"},
+        {"irish": "in ann", "english": "able to / capable of"},
+        {"irish": "i gceart", "english": "properly / correctly / in order"}
       ],
       "forms": {
         "1sg":   {"f": "ionam"},
@@ -194,6 +296,13 @@
         {"irish": "Idir dheartháireacha agus deirfiúracha.", "english": "Both brothers and sisters."},
         {"irish": "Socraigh siad é eatarthu féin.", "english": "They settled it among themselves."}
       ],
+      "phrases": [
+        {"irish": "idir X agus Y", "english": "both X and Y"},
+        {"irish": "idir dhá chomhairle", "english": "of two minds / undecided"},
+        {"irish": "idir dhá thine Bhealtaine", "english": "between the devil and the deep blue sea (lit. between two Bealtaine fires)"},
+        {"irish": "idir mhaith agus olc", "english": "for better or worse"},
+        {"irish": "ná habair é eatarthu", "english": "don't mention it between you (keep it secret)"}
+      ],
       "forms": {
         "1sg":   null,
         "2sg":   null,
@@ -214,6 +323,23 @@
         {"irish": "Is maith liom caife.", "english": "I like coffee (lit. coffee is good with me)."},
         {"irish": "Tá sí pósta leis.", "english": "She is married to him."},
         {"irish": "Scríobhann sé leis an gceann eile.", "english": "He writes with the other one."}
+      ],
+      "phrases": [
+        {"irish": "le do chead", "english": "with your permission"},
+        {"irish": "le do thoil", "english": "please (if you please)"},
+        {"irish": "is dóigh liom", "english": "I think / I am of the opinion"},
+        {"irish": "is maith liom", "english": "I like"},
+        {"irish": "ní maith liom", "english": "I don't like"},
+        {"irish": "is cuma liom", "english": "I don't mind / it's all the same to me"},
+        {"irish": "tá an lá leat", "english": "you've won the day"},
+        {"irish": "bhí an t-ádh leis", "english": "he was lucky"},
+        {"irish": "tá liom", "english": "I have succeeded"},
+        {"irish": "dul le báiní", "english": "to go berserk / lose the head"},
+        {"irish": "dul le léann", "english": "to take to learning / pursue scholarship"},
+        {"irish": "Dia linn!", "english": "God bless us! / Lord save us!"},
+        {"irish": "le saol na saol", "english": "for ever and ever"},
+        {"irish": "le fada", "english": "for a long time"},
+        {"irish": "in ann le", "english": "able for / able to handle"}
       ],
       "forms": {
         "1sg":   {"f": "liom"},
@@ -236,6 +362,19 @@
         {"irish": "Ó Luan go hAoine.", "english": "From Monday to Friday."},
         {"irish": "Tá sí anseo ó mhaidin.", "english": "She's been here since morning."}
       ],
+      "phrases": [
+        {"irish": "ó shin", "english": "since then / from then on"},
+        {"irish": "ó thús go deireadh", "english": "from beginning to end"},
+        {"irish": "ó bhun go barr", "english": "from top to bottom"},
+        {"irish": "ó áit go háit", "english": "from place to place"},
+        {"irish": "ó thús aimsire", "english": "from the beginning of time"},
+        {"irish": "ó mhaidin", "english": "since morning"},
+        {"irish": "bheith ó bhaol", "english": "to be out of danger / safe"},
+        {"irish": "airím uaim é", "english": "I miss him"},
+        {"irish": "cad tá uait?", "english": "what do you want?"},
+        {"irish": "ní lig uait é", "english": "don't let it go / hold on to it"},
+        {"irish": "ó Dhia", "english": "from God / God-given"}
+      ],
       "forms": {
         "1sg":   {"f": "uaim"},
         "2sg":   {"f": "uait"},
@@ -257,6 +396,18 @@
         {"irish": "Tá saol fada roimhe.", "english": "He has a long life ahead of him."},
         {"irish": "Fáilte romhaibh!", "english": "Welcome (to you all)!"}
       ],
+      "phrases": [
+        {"irish": "fáilte romhat", "english": "you are welcome"},
+        {"irish": "fáiltiú roimh dhuine", "english": "to welcome someone"},
+        {"irish": "roimh an Nollaig", "english": "before Christmas"},
+        {"irish": "roimh éirí ar maidin", "english": "before getting up in the morning"},
+        {"irish": "amharc romhat", "english": "look ahead / look to the future"},
+        {"irish": "chuir mé romham", "english": "I made up my mind / I resolved"},
+        {"irish": "eagla roimh rud", "english": "fear of something"},
+        {"irish": "san am atá romhainn", "english": "in time to come / in the future"},
+        {"irish": "téigh romhat", "english": "go ahead / go on"},
+        {"irish": "bí romham", "english": "be there to meet me"}
+      ],
       "forms": {
         "1sg":   {"f": "romham"},
         "2sg":   {"f": "romhat"},
@@ -275,8 +426,17 @@
       "notes": "Indicates movement past or beyond something. Also used in 'thar barr' (excellent, outstanding). Triggers lenition.",
       "usage": [
         {"irish": "Chuaigh sí thairis.", "english": "She went past him / past it."},
-        {"irish": "Léim sé thar an gclai.", "english": "He jumped over the fence."},
+        {"irish": "Léim sé thar an gclaí.", "english": "He jumped over the fence."},
         {"irish": "Tá sé thar barr.", "english": "It is outstanding / excellent."}
+      ],
+      "phrases": [
+        {"irish": "thar barr", "english": "outstanding / excellent / superb"},
+        {"irish": "thar lear", "english": "abroad / overseas"},
+        {"irish": "thar teorainn", "english": "across the border / beyond the border"},
+        {"irish": "thar a bheith", "english": "extremely / exceedingly"},
+        {"irish": "dul thar fóir", "english": "to go too far / to exceed bounds"},
+        {"irish": "thar n-ais", "english": "back / returning"},
+        {"irish": "dul thairis", "english": "to pass it / let it go / miss the mark"}
       ],
       "forms": {
         "1sg":   {"f": "tharam"},
@@ -299,6 +459,14 @@
         {"irish": "Trí Éirinn ar fad.", "english": "Throughout all of Ireland."},
         {"irish": "Chuaigh sé tríthi.", "english": "He went through her / it (fem)."}
       ],
+      "phrases": [
+        {"irish": "trí thine", "english": "on fire / ablaze"},
+        {"irish": "trí chéile", "english": "confused / in a mess / mixed up"},
+        {"irish": "trína chéile", "english": "in disarray / upset / muddled"},
+        {"irish": "trí huaire", "english": "three times"},
+        {"irish": "dul trí dheacracht", "english": "to go through difficulty"},
+        {"irish": "trí sholas", "english": "through the light / by the light of"}
+      ],
       "forms": {
         "1sg":   {"f": "tríom"},
         "2sg":   {"f": "tríot"},
@@ -319,6 +487,14 @@
         {"irish": "Um Cháisc.", "english": "Around Easter / At Easter."},
         {"irish": "Bhí sé uime.", "english": "He had it around him / He was wearing it."},
         {"irish": "Um an dtaca sin.", "english": "Around that time."}
+      ],
+      "phrases": [
+        {"irish": "um Nollaig", "english": "around Christmas / at Christmas"},
+        {"irish": "um Cháisc", "english": "around Easter / at Easter"},
+        {"irish": "um an dtaca sin", "english": "around that time / by then"},
+        {"irish": "um thráthnóna", "english": "in the evening / towards evening"},
+        {"irish": "um meán lae", "english": "around midday"},
+        {"irish": "um dheireadh", "english": "towards the end / eventually"}
       ],
       "forms": {
         "1sg":   {"f": "umam"},

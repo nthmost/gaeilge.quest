@@ -404,6 +404,10 @@
   display: block;
 }
 
+.phrases-irish {
+  font-weight: 500;
+}
+
 .matrix-table {
   font-size: 0.82rem;
 }

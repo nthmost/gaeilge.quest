@@ -46,6 +46,22 @@ function usageBlock(prep) {
   `;
 }
 
+function phrasesBlock(prep) {
+  if (!prep.phrases?.length) return '';
+  const rows = prep.phrases.map(p => `
+    <tr class="usage-row">
+      <td class="usage-irish phrases-irish">${linkedForm(p.irish)}</td>
+      <td class="usage-english">${esc(p.english)}</td>
+    </tr>
+  `).join('');
+  return `
+    <div class="usage-section-title" style="margin-top:1.5rem">Common phrases</div>
+    <table class="usage-table">
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
 // ── Sidebar ────────────────────────────────────────────────────────────────
 
 function renderSidebar() {
@@ -148,6 +164,7 @@ function renderByPrep() {
       <div class="usage-section-title">Usage examples</div>
       ${usageBlock(prep)}
     ` : ''}
+    ${phrasesBlock(prep)}
   `;
 }
 
