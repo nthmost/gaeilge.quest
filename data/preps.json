@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "groups": [
+      {"id": "core",  "label": "Core Prepositions"},
+      {"id": "other", "label": "Other Prepositions"}
+    ],
+    "persons": [
+      {"id": "1sg",    "pronoun": "mé",   "english": "I / me"},
+      {"id": "2sg",    "pronoun": "tú",   "english": "you (sg)"},
+      {"id": "3sg_m",  "pronoun": "sé",   "english": "he / him"},
+      {"id": "3sg_f",  "pronoun": "sí",   "english": "she / her"},
+      {"id": "1pl",    "pronoun": "muid", "english": "we / us"},
+      {"id": "2pl",    "pronoun": "sibh", "english": "you (pl)"},
+      {"id": "3pl",    "pronoun": "siad", "english": "they / them"}
+    ]
+  },
+  "prepositions": [
+    {
+      "id": "ag",
+      "irish": "ag",
+      "english": "at; in possession of",
+      "group": "core",
+      "notes": "Core preposition for possession: 'tá X ag Y' = Y has X (lit. X is at Y). Also used with verbal nouns to form the progressive: 'tá mé ag ól' = I am drinking.",
+      "usage": [
+        {"irish": "Tá leabhar agam.", "english": "I have a book."},
+        {"irish": "Tá Gaeilge aige.", "english": "He knows Irish (lit. Irish is at him)."},
+        {"irish": "Tá siad ag caint.", "english": "They are talking."}
+      ],
+      "forms": {
+        "1sg":   {"f": "agam"},
+        "2sg":   {"f": "agat"},
+        "3sg_m": {"f": "aige"},
+        "3sg_f": {"f": "aici"},
+        "1pl":   {"f": "againn"},
+        "2pl":   {"f": "agaibh"},
+        "3pl":   {"f": "acu"}
+      }
+    },
+    {
+      "id": "ar",
+      "irish": "ar",
+      "english": "on; on top of; about (emotions)",
+      "group": "core",
+      "notes": "Very common. Used for emotions and states: 'tá áthas orm' = I am happy (lit. happiness is on me). Triggers lenition on following noun.",
+      "usage": [
+        {"irish": "Tá áthas orm.", "english": "I am happy (happiness is on me)."},
+        {"irish": "Tá ocras uirthi.", "english": "She is hungry."},
+        {"irish": "Cad atá ort?", "english": "What's wrong with you? / What's on you?"}
+      ],
+      "forms": {
+        "1sg":   {"f": "orm"},
+        "2sg":   {"f": "ort"},
+        "3sg_m": {"f": "air"},
+        "3sg_f": {"f": "uirthi"},
+        "1pl":   {"f": "orainn"},
+        "2pl":   {"f": "oraibh"},
+        "3pl":   {"f": "orthu"}
+      }
+    },
+    {
+      "id": "as",
+      "irish": "as",
+      "english": "out of; from (origin)",
+      "group": "core",
+      "notes": "Used for coming out of or originating from a place. 'As' can also indicate the material something is made from.",
+      "usage": [
+        {"irish": "Tháinig sé as Corcaigh.", "english": "He came from Cork."},
+        {"irish": "Is as Éirinn mé.", "english": "I am from Ireland."},
+        {"irish": "Tá sé as obair.", "english": "He is out of work."}
+      ],
+      "forms": {
+        "1sg":   {"f": "asam"},
+        "2sg":   {"f": "asat"},
+        "3sg_m": {"f": "as"},
+        "3sg_f": {"f": "aisti"},
+        "1pl":   {"f": "asainn"},
+        "2pl":   {"f": "asaibh"},
+        "3pl":   {"f": "astu"}
+      }
+    },
+    {
+      "id": "chuig",
+      "irish": "chuig",
+      "english": "to; towards (a person)",
+      "group": "core",
+      "notes": "Used specifically for direction towards a person (as opposed to 'go' for places). Also used with letters, messages: 'litir chugam' = a letter to me.",
+      "usage": [
+        {"irish": "Scríobh sí chugam.", "english": "She wrote to me."},
+        {"irish": "Téigh chuige.", "english": "Go to him."},
+        {"irish": "Seol teachtaireacht chugainn.", "english": "Send a message to us."}
+      ],
+      "forms": {
+        "1sg":   {"f": "chugam"},
+        "2sg":   {"f": "chugat"},
+        "3sg_m": {"f": "chuige"},
+        "3sg_f": {"f": "chuici"},
+        "1pl":   {"f": "chugainn"},
+        "2pl":   {"f": "chugaibh"},
+        "3pl":   {"f": "chucu"}
+      }
+    },
+    {
+      "id": "de",
+      "irish": "de",
+      "english": "of; from; off",
+      "group": "core",
+      "notes": "Indicates separation, removal, or material/composition. Often found in compound prepositions (de bharr, de réir). Contracts with 'an' → 'den'. Note: 3sg_m and 3sg_f forms are identical to the uninflected preposition.",
+      "usage": [
+        {"irish": "Thit sé den chathaoir.", "english": "He fell off the chair."},
+        {"irish": "De bharr na drochaimsire...", "english": "Because of the bad weather..."},
+        {"irish": "Tá sé tuirseach díobh.", "english": "He is tired of them."}
+      ],
+      "forms": {
+        "1sg":   {"f": "díom"},
+        "2sg":   {"f": "díot"},
+        "3sg_m": {"f": "de"},
+        "3sg_f": {"f": "di"},
+        "1pl":   {"f": "dínn"},
+        "2pl":   {"f": "díbh"},
+        "3pl":   {"f": "díobh"}
+      }
+    },
+    {
+      "id": "do",
+      "irish": "do",
+      "english": "to; for (beneficiary)",
+      "group": "core",
+      "notes": "Indicates the indirect object / beneficiary. Contracts with 'an' → 'don'. Note: 3sg_f is same as de 3sg_f ('di'). In speech, do and de are often distinguished only by the form taken.",
+      "usage": [
+        {"irish": "Thug mé leabhar dó.", "english": "I gave a book to him."},
+        {"irish": "Cad is ainm duit?", "english": "What is your name? (lit. What is a name to you?)"},
+        {"irish": "Rinne sí gar dúinn.", "english": "She did us a favour."}
+      ],
+      "forms": {
+        "1sg":   {"f": "dom"},
+        "2sg":   {"f": "duit"},
+        "3sg_m": {"f": "dó"},
+        "3sg_f": {"f": "di"},
+        "1pl":   {"f": "dúinn"},
+        "2pl":   {"f": "dúibh"},
+        "3pl":   {"f": "dóibh"}
+      }
+    },
+    {
+      "id": "faoi",
+      "irish": "faoi",
+      "english": "under; about; concerning",
+      "group": "core",
+      "notes": "Means both 'under' (physical) and 'about/concerning' (topic). Also used with some set expressions for states: 'faoi deara' = noticed.",
+      "usage": [
+        {"irish": "Tá sé fúm.", "english": "It is under me. / It is up to me."},
+        {"irish": "Labhair siad fúithi.", "english": "They spoke about her."},
+        {"irish": "Cad atá fút?", "english": "What are you planning? (lit. What is under you?)"}
+      ],
+      "forms": {
+        "1sg":   {"f": "fúm"},
+        "2sg":   {"f": "fút"},
+        "3sg_m": {"f": "faoi"},
+        "3sg_f": {"f": "fúithi"},
+        "1pl":   {"f": "fúinn"},
+        "2pl":   {"f": "fúibh"},
+        "3pl":   {"f": "fúthu"}
+      }
+    },
+    {
+      "id": "i",
+      "irish": "i / in",
+      "english": "in",
+      "group": "core",
+      "notes": "Basic locative preposition. 'i' before consonants, 'in' before vowels. Causes eclipsis. The inflected forms use 'ion-' stem. 3sg_m form 'ann' is irregular.",
+      "usage": [
+        {"irish": "Tá mé i mo chónaí i mBaile Átha Cliath.", "english": "I live in Dublin."},
+        {"irish": "An bhfuil aon airgead ionat?", "english": "Do you have any money? (lit. Is there money in you?)"},
+        {"irish": "Tá sé ann.", "english": "It/he is there (lit. is in it)."}
+      ],
+      "forms": {
+        "1sg":   {"f": "ionam"},
+        "2sg":   {"f": "ionat"},
+        "3sg_m": {"f": "ann"},
+        "3sg_f": {"f": "inti"},
+        "1pl":   {"f": "ionainn"},
+        "2pl":   {"f": "ionaibh"},
+        "3pl":   {"f": "iontu"}
+      }
+    },
+    {
+      "id": "idir",
+      "irish": "idir",
+      "english": "between; both",
+      "group": "other",
+      "notes": "Unique preposition: has no 1sg/2sg/3sg inflected forms (you cannot be 'between' a single entity). The plural forms cover 'between us/you/them'. Also used with 'agus' for 'both X and Y': 'idir X agus Y'.",
+      "usage": [
+        {"irish": "Roinneamar é eadrainn.", "english": "We shared it between us."},
+        {"irish": "Idir dheartháireacha agus deirfiúracha.", "english": "Both brothers and sisters."},
+        {"irish": "Socraigh siad é eatarthu féin.", "english": "They settled it among themselves."}
+      ],
+      "forms": {
+        "1sg":   null,
+        "2sg":   null,
+        "3sg_m": null,
+        "3sg_f": null,
+        "1pl":   {"f": "eadrainn"},
+        "2pl":   {"f": "eadraibh"},
+        "3pl":   {"f": "eatarthu"}
+      }
+    },
+    {
+      "id": "le",
+      "irish": "le",
+      "english": "with; by (agent); for (duration)",
+      "group": "core",
+      "notes": "Highly versatile. Indicates accompaniment, agency in passive-type constructions, purpose, and duration. 'Le' + time = for that duration. Also used to express liking: 'is maith liom' = I like.",
+      "usage": [
+        {"irish": "Is maith liom caife.", "english": "I like coffee (lit. coffee is good with me)."},
+        {"irish": "Tá sí pósta leis.", "english": "She is married to him."},
+        {"irish": "Scríobhann sé leis an gceann eile.", "english": "He writes with the other one."}
+      ],
+      "forms": {
+        "1sg":   {"f": "liom"},
+        "2sg":   {"f": "leat"},
+        "3sg_m": {"f": "leis"},
+        "3sg_f": {"f": "léi"},
+        "1pl":   {"f": "linn"},
+        "2pl":   {"f": "libh"},
+        "3pl":   {"f": "leo"}
+      }
+    },
+    {
+      "id": "o",
+      "irish": "ó",
+      "english": "from; since (time)",
+      "group": "core",
+      "notes": "Indicates origin or starting point in space or time. 'Ó shin' = since then. Often paired with 'go' to indicate a range: 'ó X go Y' = from X to Y.",
+      "usage": [
+        {"irish": "Chuala mé uaidh inné.", "english": "I heard from him yesterday."},
+        {"irish": "Ó Luan go hAoine.", "english": "From Monday to Friday."},
+        {"irish": "Tá sí anseo ó mhaidin.", "english": "She's been here since morning."}
+      ],
+      "forms": {
+        "1sg":   {"f": "uaim"},
+        "2sg":   {"f": "uait"},
+        "3sg_m": {"f": "uaidh"},
+        "3sg_f": {"f": "uaithi"},
+        "1pl":   {"f": "uainn"},
+        "2pl":   {"f": "uaibh"},
+        "3pl":   {"f": "uathu"}
+      }
+    },
+    {
+      "id": "roimh",
+      "irish": "roimh",
+      "english": "before; in front of; ahead of",
+      "group": "other",
+      "notes": "Indicates position before something in space or time. Also used for facing/confronting. Triggers lenition.",
+      "usage": [
+        {"irish": "Bhí sí romham ag an gcomhrá.", "english": "She was before me at the meeting."},
+        {"irish": "Tá saol fada roimhe.", "english": "He has a long life ahead of him."},
+        {"irish": "Fáilte romhaibh!", "english": "Welcome (to you all)!"}
+      ],
+      "forms": {
+        "1sg":   {"f": "romham"},
+        "2sg":   {"f": "romhat"},
+        "3sg_m": {"f": "roimhe"},
+        "3sg_f": {"f": "roimpi"},
+        "1pl":   {"f": "romhainn"},
+        "2pl":   {"f": "romhaibh"},
+        "3pl":   {"f": "rompu"}
+      }
+    },
+    {
+      "id": "thar",
+      "irish": "thar",
+      "english": "past; over; beyond; across",
+      "group": "other",
+      "notes": "Indicates movement past or beyond something. Also used in 'thar barr' (excellent, outstanding). Triggers lenition.",
+      "usage": [
+        {"irish": "Chuaigh sí thairis.", "english": "She went past him / past it."},
+        {"irish": "Léim sé thar an gclai.", "english": "He jumped over the fence."},
+        {"irish": "Tá sé thar barr.", "english": "It is outstanding / excellent."}
+      ],
+      "forms": {
+        "1sg":   {"f": "tharam"},
+        "2sg":   {"f": "tharat"},
+        "3sg_m": {"f": "thairis"},
+        "3sg_f": {"f": "thairsti"},
+        "1pl":   {"f": "tharainn"},
+        "2pl":   {"f": "tharaibh"},
+        "3pl":   {"f": "tharstu"}
+      }
+    },
+    {
+      "id": "tri",
+      "irish": "trí",
+      "english": "through; throughout",
+      "group": "other",
+      "notes": "Indicates movement through something. Also used for 'throughout' a time period. Triggers eclipsis.",
+      "usage": [
+        {"irish": "Shiúil sé tríd.", "english": "He walked through it."},
+        {"irish": "Trí Éirinn ar fad.", "english": "Throughout all of Ireland."},
+        {"irish": "Chuaigh sé tríthi.", "english": "He went through her / it (fem)."}
+      ],
+      "forms": {
+        "1sg":   {"f": "tríom"},
+        "2sg":   {"f": "tríot"},
+        "3sg_m": {"f": "tríd"},
+        "3sg_f": {"f": "tríthi"},
+        "1pl":   {"f": "trínn"},
+        "2pl":   {"f": "tríbh"},
+        "3pl":   {"f": "tríothu"}
+      }
+    },
+    {
+      "id": "um",
+      "irish": "um",
+      "english": "around; about (time); at (festivals)",
+      "group": "other",
+      "notes": "Mainly used in time expressions: 'um Nollaig' = around Christmas, 'um an am sin' = around that time. Triggers lenition. Less common in everyday speech but important in set phrases.",
+      "usage": [
+        {"irish": "Um Cháisc.", "english": "Around Easter / At Easter."},
+        {"irish": "Bhí sé uime.", "english": "He had it around him / He was wearing it."},
+        {"irish": "Um an dtaca sin.", "english": "Around that time."}
+      ],
+      "forms": {
+        "1sg":   {"f": "umam"},
+        "2sg":   {"f": "umat"},
+        "3sg_m": {"f": "uime"},
+        "3sg_f": {"f": "uimpi"},
+        "1pl":   {"f": "umainn"},
+        "2pl":   {"f": "umaibh"},
+        "3pl":   {"f": "umpu"}
+      }
+    }
+  ]
+}

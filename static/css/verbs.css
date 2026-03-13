@@ -347,6 +347,71 @@
   color: var(--muted);
 }
 
+/* Prepositions page extras */
+.prep-form-cell {
+  font-size: 1rem;
+}
+
+.usage-section-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.usage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.usage-row td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.usage-row:last-child td { border-bottom: none; }
+
+.usage-irish {
+  font-style: italic;
+  color: var(--green);
+  width: 50%;
+}
+
+.usage-english {
+  color: var(--muted);
+}
+
+.usage-inline-cell {
+  font-size: 0.8rem;
+  color: var(--muted);
+  max-width: 260px;
+}
+
+.usage-first-irish {
+  font-style: italic;
+  color: var(--green);
+  display: block;
+}
+
+.usage-first-english {
+  display: block;
+}
+
+.matrix-table {
+  font-size: 0.82rem;
+}
+
+.matrix-table .prep-form-cell {
+  font-size: 0.85rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .verbs-body {

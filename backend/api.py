@@ -46,6 +46,10 @@ def load_verbs():
     with open(DATA_DIR / "verbs.json") as f:
         return json.load(f)
 
+def load_preps():
+    with open(DATA_DIR / "preps.json") as f:
+        return json.load(f)
+
 
 # ── Routes ────────────────────────────────────────────────────────────────────
 
@@ -59,6 +63,12 @@ def index():
 def verbs():
     verbs_data = load_verbs()
     return render_template("verbs.html", verbs_json=json.dumps(verbs_data))
+
+
+@app.route("/preps")
+def preps():
+    preps_data = load_preps()
+    return render_template("preps.html", preps_json=json.dumps(preps_data))
 
 
 @app.route("/static/<path:filename>")

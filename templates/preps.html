@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irish Verb Conjugations — gaeilge.quest</title>
-  <meta name="description" content="Complete Irish verb conjugation tables for irregular and regular verbs, all tenses, synthetic and analytic forms.">
+  <title>Irish Prepositional Pronouns — gaeilge.quest</title>
+  <meta name="description" content="Complete Irish prepositional pronoun tables — ag, ar, le, do, de, faoi and more, all persons, side-by-side comparison.">
   <link rel="stylesheet" href="/static/css/style.css">
   <link rel="stylesheet" href="/static/css/verbs.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>">
@@ -16,16 +16,16 @@
     <a href="/" class="logo">gaeilge<span>.quest</span></a>
     <nav class="header-nav">
       <a href="/" class="nav-link">Grammar</a>
-      <a href="/verbs" class="nav-link active">Verbs</a>
-      <a href="/preps" class="nav-link">Prepositions</a>
+      <a href="/verbs" class="nav-link">Verbs</a>
+      <a href="/preps" class="nav-link active">Prepositions</a>
     </nav>
   </div>
 </header>
 
 <div class="verbs-body">
-  <!-- Sidebar: verb groups + verb list -->
+  <!-- Sidebar -->
   <aside class="verbs-sidebar">
-    <div id="verb-groups">
+    <div id="prep-groups">
       <!-- populated by JS -->
     </div>
   </aside>
@@ -33,44 +33,42 @@
   <!-- Main content -->
   <main class="verbs-main">
     <div class="verbs-hero">
-      <h1>Irish Verb Conjugations</h1>
-      <p>All tenses, all persons. Spoken (synthetic) forms shown by default.</p>
+      <h1>Prepositional Pronouns</h1>
+      <p>In Irish, prepositions inflect for person. These fused forms — <em>liom, leat, leis, léi…</em> — are essential everyday vocabulary.</p>
     </div>
 
     <!-- Controls -->
     <div class="verbs-controls">
-      <!-- Mode toggle -->
       <div class="control-group">
         <span class="control-label">View</span>
         <div class="mode-toggle">
-          <button class="mode-btn active" id="mode-by-verb" data-mode="verb">By Verb</button>
-          <button class="mode-btn" id="mode-by-tense" data-mode="tense">By Tense</button>
+          <button class="mode-btn active" data-mode="prep">By Preposition</button>
+          <button class="mode-btn" data-mode="person">By Person</button>
+          <button class="mode-btn" data-mode="matrix">Full Matrix</button>
         </div>
       </div>
 
-      <!-- Tense toggles -->
-      <div class="control-group">
-        <span class="control-label">Tenses</span>
-        <div class="tense-toggles" id="tense-toggles">
+      <div class="control-group" id="person-picker-group" style="display:none">
+        <span class="control-label">Person</span>
+        <div class="tense-toggles" id="person-picker">
           <!-- populated by JS -->
         </div>
       </div>
 
-      <!-- Form toggle -->
       <div class="control-group">
-        <span class="control-label">Forms</span>
+        <span class="control-label">Examples</span>
         <div class="form-toggle">
           <label class="toggle-switch">
-            <input type="checkbox" id="show-analytic">
+            <input type="checkbox" id="show-usage" checked>
             <span class="toggle-slider"></span>
           </label>
-          <span class="toggle-label">Show standard/analytic</span>
+          <span class="toggle-label">Show usage examples</span>
         </div>
       </div>
     </div>
 
     <!-- Table container -->
-    <div id="verb-table-container">
+    <div id="prep-table-container">
       <!-- populated by JS -->
     </div>
   </main>
@@ -85,7 +83,7 @@
   </p>
 </footer>
 
-<script>window.__VERBS__ = {{ verbs_json | safe }};</script>
-<script src="/static/js/verbs.js" defer></script>
+<script>window.__PREPS__ = {{ preps_json | safe }};</script>
+<script src="/static/js/preps.js" defer></script>
 </body>
 </html>
