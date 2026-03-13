@@ -414,9 +414,12 @@ header {
   letter-spacing: 0.3px;
 }
 
-.diff-beginner     { background: #d4edda; color: #155724; }
-.diff-intermediate { background: #fff3cd; color: #856404; }
-.diff-advanced     { background: #f8d7da; color: #721c24; }
+.diff-A1 { background: #d4edda; color: #155724; }
+.diff-A2 { background: #c3e6cb; color: #0f4620; }
+.diff-B1 { background: #fff3cd; color: #856404; }
+.diff-B2 { background: #fde5c8; color: #7a3500; }
+.diff-C1 { background: #f8d7da; color: #721c24; }
+.diff-C2 { background: #e8c0c4; color: #4a0010; }
 
 /* Card title row (title + diff badge together) */
 .card-title-row {
