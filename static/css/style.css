@@ -93,15 +93,19 @@ header {
 .nav-dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 6px);
+  top: 100%;
   left: 0;
+  padding-top: 8px;
+  z-index: 200;
+  min-width: 150px;
+}
+
+.nav-dropdown-inner {
   background: var(--dark);
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: var(--radius);
-  min-width: 150px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
   overflow: hidden;
-  z-index: 200;
 }
 
 .nav-item:hover .nav-dropdown-menu,
