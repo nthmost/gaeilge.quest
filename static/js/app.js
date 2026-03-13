@@ -12,9 +12,14 @@ async function loadConstructions() {
     const resp = await fetch('/data/constructions.json');
     constructions = await resp.json();
   }
+
+  // Pre-filter from URL param e.g. /?cat=verbs
+  const catParam = new URLSearchParams(window.location.search).get('cat');
+  if (catParam) activeCategory = catParam;
+
   renderCategories();
   renderDialectFilter();
-  renderConstructions(constructions);
+  applyFilters();
 }
 
 function renderCategories() {
