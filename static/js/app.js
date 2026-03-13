@@ -45,8 +45,8 @@ function renderCategories() {
 }
 
 function renderDifficultyFilter() {
-  const levels = ['all', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-  const labels = { all: 'All levels', A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2', C1: 'C1', C2: 'C2' };
+  const levels = ['all', 'A1', 'A2', 'A2/B1', 'B1', 'B2', 'C1', 'C2'];
+  const labels = { all: 'All levels', A1: 'A1', A2: 'A2', 'A2/B1': 'A2/B1', B1: 'B1', B2: 'B2', C1: 'C1', C2: 'C2' };
   const ul = document.getElementById('difficulty-list');
   ul.innerHTML = levels.map(d => `
     <li><a href="#" class="cat-link ${d === activeDifficulty ? 'active' : ''}" data-diff="${d}">
@@ -135,12 +135,13 @@ const DIALECT_LABELS = {
 };
 
 const DIFFICULTY_LABELS = {
-  'A1': { label: 'A1', cls: 'diff-A1' },
-  'A2': { label: 'A2', cls: 'diff-A2' },
-  'B1': { label: 'B1', cls: 'diff-B1' },
-  'B2': { label: 'B2', cls: 'diff-B2' },
-  'C1': { label: 'C1', cls: 'diff-C1' },
-  'C2': { label: 'C2', cls: 'diff-C2' },
+  'A1':    { label: 'A1',    cls: 'diff-A1' },
+  'A2':    { label: 'A2',    cls: 'diff-A2' },
+  'A2/B1': { label: 'A2/B1', cls: 'diff-A2-B1' },
+  'B1':    { label: 'B1',    cls: 'diff-B1' },
+  'B2':    { label: 'B2',    cls: 'diff-B2' },
+  'C1':    { label: 'C1',    cls: 'diff-C1' },
+  'C2':    { label: 'C2',    cls: 'diff-C2' },
 };
 
 function constructionCard(c) {

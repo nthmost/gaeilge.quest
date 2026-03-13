@@ -894,7 +894,7 @@
     "title": "Regular Verb Conjugation",
     "category": "verbs",
     "subcategory": "conjugation",
-    "difficulty": "B1",
+    "difficulty": "A2/B1",
     "tags": [
       "verbs",
       "tenses",
@@ -1860,6 +1860,202 @@
     "see_also": [
       "adjective-agreement",
       "copula-is"
+    ]
+  },
+  {
+    "id": "habitual-present",
+    "title": "Habitual Present: Bíonn",
+    "category": "verbs",
+    "difficulty": "A2/B1",
+    "tags": [
+      "bíonn",
+      "habitual",
+      "present habitual",
+      "aimsir ghnáthláithreach",
+      "bí"
+    ],
+    "summary": "Bíonn is the habitual/frequentative form of bí — used for repeated actions, general truths, and ongoing states. Distinct from 'tá' which is the simple present.",
+    "content": "Irish distinguishes between a single present state (tá) and habitual/repeated states (bíonn):\n\n  tá mé tuirseach      I am tired (right now)\n  bíonn mé tuirseach   I am (usually/often) tired\n\nForms of bíonn (present habitual of bí):\n  Affirmative:  bíonn (analytic) / bím, bíonn tú, bíonn sé…\n  Negative:     ní bhíonn\n  Question:     an mbíonn?\n  Neg. quest.:  nach mbíonn?\n\nAll regular verbs also have a habitual present — it is the same form as the future tense in the 2nd conjugation, but distinct in the 1st:\n  1st conj.: ólann (present simple) → ólann (also habitual — same form)\n  Note: for bí specifically, the habitual (bíonn) is DIFFERENT from tá.\n\nUses:\n1. Repeated or habitual actions:\n   Bíonn sé anseo gach lá.   He is here every day.\n2. General truths and proverbs:\n   Bíonn siúlach scéalach.   A traveller has stories. (proverb)\n3. Scheduled or regular events:\n   Bíonn an margadh ann ar an Satharn.   The market is there on Saturdays.\n4. After 'nuair' (when) for repeated situations:\n   Nuair a bhíonn mé tuirseach, codlaím.   When I am tired, I sleep.",
+    "examples": [
+      {
+        "irish": "Bíonn sé fuar san oíche.",
+        "english": "It is (usually) cold at night.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bíonn mé ag obair ar maidin.",
+        "english": "I am (usually) working in the morning.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní bhíonn sé anseo Dé Luain.",
+        "english": "He is never here on Mondays.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An mbíonn tú gnóthach?",
+        "english": "Are you (usually) busy?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bíonn siúlach scéalach.",
+        "english": "A traveller has stories. (proverb)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bíonn an siopa dúnta ar an Domhnach.",
+        "english": "The shop is closed on Sundays.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nuair a bhíonn mé brónach, éistim le ceol.",
+        "english": "When I am sad, I listen to music.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bím ag rith gach maidin.",
+        "english": "I run every morning. (synthetic 1sg)",
+        "dialect": "munster"
+      }
+    ],
+    "notes": "The distinction between 'tá' (now) and 'bíonn' (habitually) is uniquely Irish — English uses 'is' for both. Getting this right marks a significant step forward. Proverbs in Irish almost always use bíonn.",
+    "see_also": [
+      "verb-bi",
+      "progressive-aspect",
+      "verb-tenses-regular"
+    ]
+  },
+  {
+    "id": "conditional-sentences",
+    "title": "Conditional Sentences (Dá… / Má…)",
+    "category": "sentence structure",
+    "difficulty": "A2/B1",
+    "tags": [
+      "conditional",
+      "dá",
+      "má",
+      "if",
+      "murach",
+      "mura"
+    ],
+    "summary": "Irish has two main conditional particles: 'má' (if — real/possible condition, present/future) and 'dá' (if — hypothetical/unreal condition, conditional tense).",
+    "content": "Two types of conditional sentences:\n\n1. MÁ — real/open conditions (present or future possibility)\n   Triggers lenition on following verb:\n   Má + present/future verb → result clause\n\n   Má tá tú tuirseach, téigh a chodladh.\n   If you are tired, go to sleep.\n\n   Má thagann sé, inseoidh mé dó.\n   If he comes, I'll tell him.\n\n   Negative: mura (mura + eclipsis)\n   Mura dtagann sé, ní bheidh mé ann.\n   If he doesn't come, I won't be there.\n\n2. DÁ — hypothetical/unreal conditions (conditional tense)\n   Triggers eclipsis on following verb:\n   Dá + conditional verb → conditional result\n\n   Dá mbeadh airgead agam, cheannóinn carr.\n   If I had money, I would buy a car.\n\n   Dá mbeinn saor, thiocfainn leat.\n   If I were free, I would come with you.\n\n   Negative: mura/murach\n   Murach é sin, ní bheinn anseo.\n   If it weren't for that, I wouldn't be here.\n   (Note: 'murach' = but for / were it not for)\n\nDá + bí → dá mbeadh (not 'dá bheadh')\nMá + bí (present) → má tá / más (más = má + is)\n  Más maith leat, déan é.   If you like, do it.",
+    "examples": [
+      {
+        "irish": "Má tá tú tuirseach, luigh síos.",
+        "english": "If you are tired, lie down.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Má thagann sé, abair leis fanacht.",
+        "english": "If he comes, tell him to wait.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Mura dtagann sé, ná bí ag fanacht.",
+        "english": "If he doesn't come, don't be waiting.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dá mbeadh airgead agam, rachainn go hÉirinn.",
+        "english": "If I had money, I would go to Ireland.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dá mbeinn ábalta, dhéanfainn é.",
+        "english": "If I were able, I would do it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Murach an aimsir, bheadh sé go hiontach.",
+        "english": "If it weren't for the weather, it would be wonderful.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Más maith leat Gaeilge, foghlaim í.",
+        "english": "If you like Irish, learn it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Má tá Gaeilge agat, labhair í.",
+        "english": "If you have Irish, speak it.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The má/dá distinction maps roughly to English 'if' vs 'if (only)'. Má is used for real conditions — things that might actually happen. Dá is for hypotheticals. A common learner error is using 'dá' for real conditions or 'má' for hypotheticals.",
+    "see_also": [
+      "negation",
+      "verb-bi",
+      "verb-tenses-regular"
+    ]
+  },
+  {
+    "id": "indirect-speech",
+    "title": "Indirect Speech & Reported Clauses",
+    "category": "sentence structure",
+    "difficulty": "A2/B1",
+    "tags": [
+      "indirect speech",
+      "reported speech",
+      "go",
+      "nach",
+      "subordinate",
+      "deir sé"
+    ],
+    "summary": "Indirect speech in Irish uses 'go' (that) or 'nach' (that not) to introduce reported clauses. These particles trigger eclipsis on the following verb.",
+    "content": "To report what someone says, thinks, or knows, Irish uses:\n\n  go + [eclipsed verb]    (positive: 'that…')\n  nach + [eclipsed verb]  (negative: 'that… not')\n\nWith the present tense:\n  Deir sé go bhfuil sé fuar.    He says (that) it is cold.\n  Deir sí nach bhfuil sé fíor.  She says (that) it is not true.\n\nWith the past tense — use 'gur' / 'nár' (before consonants) or\n'gurb' / 'nárbh' (before vowels):\n  Dúirt sé gur ith sé é.        He said that he ate it.\n  Dúirt sí nár tháinig sé.      She said that he didn't come.\n\nWith other verbs of communication, thought, or belief:\n  Creidim go bhfuil sé ceart.   I believe that it is right.\n  Is dócha go mbeidh sé ann.    It is likely that he will be there.\n  Tá a fhios agam go bhfuil.    I know that (he/it) is.\n  Ceapaim nach dtiocfaidh sé.   I think he won't come.\n\nNote: 'go' here is not the same as 'go' (to, towards) — it is a subordinating conjunction.\n\nWith the copula:\n  Deir sé gurb é an rud ceart é.  He says it is the right thing.\n  (gur + vowel → gurb)\n\nQuestion words in indirect speech use a relative form:\n  Ní fhios dom cé atá ann.      I don't know who is there.\n  Ní fhios dom cad a dúirt sé.  I don't know what he said.",
+    "examples": [
+      {
+        "irish": "Deir sé go bhfuil sé tuirseach.",
+        "english": "He says (that) he is tired.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dúirt sí go raibh sí brónach.",
+        "english": "She said (that) she was sad.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Creidim nach bhfuil sé fíor.",
+        "english": "I believe that it is not true.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is dócha go mbeidh sé déanach.",
+        "english": "It is likely that he will be late.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá a fhios agam gur tháinig sí.",
+        "english": "I know that she came.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ceapaim nach dtiocfaidh sé.",
+        "english": "I think he won't come.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dúirt sé nár ith sé é.",
+        "english": "He said he didn't eat it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní fhios dom cá bhfuil sé.",
+        "english": "I don't know where he is.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cloisim go bhfuil sé go maith.",
+        "english": "I hear that it is good.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "A very common construction: 'Is dócha go…' (It is likely that…), 'Ceapaim go…' (I think that…), 'Tá súil agam go…' (I hope that…). All take go + eclipsis. The past forms gur/nár behave like verbal particles — gur causes lenition, nár causes lenition.",
+    "see_also": [
+      "negation",
+      "question-words",
+      "relative-clauses"
     ]
   }
 ]
