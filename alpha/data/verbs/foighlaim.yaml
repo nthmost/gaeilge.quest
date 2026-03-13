@@ -1,0 +1,95 @@
+# foghlaim.yaml - "to learn"
+infinitive: foghlaim
+root: foghl
+type: 2nd conjugation
+meaning: to learn
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: foghlaimím
+      second: foghlaimíonn tú
+      thirdMasc: foghlaimíonn sé
+      thirdFem: foghlaimíonn sí
+    plural:
+      first: foghlaimímid
+      second: foghlaimíonn sibh
+      third: foghlaimíonn siad
+    autonomous: foghlaimítear
+  
+  past:
+    singular:
+      first: d'fhoghlaim mé
+      second: d'fhoghlaim tú
+      thirdMasc: d'fhoghlaim sé
+      thirdFem: d'fhoghlaim sí
+    plural:
+      first: d'fhoghlaimíomar
+      second: d'fhoghlaim sibh
+      third: d'fhoghlaim siad
+    autonomous: foghlaimíodh
+  
+  future:
+    singular:
+      first: foghlaimeoidh mé
+      second: foghlaimeoidh tú
+      thirdMasc: foghlaimeoidh sé
+      thirdFem: foghlaimeoidh sí
+    plural:
+      first: foghlaimeoimid
+      second: foghlaimeoidh sibh
+      third: foghlaimeoidh siad
+    autonomous: foghlaimeofar
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: foghlaimím
+      second: foghlaimíonn tú
+      thirdMasc: foghlaimíonn sé
+      thirdFem: foghlaimíonn sí
+    plural:
+      first: foghlaimímid
+      second: foghlaimíonn sibh
+      third: foghlaimíonn siad
+    autonomous: foghlaimítear
+  
+  habitual_past:
+    singular:
+      first: d'fhoghlaimínn
+      second: d'fhoghlaimíteá
+      thirdMasc: d'fhoghlaimíodh sé
+      thirdFem: d'fhoghlaimíodh sí
+    plural:
+      first: d'fhoghlaimímis
+      second: d'fhoghlaimíodh sibh
+      third: d'fhoghlaimíodh siad
+    autonomous: d'fhoghlaimítí
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: d'fhoghlaimeóinn
+      second: d'fhoghlaimeofá
+      thirdMasc: d'fhoghlaimeodh sé
+      thirdFem: d'fhoghlaimeodh sí
+    plural:
+      first: d'fhoghlaimeoimis
+      second: d'fhoghlaimeodh sibh
+      third: d'fhoghlaimeodh siad
+    autonomous: d'fhoghlaimeofaí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: foghlaimím
+      second: foghlaim
+      thirdMasc: foghlaimíodh sé
+      thirdFem: foghlaimíodh sí
+    plural:
+      first: foghlaimímis
+      second: foghlaimígí
+      third: foghlaimídís
+    autonomous: foghlaimítear
+
+notes: "Foghlaim is a 2nd conjugation verb meaning 'to learn'. Note that it takes the prefix 'd'' in the past tense, which is common for verbs beginning with 'f'. The stem changes to 'foghlaime-' in the future tense and conditional mood, which is typical of many 2nd conjugation verbs."

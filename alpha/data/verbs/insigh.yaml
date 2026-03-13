@@ -1,0 +1,84 @@
+infinitive: insigh
+root: insigh
+type: 2nd conjugation
+meaning: to tell, inform
+conjugations:
+  present:
+    singular:
+      first: insím
+      second: insíonn tú
+      thirdMasc: insíonn sé
+      thirdFem: insíonn sí
+    plural:
+      first: insímid
+      second: insíonn sibh
+      third: insíonn siad
+    autonomous: insear
+  past:
+    singular:
+      first: d'inis mé
+      second: d'inis tú
+      thirdMasc: d'inis sé
+      thirdFem: d'inis sí
+    plural:
+      first: d'inis muid
+      second: d'inis sibh
+      third: d'inis siad
+    autonomous: insíodh
+  future:
+    singular:
+      first: inseoidh mé
+      second: inseoidh tú
+      thirdMasc: inseoidh sé
+      thirdFem: inseoidh sí
+    plural:
+      first: inseoimid
+      second: inseoidh sibh
+      third: inseoidh siad
+    autonomous: inseofar
+  habitual_present:
+    singular:
+      first: insím
+      second: insíonn tú
+      thirdMasc: insíonn sé
+      thirdFem: insíonn sí
+    plural:
+      first: insímid
+      second: insíonn sibh
+      third: insíonn siad
+    autonomous: insear
+  habitual_past:
+    singular:
+      first: inseoinn
+      second: inseontá
+      thirdMasc: inseodh sé
+      thirdFem: inseodh sí
+    plural:
+      first: inseoimis
+      second: inseodh sibh
+      third: inseodh siad
+    autonomous: inseofaí
+  conditional:
+    singular:
+      first: inseoinn
+      second: inseofá
+      thirdMasc: inseodh sé
+      thirdFem: inseodh sí
+    plural:
+      first: inseoimis
+      second: inseodh sibh
+      third: inseodh siad
+    autonomous: inseofaí
+  imperative:
+    singular:
+      first: insím
+      second: inis
+      thirdMasc: inseadh sé
+      thirdFem: inseadh sí
+    plural:
+      first: insímid
+      second: insaigí
+      third: inseadh siad
+    autonomous: insear
+notes: Insigh is a 2nd conjugation verb meaning 'to tell' or 'inform'.
+

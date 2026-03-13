@@ -1,0 +1,85 @@
+conjugations:
+  conditional:
+    autonomous: thógfaí
+    plural:
+      first: thógfaimis
+      second: thógfadh sibh
+      third: thógfadh siad
+    singular:
+      first: thógfainn
+      second: thógfá
+      thirdFem: thógfadh sí
+      thirdMasc: thógfadh sé
+  future:
+    autonomous: tógfar
+    plural:
+      first: tógfaimid
+      second: tógfaidh sibh
+      third: tógfaidh siad
+    singular:
+      first: tógfaidh mé
+      second: tógfaidh tú
+      thirdFem: tógfaidh sí
+      thirdMasc: tógfaidh sé
+  habitual_past:
+    autonomous: thógtaí
+    plural:
+      first: thógaimis
+      second: thógadh sibh
+      third: thógadh siad
+    singular:
+      first: thógainn
+      second: thógtá
+      thirdFem: thógadh sí
+      thirdMasc: thógadh sé
+  habitual_present:
+    autonomous: tógtar
+    plural:
+      first: tógaimid
+      second: tógann sibh
+      third: tógann siad
+    singular:
+      first: tógaim
+      second: tógann tú
+      thirdFem: tógann sí
+      thirdMasc: tógann sé
+  imperative:
+    autonomous: tógtar
+    plural:
+      first: tógaimis
+      second: tógaigí
+      third: tógaidís
+    singular:
+      first: tógaim
+      second: tóg
+      thirdFem: tógadh sé
+      thirdMasc: tógadh sé
+  past:
+    autonomous: tógadh
+    plural:
+      first: thógamar
+      second: thóg sibh
+      third: thóg siad
+    singular:
+      first: thóg mé
+      second: thóg tú
+      thirdFem: thóg sí
+      thirdMasc: thóg sé
+  present:
+    autonomous: tógtar
+    plural:
+      first: tógaimid
+      second: tógann sibh
+      third: tógann siad
+    singular:
+      first: tógaim
+      second: tógann tú
+      thirdFem: tógann sí
+      thirdMasc: tógann sé
+infinitive: tóg
+meaning: to take/build
+notes: 'Tóg is a regular 1st conjugation verb with two main meanings: ''to take''
+  and ''to build''. The imperative ''tóg'' is often used in phrases like ''tóg go
+  bog é'' (take it easy).'
+root: tóg
+type: 1st conjugation

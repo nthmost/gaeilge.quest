@@ -1,0 +1,85 @@
+conjugations:
+  conditional:
+    autonomous: dhéanfaí
+    plural:
+      first: dhéanfaimis
+      second: dhéanfadh sibh
+      third: dhéanfadh siad
+    singular:
+      first: dhéanfainn
+      second: dhéanfá
+      thirdFem: dhéanfadh sí
+      thirdMasc: dhéanfadh sé
+  future:
+    autonomous: déanfar
+    plural:
+      first: déanfaimid
+      second: déanfaidh sibh
+      third: déanfaidh siad
+    singular:
+      first: déanfaidh mé
+      second: déanfaidh tú
+      thirdFem: déanfaidh sí
+      thirdMasc: déanfaidh sé
+  habitual_past:
+    autonomous: dhéantaí
+    plural:
+      first: dhéanaimis
+      second: dhéanadh sibh
+      third: dhéanadh siad
+    singular:
+      first: dhéanainn
+      second: dhéantá
+      thirdFem: dhéanadh sí
+      thirdMasc: dhéanadh sé
+  habitual_present:
+    autonomous: déantar
+    plural:
+      first: déanaimid
+      second: déanann sibh
+      third: déanann siad
+    singular:
+      first: déanaim
+      second: déanann tú
+      thirdFem: déanann sí
+      thirdMasc: déanann sé
+  imperative:
+    autonomous: déantar
+    plural:
+      first: déanaimis
+      second: déanaigí
+      third: déanadh siad
+    singular:
+      first: déanaim
+      second: déan
+      thirdFem: déanadh sí
+      thirdMasc: déanadh sé
+  past:
+    autonomous: rinneadh
+    plural:
+      first: rinneamar
+      second: rinne sibh
+      third: rinne siad
+    singular:
+      first: rinne mé
+      second: rinne tú
+      thirdFem: rinne sí
+      thirdMasc: rinne sé
+  present:
+    autonomous: déantar
+    plural:
+      first: déanaimid
+      second: déanann sibh
+      third: déanann siad
+    singular:
+      first: déanaim
+      second: déanann tú
+      thirdFem: déanann sí
+      thirdMasc: déanann sé
+infinitive: déan
+meaning: to do/make
+notes: Déan is an irregular verb meaning 'to do' or 'to make'. Note that in the past
+  tense it changes completely to 'rinne'. The imperative 'déan' is commonly used in
+  commands and instructions.
+root: déan
+type: 2nd conjugation

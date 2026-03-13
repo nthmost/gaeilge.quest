@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Directions - Gaeilge Quest</title>
+    <!-- Base and layout styles -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="/css/directions.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Space+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Include js-yaml library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <img src="/assets/images/harp.png" alt="Irish Harp Logo">
+                    <div class="site-title">Gaeilge Quest</div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/verbs/">Verb Tenses</a></li>
+                    <li><a href="/directions/" class="active">Directions</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Irish Directions</h1>
+                    <p>Master the complexities of directional phrases in Irish</p>
+                </div>
+            </section>
+
+            <div class="directions-container">
+                <!-- Introduction to Directions - MOVED ABOVE SELECTION PANEL -->
+                <section class="intro-panel">
+                    <h2>Understanding Irish Directional Words</h2>
+                    <p>In Irish, directional words depend on the speaker's position and the direction of movement. This makes them more complex than in English, but also more precise!</p>
+                    
+                    <div class="direction-basics">
+                        <h3>Key Direction Words</h3>
+                        <div class="direction-grid">
+                            <div class="direction-card">
+                                <div class="direction-term">suas</div>
+                                <div class="direction-meaning">up (movement upward)</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">síos</div>
+                                <div class="direction-meaning">down (movement downward)</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">anuas</div>
+                                <div class="direction-meaning">down (from above toward speaker)</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">aníos</div>
+                                <div class="direction-meaning">up (from below toward speaker)</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">amach</div>
+                                <div class="direction-meaning">out (away from enclosed space)</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">isteach</div>
+                                <div class="direction-meaning">in (into an enclosed space)</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">siar</div>
+                                <div class="direction-meaning">westward/backward</div>
+                            </div>
+                            <div class="direction-card">
+                                <div class="direction-term">soir</div>
+                                <div class="direction-meaning">eastward/forward</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Category and Level Selection - REDESIGNED WITH BOXES -->
+                <section class="selection-panel">
+                    <h2 class="selection-title">Practice Your Skills</h2>
+                    <p class="selection-instruction">Choose one option from each category below to begin</p>
+                    
+                    <div class="selection-boxes">
+                        <div class="selection-box category-box">
+                            <div class="selection-box-header">
+                                <h3>Choose a Category</h3>
+                            </div>
+                            <div class="cyber-buttons">
+                                <button class="category-btn" data-category="weather">
+                                    <span class="btn-text">An Aimsir & Na Séasúir (Weather & Seasons)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="category-btn" data-category="home">
+                                    <span class="btn-text">Sa Bhaile (At Home)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="category-btn" data-category="travel">
+                                    <span class="btn-text">Ag Taisteal (Traveling)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="selection-box level-box">
+                            <div class="selection-box-header">
+                                <h3>Choose a Level</h3>
+                            </div>
+                                <div class="cyber-buttons">
+                                <button class="level-btn" data-level="beginner">
+                                    <span class="btn-text">Bunleibhéal (Beginner)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="level-btn" data-level="intermediate">
+                                    <span class="btn-text">Meánleibhéal (Intermediate)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                                <button class="level-btn" data-level="advanced">
+                                    <span class="btn-text">Ardleibhéal (Advanced)</span>
+                                    <div class="btn-deco"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Selection status indicator -->
+                    <div class="selection-status">
+                        <div class="status-item category-status">
+                            <div class="status-label">Category:</div>
+                            <div id="category-status-value" class="status-value">Not selected</div>
+                        </div>
+                        <div class="status-item level-status">
+                            <div class="status-label">Level:</div>
+                            <div id="level-status-value" class="status-value">Not selected</div>
+                        </div>
+                        <div id="start-activity" class="start-activity-btn disabled">
+                            Begin Practice
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interactive Activity Area -->
+                <section id="activity-area" class="activity-area">
+                    <div class="activity-placeholder">
+                        <p>Select a category and level above to begin practicing!</p>
+                        <div class="cyber-decoration">
+                            <div class="deco-line"></div>
+                            <div class="deco-circle"></div>
+                            <div class="deco-line"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Feedback Area -->
+                <section class="feedback-area">
+                    <div id="feedback-message" class="feedback-message"></div>
+                    <div class="progress-tracker">
+                        <div class="progress-label">Progress:</div>
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div id="progress-count" class="progress-count">0/0</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Gaeilge Quest © 2025 | <a href="https://github.com/nthmost">Created by Naomi Most</a></p>
+        </footer>
+    </div>
+
+    <!-- Modal for explanations -->
+    <div id="explanation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title">Direction Explanation</h3>
+            <div id="modal-content">
+                <p>Explanation text goes here.</p>
+            </div>
+            <button id="modal-continue" class="cyber-btn">Continue</button>
+        </div>
+    </div>
+
+    <!-- Load javascript -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/data-loader.js"></script>
+    <script src="/js/directions/directions-data.js"></script>
+    <script src="/js/directions/directions-ui.js"></script>
+</body>
+</html>

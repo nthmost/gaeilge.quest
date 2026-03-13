@@ -1,0 +1,346 @@
+/* ===== ANIMATIONS.CSS =====
+   Animation and transition effects
+*/
+
+/* ===== KEYFRAME ANIMATIONS ===== */
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Down */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Cyber Glitch */
+@keyframes cyberGlitch {
+    0% {
+        clip-path: inset(50% 0 30% 0);
+        transform: skew(0.5deg);
+    }
+    5% {
+        clip-path: inset(20% 0 60% 0);
+        transform: skew(-0.2deg);
+    }
+    10% {
+        clip-path: inset(40% 0 40% 0);
+        transform: skew(0.8deg);
+    }
+    15% {
+        clip-path: inset(10% 0 70% 0);
+        transform: skew(-0.5deg);
+    }
+    20% {
+        clip-path: inset(80% 0 10% 0);
+        transform: skew(0.3deg);
+    }
+    25% {
+        clip-path: inset(30% 0 60% 0);
+        transform: skew(-0.1deg);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+        transform: skew(0);
+    }
+}
+
+/* Neon Flicker */
+@keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 
+            0 0 5px var(--cyber-blue),
+            0 0 10px var(--cyber-blue),
+            0 0 15px var(--cyber-blue);
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+/* Spin */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Shimmer */
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Float */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ===== ANIMATION UTILITY CLASSES ===== */
+
+/* Fade In Animations */
+.anim-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.anim-fade-in-up {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.anim-fade-in-down {
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+.anim-fade-in-left {
+    animation: fadeInLeft 0.5s ease forwards;
+}
+
+.anim-fade-in-right {
+    animation: fadeInRight 0.5s ease forwards;
+}
+
+/* Timing Utilities */
+.anim-delay-100 {
+    animation-delay: 0.1s;
+}
+
+.anim-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.anim-delay-300 {
+    animation-delay: 0.3s;
+}
+
+.anim-delay-400 {
+    animation-delay: 0.4s;
+}
+
+.anim-delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* Duration Utilities */
+.anim-duration-300 {
+    animation-duration: 0.3s;
+}
+
+.anim-duration-500 {
+    animation-duration: 0.5s;
+}
+
+.anim-duration-1000 {
+    animation-duration: 1s;
+}
+
+.anim-duration-2000 {
+    animation-duration: 2s;
+}
+
+/* Special Animations */
+.anim-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.anim-bounce {
+    animation: bounce 2s ease infinite;
+}
+
+.anim-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.anim-spin {
+    animation: spin 1s linear infinite;
+}
+
+.anim-cyber-glitch {
+    position: relative;
+}
+
+.anim-cyber-glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 2px 0 var(--cyber-purple);
+    top: 0;
+    color: inherit;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    animation: cyberGlitch 2s linear alternate-reverse infinite;
+}
+
+.anim-cyber-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -2px 0 var(--cyber-blue);
+    top: 0;
+    color: inherit;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    animation: cyberGlitch 3s linear alternate-reverse infinite;
+}
+
+.anim-neon-flicker {
+    animation: neonFlicker 2s infinite alternate;
+}
+
+.anim-shimmer {
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.2) 25%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* Scroll Animation for elements appearing as they scroll into view */
+.scroll-anim {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-anim-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sequential children animations */
+.anim-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.anim-children > *:nth-child(1) {
+    animation: fadeInUp 0.5s ease forwards 0.1s;
+}
+
+.anim-children > *:nth-child(2) {
+    animation: fadeInUp 0.5s ease forwards 0.2s;
+}
+
+.anim-children > *:nth-child(3) {
+    animation: fadeInUp 0.5s ease forwards 0.3s;
+}
+
+.anim-children > *:nth-child(4) {
+    animation: fadeInUp 0.5s ease forwards 0.4s;
+}
+
+.anim-children > *:nth-child(5) {
+    animation: fadeInUp 0.5s ease forwards 0.5s;
+}
+
+.anim-children > *:nth-child(6) {
+    animation: fadeInUp 0.5s ease forwards 0.6s;
+}

@@ -1,0 +1,84 @@
+infinitive: clois
+root: clois
+type: irregular
+meaning: to hear
+conjugations:
+  present:
+    singular:
+      first: cloisim
+      second: cloiseann tú
+      thirdMasc: cloiseann sé
+      thirdFem: cloiseann sí
+    plural:
+      first: cloisimid
+      second: cloiseann sibh
+      third: cloiseann siad
+    autonomous: cloistear
+  past:
+    singular:
+      first: chuala mé
+      second: chuala tú
+      thirdMasc: chuala sé
+      thirdFem: chuala sí
+    plural:
+      first: chualamar
+      second: chuala sibh
+      third: chuala siad
+    autonomous: chualathas
+  future:
+    singular:
+      first: cloisfidh mé
+      second: cloisfidh tú
+      thirdMasc: cloisfidh sé
+      thirdFem: cloisfidh sí
+    plural:
+      first: cloisfimid
+      second: cloisfidh sibh
+      third: cloisfidh siad
+    autonomous: cloistear
+  habitual_present:
+    singular:
+      first: cloisim
+      second: cloiseann tú
+      thirdMasc: cloiseann sé
+      thirdFem: cloiseann sí
+    plural:
+      first: cloisimid
+      second: cloiseann sibh
+      third: cloiseann siad
+    autonomous: cloistear
+  habitual_past:
+    singular:
+      first: chloisinn
+      second: chloisteá
+      thirdMasc: chloisheadh sé
+      thirdFem: chloisheadh sí
+    plural:
+      first: chloisimis
+      second: chloisheadh sibh
+      third: chloisheadh siad
+    autonomous: chloistí
+  conditional:
+    singular:
+      first: chloisfinn
+      second: chloisfeá
+      thirdMasc: chloisfeadh sé
+      thirdFem: chloisfeadh sí
+    plural:
+      first: chloisfimis
+      second: chloisfeadh sibh
+      third: chloisfeadh siad
+    autonomous: chloisfí
+  imperative:
+    singular:
+      first: cloisim
+      second: clois
+      thirdMasc: cloisadh sé
+      thirdFem: cloisadh sí
+    plural:
+      first: cloisimis
+      second: cloisi
+      third: cloisadh siad
+    autonomous: cloistear
+notes: Clois is an irregular verb meaning 'to hear'. Its past tense form is 'chuala'.
+

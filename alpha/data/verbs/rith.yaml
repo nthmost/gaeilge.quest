@@ -1,0 +1,84 @@
+infinitive: rith
+root: rith
+type: 1st conjugation
+meaning: to run
+conjugations:
+  present:
+    singular:
+      first: ritheann mé
+      second: ritheann tú
+      thirdMasc: ritheann sé
+      thirdFem: ritheann sí
+    plural:
+      first: ritheann muid
+      second: ritheann sibh
+      third: ritheann siad
+    autonomous: rítear
+  past:
+    singular:
+      first: rit mé
+      second: rit tú
+      thirdMasc: rit sé
+      thirdFem: rit sí
+    plural:
+      first: rit muid
+      second: rit sibh
+      third: rit siad
+    autonomous: ritheadh
+  future:
+    singular:
+      first: ritfidh mé
+      second: ritfidh tú
+      thirdMasc: ritfidh sé
+      thirdFem: ritfidh sí
+    plural:
+      first: ritfimid
+      second: ritfidh sibh
+      third: ritfidh siad
+    autonomous: ritfear
+  habitual_present:
+    singular:
+      first: ritheann mé
+      second: ritheann tú
+      thirdMasc: ritheann sé
+      thirdFem: ritheann sí
+    plural:
+      first: ritheann muid
+      second: ritheann sibh
+      third: ritheann siad
+    autonomous: rítear
+  habitual_past:
+    singular:
+      first: rithinn
+      second: rithteá
+      thirdMasc: ritheadh sé
+      thirdFem: ritheadh sí
+    plural:
+      first: rithimis
+      second: ritheadh sibh
+      third: ritheadh siad
+    autonomous: rití
+  conditional:
+    singular:
+      first: rithfinn
+      second: rithfeá
+      thirdMasc: rithfeadh sé
+      thirdFem: rithfeadh sí
+    plural:
+      first: rithfimis
+      second: rithfeadh sibh
+      third: rithfeadh siad
+    autonomous: rithfí
+  imperative:
+    singular:
+      first: ritheann mé
+      second: rith
+      thirdMasc: ritheadh sé
+      thirdFem: ritheadh sí
+    plural:
+      first: ritheann muid
+      second: rithigí
+      third: ritheadh siad
+    autonomous: rítear
+notes: Rith is a regular 1st conjugation verb meaning 'to run'.
+

@@ -1,0 +1,172 @@
+# Direction words reference data
+direction_words:
+  # Up/Down movement
+  suas:
+    meaning: "up (movement upward)"
+    explanation: "Use 'suas' when something or someone is moving upward, away from the ground or a lower position."
+  síos:
+    meaning: "down (movement downward)"
+    explanation: "Use 'síos' when something or someone is moving downward, toward the ground or a lower position."
+  anuas:
+    meaning: "down (from above toward speaker)"
+    explanation: "Use 'anuas' when something is coming down from above toward the speaker's position."
+  aníos:
+    meaning: "up (from below toward speaker)"
+    explanation: "Use 'aníos' when something is coming up from below toward the speaker's position."
+  
+  # In/Out movement
+  amach:
+    meaning: "out (away from enclosed space)"
+    explanation: "Use 'amach' when moving out from an enclosed space to an open area."
+  isteach:
+    meaning: "in (into an enclosed space)"
+    explanation: "Use 'isteach' when moving into an enclosed space from outside."
+  
+  # Directions
+  siar:
+    meaning: "westward/backward"
+    explanation: "Use 'siar' for movement westward or backward (away from the speaker)."
+  soir:
+    meaning: "eastward/forward"
+    explanation: "Use 'soir' for movement eastward or forward (away from the speaker)."
+  ó_thuaidh:
+    meaning: "northward"
+    explanation: "Use 'ó thuaidh' for movement northward."
+  ó_dheas:
+    meaning: "southward"
+    explanation: "Use 'ó dheas' for movement southward."
+  
+  # Towards/Away
+  chugam:
+    meaning: "towards me"
+    explanation: "Use 'chugam' for movement directed toward the speaker."
+  uaim:
+    meaning: "away from me"
+    explanation: "Use 'uaim' for movement directed away from the speaker."
+  
+  # Position relative to speaker
+  thuas:
+    meaning: "up there (static position above)"
+    explanation: "Use 'thuas' to indicate a static position that is above the speaker."
+  thíos:
+    meaning: "down there (static position below)"
+    explanation: "Use 'thíos' to indicate a static position that is below the speaker."
+  
+  # Around/Across
+  timpeall:
+    meaning: "around"
+    explanation: "Use 'timpeall' for movement that encircles or goes around something."
+  trasna:
+    meaning: "across"
+    explanation: "Use 'trasna' for movement that crosses from one side to another."
+
+# Level-specific word sets
+level_words:
+  beginner:
+    - suas
+    - síos
+    - amach
+    - isteach
+  intermediate:
+    - suas
+    - síos
+    - anuas
+    - aníos
+    - amach
+    - isteach
+    - thuas
+    - thíos
+  advanced:
+    - suas
+    - síos
+    - anuas
+    - aníos
+    - amach
+    - isteach
+    - siar
+    - soir
+    - ó_thuaidh
+    - ó_dheas
+    - chugam
+    - uaim
+    - thuas
+    - thíos
+    - timpeall
+    - trasna
+
+# Scenarios organized by category and level
+scenarios:
+  weather:
+    beginner:
+      - id: weather_beginner_1
+        title: Rain Falling
+        image: /assets/images/directions/rain_falling.jpg
+        description: It's raining heavily. The rain is falling from the clouds above.
+        exercises:
+          - sentence: Titeann an bháisteach ____ ón spéir.
+            blanks:
+              - id: weather_beginner_1_blank_1
+                options:
+                  - suas
+                  - síos
+                  - amach
+                  - isteach
+                correct: síos
+                explanation: "We use 'síos' here because the rain is falling downward from the sky. This is a movement in a downward direction away from its source."
+            translation: The rain falls down from the sky.
+      
+      - id: weather_beginner_2
+        title: Steam Rising
+        image: /assets/images/directions/steam_rising.jpg
+        description: Steam is rising from a hot cup of tea on a cold morning.
+        exercises:
+          - sentence: Téann an gal ____ ón gcupán tae.
+            blanks:
+              - id: weather_beginner_2_blank_1
+                options:
+                  - suas
+                  - síos
+                  - amach
+                  - isteach
+                correct: suas
+                explanation: "We use 'suas' here because the steam is rising upward from the tea. This is a movement in an upward direction away from its source."
+            translation: The steam goes up from the cup of tea.
+
+    intermediate:
+      - id: weather_intermediate_1
+        title: Leaves Falling in Autumn
+        image: /assets/images/directions/leaves_falling.jpg
+        description: It's autumn and the leaves are falling from the trees. You're standing under a tree watching the leaves fall toward you.
+        exercises:
+          - sentence: Titeann na duilleoga ____ sa bhfómhar.
+            blanks:
+              - id: weather_intermediate_1_blank_1
+                options:
+                  - suas
+                  - síos
+                  - anuas
+                  - aníos
+                  - amach
+                  - isteach
+                correct: anuas
+                explanation: "We use 'anuas' here because the leaves are falling down from above toward the speaker's position. This differs from 'síos' which would be used if the speaker was observing the downward movement from a distance."
+            translation: The leaves fall down (toward us) in autumn.
+
+  home:
+    beginner:
+      - id: home_beginner_1
+        title: Going Upstairs
+        image: /assets/images/directions/going_upstairs.jpg
+        description: You're walking up the stairs to the second floor of your house.
+        exercises:
+          - sentence: Táim ag dul ____ an staighre.
+            blanks:
+              - id: home_beginner_1_blank_1
+                options:
+                  - suas
+                  - síos
+                  - amach
+                  - isteach
+                correct: suas
+                explanation: "We use 'suas' here because you are moving upward on the stairs."
+            translation: I am going up the stairs.

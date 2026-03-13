@@ -1,0 +1,84 @@
+infinitive: faigh
+root: faigh
+type: irregular
+meaning: to get, to find
+conjugations:
+  present:
+    singular:
+      first: faighim
+      second: faigheann tú
+      thirdMasc: faigheann sé
+      thirdFem: faigheann sí
+    plural:
+      first: faighimid
+      second: faigheann sibh
+      third: faigheann siad
+    autonomous: faightear
+  past:
+    singular:
+      first: fuair mé
+      second: fuair tú
+      thirdMasc: fuair sé
+      thirdFem: fuair sí
+    plural:
+      first: fuaireamar
+      second: fuair sibh
+      third: fuair siad
+    autonomous: fuarthas
+  future:
+    singular:
+      first: gheobhaidh mé
+      second: gheobhaidh tú
+      thirdMasc: gheobhaidh sé
+      thirdFem: gheobhaidh sí
+    plural:
+      first: gheobhaimid
+      second: gheobhaidh sibh
+      third: gheobhaidh siad
+    autonomous: gheofar
+  habitual_present:
+    singular:
+      first: faighim
+      second: faigheann tú
+      thirdMasc: faigheann sé
+      thirdFem: faigheann sí
+    plural:
+      first: faighimid
+      second: faigheann sibh
+      third: faigheann siad
+    autonomous: faightear
+  habitual_past:
+    singular:
+      first: fuighinn
+      second: fuighteá
+      thirdMasc: fuigheann sé
+      thirdFem: fuigheann sí
+    plural:
+      first: fuighimis
+      second: fuigheann sibh
+      third: fuigheann siad
+    autonomous: fuintí
+  conditional:
+    singular:
+      first: gheobhainn
+      second: gheofá
+      thirdMasc: gheobhadh sé
+      thirdFem: gheobhadh sí
+    plural:
+      first: gheobhaimis
+      second: gheobhadh sibh
+      third: gheobhadh siad
+    autonomous: gheofaí
+  imperative:
+    singular:
+      first: faighim
+      second: faigh
+      thirdMasc: faíodh sé
+      thirdFem: faíodh sí
+    plural:
+      first: faighimis
+      second: faighigí
+      third: faíodh siad
+    autonomous: faightear
+notes: Faigh is highly irregular, changing root to 'fuair' in past and 'gheobhaidh' in future.
+

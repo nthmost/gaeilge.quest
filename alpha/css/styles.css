@@ -1,0 +1,413 @@
+/* ===== VARIABLES ===== */
+:root {
+    /* Color Palette - Irish meets Neo Tokyo */
+    --irish-green: #169b62;
+    --light-green: #9febc1;
+    --orange: #ff883e;
+    --light-orange-pink: #ffb6b9;
+    --silver: #e6e6fa;
+    --gold: #ffd700;
+    --copper: #b87333;
+    --cyber-blue: #00f2ff;
+    --cyber-purple: #ff00ff;
+    --dark-bg: #121212;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--silver);
+    background-image: linear-gradient(45deg, #121212 25%, #1a1a1a 25%, #1a1a1a 50%, #121212 50%, #121212 75%, #1a1a1a 75%, #1a1a1a 100%);
+    background-size: 10px 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER STYLES ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--copper);
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+    filter: drop-shadow(0 0 8px var(--cyber-blue));
+}
+
+.site-title {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 28px;
+    background: linear-gradient(to right, var(--irish-green), var(--cyber-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--silver);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--cyber-blue);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--irish-green), var(--cyber-blue));
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after, nav ul li a.active::after {
+    width: 100%;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, rgba(22, 155, 98, 0.1), rgba(0, 242, 255, 0.1)),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect width="1" height="1" fill="%23169b62" opacity="0.05" /><rect x="10" y="10" width="1" height="1" fill="%2300f2ff" opacity="0.05" /></svg>');
+    z-index: -1;
+}
+
+.hero-content {
+    background: rgba(18, 18, 18, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--copper);
+    box-shadow: 0 0 20px rgba(184, 115, 51, 0.3);
+}
+
+.hero h1 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--gold), var(--irish-green), var(--cyber-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--light-orange-pink);
+}
+
+/* ===== ACTIVITIES SECTION ===== */
+.activities {
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.activities h2 {
+    font-family: 'Uncial Antiqua', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--light-orange-pink);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.activities h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background: linear-gradient(to right, var(--gold), var(--cyber-purple));
+}
+
+/* Grid Layout for Activities */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Activity Card Styles with Cyber-Celtic Frame */
+.activity-card {
+    position: relative;
+    padding: 3px; /* Space for the frame */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* The cyber-celtic frame */
+.activity-frame {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    background: 
+        /* Top left corner */
+        radial-gradient(circle at 0 0, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) top left,
+        /* Top right corner */
+        radial-gradient(circle at 100% 0, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) top right,
+        /* Bottom left corner */
+        radial-gradient(circle at 0 100%, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) bottom left,
+        /* Bottom right corner */
+        radial-gradient(circle at 100% 100%, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) bottom right;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    border: 1px solid var(--cyber-blue);
+    box-shadow: 0 0 5px var(--cyber-blue);
+    transition: all 0.3s ease;
+}
+
+/* Celtic knot patterns at corners */
+.activity-frame::before, 
+.activity-frame::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M1,5 A4,4 0 0,1 5,1 A4,4 0 0,1 9,5 A4,4 0 0,1 5,9 A4,4 0 0,1 1,5 Z" fill="none" stroke="%2300f2ff" stroke-width="0.5" /></svg>');
+    opacity: 0.7;
+}
+
+.activity-frame::before {
+    top: 5px;
+    left: 5px;
+}
+
+.activity-frame::after {
+    bottom: 5px;
+    right: 5px;
+}
+
+/* The card content */
+.activity-content {
+    background: linear-gradient(135deg, rgba(22, 155, 98, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 8px;
+    padding: 20px 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover .activity-icon {
+    transform: scale(1.15);
+}
+
+.activity-card h3 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--light-orange-pink);
+}
+
+.activity-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: var(--silver);
+}
+
+.activity-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--cyber-blue), var(--cyber-purple));
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.activity-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--cyber-purple);
+}
+
+/* Hover effects for the cyber-celtic frame */
+.activity-card:hover .activity-frame {
+    box-shadow: 
+        0 0 10px var(--cyber-blue),
+        0 0 20px rgba(0, 242, 255, 0.5);
+    border-color: var(--gold);
+}
+
+/* ===== ABOUT TEASER SECTION ===== */
+.about-teaser {
+    background: linear-gradient(45deg, rgba(22, 155, 98, 0.2), rgba(0, 242, 255, 0.2));
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0 40px;
+    border: 1px solid var(--copper);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-family: 'Uncial Antiqua', cursive;
+    margin-bottom: 15px;
+    color: var(--light-orange-pink);
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-link {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--irish-green), var(--cyber-blue));
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    transition: all 0.3s ease;
+}
+
+.about-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid var(--copper);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--cyber-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--cyber-purple);
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    nav {
+        margin-top: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .activities-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .activities-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .activity-content {
+        padding: 15px 10px;
+    }
+    
+    .activity-icon {
+        font-size: 1.5rem;
+    }
+    
+    .activity-card h3 {
+        font-size: 1rem;
+    }
+    
+    .activity-card p {
+        font-size: 0.8rem;
+    }
+    
+    .activity-button {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}

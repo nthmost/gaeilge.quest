@@ -1,0 +1,95 @@
+# teigh.yaml - "to go"
+infinitive: téigh
+root: té
+type: irregular
+meaning: to go
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: téim
+      second: téann tú
+      thirdMasc: téann sé
+      thirdFem: téann sí
+    plural:
+      first: téimid
+      second: téann sibh
+      third: téann siad
+    autonomous: téitear
+  
+  past:
+    singular:
+      first: chuaigh mé
+      second: chuaigh tú
+      thirdMasc: chuaigh sé
+      thirdFem: chuaigh sí
+    plural:
+      first: chuamar
+      second: chuaigh sibh
+      third: chuaigh siad
+    autonomous: chuathas
+  
+  future:
+    singular:
+      first: rachaidh mé
+      second: rachaidh tú
+      thirdMasc: rachaidh sé
+      thirdFem: rachaidh sí
+    plural:
+      first: rachaimid
+      second: rachaidh sibh
+      third: rachaidh siad
+    autonomous: rachthar
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: téim
+      second: téann tú
+      thirdMasc: téann sé
+      thirdFem: téann sí
+    plural:
+      first: téimid
+      second: téann sibh
+      third: téann siad
+    autonomous: téitear
+  
+  habitual_past:
+    singular:
+      first: théinn
+      second: théiteá
+      thirdMasc: théadh sé
+      thirdFem: théadh sí
+    plural:
+      first: théimis
+      second: théadh sibh
+      third: théadh siad
+    autonomous: théití
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: rachainn
+      second: rachfá
+      thirdMasc: rachadh sé
+      thirdFem: rachadh sí
+    plural:
+      first: rachaimis
+      second: rachadh sibh
+      third: rachadh siad
+    autonomous: rachfaí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: téim
+      second: téigh
+      thirdMasc: téadh sé
+      thirdFem: téadh sí
+    plural:
+      first: téimis
+      second: téigí
+      third: téidís
+    autonomous: téitear
+
+notes: "Téigh is one of the most important irregular verbs in Irish, meaning 'to go'. It has three completely different stems: 'té-' (present/imperative), 'chuaigh' (past), and 'rach-' (future/conditional). The verb is used in many common phrases like 'téigh abhaile' (go home) and 'téigh go dtí an siopa' (go to the shop)."

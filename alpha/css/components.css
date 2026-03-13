@@ -1,0 +1,412 @@
+/* ===== COMPONENTS.CSS =====
+   Reusable UI components like buttons, cards, forms, etc.
+*/
+
+/* ===== ACTIVITY CARDS ===== */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Activity Card Styles with Cyber-Celtic Frame */
+.activity-card {
+    position: relative;
+    padding: 3px; /* Space for the frame */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* The cyber-celtic frame */
+.activity-frame {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    background: 
+        /* Top left corner */
+        radial-gradient(circle at 0 0, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) top left,
+        /* Top right corner */
+        radial-gradient(circle at 100% 0, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) top right,
+        /* Bottom left corner */
+        radial-gradient(circle at 0 100%, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) bottom left,
+        /* Bottom right corner */
+        radial-gradient(circle at 100% 100%, transparent 8px, var(--cyber-blue) 9px, var(--cyber-blue) 11px, transparent 12px) bottom right;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    border: 1px solid var(--cyber-blue);
+    box-shadow: 0 0 5px var(--cyber-blue);
+    transition: all 0.3s ease;
+}
+
+/* Celtic knot patterns at corners */
+.activity-frame::before, 
+.activity-frame::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M1,5 A4,4 0 0,1 5,1 A4,4 0 0,1 9,5 A4,4 0 0,1 5,9 A4,4 0 0,1 1,5 Z" fill="none" stroke="%2300f2ff" stroke-width="0.5" /></svg>');
+    opacity: 0.7;
+}
+
+.activity-frame::before {
+    top: 5px;
+    left: 5px;
+}
+
+.activity-frame::after {
+    bottom: 5px;
+    right: 5px;
+}
+
+/* The card content */
+.activity-content {
+    background: linear-gradient(135deg, rgba(22, 155, 98, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 8px;
+    padding: 20px 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover .activity-icon {
+    transform: scale(1.15);
+}
+
+.activity-card h3 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--light-orange-pink);
+}
+
+.activity-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: var(--silver);
+}
+
+.activity-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--cyber-blue), var(--cyber-purple));
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.activity-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--cyber-purple);
+}
+
+/* Hover effects for the cyber-celtic frame */
+.activity-card:hover .activity-frame {
+    box-shadow: 
+        0 0 10px var(--cyber-blue),
+        0 0 20px rgba(0, 242, 255, 0.5);
+    border-color: var(--gold);
+}
+
+/* ===== BUTTONS ===== */
+.cyber-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--irish-green), var(--cyber-blue));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.cyber-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.cyber-button:hover {
+    box-shadow: 0 0 15px var(--cyber-blue);
+    transform: translateY(-3px);
+}
+
+.cyber-button:hover::before {
+    left: 100%;
+}
+
+.cyber-button-small {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+}
+
+.cyber-button-large {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+}
+
+.cyber-button-purple {
+    background: linear-gradient(45deg, var(--cyber-purple), var(--cyber-blue));
+}
+
+.cyber-button-gold {
+    background: linear-gradient(45deg, var(--gold), var(--copper));
+}
+
+/* ===== DROPDOWNS ===== */
+.cyber-dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--cyber-blue);
+    border-radius: 5px;
+    color: var(--silver);
+    padding: 10px 30px 10px 15px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%2300f2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.cyber-dropdown:hover {
+    border-color: var(--cyber-purple);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+.cyber-dropdown:focus {
+    outline: none;
+    border-color: var(--cyber-purple);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+/* ===== FORM ELEMENTS ===== */
+.cyber-input {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--copper);
+    border-radius: 5px;
+    color: var(--silver);
+    font-family: 'Space Mono', monospace;
+    transition: all 0.3s ease;
+}
+
+.cyber-input:focus {
+    outline: none;
+    border-color: var(--cyber-blue);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Space Mono', monospace;
+    color: var(--light-orange-pink);
+}
+
+/* ===== NOTIFICATIONS ===== */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-left: 4px solid var(--cyber-blue);
+    color: var(--silver);
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+    max-width: 350px;
+}
+
+.notification-visible {
+    transform: translateX(0);
+}
+
+.notification-success {
+    border-left-color: var(--irish-green);
+}
+
+.notification-error {
+    border-left-color: #ff3860;
+}
+
+.notification-info {
+    border-left-color: var(--cyber-blue);
+}
+
+.notification-content {
+    margin-right: 15px;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: var(--silver);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+/* ===== TOOLTIPS ===== */
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: var(--silver);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    z-index: 100;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--cyber-blue);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.tooltip-top::before {
+    border-width: 6px 6px 0 6px;
+    border-color: var(--cyber-blue) transparent transparent transparent;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-bottom::before {
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent var(--cyber-blue) transparent;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-left::before {
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent var(--cyber-blue);
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tooltip-right::before {
+    border-width: 6px 6px 6px 0;
+    border-color: transparent var(--cyber-blue) transparent transparent;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tooltip-visible {
+    opacity: 1;
+}
+
+/* ===== LOADING SPINNER ===== */
+.spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 242, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--cyber-blue);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+/* ===== CYBER DECORATIONS ===== */
+.cyber-decoration {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.deco-line {
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, transparent, var(--cyber-blue), transparent);
+}
+
+.deco-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--cyber-blue);
+    margin: 0 10px;
+    position: relative;
+    box-shadow: 0 0 10px var(--cyber-blue);
+}
+
+.deco-circle::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--cyber-blue);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

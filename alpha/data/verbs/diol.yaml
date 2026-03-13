@@ -1,0 +1,95 @@
+# caith.yaml - "to wear"
+infinitive: caith
+root: caith
+type: 1st conjugation
+meaning: to wear/spend/throw
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: caithim
+      second: caitheann tú
+      thirdMasc: caitheann sé
+      thirdFem: caitheann sí
+    plural:
+      first: caithimid
+      second: caitheann sibh
+      third: caitheann siad
+    autonomous: caitear
+  
+  past:
+    singular:
+      first: chaith mé
+      second: chaith tú
+      thirdMasc: chaith sé
+      thirdFem: chaith sí
+    plural:
+      first: chaitheamar
+      second: chaith sibh
+      third: chaith siad
+    autonomous: caitheadh
+  
+  future:
+    singular:
+      first: caithfidh mé
+      second: caithfidh tú
+      thirdMasc: caithfidh sé
+      thirdFem: caithfidh sí
+    plural:
+      first: caithfimid
+      second: caithfidh sibh
+      third: caithfidh siad
+    autonomous: caithfear
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: caithim
+      second: caitheann tú
+      thirdMasc: caitheann sé
+      thirdFem: caitheann sí
+    plural:
+      first: caithimid
+      second: caitheann sibh
+      third: caitheann siad
+    autonomous: caitear
+  
+  habitual_past:
+    singular:
+      first: chaithinn
+      second: chaitheá
+      thirdMasc: chaitheadh sé
+      thirdFem: chaitheadh sí
+    plural:
+      first: chaithimis
+      second: chaitheadh sibh
+      third: chaitheadh siad
+    autonomous: chaití
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: chaithfinn
+      second: chaithfeá
+      thirdMasc: chaithfeadh sé
+      thirdFem: chaithfeadh sí
+    plural:
+      first: chaithfimis
+      second: chaithfeadh sibh
+      third: chaithfeadh siad
+    autonomous: chaithfí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: caithim
+      second: caith
+      thirdMasc: caitheadh sé
+      thirdFem: caitheadh sí
+    plural:
+      first: caithimis
+      second: caithigí
+      third: caitheadh siad
+    autonomous: caitear
+
+notes: "Caith is a versatile verb with multiple meanings: 'to wear' (clothes), 'to spend' (time or money), and 'to throw'. For example: 'caith éadaí' (wear clothes), 'caith airgead' (spend money), or 'caith an liathróid' (throw the ball)."

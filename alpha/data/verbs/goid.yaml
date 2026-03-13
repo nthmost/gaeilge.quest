@@ -1,0 +1,95 @@
+# goid.yaml - "to steal"
+infinitive: goid
+root: goid
+type: 1st conjugation
+meaning: to steal
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: goidim
+      second: goideann tú
+      thirdMasc: goideann sé
+      thirdFem: goideann sí
+    plural:
+      first: goidimid
+      second: goideann sibh
+      third: goideann siad
+    autonomous: goidtear
+  
+  past:
+    singular:
+      first: ghoid mé
+      second: ghoid tú
+      thirdMasc: ghoid sé
+      thirdFem: ghoid sí
+    plural:
+      first: ghoideamar
+      second: ghoid sibh
+      third: ghoid siad
+    autonomous: goideadh
+  
+  future:
+    singular:
+      first: goidfidh mé
+      second: goidfidh tú
+      thirdMasc: goidfidh sé
+      thirdFem: goidfidh sí
+    plural:
+      first: goidfimid
+      second: goidfidh sibh
+      third: goidfidh siad
+    autonomous: goidfear
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: goidim
+      second: goideann tú
+      thirdMasc: goideann sé
+      thirdFem: goideann sí
+    plural:
+      first: goidimid
+      second: goideann sibh
+      third: goideann siad
+    autonomous: goidtear
+  
+  habitual_past:
+    singular:
+      first: ghoidinn
+      second: ghoidteá
+      thirdMasc: ghoidteadh sé
+      thirdFem: ghoidteadh sí
+    plural:
+      first: ghoidimis
+      second: ghoidteadh sibh
+      third: ghoidteadh siad
+    autonomous: ghoidtí
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: ghoidfinn
+      second: ghoidfeá
+      thirdMasc: ghoidfeadh sé
+      thirdFem: ghoidfeadh sí
+    plural:
+      first: ghoidfimis
+      second: ghoidfeadh sibh
+      third: ghoidfeadh siad
+    autonomous: ghoidfí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: goidim
+      second: goid
+      thirdMasc: goideadh sé
+      thirdFem: goideadh sí
+    plural:
+      first: goidimis
+      second: goidigí
+      third: goideadh siad
+    autonomous: goidtear
+
+notes: "Goid is a regular 1st conjugation verb meaning 'to steal'. Like many Irish verbs, it takes lenition (adding 'h' after the first consonant) in the past tense (ghoid) and conditional mood (ghoidfinn)."

@@ -1,0 +1,85 @@
+conjugations:
+  conditional:
+    autonomous: d'íosfaí
+    plural:
+      first: d'íosfaimis
+      second: d'íosfadh sibh
+      third: d'íosfadh siad
+    singular:
+      first: d'íosfainn
+      second: d'íosfá
+      thirdFem: d'íosfadh sí
+      thirdMasc: d'íosfadh sé
+  future:
+    autonomous: íosfar
+    plural:
+      first: íosfaimid
+      second: íosfaidh sibh
+      third: íosfaidh siad
+    singular:
+      first: íosfaidh mé
+      second: íosfaidh tú
+      thirdFem: íosfaidh sí
+      thirdMasc: íosfaidh sé
+  habitual_past:
+    autonomous: d'ití
+    plural:
+      first: d'ithimis
+      second: d'itheadh sibh
+      third: d'itheadh siad
+    singular:
+      first: d'ithinn
+      second: d'iteá
+      thirdFem: d'itheadh sí
+      thirdMasc: d'itheadh sé
+  habitual_present:
+    autonomous: itear
+    plural:
+      first: ithimid
+      second: itheann sibh
+      third: itheann siad
+    singular:
+      first: ithim
+      second: itheann tú
+      thirdFem: itheann sí
+      thirdMasc: itheann sé
+  imperative:
+    autonomous: itear
+    plural:
+      first: ithimis
+      second: ithigí
+      third: itheadh siad
+    singular:
+      first: ithim
+      second: ith
+      thirdFem: itheadh sí
+      thirdMasc: itheadh sé
+  past:
+    autonomous: itheadh
+    plural:
+      first: d'itheamar
+      second: d'ith sibh
+      third: d'ith siad
+    singular:
+      first: d'ith mé
+      second: d'ith tú
+      thirdFem: d'ith sí
+      thirdMasc: d'ith sé
+  present:
+    autonomous: itear
+    plural:
+      first: ithimid
+      second: itheann sibh
+      third: itheann siad
+    singular:
+      first: ithim
+      second: itheann tú
+      thirdFem: itheann sí
+      thirdMasc: itheann sé
+infinitive: ith
+meaning: to eat
+notes: Ith is a regular 1st conjugation verb meaning 'to eat'. Note the stem change
+  in the future tense and conditional mood (ith → íos). The imperative form 'ith'
+  is commonly used in phrases like 'ith do dhinnéar!' (eat your dinner!).
+root: ith
+type: 1st conjugation

@@ -1,0 +1,85 @@
+conjugations:
+  conditional:
+    autonomous: d'fheicfí
+    plural:
+      first: d'fheicfimis
+      second: d'fheicfeadh sibh
+      third: d'fheicfeadh siad
+    singular:
+      first: d'fheicfinn
+      second: d'fheicfeá
+      thirdFem: d'fheicfeadh sí
+      thirdMasc: d'fheicfeadh sé
+  future:
+    autonomous: feicfear
+    plural:
+      first: feicfimid
+      second: feicfidh sibh
+      third: feicfidh siad
+    singular:
+      first: feicfidh mé
+      second: feicfidh tú
+      thirdFem: feicfidh sí
+      thirdMasc: feicfidh sé
+  habitual_past:
+    autonomous: d'fheictí
+    plural:
+      first: d'fheicimis
+      second: d'fheiceadh sibh
+      third: d'fheiceadh siad
+    singular:
+      first: d'fheicinn
+      second: d'fheicteá
+      thirdFem: d'fheiceadh sí
+      thirdMasc: d'fheiceadh sé
+  habitual_present:
+    autonomous: feictear
+    plural:
+      first: feicimid
+      second: feiceann sibh
+      third: feiceann siad
+    singular:
+      first: feicim
+      second: feiceann tú
+      thirdFem: feiceann sí
+      thirdMasc: feiceann sé
+  imperative:
+    autonomous: feictear
+    plural:
+      first: feicimis
+      second: feicigí
+      third: feiceadh siad
+    singular:
+      first: feicim
+      second: feic
+      thirdFem: feiceadh sí
+      thirdMasc: feiceadh sé
+  past:
+    autonomous: chonacthas
+    plural:
+      first: chonaiceamar
+      second: chonaic sibh
+      third: chonaic siad
+    singular:
+      first: chonaic mé
+      second: chonaic tú
+      thirdFem: chonaic sí
+      thirdMasc: chonaic sé
+  present:
+    autonomous: feictear
+    plural:
+      first: feicimid
+      second: feiceann sibh
+      third: feiceann siad
+    singular:
+      first: feicim
+      second: feiceann tú
+      thirdFem: feiceann sí
+      thirdMasc: feiceann sé
+infinitive: feic
+meaning: to see
+notes: Feic is an irregular verb meaning 'to see'. Note the change to 'chonaic' in
+  the past tense. In the conditional and habitual past forms, it takes the prefix
+  'd'' because it begins with 'f'.
+root: feic
+type: irregular

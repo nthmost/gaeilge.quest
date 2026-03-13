@@ -1,0 +1,95 @@
+# plearail.yaml - "to discuss"
+infinitive: pléaráil
+root: pléar
+type: 2nd conjugation
+meaning: to discuss
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: pléaráilim
+      second: pléaráileann tú
+      thirdMasc: pléaráileann sé
+      thirdFem: pléaráileann sí
+    plural:
+      first: pléaráilimid
+      second: pléaráileann sibh
+      third: pléaráileann siad
+    autonomous: pléaráiltear
+  
+  past:
+    singular:
+      first: phléaráil mé
+      second: phléaráil tú
+      thirdMasc: phléaráil sé
+      thirdFem: phléaráil sí
+    plural:
+      first: phléaráileamar
+      second: phléaráil sibh
+      third: phléaráil siad
+    autonomous: pléaráileadh
+  
+  future:
+    singular:
+      first: pléaráilfidh mé
+      second: pléaráilfidh tú
+      thirdMasc: pléaráilfidh sé
+      thirdFem: pléaráilfidh sí
+    plural:
+      first: pléaráilfimid
+      second: pléaráilfidh sibh
+      third: pléaráilfidh siad
+    autonomous: pléaráilfear
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: pléaráilim
+      second: pléaráileann tú
+      thirdMasc: pléaráileann sé
+      thirdFem: pléaráileann sí
+    plural:
+      first: pléaráilimid
+      second: pléaráileann sibh
+      third: pléaráileann siad
+    autonomous: pléaráiltear
+  
+  habitual_past:
+    singular:
+      first: phléaráilinn
+      second: phléaráilteá
+      thirdMasc: phléaráileadh sé
+      thirdFem: phléaráileadh sí
+    plural:
+      first: phléaráilimis
+      second: phléaráileadh sibh
+      third: phléaráileadh siad
+    autonomous: phléaráiltí
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: phléaráilfinn
+      second: phléaráilfeá
+      thirdMasc: phléaráilfeadh sé
+      thirdFem: phléaráilfeadh sí
+    plural:
+      first: phléaráilfimis
+      second: phléaráilfeadh sibh
+      third: phléaráilfeadh siad
+    autonomous: phléaráilfí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: pléaráilim
+      second: pléaráil
+      thirdMasc: pléaráileadh sé
+      thirdFem: pléaráileadh sí
+    plural:
+      first: pléaráilimis
+      second: pléaráiligí
+      third: pléaráilidís
+    autonomous: pléaráiltear
+
+notes: "Pléaráil is a verb meaning 'to discuss' or 'to debate'. It's an example of a verb derived from a noun (plé - discussion) with the verbal ending -áil, which is common in modern Irish, especially for loanwords or newer verb formations."

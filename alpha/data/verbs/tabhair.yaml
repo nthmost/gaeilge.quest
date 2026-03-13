@@ -1,0 +1,95 @@
+# tabhair.yaml - "to give"
+infinitive: tabhair
+root: tabh
+type: irregular
+meaning: to give
+conjugations:
+  # Indicative Mood
+  present:
+    singular:
+      first: tugaim
+      second: tugann tú
+      thirdMasc: tugann sé
+      thirdFem: tugann sí
+    plural:
+      first: tugaimid
+      second: tugann sibh
+      third: tugann siad
+    autonomous: tugtar
+  
+  past:
+    singular:
+      first: thug mé
+      second: thug tú
+      thirdMasc: thug sé
+      thirdFem: thug sí
+    plural:
+      first: thugamar
+      second: thug sibh
+      third: thug siad
+    autonomous: tugadh
+  
+  future:
+    singular:
+      first: tabharfaidh mé
+      second: tabharfaidh tú
+      thirdMasc: tabharfaidh sé
+      thirdFem: tabharfaidh sí
+    plural:
+      first: tabharfaimid
+      second: tabharfaidh sibh
+      third: tabharfaidh siad
+    autonomous: tabharfar
+  
+  # Habitual Past and Present
+  habitual_present:
+    singular:
+      first: tugaim
+      second: tugann tú
+      thirdMasc: tugann sé
+      thirdFem: tugann sí
+    plural:
+      first: tugaimid
+      second: tugann sibh
+      third: tugann siad
+    autonomous: tugtar
+  
+  habitual_past:
+    singular:
+      first: thugainn
+      second: thugtá
+      thirdMasc: thugadh sé
+      thirdFem: thugadh sí
+    plural:
+      first: thugaimis
+      second: thugadh sibh
+      third: thugadh siad
+    autonomous: thugtaí
+  
+  # Conditional Mood
+  conditional:
+    singular:
+      first: thabharfainn
+      second: thabharfá
+      thirdMasc: thabharfadh sé
+      thirdFem: thabharfadh sí
+    plural:
+      first: thabharfaimis
+      second: thabharfadh sibh
+      third: thabharfadh siad
+    autonomous: thabharfaí
+  
+  # Imperative Mood
+  imperative:
+    singular:
+      first: tugaim
+      second: tabhair
+      thirdMasc: tugadh sé
+      thirdFem: tugadh sí
+    plural:
+      first: tugaimis
+      second: tugaigí
+      third: tugaidís
+    autonomous: tugtar
+
+notes: "Tabhair is an irregular verb meaning 'to give'. It has different stems in different tenses: 'tabhair' in the imperative, 'tug-' in the present, and 'thug' in the past. It's used in common phrases like 'tabhair dom' (give me) and 'tabhair aire' (be careful/take care)."
