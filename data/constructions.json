@@ -1346,5 +1346,289 @@
       "copula-is",
       "verb-bi"
     ]
+  },
+  {
+    "id": "word-order-vso",
+    "title": "Word Order: Verb-Subject-Object (VSO)",
+    "category": "sentence structure",
+    "difficulty": "A1",
+    "tags": [
+      "word order",
+      "VSO",
+      "sentence structure",
+      "verb first"
+    ],
+    "summary": "Irish is a VSO language — the verb comes first, before the subject. This is the opposite of English order and applies to nearly all sentences.",
+    "content": "The basic Irish sentence puts the verb first:\n\n  Verb — Subject — Object\n  Ith   — Seán   — an t-úll.\n  Ate     Seán     the apple.\n  (Seán ate the apple.)\n\nThis is not optional — verb-first is the default word order in Irish.\n\nWith bí (to be), the same applies:\n  Tá — Máire — sa bhaile.\n  Is   Máire   at-home.\n  (Máire is at home.)\n\nWith the copula (is), the order is: is + predicate + subject:\n  Is — múinteoir — é.\n  Is   teacher     him.\n  (He is a teacher.)\n\nNegatives and questions also start with a verb/particle:\n  Ní ólann sé caife.     He doesn't drink coffee.\n  Ar ith tú é?           Did you eat it?\n  Ní raibh sí ann.       She wasn't there.\n\nAdverbs of time usually go at the beginning or end, not in the middle:\n  Inniu, chuaigh sí go Gaillimh.   Today she went to Galway.\n  Chuaigh sí go Gaillimh inniu.    She went to Galway today.\n\nThere is no equivalent of the English dummy subject 'it' or 'there':\n  Tá sé ag cur báistí.    It is raining. (lit. It is at putting rain.)\n  Tá daoine ann.          There are people there. (lit. People are there.)",
+    "examples": [
+      {
+        "irish": "Ól Seán caife.",
+        "english": "Seán drinks coffee. (V–S–O)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá Máire tuirseach.",
+        "english": "Máire is tired. (V–S–Adj)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chonaic mé an cat.",
+        "english": "I saw the cat. (V–S–O)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Léigh an páiste an leabhar.",
+        "english": "The child read the book.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé ag cur báistí.",
+        "english": "It is raining. (lit. It is at putting rain.)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Inniu, chuaigh mé go Baile Átha Cliath.",
+        "english": "Today, I went to Dublin.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní ólann sí tae.",
+        "english": "She doesn't drink tea. (negative stays verb-first)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An bhfuil Seán anseo?",
+        "english": "Is Seán here? (question particle + V–S)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "VSO order affects everything: relative clauses, reported speech, commands, negative sentences. Getting comfortable with the verb coming first is the single most important adjustment an English speaker makes when learning Irish.",
+    "see_also": [
+      "verb-bi",
+      "copula-is",
+      "question-words"
+    ]
+  },
+  {
+    "id": "possession-with-ag",
+    "title": "Possession with Ag (tá … agam)",
+    "category": "prepositions",
+    "difficulty": "A1",
+    "tags": [
+      "possession",
+      "ag",
+      "have",
+      "agam",
+      "agat",
+      "aige",
+      "aici"
+    ],
+    "summary": "Irish has no verb 'to have'. Instead, possession is expressed with bí + the preposition ag: 'tá leabhar agam' = I have a book (lit. a book is at me).",
+    "content": "English 'to have' does not exist in Irish. Possession is expressed with:\n\n  tá + [thing possessed] + ag + [possessor]\n\nThe preposition 'ag' inflects for person (prepositional pronouns):\n\n  agam   — at me   (1sg)   → I have\n  agat   — at you  (2sg)   → you have\n  aige   — at him  (3sg m) → he has\n  aici   — at her  (3sg f) → she has\n  againn — at us   (1pl)   → we have\n  agaibh — at you  (2pl)   → you (pl) have\n  acu    — at them (3pl)   → they have\n\nPast tense — use bhí:\n  Bhí carr agam. — I had a car.\n\nFuture tense — use beidh:\n  Beidh airgead agam. — I will have money.\n\nNegative — use níl:\n  Níl carr agam. — I don't have a car.\n\nQuestion — use an bhfuil:\n  An bhfuil leabhar agat? — Do you have a book?\n\nThis construction also expresses ability, obligation, and other relations\ndepending on what follows 'ag' (or other prepositions).",
+    "examples": [
+      {
+        "irish": "Tá leabhar agam.",
+        "english": "I have a book. (lit. A book is at me.)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá carr aige.",
+        "english": "He has a car.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá deartháir agam.",
+        "english": "I have a brother.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Níl airgead agam.",
+        "english": "I don't have money.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An bhfuil fón agat?",
+        "english": "Do you have a phone?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí teach mór acu.",
+        "english": "They had a big house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Beidh am againn.",
+        "english": "We will have time.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá ocras orm.",
+        "english": "I am hungry. (lit. Hunger is on me — a related construction with ar)",
+        "dialect": "standard",
+        "note": "Hunger, thirst, cold etc. use 'ar', not 'ag'"
+      },
+      {
+        "irish": "Níl Gaeilge aici.",
+        "english": "She doesn't have Irish. (= She doesn't speak Irish.)",
+        "dialect": "standard",
+        "note": "'Tá Gaeilge agam' = I speak Irish — very common usage"
+      }
+    ],
+    "notes": "Saying 'tá Gaeilge agam' (I have Irish) is the standard way to say 'I speak Irish'. Similarly 'tá Béarla aige' = he speaks English. The possession construction extends naturally to languages, skills, and qualities.",
+    "see_also": [
+      "prepositional-pronouns",
+      "emotions-with-prepositions",
+      "verb-bi"
+    ]
+  },
+  {
+    "id": "progressive-aspect",
+    "title": "Progressive Aspect: tá … ag + Verbal Noun",
+    "category": "verbs",
+    "difficulty": "A1",
+    "tags": [
+      "progressive",
+      "verbal noun",
+      "ag",
+      "continuous",
+      "present continuous",
+      "tá mé ag"
+    ],
+    "summary": "To say 'I am doing X', Irish uses tá + subject + ag + verbal noun. This is the main way to express ongoing action.",
+    "content": "Irish has no present tense continuous inflection. Instead, ongoing actions use:\n\n  tá + [subject] + ag + [verbal noun]\n\nThe verbal noun (ainm briathartha) is the base form used in this construction — similar to an English gerund (-ing form).\n\n  Tá mé ag ithe.        I am eating.\n  Tá sí ag caint.       She is talking.\n  Tá siad ag rith.      They are running.\n\nWith an object, the verbal noun takes a following noun or possessive:\n  Tá mé ag léamh leabhair.    I am reading a book.  (leabhair = genitive)\n  Tá sé ag ithe aráin.        He is eating bread.   (aráin = genitive)\n  Tá mé á léamh.              I am reading it.      (á = ag + 3sg m poss.)\n\nOther tenses work the same way:\n  Past:    Bhí mé ag obair.     I was working.\n  Future:  Beidh mé ag foghlaim.  I will be learning.\n  Cond.:   Bheinn ag canadh.    I would be singing.\n\nCommon verbal nouns to know at A1:\n  ag caint     — talking\n  ag ithe      — eating\n  ag ól        — drinking\n  ag obair     — working\n  ag léamh     — reading\n  ag scríobh   — writing\n  ag siúl      — walking\n  ag rith      — running\n  ag féachaint — watching / looking\n  ag éisteacht — listening\n  ag foghlaim  — learning\n  ag canadh    — singing\n  ag imirt     — playing (sport/music)",
+    "examples": [
+      {
+        "irish": "Tá mé ag ithe.",
+        "english": "I am eating.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sí ag caint ar an bhfón.",
+        "english": "She is talking on the phone.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí siad ag rith sa pháirc.",
+        "english": "They were running in the park.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá Seán ag obair inniu.",
+        "english": "Seán is working today.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an páiste ag léamh leabhair.",
+        "english": "The child is reading a book.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cad atá tú a dhéanamh?",
+        "english": "What are you doing?",
+        "dialect": "standard",
+        "note": "With 'cad/céard', use 'a dhéanamh' (doing) not 'ag déanamh'"
+      },
+      {
+        "irish": "Céard atá tú a dhéanamh?",
+        "english": "What are you doing?",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Tá sé ag cur báistí.",
+        "english": "It is raining. (lit. it is at putting rain)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Beidh mé ag foghlaim Gaeilge.",
+        "english": "I will be learning Irish.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá mé ag éisteacht le ceol.",
+        "english": "I am listening to music.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "After question words (cad, céard, cad é), the verbal noun is preceded by 'a' not 'ag': 'cad atá tú a dhéanamh?' not 'ag déanamh'. This is a common learner mistake. The ag → a change happens because the verbal noun is in object position after the question word.",
+    "see_also": [
+      "verbal-noun",
+      "verb-bi",
+      "question-words"
+    ]
+  },
+  {
+    "id": "negation",
+    "title": "Negation: Ní, Níl, Ná, Nár",
+    "category": "sentence structure",
+    "difficulty": "A1",
+    "tags": [
+      "negation",
+      "ní",
+      "níl",
+      "ná",
+      "nár",
+      "chan",
+      "negative"
+    ],
+    "summary": "Irish has several negative particles depending on the verb and context. Ní negates most verbs; níl negates bí in the present; ná is used in commands and some clauses.",
+    "content": "Negative particles in Irish:\n\n1. NÍ — negates most verbs (present, future, conditional, habitual)\n   Triggers lenition on the following consonant:\n   Ní ólann sé caife.     He doesn't drink coffee.\n   Ní íosfaidh mé é.      I won't eat it.\n   Before vowels: ní + vowel → 'ní' stays as is\n   Ní ólaim.              I don't drink.\n\n2. NÍL — negates bí in the present tense (not + tá)\n   Níl mé tuirseach.      I am not tired.\n   Níl sé anseo.          He is not here.\n   (Past negative of bí: ní raibh)\n   (Future negative: ní bheidh)\n\n3. NÁ — negative imperative (commands)\n   Ná bí ag caint!        Don't be talking!\n   Ná déan é sin.         Don't do that.\n   Ná habair é.           Don't say it.\n\n4. NÁR — past/conditional negative in subordinate clauses; also negative\n   relative: nár ith sé = who/that did not eat\n   Bhí sé ag rá nár ith sé.   He said that he didn't eat.\n\n5. NACH — negative in questions and subordinate clauses (present/future)\n   Nach bhfuil tú ag teacht?   Aren't you coming?\n   Deir sé nach dtuigeann sé.  He says he doesn't understand.\n\nDialect note: Ulster Irish uses CHAN / CHA instead of ní:\n   Chan ól sé caife. / Cha n-ólaim caife.   (Ulster = He doesn't drink coffee.)",
+    "examples": [
+      {
+        "irish": "Níl mé tuirseach.",
+        "english": "I am not tired.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní ólann sí caife.",
+        "english": "She doesn't drink coffee.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní raibh sé anseo.",
+        "english": "He wasn't here.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní bheidh mé ann.",
+        "english": "I won't be there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ná bí déanach!",
+        "english": "Don't be late!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ná déan é sin.",
+        "english": "Don't do that.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nach bhfuil tú ag teacht?",
+        "english": "Aren't you coming?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chan ól sé caife.",
+        "english": "He doesn't drink coffee. (Ulster)",
+        "dialect": "ulster"
+      },
+      {
+        "irish": "Cha dtuigeann mé.",
+        "english": "I don't understand. (Ulster)",
+        "dialect": "ulster"
+      },
+      {
+        "irish": "Níl Gaeilge agam.",
+        "english": "I don't have Irish. (= I don't speak Irish.)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The most common beginner error is using 'ní' where 'níl' is needed. Remember: 'níl' = negative of 'tá' in the present only. All other tenses of bí use 'ní': ní raibh (past), ní bheidh (future), ní bheadh (conditional).",
+    "see_also": [
+      "verb-bi",
+      "question-words",
+      "dialects"
+    ]
   }
 ]
