@@ -1153,5 +1153,198 @@
       "initial-mutations",
       "verb-bi"
     ]
+  },
+  {
+    "id": "question-words",
+    "title": "Question Words (Focail Ceisteacha)",
+    "category": "questions",
+    "difficulty": "A1",
+    "tags": [
+      "questions",
+      "cé",
+      "cad",
+      "cá",
+      "conas",
+      "cathain",
+      "cén fáth",
+      "cé mhéad"
+    ],
+    "summary": "Irish question words are used to form wh-questions. Most trigger lenition or eclipsis on the following word.",
+    "content": "Core question words:\n\n  cé       — who  (cé + is → cé is → cé hé / cé hí?)\n  cad/céard — what  (cad = standard; céard = Connacht; cad é = Ulster)\n  cá       — where  (triggers lenition: cá bhfuil? — where is?)\n  conas    — how  (conas atá tú? — standard)\n  cathain  — when  (cathain a bheidh sé ann?)\n  cén fáth — why  (lit. 'which reason'; cén fáth a…)\n  cé mhéad — how many / how much  (cé mhéad duine? — how many people?)\n  cén      — which / what (cén t-am? — what time?; cén saghas? — what kind?)\n  cé chomh — how (+ adjective)  (cé chomh fada? — how long?)\n\nQuestion words are followed by the dependent form of the verb. With bí:\n  cá bhfuil…?   cad atá…?   conas atá…?   cathain a bheidh…?\n\nNote: 'cá' triggers eclipsis on the verb (cá bhfuil), while 'cad/cé/conas/cathain' use 'a' or 'ar' as the relative particle before the verb.",
+    "examples": [
+      {
+        "irish": "Cé thú féin?",
+        "english": "Who are you? (lit. Who yourself?)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé hé sin?",
+        "english": "Who is that? (masculine)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé hí sin?",
+        "english": "Who is that? (feminine)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cad atá tú a dhéanamh?",
+        "english": "What are you doing?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Céard atá tú a dhéanamh?",
+        "english": "What are you doing?",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Cad é atá tú a dhéanamh?",
+        "english": "What are you doing?",
+        "dialect": "ulster"
+      },
+      {
+        "irish": "Cá bhfuil tú?",
+        "english": "Where are you?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cá háit a bhfuil tú?",
+        "english": "Where (what place) are you?",
+        "dialect": "standard",
+        "note": "'cá háit' is more emphatic than 'cá' alone"
+      },
+      {
+        "irish": "Conas atá tú?",
+        "english": "How are you?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé'n chaoi a bhfuil tú?",
+        "english": "How are you?",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Cad é mar atá tú?",
+        "english": "How are you?",
+        "dialect": "ulster"
+      },
+      {
+        "irish": "Cathain a thiocfaidh tú?",
+        "english": "When will you come?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cén fáth a bhfuil tú déanach?",
+        "english": "Why are you late?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé mhéad é?",
+        "english": "How much is it?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé mhéad duine atá ann?",
+        "english": "How many people are there?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cén t-am é?",
+        "english": "What time is it?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cén saghas ceoil is maith leat?",
+        "english": "What kind of music do you like?",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé chomh fada is atá sé?",
+        "english": "How long is it?",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Dialect variation is significant here: 'cad' (standard), 'céard' (Connacht), 'cad é' (Ulster) all mean 'what'. For 'how are you', all three dialects have distinct forms. Learn the form for your chosen dialect first, then recognise the others.",
+    "see_also": [
+      "verb-bi",
+      "dialects"
+    ]
+  },
+  {
+    "id": "personal-pronouns",
+    "title": "Personal Pronouns & Emphatic Forms",
+    "category": "nouns",
+    "difficulty": "A1",
+    "tags": [
+      "pronouns",
+      "emphatic",
+      "mise",
+      "tusa",
+      "eisean",
+      "ise",
+      "sinne",
+      "sibhse",
+      "siadsan"
+    ],
+    "summary": "Irish has two sets of personal pronouns: basic forms and emphatic (stressed) forms. The emphatic forms are used constantly in speech.",
+    "content": "Irish personal pronouns:\n\n  Person    Basic    Emphatic\n  1sg       mé       mise\n  2sg       tú       tusa\n  3sg m     sé       eisean\n  3sg f     sí       ise\n  1pl       muid/sinn   sinne\n  2pl       sibh     sibhse\n  3pl       siad     siadsan\n\nNote on 1pl: 'muid' is used in Connacht and Ulster after most verb forms (tá muid); 'sinn' appears after some synthetic forms and in standard written Irish.\n\nEmphatic forms are used:\n1. For contrast or emphasis: 'Rinne MISE é' (I did it — implying, not you)\n2. After the copula: 'Is MISE Seán' (I am Seán)\n3. After prepositions in emphatic contexts: 'liomsa' / 'leatsa' — emphatic prep. pronouns\n4. Standing alone (without a verb): 'Cé é? — Eisean.' (Who? — Him.)\n5. In answer to questions: 'Cé a rinne é? — Mise.' (Who did it? — Me.)\n\nThe emphatic suffixes: -se/-sa (1sg, 2sg, 3sg f, 2pl), -san/-sean (3sg m, 3pl), -ne (1pl)",
+    "examples": [
+      {
+        "irish": "Is mise Máire.",
+        "english": "I am Máire. (emphatic — introducing yourself)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá tusa go maith.",
+        "english": "You are doing well. (emphatic tú)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rinne siadsan é.",
+        "english": "They did it. (emphatic — stressing 'they', not us)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé a d'ith mo lón? — Eisean.",
+        "english": "Who ate my lunch? — Him.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní mise a rinne é.",
+        "english": "It wasn't me who did it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Táimid anseo / Tá muid anseo.",
+        "english": "We are here.",
+        "dialect": "standard",
+        "note": "Synthetic 'táimid' (standard/Munster) vs. analytic 'tá muid' (Connacht/Ulster)"
+      },
+      {
+        "irish": "Bhí sise ag caint.",
+        "english": "She was talking. (emphatic sí)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An tusa an múinteoir?",
+        "english": "Are you the teacher? (emphatic — asking specifically)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Labhair mise leis.",
+        "english": "I spoke with him. (emphatic — it was me who spoke)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Sinne atá ann.",
+        "english": "It is us who are there.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The emphatic forms are not optional politeness or formality markers — they carry grammatical meaning (contrast, focus, identity). Learners who skip emphatic forms sound unnatural. In practice, emphatic pronouns appear in almost every conversation.",
+    "see_also": [
+      "copula-is",
+      "verb-bi"
+    ]
   }
 ]
