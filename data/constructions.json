@@ -3465,5 +3465,1675 @@
       "dialects",
       "lit-cre-na-cille"
     ]
+  },
+  {
+    "id": "yes-no-answers",
+    "title": "Yes and No: Echoing the Verb",
+    "category": "syntax",
+    "difficulty": "B1",
+    "tags": [
+      "yes",
+      "no",
+      "questions",
+      "answers",
+      "tá",
+      "níl",
+      "echoing"
+    ],
+    "summary": "Irish has no single word for 'yes' or 'no' — you answer by repeating the verb.",
+    "content": "Irish does not have dedicated words for 'yes' or 'no'. Instead, you answer a question by repeating the main verb (affirmative or negative). The verb form used must match the tense and person of the question.\n\nPRESENT (bí):\n  An bhfuil tú go maith?  →  Tá. / Níl.\n  Are you well?          →  Yes. / No.\n\nPAST:\n  An raibh tú ann?  →  Bhí. / Ní raibh.\n  Were you there?   →  Yes. / No.\n\nFUTURE:\n  An mbeidh tú ann?  →  Beidh. / Ní bheidh.\n  Will you be there?  →  Yes. / No.\n\nREGULAR VERBS:\n  An gceannóidh tú é?  →  Ceannóidh. / Ní cheannóidh.\n  An ndearna tú é?     →  Rinne. / Ní dhearna.\n\nCOPULA (is):\n  An múinteoir thú?  →  Is ea. / Ní hea.\n  Are you a teacher?  →  Yes (I am). / No (I'm not).\n\nThe answer verb must agree in tense with the question verb — you cannot answer a past-tense question with a present-tense verb.",
+    "examples": [
+      {
+        "irish": "An bhfuil ocras ort? — Tá.",
+        "english": "Are you hungry? — Yes.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An bhfuil ocras ort? — Níl.",
+        "english": "Are you hungry? — No.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An raibh tú sa bhaile? — Bhí.",
+        "english": "Were you at home? — Yes.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An dtéann tú ar scoil? — Téim.",
+        "english": "Do you go to school? — Yes (I go).",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An ndéanfaidh tú é? — Déanfaidh. / Ní dhéanfaidh.",
+        "english": "Will you do it? — Yes / No.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An múinteoir í? — Is ea.",
+        "english": "Is she a teacher? — Yes (she is).",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "For copula questions, Is ea / Ní hea are the standard answers regardless of person. For all other verbs, the answer verb must be 3sg if the question was 3sg, etc. — though in practice speakers often use a fixed person.",
+    "see_also": [
+      "question-words",
+      "copula-is",
+      "verb-bi"
+    ]
+  },
+  {
+    "id": "conjunctions",
+    "title": "Conjunctions (Cónascairí)",
+    "category": "syntax",
+    "difficulty": "B1",
+    "tags": [
+      "conjunctions",
+      "agus",
+      "ach",
+      "nó",
+      "mar",
+      "nuair",
+      "sula",
+      "cé go",
+      "mura"
+    ],
+    "summary": "Conjunctions link clauses and phrases. Many Irish conjunctions trigger mutations on the following verb.",
+    "content": "COORDINATING CONJUNCTIONS (linking equal clauses):\n  agus  — and (no mutation)\n  ach   — but (no mutation)\n  nó    — or (no mutation)\n  óir   — for, because (formal; no mutation)\n\nSUBORDINATING CONJUNCTIONS (introducing dependent clauses):\n  nuair  — when        → lenition of following verb: nuair a tháinig sé\n  mar    — because, as → lenition: mar a dúirt mé\n  sula   — before      → eclipsis: sula mbeidh sé déanach\n  mura   — if not, unless → eclipsis: mura dtiocfaidh sé\n  cé go  — although   → eclipsis: cé go bhfuil sé fuar\n  ionas go — so that  → eclipsis: ionas go mbeidh sé réidh\n  go dtí go — until   → eclipsis: go dtí go dtiocfaidh tú\n\nCONDITIONAL:\n  má    — if (real condition) → lenition: má tá tú sásta\n  dá    — if (hypothetical)  → eclipsis/lenition depending on tense: dá mbeadh sé ann\n\nThe particle 'a' often appears between the conjunction and the verb for nuair/mar:\n  nuair a + lenition (most common written form)\n  nuair is also written as 'nuair a' before verbal forms.",
+    "examples": [
+      {
+        "irish": "Tá mé tuirseach agus tá mé ocrach.",
+        "english": "I am tired and I am hungry.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ba mhaith liom dul, ach níl am agam.",
+        "english": "I would like to go, but I don't have time.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nuair a tháinig sé, bhí áthas orainn.",
+        "english": "When he came, we were happy.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Sula mbeidh sé rómhall, caithfimid imeacht.",
+        "english": "Before it is too late, we must leave.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé go bhfuil sé fuar, téann sí amach.",
+        "english": "Although it is cold, she goes out.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Má tá tú réidh, tosóimid.",
+        "english": "If you are ready, we will start.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dá mbeadh airgead agam, cheannóinn é.",
+        "english": "If I had money, I would buy it.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Many learners confuse má (real/open condition, present/future) with dá (hypothetical/counterfactual). Má never eclipses; dá eclipses present/future verbs but lenites in the conditional.",
+    "see_also": [
+      "conditional-sentences",
+      "initial-mutations",
+      "dependent-verb-forms"
+    ]
+  },
+  {
+    "id": "adverbs",
+    "title": "Adverbs and Adverbial Phrases",
+    "category": "syntax",
+    "difficulty": "B1",
+    "tags": [
+      "adverbs",
+      "go",
+      "manner",
+      "time",
+      "place",
+      "anois",
+      "anseo",
+      "fós",
+      "riamh"
+    ],
+    "summary": "Most Irish adverbs of manner are formed with 'go' + adjective. Many common adverbs of time and place are fixed forms.",
+    "content": "MANNER ADVERBS — go + lenited adjective:\n  go maith    — well\n  go tapaidh  — quickly\n  go mall     — slowly, late\n  go luath    — soon, early\n  go breá     — nicely, finely\n  go ciúin    — quietly\n  go láidir   — strongly\n\nBefore adjectives beginning with a vowel, go adds h-:\n  go hálainn  — beautifully\n  go héasca   — easily\n  go hoscailte — openly\n\nTIME ADVERBS (fixed forms):\n  anois    — now\n  arís     — again\n  cheana   — already\n  fós      — still, yet\n  riamh    — ever (in questions/negative); never (with ní)\n  i gcónaí — always\n  uaireanta — sometimes\n  go minic  — often\n  ó shin    — since then, ago\n  inné     — yesterday\n  amárach  — tomorrow\n\nPLACE ADVERBS:\n  anseo  — here (position)\n  ansin  — there (position)\n  ansiúd — over there\n  isteach — into (motion inward)\n  amach  — out (motion outward)\n  suas   — up (motion)\n  síos   — down (motion)\n  thuas  — up (position)\n  thíos  — down (position)\n\nADVERBIAL PHRASES with prepositions:\n  ar ball       — soon, in a while\n  faoi láthair  — at present, currently\n  go fóill      — yet, for now\n  i ndeireadh na dála — in the end, ultimately",
+    "examples": [
+      {
+        "irish": "Labhraíonn sí go maith.",
+        "english": "She speaks well.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rith sé go tapaidh.",
+        "english": "He ran quickly.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé anseo cheana.",
+        "english": "He is here already.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní raibh mé riamh i Sasana.",
+        "english": "I was never in England.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sí i gcónaí ag obair.",
+        "english": "She is always working.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Téann sé suas go tapaidh.",
+        "english": "He goes up quickly.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Beidh mé ann ar ball.",
+        "english": "I will be there soon / in a while.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Direction adverbs (suas/síos, isteach/amach, anonn/anall) come in pairs: isteach (motion into) vs. istigh (position inside). Using the wrong one is a common learner error.",
+    "see_also": [
+      "adjective-agreement",
+      "comparative-superlative"
+    ]
+  },
+  {
+    "id": "ordinal-numbers",
+    "title": "Ordinal Numbers (Uimhreacha Orduiúla)",
+    "category": "numbers",
+    "difficulty": "B1",
+    "tags": [
+      "ordinal numbers",
+      "first",
+      "second",
+      "céad",
+      "dara",
+      "tríú",
+      "ranking"
+    ],
+    "summary": "Ordinal numbers in Irish use a definite article + prefix form. The first few are irregular.",
+    "content": "ORDINAL NUMBERS:\n  1st  — an chéad (+ lenition of noun)\n  2nd  — an dara / an darna\n  3rd  — an tríú\n  4th  — an ceathrú\n  5th  — an cúigiú\n  6th  — an séú\n  7th  — an seachtú\n  8th  — an t-ochtú\n  9th  — an naoú\n  10th — an deichiú\n\nFor 11th–19th, add déag:\n  11th — an t-aonú ... déag\n  12th — an dóú ... déag\n  20th — an fichiú\n\nUSAGE:\n  an chéad + lenited noun: an chéad lá (the first day)\n  From 2nd onward: ordinal + noun in genitive or plain form depending on context:\n    an dara lá     (the second day)\n    an tríú háit   (third place)\n    an ceathrú rann (the fourth verse)\n\nFRACTIONS share these forms:\n  leath   — half\n  trian   — a third\n  ceathrú — a quarter (same as 4th)\n  cúigiú  — a fifth",
+    "examples": [
+      {
+        "irish": "an chéad lá",
+        "english": "the first day",
+        "dialect": "standard"
+      },
+      {
+        "irish": "an dara ceann",
+        "english": "the second one",
+        "dialect": "standard"
+      },
+      {
+        "irish": "an tríú háit",
+        "english": "third place",
+        "dialect": "standard"
+      },
+      {
+        "irish": "an deichiú huair",
+        "english": "the tenth time",
+        "dialect": "standard"
+      },
+      {
+        "irish": "an ceathrú cuid den leabhar",
+        "english": "the fourth part of the book",
+        "dialect": "standard"
+      },
+      {
+        "irish": "an chéad Déardaoin eile",
+        "english": "next Thursday (lit. the first next Thursday)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "sa chéad áit",
+        "english": "in the first place / firstly",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "An chéad always lenites the following noun (if lenitable). From an dara onward, no lenition. The ordinal comes before the noun, unlike cardinal numbers which follow: trí cinn (three of them) vs. an tríú ceann (the third one).",
+    "see_also": [
+      "numbers-counting"
+    ]
+  },
+  {
+    "id": "compound-prepositions",
+    "title": "Compound Prepositions (Réamhfhocail Chomhshuite)",
+    "category": "syntax",
+    "difficulty": "B1",
+    "tags": [
+      "prepositions",
+      "compound",
+      "ar aghaidh",
+      "os comhair",
+      "i ndiaidh",
+      "in aice",
+      "le linn",
+      "de réir",
+      "in ionad",
+      "genitive"
+    ],
+    "summary": "Compound prepositions are multi-word phrases that govern the genitive case of the following noun.",
+    "content": "Compound prepositions consist of a simple preposition + noun (sometimes + another preposition). The noun following a compound preposition is in the GENITIVE case.\n\nCOMMON COMPOUND PREPOSITIONS:\n  ar aghaidh    — in front of, facing, ahead\n  os comhair    — in front of, opposite (with genitive)\n  i ndiaidh     — after, behind, following\n  in aice (le)  — beside, near\n  le linn       — during, at the time of\n  de réir        — according to\n  in ionad       — instead of\n  i gcaitheamh  — throughout, during\n  ar son         — for the sake of, for\n  ar feadh       — for (duration of time)\n  i lár          — in the middle of\n  thar ceann    — on behalf of\n  faoi dhéin    — towards, to meet\n\nWhen followed by a PRONOUN, compound prepositions use prepositional pronouns on the first element:\n  ar mo aghaidh → i mo dhiaidh → lena linn → dá réir\n  (my/their/his portion absorbed into first prep)\n\nMost commonly:\n  ina dhiaidh sin  — after that\n  dá réir sin      — accordingly, as a result\n  ina theannta sin — in addition to that",
+    "examples": [
+      {
+        "irish": "Sheas sé os comhair an tí.",
+        "english": "He stood in front of the house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tháinig sí i ndiaidh an bhéile.",
+        "english": "She came after the meal.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Le linn an chogaidh, bhí sé deacair.",
+        "english": "During the war, it was difficult.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "De réir an dlí, tá sé mídhleathach.",
+        "english": "According to the law, it is illegal.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ar feadh seachtaine, d'fhan sé.",
+        "english": "For a week, he stayed.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "In ionad caife, d'ól mé tae.",
+        "english": "Instead of coffee, I drank tea.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ina dhiaidh sin, d'imigh sí.",
+        "english": "After that, she left.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The genitive after compound prepositions is a common point of error. Remember that definite nouns take the genitive article (an → na for feminine, na → na for plural). When the object is a pronoun, compound prepositions have their own inflected forms.",
+    "see_also": [
+      "genitive-case",
+      "prepositional-pronouns",
+      "preposition-article-contractions"
+    ]
+  },
+  {
+    "id": "past-tense",
+    "title": "The Past Tense (Aimsir Chaite)",
+    "category": "verbs",
+    "difficulty": "B1",
+    "tags": [
+      "past tense",
+      "aimsir chaite",
+      "lenition",
+      "conjugation",
+      "1st conjugation",
+      "2nd conjugation",
+      "irregular"
+    ],
+    "summary": "The Irish past tense lenites the verb stem (or adds d' before vowels). Endings are minimal — person is usually shown by pronoun.",
+    "content": "FORMATION — 1st Conjugation (monosyllabic stems):\n  Lenite initial consonant (or add d' before vowels/fh-):\n  bris → bhris mé  (I broke)\n  ól  → d'ól mé   (I drank)\n  fan → d'fhan mé  (I waited)\n  glan → ghlan mé  (I cleaned)\n\n1st Conjugation synthetic (ending carries person):\n  1sg:  bhris-eamar / ghlan-amar  (we broke / cleaned) [1pl synthetic]\n  All other persons use pronoun + base past form.\n\n2nd Conjugation (polysyllabic, -igh/-aigh stems):\n  ceannaigh → cheannaigh mé  (I bought)\n  imigh    → d'imigh mé     (I left)\n  éirigh   → d'éirigh mé    (I got up)\n  lean follows 1st conj pattern despite ending: lean → lean mé\n\nNEGATIVE — ní + lenition:\n  Níor bhris mé é.    (I didn't break it.)\n  Níor cheannaigh sí. (She didn't buy.)\n  Níor ól mé é.       (I didn't drink it.) — 'níor' before vowels and fh\n\nQUESTION — ar + lenition (past particle):\n  Ar bhris tú é?      (Did you break it?)\n  Ar cheannaigh tú?   (Did you buy?)\n  Ar ól tú é?         (Did you drink it?)\n\nKEY IRREGULAR PAST FORMS:\n  téigh → chuaigh     (went)\n  tar   → tháinig     (came)\n  abair → dúirt       (said)\n  bí    → bhí         (was)\n  déan  → rinne       (did/made)\n  faigh → fuair       (got)\n  feic  → chonaic     (saw)\n  ith   → d'ith       (ate)\n  clois → chuala      (heard)\n  tabhair → thug      (gave)\n  beir  → rug         (caught, gave birth)",
+    "examples": [
+      {
+        "irish": "Bhris mé an fhuinneog.",
+        "english": "I broke the window.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'ól siad caife.",
+        "english": "They drank coffee.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cheannaigh sí leabhar nua.",
+        "english": "She bought a new book.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuaigh muid go Gaillimh.",
+        "english": "We went to Galway.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Níor tháinig sé in am.",
+        "english": "He didn't come on time.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ar chuala tú an scéal? — Chuala.",
+        "english": "Did you hear the news? — Yes.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rinne sí an obair go maith.",
+        "english": "She did the work well.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The past tense particle in dependent position is 'ar' (leniting), not 'a'. In Ulster Irish, 'cha' / 'chan' replaces 'ní / níor' in many negative contexts. The 1pl synthetic form '-amar/-eamar' is used in formal and written Irish; colloquially, 'muid/sinn' is added to the 3sg form.",
+    "see_also": [
+      "regular-verb-conjugation",
+      "irregular-verbs",
+      "dependent-verb-forms",
+      "yes-no-answers"
+    ]
+  },
+  {
+    "id": "advanced-copula",
+    "title": "Advanced Copula Constructions",
+    "category": "copula",
+    "difficulty": "C1",
+    "tags": [
+      "copula",
+      "is",
+      "ba",
+      "gur",
+      "gurb",
+      "is ea",
+      "ní hea",
+      "subordinate",
+      "double copula",
+      "past copula"
+    ],
+    "summary": "The copula changes form across tenses and clause types. Mastering gur/gurb, ba/b', and double-copula structures is essential at C1.",
+    "content": "TENSE FORMS OF THE COPULA:\n  Present:    is (positive), ní (negative), an? (question), nach? (neg. question)\n  Past/Cond:  ba / b' (positive), níorbh / níor (negative), arbh / ar? (question)\n  Subordinate present:  gur / gurb (that it is), nach (that it is not)\n  Subordinate past:     gurbh / gur (that it was), nárbh / nár\n\nb' is used before vowels and fh- in past/conditional:\n  b'fhearr liom tae.  (I preferred tea.)\n  Ba bhreá liom é.    (I would love it.)\n\nDOUBLE COPULA — emphasis or classification of a modified noun:\n  Is é an rud is mó a bhíonn deacair.  (It is the biggest thing that tends to be difficult.)\n  Is é Seán is fearr.  (It's Seán who is best.)\n  Ba é an lá ba fhearr é.  (It was the best day.)\n\nCOPULA IN SUBORDINATE CLAUSES:\n  Deir sí gur múinteoir é.      (She says he is a teacher.)\n  Cheap mé gurbh amhlaidh é.    (I thought that was so.)\n  Dúirt sé nárbh é a thuairim.  (He said it wasn't his opinion.)\n\nIS EA / NÍ HEA (standard yes/no for copula questions):\n  An dochtúir thú? — Is ea. / Ní hea.\n\nCOPULA + ADJECTIVE PREDICATE (formal/literary pattern):\n  Is maith an rud é.   (It is a good thing.)\n  Is mór an trua é.    (It is a great pity.)\n  Ba mhóide an brón é. (It added to the sorrow.)",
+    "examples": [
+      {
+        "irish": "Ba mhúinteoir í fadó.",
+        "english": "She was a teacher long ago.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "B'fhearr liom fanacht.",
+        "english": "I would prefer to stay.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Deir sé gur Francach í.",
+        "english": "He says she is French.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cheap sí nárbh fhíor é.",
+        "english": "She thought it wasn't true.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is é Dia is mó a chuidigh léi.",
+        "english": "It is God who helped her most (double copula).",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is maith an scéalaí an aimsir.",
+        "english": "Time is a good storyteller. (proverbial copula + noun)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ba é sin an fáth ar imigh mé.",
+        "english": "That was the reason I left.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The choice between gur and gurb before vowels parallels is/is (is before consonants, is before vowels). Arbh / níorbh are used before vowels and fh- in past questions/negatives. These distinctions matter in careful writing but are often collapsed in speech.",
+    "see_also": [
+      "copula-is",
+      "copula-vs-bi",
+      "cleft-sentences",
+      "dependent-verb-forms"
+    ]
+  },
+  {
+    "id": "preverbal-particles",
+    "title": "Preverbal Particles and Dependent Forms",
+    "category": "verbs",
+    "difficulty": "C1",
+    "tags": [
+      "particles",
+      "ní",
+      "an",
+      "nach",
+      "go",
+      "gur",
+      "nár",
+      "dependent forms",
+      "eclipsis",
+      "lenition",
+      "subordinate"
+    ],
+    "summary": "Every Irish verb clause has a particle (or lacks one) that determines its meaning and the mutation it triggers. These particles must be matched to the correct dependent verb form.",
+    "content": "Irish verbs have two sets of forms: INDEPENDENT (used in main affirmative clauses, no particle) and DEPENDENT (used after all particles).\n\nPARTICLES AND THEIR MUTATIONS:\n\nMain clause:\n  [none]    — affirmative, independent form: Téim. Chuaigh sí.\n  ní        — negative, lenition: Ní théim. Ní chuaigh sí.\n  an?       — question, eclipsis: An dtéann tú? An ndeachaigh sí?\n  nach?     — negative question, eclipsis: Nach dtéann tú?\n\nPast tense (special particles):\n  níor      — negative past, lenition: Níor tháinig sé.\n  ar?       — question past, lenition: Ar tháinig sí?\n  nár?      — negative question past, lenition: Nár tháinig sé?\n\nSubordinate / reported:\n  go        — 'that' (affirmative, present/future), eclipsis: Deir sí go dtagann sé.\n  gur/gurb  — 'that' (past/conditional), lenition: Cheap sé gur tháinig sí.\n  nach       — 'that...not', eclipsis: Deir sé nach dtagann sé.\n  nár        — 'that...not' (past/conditional), lenition: Cheap sé nár tháinig sí.\n\nConditional/temporal conjunctions also use these:\n  nuair a   — lenition (when)\n  sula      — eclipsis (before)\n  má        — lenition (if, real)\n  dá        — eclipsis/conditional form (if, hypothetical)\n\nNOTE ON BÍ: Bí has special dependent forms:\n  an mbíonn? nach mbíonn? go mbíonn — present habitual\n  an raibh? nach raibh? go raibh    — past\n  an mbeidh? go mbeidh              — future",
+    "examples": [
+      {
+        "irish": "Téim abhaile gach lá.",
+        "english": "I go home every day. (independent)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní théim abhaile go luath.",
+        "english": "I don't go home early. (ní + lenition)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An dtéann tú abhaile?",
+        "english": "Do you go home? (an + eclipsis)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Deir sí go dtagann sé i gcónaí.",
+        "english": "She says he always comes. (go + eclipsis)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cheap mé gur tháinig sé.",
+        "english": "I thought he came. (gur + lenition)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Níor ól sé a dhóthain.",
+        "english": "He didn't drink enough. (níor + lenition, past)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Nár inis sí duit é?",
+        "english": "Didn't she tell you? (nár + lenition, past neg. question)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The irregular verbs bí, téigh, tar, abair, déan, faigh, feic, clois, tabhair, beir, ith have irregular dependent forms — especially in past tense. These must be learned individually. A key confusion point: 'go' (the conjunction 'that') triggers eclipsis, but 'nuair a' (when) triggers lenition.",
+    "see_also": [
+      "dependent-verb-forms",
+      "initial-mutations",
+      "conjunctions",
+      "irregular-verbs"
+    ]
+  },
+  {
+    "id": "genitive-with-verbal-nouns",
+    "title": "The Genitive with Verbal Nouns",
+    "category": "verbs",
+    "difficulty": "C1",
+    "tags": [
+      "genitive",
+      "verbal noun",
+      "ainm briathartha",
+      "object",
+      "definite",
+      "scríobh",
+      "léamh"
+    ],
+    "summary": "When a verbal noun takes a definite object, that object goes into the genitive case — a key structural difference from English.",
+    "content": "In Irish, the verbal noun (VN) functions like a noun. When it has an object:\n\nINDEFINITE OBJECT — stays in nominative after VN:\n  ag scríobh litreach   — writing a letter\n  ag léamh leabhair     — reading a book (partitive genitive; see note)\n  ag ithe aráin         — eating bread (indefinite)\n\nDEFINITE OBJECT — goes into genitive before VN in a nominal context, OR appears with object pronoun:\n  ag scríobh na litreach  — writing the letter (genitive with article)\n  ag léamh an leabhair    — reading the book (genitive)\n  á scríobh               — writing it (object pronoun replaces noun: á = ag + a)\n\nVERBAL NOUN AS SUBJECT OR COMPLEMENT:\n  Is maith liom snámh.      — I like swimming. (VN as object of 'is maith liom')\n  Tá snámh go maith aige.  — He swims well. (VN as subject)\n  Thosaigh sí ag caint.    — She started talking. (VN after 'ag')\n\nGENITIVE OF THE VN ITSELF:\n  am codlata    — sleeping time, bedtime\n  am léitheoireachta — reading time\n  seomra folctha — bathroom (lit. room of bathing)\n  lá oibre      — workday\n\nOBJECT BEFORE VN (literary / emphatic):\n  Chonaic mé ag scríobh litreach é.  — I saw him writing a letter.\n  (object 'é' comes after the VN phrase in formal writing)",
+    "examples": [
+      {
+        "irish": "Tá mé ag léamh an leabhair.",
+        "english": "I am reading the book. (definite → genitive)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá mé ag léamh leabhair.",
+        "english": "I am reading a book. (indefinite → nominative)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is maith liom snámh.",
+        "english": "I like swimming.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé ag scríobh na litreach.",
+        "english": "He is writing the letter.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuala mé á rá.",
+        "english": "I heard it being said (á = ag + a).",
+        "dialect": "standard"
+      },
+      {
+        "irish": "am codlata",
+        "english": "bedtime, sleeping time (genitive of VN)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Thosaigh sí ag foghlaim na Gaeilge.",
+        "english": "She started learning Irish. (definite object in genitive)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Indefinite objects of verbal nouns are actually in the genitive too (partitive), but for most nouns the partitive genitive is identical to the nominative. The definite genitive (with the article) is where the change becomes visible. The pronoun construction á (= ag + 3sg object) is the most common way to express a definite pronoun object of a verbal noun.",
+    "see_also": [
+      "verbal-noun",
+      "genitive-case",
+      "genitive-chains"
+    ]
+  },
+  {
+    "id": "discourse-markers",
+    "title": "Discourse Markers and Sentence Connectors",
+    "category": "syntax",
+    "difficulty": "C1",
+    "tags": [
+      "discourse markers",
+      "connectors",
+      "ar ndóigh",
+      "mar sin féin",
+      "thairis sin",
+      "dá bharr sin",
+      "i ndáiríre",
+      "transition"
+    ],
+    "summary": "Discourse markers signal logical relationships between sentences — contrast, addition, result, concession. Essential for coherent written and spoken Irish.",
+    "content": "ADDITION:\n  chomh maith (leis sin)  — also, as well (as that)\n  thairis sin             — moreover, besides that\n  ina theannta sin        — in addition to that, along with that\n  anuas air sin           — on top of that, furthermore\n  i dteannta a chéile     — together, combined\n\nCONTRAST / CONCESSION:\n  mar sin féin            — nonetheless, however, even so\n  ach sin ráite           — that said\n  cé sin                  — although, even though (literary)\n  ar an láimh eile        — on the other hand\n  in ainneoin sin         — despite that, in spite of that\n\nRESULT / CONSEQUENCE:\n  mar sin                 — so, therefore\n  dá bharr sin            — as a result of that, consequently\n  ar an gcaoi sin         — in that way, accordingly\n  dá réir sin             — accordingly, correspondingly\n  uime sin                — therefore (formal/literary)\n\nCLARIFICATION / EMPHASIS:\n  ar ndóigh               — of course, naturally\n  go deimhin              — indeed, certainly\n  i ndáiríre              — really, truly, in fact\n  is é sin le rá          — that is to say\n  is é sin                — namely, that is\n\nTIME / SEQUENCE:\n  ar dtús                 — first, at first\n  ina dhiaidh sin         — after that, subsequently\n  faoi dheireadh          — finally, at last\n  idir an dá linn         — meanwhile, in the meantime\n  ó shin i leith          — since then",
+    "examples": [
+      {
+        "irish": "Tá sé deacair. Mar sin féin, déanfaidh mé mo dhícheall.",
+        "english": "It's difficult. Nevertheless, I'll do my best.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ar ndóigh, tá ceart agat.",
+        "english": "Of course, you are right.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dá bharr sin, bhí orainn athrú.",
+        "english": "As a result of that, we had to change.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "I ndáiríre, ní raibh a fhios agam.",
+        "english": "In fact, I didn't know.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ar dtús, lean siad an treoracha. Ina dhiaidh sin, rinne siad a rogha rud féin.",
+        "english": "At first, they followed the instructions. After that, they did their own thing.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Thairis sin, caithfear smaoineamh ar an gcostas.",
+        "english": "Moreover, one must think about the cost.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is é sin le rá, ní raibh aon rogha eile ann.",
+        "english": "That is to say, there was no other option.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Many of these markers are prepositional phrases with demonstratives (sin 'that'). They typically come clause-initially and are often set off by a comma. In formal registers, uime sin and dá réir sin are preferred; in speech, mar sin and thairis sin are more common.",
+    "see_also": [
+      "conjunctions",
+      "compound-prepositions",
+      "word-order-vso"
+    ]
+  },
+  {
+    "id": "literary-verb-forms",
+    "title": "Literary and Archaic Verb Forms",
+    "category": "verbs",
+    "difficulty": "C2",
+    "tags": [
+      "literary",
+      "archaic",
+      "autonomous",
+      "synthetic",
+      "2nd person singular",
+      "classical",
+      "older Irish"
+    ],
+    "summary": "Classical and literary Irish uses synthetic verb endings, older autonomous forms, and second-person singular distinctions not found in the standard.",
+    "content": "SYNTHETIC ENDINGS (person encoded in the verb, not a separate pronoun):\nModern standard prefers analytic (verb + pronoun), but literary and formal texts use synthetic forms:\n\n  Present:\n    1sg: -aim/-im    (deirim — I say)   vs. analytic: deir mé\n    1pl: -imid/-aimid (deirimid — we say) vs. deir muid\n    2sg: -ir (deir tú — no synthetic in most modern verbs; older: deirir)\n\n  Past:\n    1pl: -amar/-eamar (chuamar — we went) vs. chuaigh muid\n\n  Future:\n    1sg: -fad/-fead  (rachad — I will go) vs. rachaidh mé\n    1pl: -faimid     (rachaimid — we will go)\n\n  Conditional:\n    1sg: -fainn      (rachainn — I would go)\n    2sg: -fá         (rachfá — you would go)\n    1pl: -faimis     (rachaimis)\n\nARCHAIC AUTONOMOUS (passive-like) FORMS:\n  The standard autonomous uses -tear/-tar (present) and -adh/-eadh (past).\n  Older texts show: -thear (present lenited), and -thas (past, from -(e)adh):\n    Rinneadh é.   — Standard: It was done.\n    Rinnteas é.   — Older/dialectal variant.\n\n2nd PERSON SINGULAR (tú vs. thú):\n  In literary Irish, 'thú' is the object form and 'tú' the subject.\n  Standard Irish uses 'tú' for both, but literature preserves the distinction:\n    Chonaic mé thú. (I saw you.) — object\n    Tháinig tú.     (You came.)  — subject\n\nPAST COPULA IN LITERARY USE:\n  Ba + lenition in elaborate nominal sentences:\n    Ba mhian leis dul ann.  (He wished/desired to go there.)\n    Ba mhór an crá croí é. (It was a great heartache.)",
+    "examples": [
+      {
+        "irish": "Deirim leat go bhfuil sé fíor.",
+        "english": "I tell you it is true. (1sg synthetic: deirim)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuamar go Corcaigh an samhradh sin.",
+        "english": "We went to Cork that summer. (1pl past synthetic)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rachad ann amárach.",
+        "english": "I will go there tomorrow. (1sg future synthetic)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rachainn dá mbeadh am agam.",
+        "english": "I would go if I had time. (1sg conditional)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chonaic mé thú ag an margadh.",
+        "english": "I saw you at the market. (object form thú)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rinneadh an obair go maith.",
+        "english": "The work was done well. (standard autonomous past)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ba mhian leis an saol a thuiscint.",
+        "english": "He desired to understand life. (literary ba + verbal noun)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The synthetic forms are not merely archaic — they survive in all dialects to varying degrees. Munster Irish is especially synthetic. Reading any 20th-century prose or poetry requires comfort with 1sg -aim, 1pl -imid/-(a)mar, and the conditional endings. The tú/thú distinction appears throughout Peig, An tOileánach, and other canonical texts.",
+    "see_also": [
+      "regular-verb-conjugation",
+      "autonomous-verb",
+      "lit-an-toilanach",
+      "lit-peig"
+    ]
+  },
+  {
+    "id": "classical-spelling",
+    "title": "Classical vs. Standard Spelling",
+    "category": "overview",
+    "difficulty": "C2",
+    "tags": [
+      "spelling",
+      "caighdeán",
+      "classical",
+      "pre-standard",
+      "orthography",
+      "silent letters",
+      "older texts"
+    ],
+    "summary": "Pre-standard Irish texts use older spelling conventions. Recognising classical orthographic patterns is essential for reading literature printed before the 1950s.",
+    "content": "The Caighdeán Oifigiúil (Official Standard) was introduced in 1958 and revised in 2017. Texts before this — and many literary works in dialect — use older spelling.\n\nKEY DIFFERENCES:\n\n1. SILENT LETTERS — classical Irish retains etymological letters now silent or removed:\n   Classical: tighe (of a house) → Standard: tí\n   Classical: oidhche → Standard: oíche  (night)\n   Classical: cneidh → Standard: cneá  (wound)\n   Classical: aoidh → Standard: aí (guest)\n\n2. DIPHTHONG SPELLINGS:\n   Classical: gníomh, snámh, biadh, tigh\n   Standard:  gníomh (same), snámh (same), bia, teach (declension simplified)\n\n3. GENITIVE FORMS — classical uses fuller vowel in genitive:\n   Classical: leabhair (of a book, 2 syllables clearly)\n   Standard:  leabhair (same, but other forms more compressed)\n   Classical feminine genitives often retained: na mná (standard same)\n\n4. ECLIPSIS SPELLING — pre-standard texts sometimes wrote both letters in full:\n   Classical: i bpeann (in a pen) — same as standard\n   But older texts: 'i bh-fearann' with hyphen for eclipsis\n\n5. VERBAL FORMS — older endings preserved:\n   Classical: do chuaidh → Standard: chuaigh  (went)\n   Classical: do rinne   → Standard: rinne    (did)\n   The particle 'do/d'' before past tense was obligatory in older writing.\n\n6. THE PARTICLE 'DO' (past tense marker):\n   Classical texts always write: Do chuaigh sé. Do dúirt sí.\n   Standard: drops 'do' — Chuaigh sé. Dúirt sí.\n   'D'' survives before vowels and fh- in the standard.\n\n7. DIALECT SPELLINGS:\n   Munster literary tradition: bheith (to be — Munster spelling of bheith, same actually)\n   Connacht: síol, fíor (same), but vowel syncope spelling varies\n   Ulster: spellings closer to Scottish Gaelic in some older texts",
+    "examples": [
+      {
+        "irish": "Do chuaidh sé go Baile Átha Cliath.",
+        "english": "He went to Dublin. (classical form with 'do' particle)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí sé ina shuí ag bun an tighe.",
+        "english": "He was sitting at the foot of the house. (tighe = classical genitive of teach)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "ar feadh na hoidhche",
+        "english": "throughout the night (oidhche = classical spelling of oíche)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Do rinne sí a dícheall.",
+        "english": "She did her best. (do + past, classical)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Níor dhúisigh sé go maidin.",
+        "english": "He didn't wake until morning. (standard — níor replacing classical 'níor')",
+        "dialect": "standard"
+      },
+      {
+        "irish": "bean an tighe",
+        "english": "the woman of the house (classical: tighe = genitive of teach)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The particle 'do' is the single most immediately visible difference between classical and standard Irish. When reading Peig, An tOileánach, or Cré na Cille, expect 'do' before nearly every past tense verb. Once you recognise it as a past-tense marker that lenites the verb, classical texts become much more accessible.",
+    "see_also": [
+      "regular-verb-conjugation",
+      "past-tense",
+      "lit-an-toilanach",
+      "lit-peig",
+      "dialects"
+    ]
+  },
+  {
+    "id": "literary-register",
+    "title": "Literary Register: Inversion, Fronting, and Poetic Word Order",
+    "category": "syntax",
+    "difficulty": "C2",
+    "tags": [
+      "literary",
+      "register",
+      "inversion",
+      "fronting",
+      "emphasis",
+      "poetic",
+      "word order",
+      "topicalization"
+    ],
+    "summary": "Literary Irish exploits VSO freedom for emphasis, topicalization, and rhythm. Recognising these patterns is key to reading poetry and formal prose.",
+    "content": "Irish VSO order is flexible. Literary and formal registers exploit this freedom for emphasis, rhythm, and topicalization.\n\nTOPICALIZATION (fronting for emphasis):\nMove the element you want to emphasize to the front, often as a cleft:\n  Is san oíche a labhrann an chuach.  (It is at night that the cuckoo calls.)\n  Is iad na daoine bochta is fearr a thuigeann é.  (It is the poor people who understand it best.)\n\nADVERBIAL FRONTING — placing time/place expressions before the verb:\n  I dtús aimsire, ní raibh ach fiántas ann.  (In the beginning, there was only wilderness.)\n  Ar maidin lá arna mhárach, d'éirigh sí.   (The morning of the next day, she rose.)\n\nFRONTING OF OBJECT (literary, marked):\n  An focal sin, ní déarfaidh mé choíche arís é.\n  (That word — I will never say it again.)\n\nPOETIC INVERSION — adjective before noun (echoing older Irish):\n  fada é an lá  (long is the day) — predicate-first, common in poetry\n  Mairg nach bhfuil ina chailleach.  (Woe to one who is not an old woman — literary)\n\nAPPOSITION AND ELABORATION:\n  Literary prose often delays the main verb with long nominal expansions:\n  An fear mór láidir a bhí ina chónaí ar imeall an bhaile, ba é a d'oscail an doras.\n  (The big strong man who lived on the edge of the town — it was he who opened the door.)\n\nELLIPSIS — subject/object dropped when recoverable (more common in literature):\n  Thóg sé an claiomh. Bhuail. Thit an namhaid.\n  (He took the sword. Struck. The enemy fell.) — 'he' implied in 2nd/3rd verb.",
+    "examples": [
+      {
+        "irish": "Is fada an lá go sámh.",
+        "english": "Long and peaceful is the day. (adjective-fronted predicate)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "I gcroílár na hoíche, músclaíodh mé.",
+        "english": "In the dead of night, I was awakened. (adverbial fronting)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An focal céanna, chuala mé arís agus arís é.",
+        "english": "That same word, I heard it again and again. (fronted object)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is iad na sléibhte a mhúnlaigh a chroí.",
+        "english": "It is the mountains that shaped his heart. (cleft + topicalization)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ar an gcéad dul síos, caithfear ceist eile a chur.",
+        "english": "First of all, another question must be asked. (formal adverbial)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní bheidh a leithéid arís ann.",
+        "english": "His/her like will not be seen again. (classic literary phrase, often closing an elegy)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Ní bheidh a leithéid arís ann is one of the most recognisable phrases in Irish literary culture — an elegiac formula used in eulogies and poetry. The VSO base order is highly amenable to fronting because the verb signals clause-start regardless; anything before the verb is therefore inherently marked/emphatic.",
+    "see_also": [
+      "word-order-vso",
+      "cleft-sentences",
+      "classical-spelling",
+      "lit-cre-na-cille",
+      "lit-curt-an-mhean-oiche"
+    ]
+  },
+  {
+    "id": "broad-slender",
+    "title": "Broad and Slender: The Foundation of Irish Spelling",
+    "category": "phonology",
+    "difficulty": "A1",
+    "tags": [
+      "broad",
+      "slender",
+      "leathan",
+      "caol",
+      "spelling",
+      "consonants",
+      "vowels",
+      "caol le caol"
+    ],
+    "summary": "Every Irish consonant is either broad (leathan) or slender (caol). This single principle underlies all Irish spelling and inflection.",
+    "content": "Every consonant in Irish is pronounced in one of two ways:\n  BROAD (leathan) — adjacent to the vowels a, o, u\n  SLENDER (caol)  — adjacent to the vowels e, i\n\nSlender consonants are 'palatalized' — slightly 'y-coloured'. Broad consonants are not.\n  bán (broad n) — sounds like English 'bawn'\n  bín (slender n) — sounds like English 'been'\n\nTHE SPELLING RULE: Caol le caol, leathan le leathan\n  ('Slender with slender, broad with broad')\n  The vowels on BOTH SIDES of any consonant group must agree in quality.\n  This is why endings are added the way they are — the added vowel must match the consonant's quality.\n\nWHY THIS MATTERS FOR INFLECTION:\n  The genitive, plural, and verbal endings all insert or change vowels to satisfy this rule.\n  fear (man) → genitive: fir  [the r becomes slender → insert i before r]\n  bord (table) → genitive: boird  [d becomes slender → insert i]\n  leabhar (book) → genitive: leabhair  [r becomes slender → insert i]\n  lámh (hand) → genitive: láimhe  [mh becomes slender → insert i, add e]\n\nIDENTIFYING BROAD vs. SLENDER:\n  Look at the vowel(s) immediately beside the consonant(s):\n  bord — o is beside d → d is broad\n  boird — oi is beside d → d is slender (i makes it slender)\n  scríobh —ío is beside bh → bh is slender (the i counts)\n  scríobha — a is beside bh → bh turns broad (in this form)\n\nCONSONANT GROUPS:\n  In groups like 'bhr', 'str', 'gl', all consonants in the group share the same quality.\n  The vowel on each side of the group determines the quality of the whole group.",
+    "examples": [
+      {
+        "irish": "fear / fir",
+        "english": "man / of a man (broad r → slender r)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "bord / boird",
+        "english": "table / of a table (broad d → slender d)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "lámh / láimhe",
+        "english": "hand / of a hand (broad mh → slender mh + e)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "bán / bána",
+        "english": "white (adj) / plural/gen: broad n stays broad, add a",
+        "dialect": "standard"
+      },
+      {
+        "irish": "milis / milse",
+        "english": "sweet / comparative: slender throughout",
+        "dialect": "standard"
+      },
+      {
+        "irish": "scríobh / scríobhann",
+        "english": "write (stem) / writes: add broad ending -ann",
+        "dialect": "standard"
+      },
+      {
+        "irish": "bris / briseann",
+        "english": "break (stem) / breaks: add slender ending -eann",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "This rule explains why Irish words sometimes look like they gain or lose vowels — the vowels are being inserted or adjusted to satisfy broad/slender agreement. Once you internalize this rule, Irish spelling becomes much more systematic. Dialects apply the rule consistently, but the specific quality of some consonants can vary.",
+    "see_also": [
+      "initial-mutations",
+      "genitive-case",
+      "noun-plural-formation",
+      "adjective-agreement"
+    ]
+  },
+  {
+    "id": "imperative-mood",
+    "title": "The Imperative Mood (Modh Ordaitheach)",
+    "category": "verbs",
+    "difficulty": "A2",
+    "tags": [
+      "imperative",
+      "commands",
+      "requests",
+      "ná",
+      "2sg",
+      "1pl",
+      "2pl",
+      "modh ordaitheach"
+    ],
+    "summary": "The imperative is used for commands, requests, and suggestions. The 2sg form is simply the verb stem.",
+    "content": "The imperative has three forms in common use: 2sg (you), 1pl (let's), and 2pl (y'all).\n\n2ND SINGULAR (talking to one person) = bare verb stem:\n  1st conjugation: bris! (break!), glan! (clean!), ól! (drink!), fan! (wait!), ith! (eat!)\n  2nd conjugation: ceannaigh! (buy!), imigh! (go/leave!), éirigh! (get up!)\n  Note: the 2sg is the dictionary form — the simplest form of the verb.\n\n1ST PLURAL (let's / we should) = stem + -imis (slender) / -aimis (broad):\n  glan → glanaimis!   (let's clean!)\n  bris → brisimis!    (let's break!)\n  ól  → ólaímis!     (let's drink!)\n  ceannaigh → ceannaimis!  (let's buy!)\n\n2ND PLURAL (talking to a group) = stem + -igí (slender) / -aigí (broad):\n  glan → glanaidí!... actually: glan + aigí = glanaigí!\n  bris → brisigí!\n  ól  → ólaigí!\n  ceannaigh → ceannaigí!\n  imigh → imígí!\n\nNEGATIVE IMPERATIVE: ná + imperative form\n  ná is not followed by lenition in the imperative\n  ná adds h- before vowel-initial verbs:\n  Ná glan é! (Don't clean it!)\n  Ná bris é! (Don't break it!)\n  Ná hith é! (Don't eat it!) — h before vowel\n  Ná hól é! (Don't drink it!) — h before vowel\n  Ná himigh! (Don't leave!) — h before vowel\n\nPOLITE REQUESTS — use the conditional instead:\n  An gclánfá é sin? (Would you clean that?)\n  An bhféadfá é sin a dhéanamh? (Could you do that?)",
+    "examples": [
+      {
+        "irish": "Suigh síos!",
+        "english": "Sit down!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Éirigh suas!",
+        "english": "Get up!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ith do chuid!",
+        "english": "Eat your food!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Déan deifir!",
+        "english": "Hurry up! (make haste)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ná habair é sin!",
+        "english": "Don't say that!",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Téimis abhaile.",
+        "english": "Let's go home.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Glanaigí an seomra!",
+        "english": "Clean the room! (to a group)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ná bígí deireanach!",
+        "english": "Don't be late! (to a group)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Bí has irregular imperative forms: 2sg = bí!, 1pl = bímis!, 2pl = bígí! Negative: ná bí!, ná bímis!, ná bígí! The imperative of tabhair is tabhair (2sg), tugaigí (2pl). The imperative of abair is abair (2sg), abraigí (2pl).",
+    "see_also": [
+      "regular-verb-conjugation",
+      "negation",
+      "verb-bi"
+    ]
+  },
+  {
+    "id": "simple-prepositions",
+    "title": "Simple Prepositions: Meanings and Basic Use",
+    "category": "prepositions",
+    "difficulty": "A2",
+    "tags": [
+      "prepositions",
+      "ag",
+      "ar",
+      "as",
+      "chuig",
+      "de",
+      "do",
+      "faoi",
+      "i",
+      "idir",
+      "le",
+      "ó",
+      "roimh",
+      "thar",
+      "trí",
+      "um",
+      "réamhfhocail"
+    ],
+    "summary": "Irish has 15 simple prepositions. Each has a core meaning and a range of idiomatic uses. All inflect with pronouns.",
+    "content": "The 15 simple prepositions of Irish, with their core meanings:\n\n  ag  — at, by; marks possession (tá x agam), progressive (ag léamh), and skills/states\n  ar  — on, at, upon; marks many emotional states (tá áthas ar, tá ocras ar) and obligations\n  as  — out of, from; origin from a place, made of a material\n  chuig — to, towards; used for going to people, sending things to people\n  de  — off, from, of; detachment or removal, some adjective idioms\n  do  — to, for; indirect objects, benefit; also used in dative constructions\n  faoi — under, about; under a surface, or concerning a topic; some emotional states\n  i/in — in, into; location inside something (i eclipses following noun)\n  idir — between; requires two entities or a plural\n  le  — with, by; accompaniment, agreement, connection, ownership idioms\n  ó   — from, since; separation from a person or place, origin, time since\n  roimh — before, in front of; temporal (before an event) or physical (in front of)\n  thar — over, past, beyond; motion across or beyond something\n  trí  — through; motion or passage through something\n  um  — about, around; used mainly in set phrases (um Nollaig = around Christmas)\n\nKEY DISTINCTIONS:\n  go (to a place) vs. chuig (to a person):\n    Tá mé ag dul go Gaillimh.  (I'm going to Galway — place)\n    Tá mé ag dul chuig mo chara.  (I'm going to my friend — person)\n\n  ó (from — origin/separation) vs. as (from — out of):\n    Is as Corcaigh mé.  (I'm from Cork — origin, as is idiomatic here)\n    Tháinig sé ó Mháire.  (It came from Máire — from a person)\n    Tháinig sé as an mbosca.  (It came out of the box — emergence)\n\n  do (for/to) vs. le (with/for in some senses):\n    Cheannaigh mé é do Sheán.  (I bought it for Seán — beneficiary)\n    Tá sé le hÁine.  (It is with/belongs to Áine — possession idiom)",
+    "examples": [
+      {
+        "irish": "Tá leabhar agam.",
+        "english": "I have a book. (ag = possession)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá ocras orm.",
+        "english": "I am hungry. (ar = state)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is as Éirinn mé.",
+        "english": "I am from Ireland. (as = origin)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuir mé litir chuici.",
+        "english": "I sent a letter to her. (chuig = to a person)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sé faoi bhun na fuinneoige.",
+        "english": "It is under the window. (faoi = under)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tháinig sí le Seán.",
+        "english": "She came with Seán. (le = accompaniment)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuaigh sé thar an droichead.",
+        "english": "He went over the bridge. (thar = over/past)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí sí roimhe.",
+        "english": "She was before him / ahead of him. (roimh = before)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "All simple prepositions have inflected forms when followed by a pronoun — these are the prepositional pronouns (see that card). When followed by the definite article, most prepositions contract: ag an → ag an (no change), ar an → ar an (no change), but i + an → sa/san, de + an → den, do + an → don, etc.",
+    "see_also": [
+      "prepositional-pronouns",
+      "preposition-article-contractions",
+      "possession-ag",
+      "emotions-with-prepositions"
+    ]
+  },
+  {
+    "id": "h-t-prefix",
+    "title": "The h-Prefix and t-Prefix",
+    "category": "phonology",
+    "difficulty": "A2",
+    "tags": [
+      "h-prefix",
+      "t-prefix",
+      "mutations",
+      "article",
+      "phonology",
+      "na",
+      "an",
+      "vowels"
+    ],
+    "summary": "Besides lenition and eclipsis, Irish has two more initial changes: the h-prefix (before vowels in specific grammatical environments) and the t-prefix (masculine nouns after 'an').",
+    "content": "Irish has four types of initial changes. Lenition and eclipsis are the most common, but h-prefixing and t-prefixing are equally systematic.\n\nH-PREFIX — added before vowel-initial words in these environments:\n\n1. After 3sg FEMININE possessive 'a' (her):\n   a hata     (her hat)    a héadan   (her face)\n   a hainm    (her name)   a hathair  (her father)\n   Compare: a (his) + vowel → lenition or d': a éadan → a éadan (no change — 3sg masc possessive doesn't trigger h)\n\n2. After 'go' + adjective (degree adverb):\n   go hálainn    (beautifully)   go hiontach  (wonderfully)\n   go healaíonta (artistically)  go héasca    (easily)\n\n3. After definite article 'na' (nom plural / gen sg feminine) before vowels:\n   na héin        (the birds)     na húlla       (the apples)\n   na háiteanna   (the places)    na hÉireannach (the Irish people)\n\nT-PREFIX — added before certain vowel-initial nouns:\n\n1. MASCULINE nouns after 'an' (nominative singular) beginning with a vowel:\n   an t-arán   (the bread)    an t-uisce  (the water)\n   an t-am     (the time)     an t-éan    (the bird)\n   an t-ainm   (the name)     an t-im     (the butter)\n\n2. FEMININE nouns after 'an' (nominative singular) beginning with sl-, sn-, sr-:\n   an tsráid   (the street)   an tsrón    (the nose)\n   an tsnámh   (the swimming) an tslí     (the way/path)\n\nT-PREFIX is NOT used:\n   In the genitive of masculine vowel-initial nouns: an éin (of the bird — no t-)\n   After other prepositions: ar an arán (not *ar an t-arán — wait, actually yes: ar an arán eclipses)\n   With feminine nouns beginning with s + other consonants: an scoil (no t-, scoil is feminine)\n\nIMPORTANT: After 'ar an', 'ag an', 'leis an' etc., the standard uses eclipsis (not t-prefix):\n   ar an mbord, ag an doras — the t-prefix rule only applies directly after the bare article 'an'.",
+    "examples": [
+      {
+        "irish": "Cad is ainm di? — Áine is ainm di. Cad is ainm dá hathair?",
+        "english": "What is her name? — Áine. What is her father's name? (h-prefix on hathair)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an t-uisce fuar.",
+        "english": "The water is cold. (t-prefix on uisce)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá na héin ag canadh.",
+        "english": "The birds are singing. (h-prefix after na)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Labhraíonn sí go hálainn.",
+        "english": "She speaks beautifully. (h-prefix after go)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá an tsráid plódaithe.",
+        "english": "The street is crowded. (t-prefix on feminine sráid)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "an t-arán agus an t-im",
+        "english": "the bread and the butter (t-prefix on both)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "A useful memory aid: the h-prefix 'softens' the transition to a vowel (adds a consonant before the vowel). The t-prefix 'hardens' the start of a word (replaces the vowel onset with a dental stop). Both are written with a hyphen: an t-uisce, go hálainn (no hyphen for h-prefix in standard).",
+    "see_also": [
+      "initial-mutations",
+      "definite-article",
+      "possessive-pronouns",
+      "broad-slender"
+    ]
+  },
+  {
+    "id": "days-months-dates",
+    "title": "Days, Months, Seasons, and Dates",
+    "category": "numbers",
+    "difficulty": "A2",
+    "tags": [
+      "days",
+      "months",
+      "seasons",
+      "dates",
+      "calendar",
+      "laethanta",
+      "míonna",
+      "séasúir",
+      "dátaí"
+    ],
+    "summary": "Calendar vocabulary in Irish comes with specific grammatical structures: days use 'Dé' for 'on', months use 'i mí', and seasons use 'sa/san'.",
+    "content": "DAYS OF THE WEEK (Laethanta na Seachtaine):\n  Dé Luain     — Monday\n  Dé Máirt     — Tuesday\n  Dé Céadaoin  — Wednesday\n  Déardaoin    — Thursday (note: no 'Dé' prefix)\n  Dé hAoine    — Friday (h-prefix: Aoine → hAoine)\n  Dé Sathairn  — Saturday\n  Dé Domhnaigh — Sunday\n\n'ON' A DAY OF THE WEEK: use 'Dé' alone (no extra preposition needed):\n  Dé Luain     — on Monday\n  Dé Sathairn  — on Saturday\n  But: 'Ar an' + day name is also used in speech: ar an Luan, ar an Satharn\n\nLAST / NEXT:\n  Dé Luain seo caite   — last Monday\n  Dé Luain seo chugainn — next Monday\n\nMONTHS (Míonna na Bliana):\n  Eanáir, Feabhra, Márta, Aibreán, Bealtaine, Meitheamh\n  Iúil, Lúnasa, Meán Fómhair, Deireadh Fómhair, Samhain, Nollaig\n\n'IN' A MONTH: i mí + month name:\n  i mí Eanáir   (in January)    i mí Iúil     (in July)\n  i mí na Nollag (in December — Nollaig → na Nollag in genitive)\n\nSEASONS (Séasúir):\n  an t-earrach (spring)   san earrach  (in spring)\n  an samhradh  (summer)   sa samhradh  (in summer)\n  an fómhar    (autumn)   sa bhfómhar / san fhómhar (in autumn)\n  an geimhreadh (winter)  sa gheimhreadh (in winter)\n\nYEARS:\n  i mbliana     — this year\n  anuraidh      — last year\n  an bhliain seo chugainn — next year\n  In specific years: sa bhliain dhá mhíle is... (in the year 2000s...)\n\nDATE EXPRESSIONS:\n  An chéad lá de mhí Eanáir  — the 1st of January\n  An dara lá déag de mhí Mhárta — the 12th of March\n  Cén lá den mhí é? — What day of the month is it?\n  Is é an (ordinal) lá de mhí (month) é — It is the Xth of (month).",
+    "examples": [
+      {
+        "irish": "Casaimid Dé Céadaoin.",
+        "english": "We meet on Wednesday.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Rugadh mé i mí Lúnasa.",
+        "english": "I was born in August.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bíonn sé fuar sa gheimhreadh.",
+        "english": "It is cold in winter.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dé Luain seo caite, d'imigh sí.",
+        "english": "Last Monday, she left.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An chéad lá de mhí na Nollag",
+        "english": "The first of December",
+        "dialect": "standard"
+      },
+      {
+        "irish": "i mbliana agus anuraidh",
+        "english": "this year and last year",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tagann na cuacha i mí Aibreáin.",
+        "english": "Cuckoos come in April.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Note that Irish months are not capitalized (unlike English). Déardaoin (Thursday) is irregular — it does not take the 'Dé' prefix. Dé hAoine takes the h-prefix because Aoine is vowel-initial. In Ulster Irish, the days often use different forms.",
+    "see_also": [
+      "telling-time",
+      "ordinal-numbers",
+      "numbers-counting",
+      "h-t-prefix"
+    ]
+  },
+  {
+    "id": "future-tense",
+    "title": "The Future Tense (Aimsir Fháistineach)",
+    "category": "verbs",
+    "difficulty": "B1",
+    "tags": [
+      "future tense",
+      "aimsir fháistineach",
+      "faidh",
+      "fidh",
+      "óidh",
+      "eoidh",
+      "conjugation",
+      "rachaidh",
+      "tiocfaidh"
+    ],
+    "summary": "The future tense uses the endings -faidh/-fidh (1st conjugation) and -óidh/-eoidh (2nd conjugation). Key irregular futures must be learned.",
+    "content": "FORMATION — 1st Conjugation (monosyllabic stems):\n  Broad stems → add -faidh:\n  glan → glanfaidh  (will clean)\n  ól  → ólfaidh    (will drink)\n  fan → fanfaidh   (will wait)\n  léigh → léifidh  (will read — slender)\n\n  Slender stems → add -fidh:\n  bris → brisfidh   (will break)\n  buail → buailfidh (will hit)\n  scríobh → scríobhfaidh (broad — scríobhfaidh)\n\n2nd CONJUGATION (polysyllabic, -aigh/-igh stems):\n  Broad: remove -aigh, add -óidh:\n  ceannaigh → ceannóidh  (will buy)\n  dúnaigh  → dúnóidh   (will close)\n\n  Slender: remove -igh, add -eoidh:\n  imigh   → imeoidh    (will leave)\n  éirigh  → éireoidh   (will get up)\n  bailigh → baileoidh  (will collect)\n\nIRREGULAR FUTURES (must be learned):\n  bí     → beidh       (will be)\n  téigh  → rachaidh    (will go)\n  tar    → tiocfaidh   (will come)\n  abair  → déarfaidh   (will say)\n  faigh  → gheobhaidh  (will get — highly irregular)\n  feic   → feicfidh    (will see)\n  clois  → cluinfidh   (will hear)\n  tabhair → tabharfaidh (will give)\n  beir   → béarfaidh   (will catch)\n  ith    → íosfaidh    (will eat)\n  déan   → déanfaidh   (will do/make — follows regular pattern)\n\nNEGATIVE: ní + lenition:\n  Ní rachaidh mé.    (I will not go.)\n  Ní bheidh sé ann. (He will not be there.)\n  Ní íosfaidh sí é. (She will not eat it.)\n\nQUESTION: an + eclipsis:\n  An rachaidh tú?      (Will you go?)\n  An mbeidh tú ann?   (Will you be there?)\n  An dtiocfaidh siad? (Will they come?)\n\nSUBORDINATE: go + eclipsis:\n  Deir sí go rachaidh sí.   (She says she will go.)\n  Ceapann sé go mbeidh sé ann. (He thinks he will be there.)",
+    "examples": [
+      {
+        "irish": "Rachaidh mé go Baile Átha Cliath amárach.",
+        "english": "I will go to Dublin tomorrow.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tiocfaidh sí ar ball.",
+        "english": "She will come in a while.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ceannóidh siad teach nua.",
+        "english": "They will buy a new house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní bheidh sé fuar amárach.",
+        "english": "It will not be cold tomorrow.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An íosfaidh tú é? — Íosfaidh.",
+        "english": "Will you eat it? — Yes.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Gheobhaidh tú é gan aon agó.",
+        "english": "You will get it without any doubt.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Déarfaidh sé an fhírinne, is dócha.",
+        "english": "He will tell the truth, probably.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Gheobhaidh (from faigh, to get) is one of the most irregular futures in Irish — the stem changes completely. The future of déan is déanfaidh, which follows the regular 1st conjugation pattern. In Munster Irish, the 1sg future often uses synthetic -fad/-fead endings: raghad (I will go), tiocfad (I will come).",
+    "see_also": [
+      "past-tense",
+      "regular-verb-conjugation",
+      "irregular-verbs",
+      "conditional-tense",
+      "yes-no-answers"
+    ]
+  },
+  {
+    "id": "perfect-aspect",
+    "title": "The Perfect Aspect: tar éis + Verbal Noun",
+    "category": "verbs",
+    "difficulty": "B1",
+    "tags": [
+      "perfect",
+      "tar éis",
+      "i ndiaidh",
+      "aspect",
+      "just",
+      "have done",
+      "verbal noun",
+      "recent past"
+    ],
+    "summary": "Irish expresses the perfect ('I have done X') using tá/bhí + tar éis + verbal noun. There is no separate perfect tense.",
+    "content": "Irish does not have a perfect tense (like English 'have done'). Instead, it uses the construction:\n  tá/bhí + subject + tar éis + verbal noun\n\nPRESENT PERFECT (something just done / recently completed):\n  Tá mé tar éis é a dhéanamh.  (I have just done it. / I've done it.)\n  Tá sí tar éis teacht.         (She has just come.)\n  Tá siad tar éis imeacht.      (They have just left.)\n\nPAST PERFECT (had done — use bhí):\n  Bhí sé tar éis imeacht nuair a tháinig mé.  (He had already left when I came.)\n  Bhí sí tar éis an leabhar a léamh.           (She had read the book.)\n\nWHEN THE VERBAL NOUN HAS AN OBJECT:\n  Put 'a' immediately before the verbal noun; the object comes BEFORE 'a':\n  Tá mé tar éis an leabhar a léamh.    (I have just read the book.)\n  Tá sé tar éis an dinnéar a ithe.     (He has just eaten the dinner.)\n  Tá sí tar éis litir a scríobh.        (She has just written a letter.)\n\nWith a PRONOUN object, use á (= ag + 3sg object):\n  Tá mé tar éis é a dhéanamh → Tá mé tar éis a dhéanamh  ... actually use:\n  Tá mé tar éis é a chríochnú.  (I have just finished it.)\n\nALTERNATIVE: i ndiaidh (more common in Ulster and Connacht):\n  Tá mé i ndiaidh é a dhéanamh.  (I have just done it.)\n  This is equally valid and common in many dialects.\n\nSIMPLE PAST vs. PERFECT:\n  Rinne mé é.              — I did it. (simple past — action in the past)\n  Tá mé tar éis é a dhéanamh. — I have just done it. (perfect — result in present)",
+    "examples": [
+      {
+        "irish": "Tá mé tar éis mo chuid oibre a chríochnú.",
+        "english": "I have just finished my work.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá sí tar éis dul a chodladh.",
+        "english": "She has just gone to sleep.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí sé tar éis imeacht romhainn.",
+        "english": "He had left before us.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá mé tar éis an scannán sin a fheiceáil.",
+        "english": "I have just seen that film.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An bhfuil tú tar éis é sin a chloisteáil? — Táim.",
+        "english": "Have you just heard that? — Yes.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá siad tar éis teacht abhaile.",
+        "english": "They have just come home.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá mé i ndiaidh é a dhéanamh.",
+        "english": "I have just done it. (i ndiaidh variant)",
+        "dialect": "ulster"
+      }
+    ],
+    "notes": "The construction 'tá X tar éis Y a dhéanamh' literally means 'X is after doing Y' — Irish expresses the perfect through a spatial metaphor (being after something). The 'a' before the verbal noun is a verbal particle, not the article. Do not confuse it with the possessive 'a' or the relative particle 'a'.",
+    "see_also": [
+      "verbal-noun",
+      "progressive-aspect",
+      "prospective-aspect",
+      "past-tense",
+      "genitive-with-verbal-nouns"
+    ]
+  },
+  {
+    "id": "personal-numbers",
+    "title": "Personal Numbers (Uimhreacha Pearsanta)",
+    "category": "numbers",
+    "difficulty": "B1",
+    "tags": [
+      "personal numbers",
+      "uimhreacha pearsanta",
+      "beirt",
+      "triúr",
+      "ceathrar",
+      "counting people",
+      "daoine"
+    ],
+    "summary": "Irish uses a special set of numbers exclusively for counting people. Cardinal numbers are not used for people.",
+    "content": "When counting PEOPLE, Irish uses personal numbers — never cardinal numbers:\n\n  beirt    — 2 people\n  triúr    — 3 people\n  ceathrar — 4 people\n  cúigear  — 5 people\n  seisear  — 6 people\n  seachtar — 7 people\n  ochtar   — 8 people\n  naonúr   — 9 people\n  deichniúr — 10 people\n\nFor 1 person: use duine amháin (one person) or aon duine.\nFor 11+: cardinal numbers + duine/daoine: aon duine dhéag (11), fiche duine (20).\n\nUSAGE — personal numbers + GENITIVE PLURAL of the noun:\n  beirt mhac       (two sons — mac → genitive plural: mac; mutated: mhac)\n  beirt iníonacha  (two daughters)\n  triúr múinteoirí (three teachers)\n  ceathrar ban     (four women — bean → genitive plural: ban)\n  cúigear mac      (five sons)\n  seisear fear     (six men — fear → genitive plural: fear)\n\nSTANDING ALONE (without a noun):\n  Bhí beirt ann.         (There were two people there.)\n  Tháinig triúr.         (Three people came.)\n  Cé mhéad duine? — Seisear. (How many people? — Six.)\n\nDECLINATION — personal numbers decline like nouns:\n  leis an mbeirt    (with the two of them)\n  don triúr         (for the three of them)\n  ag an gceathrar   (at the four of them)\n\nPRONOUNS after personal numbers:\n  Personal numbers typically refer to mixed or male groups.\n  For female groups, the same numbers are used.\n  beirt (the two of them) is common as a standalone pronoun-like form.",
+    "examples": [
+      {
+        "irish": "Tá beirt mhac agam.",
+        "english": "I have two sons.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tháinig triúr múinteoirí isteach.",
+        "english": "Three teachers came in.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí seachtar againn ann.",
+        "english": "There were seven of us there.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Deichniúr ban a bhí sa ghrúpa.",
+        "english": "There were ten women in the group.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cé mhéad duine? — Cúigear.",
+        "english": "How many people? — Five.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'imigh an bheirt acu.",
+        "english": "The two of them left. (beirt with definite article)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí ceathrar clainne orthu.",
+        "english": "They had four children.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The personal numbers are one of the most distinctly Irish features of the language. Never say *dhá dhuine* for 'two people' — say *beirt*. The distinction between personal and cardinal numbers is strictly observed by native speakers. Note that beirt, when definite, becomes an bheirt (lenited after the article, as it is feminine in grammatical gender).",
+    "see_also": [
+      "numbers-counting",
+      "ordinal-numbers",
+      "genitive-case"
+    ]
+  },
+  {
+    "id": "conditional-tense",
+    "title": "The Conditional Tense (Modh Coinníollach): Forms",
+    "category": "verbs",
+    "difficulty": "B2",
+    "tags": [
+      "conditional",
+      "modh coinníollach",
+      "would",
+      "fainn",
+      "fadh",
+      "óinn",
+      "eodh",
+      "bheadh",
+      "rachainn",
+      "irregular"
+    ],
+    "summary": "The conditional expresses 'would'. It is built on the future stem with past-style endings. All forms have initial lenition (or d' before vowels).",
+    "content": "The conditional always begins with a lenited (or d'-prefixed) verb — this is how you know it's conditional.\n\n1ST CONJUGATION — BROAD STEMS (add -fadh for 3sg, -fainn for 1sg, etc.):\n  glan (clean):   ghlanfainn, ghlanfá, ghlanfadh, ghlanfaimis, ghlanfadh sibh, ghlanfaidís\n  ól  (drink):    d'ólfainn, d'ólfá, d'ólfadh, d'ólfaimis, d'ólfadh sibh, d'ólfaidís\n  fan (wait):     d'fhanfainn, d'fhanfá, d'fhanfadh\n\n1ST CONJUGATION — SLENDER STEMS (add -feadh/-finn/-feá etc.):\n  bris (break):   bhrisfinn, bhrisfea, bhrisfeadh, bhrisfimis, bhrisfeadh sibh, bhrisfidís\n  léigh (read):   léifinn, léifeá, léifeadh, léifimis\n\n2ND CONJUGATION — BROAD (-óinn/-ódh):\n  ceannaigh:      cheannóinn, cheannófá, cheannódh, cheannóimis, cheannódh sibh, cheannóidís\n  dúnaigh:        dhúnóinn, dhúnódh\n\n2ND CONJUGATION — SLENDER (-eoinn/-eodh):\n  imigh:          d'imeoinn, d'imeofá, d'imeodh, d'imeoimis\n  éirigh:         d'éireoinn, d'éireodh\n\nIRREGULAR CONDITIONAL FORMS:\n  bí:       bheinn, bheifá, bheadh, bheimis, bheadh sibh, bheidís\n  téigh:    rachainn, rachfá, rachadh, rachaimis, rachadh sibh, rachaidís\n  tar:      thiocfainn, thiocfá, thiocfadh, thiocfaimis\n  abair:    déarfainn, déarfá, déarfadh\n  faigh:    gheobhainn, gheofá, gheobhadh, gheobhaimis\n  feic:     d'fheicfinn, d'fheicfeá, d'fheicfeadh\n  clois:    chluinfinn, chluinfeadh\n  tabhair:  thabharfainn, thabharfadh\n  ith:      d'íosfainn, d'íosfadh\n  déan:     dhéanfainn, dhéanfadh\n  beir:     bhéarfainn, bhéarfadh\n\nNEGATIVE: ní + lenition (conditional verb already lenited — ní adds nothing new):\n  Ní rachainn ann.  (I would not go there.)\n  Ní bheadh sé ann. (He would not be there.)\n\nQUESTION: an + eclipsis:\n  An rachadh sí?     (Would she go?)\n  An mbeadh tú ann? (Would you be there?)",
+    "examples": [
+      {
+        "irish": "Rachainn ann dá mbeadh am agam.",
+        "english": "I would go there if I had time.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cheannódh sé é dá mbeadh airgead aige.",
+        "english": "He would buy it if he had money.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bheadh áthas orm.",
+        "english": "I would be happy. (lit. happiness would be on me)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní thiocfainn ar ais go deo.",
+        "english": "I would never come back.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "An ndéanfá garraíocht? — Dhéanfainn.",
+        "english": "Would you do gardening? — I would.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Gheobhainn é dá n-iarrfainn.",
+        "english": "I would get it if I asked.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'íosfainn rud ar bith anois.",
+        "english": "I would eat anything right now.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The conditional personal endings are: -inn (1sg), -fá/-feá (2sg), -fadh/-feadh (3sg), -faimis/-fimis (1pl), -fadh/-feadh sibh (2pl), -faidís/-fidís (3pl). The 2sg -fá/-feá is distinctive and common in speech. The conditional of bí (bheadh/bheinn) is especially high-frequency and must be automatic.",
+    "see_also": [
+      "conditional-sentences",
+      "future-tense",
+      "past-tense",
+      "irregular-verbs"
+    ]
+  },
+  {
+    "id": "five-declensions",
+    "title": "The Five Noun Declensions",
+    "category": "nouns",
+    "difficulty": "B2",
+    "tags": [
+      "declensions",
+      "nouns",
+      "genitive",
+      "plural",
+      "1st declension",
+      "2nd declension",
+      "3rd declension",
+      "4th declension",
+      "5th declension"
+    ],
+    "summary": "Irish nouns belong to one of five declensions, which determine how the genitive and plural are formed. Recognising a noun's declension is key to correct inflection.",
+    "content": "Irish nouns are grouped into 5 declensions. The declension predicts the genitive singular and often the plural.\n\n1ST DECLENSION — mostly masculine, ends in broad consonant:\n  Genitive: slenderize final consonant (insert -i- if needed for caol le caol)\n  Plural: often same as genitive (or + -a in some subgroups)\n  Examples: fear/fir, bord/boird, leabhar/leabhair, cat/cait, bád/báid, ceol/ceoil\n  Plural: fir (men), boird (tables), leabhair (books)\n\n2ND DECLENSION — mostly feminine, varied endings:\n  Genitive: slenderize + add -e (slender) or -a (broad endings, e.g. -óg → -óige)\n  Plural: usually + -a\n  Examples:\n    lámh → láimhe (hand); plural: lámha\n    cloch → cloiche (stone); plural: clocha\n    fuinneog → fuinneoige (window); plural: fuinneoga\n    scoil → scoile (school); plural: scoileanna\n    bean → mná (woman — highly irregular); plural: mná\n\n3RD DECLENSION — mixed gender, varied:\n  Genitive: often + -(e)ach or -(a)igh — or the stem changes\n  Many verbal nouns and abstract nouns belong here\n  Examples:\n    sagart → sagairt (priest); plural: sagairt\n    eochair → eochrach (key); plural: eochracha\n    triail → trialach (trial); plural: trialacha\n    súil → súl (eye — irregular); plural: súile\n\n4TH DECLENSION — mixed, genitive = nominative (no change):\n  The genitive is the same form as the nominative — the easiest declension\n  Includes most verbal nouns, loanwords, nouns ending in a vowel\n  Examples:\n    bia → bia (food — gen = nom)\n    dlí → dlí (law)\n    rí → rí (king); plural: ríthe\n    léamh → léamh (reading — verbal noun)\n    scríobh → scríobh (writing — verbal noun)\n    baile → baile (town); plural: bailte\n\n5TH DECLENSION — mostly feminine, various:\n  Genitive: often -(e)ach or adding -d, various patterns\n  Examples:\n    caora → caorach (sheep); plural: caoirigh\n    cathair → cathrach (city); plural: cathracha\n    abhainn → abhann (river); plural: aibhneacha\n    comharsa → comharsan (neighbour); plural: comharsana\n    traein → traenach (train); plural: traenacha",
+    "examples": [
+      {
+        "irish": "teach an fhir mhóir",
+        "english": "the big man's house (1st declension: fear → fir)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "barr na láimhe",
+        "english": "the top of the hand (2nd declension: lámh → láimhe)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "eochair an dorais",
+        "english": "the key of the door (3rd declension: eochair → eochrach... actually: eochair → eochrach is gen. but 'dorais' is gen. of doras, 1st decl)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "am léamh",
+        "english": "reading time (4th declension: léamh gen = léamh)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "bruach na habhann",
+        "english": "the bank of the river (5th declension: abhainn → abhann)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "ag coimeád na gcaorach",
+        "english": "keeping the sheep (5th declension: caora → caorach, with eclipsis na g-)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "In practice, you learn a noun's declension by learning the genitive form alongside the nominative — dictionaries always list both. A useful heuristic: if the noun ends in a broad consonant and is masculine, it's likely 1st declension. If it ends in -óg/-eog/-lann and is feminine, it's likely 2nd. Verbal nouns are 4th. When in doubt, check a dictionary.",
+    "see_also": [
+      "genitive-case",
+      "noun-plural-formation",
+      "broad-slender",
+      "definite-article"
+    ]
+  },
+  {
+    "id": "indirect-questions",
+    "title": "Indirect and Embedded Questions",
+    "category": "syntax",
+    "difficulty": "B2",
+    "tags": [
+      "indirect questions",
+      "embedded questions",
+      "cé",
+      "cad",
+      "cá",
+      "cathain",
+      "conas",
+      "cén fáth",
+      "reported speech",
+      "subordinate"
+    ],
+    "summary": "Indirect questions embed a question inside a statement or another question. The question word introduces a dependent clause with the verb in its dependent (lenited) form.",
+    "content": "An INDIRECT (embedded) question reports or contains a question without asking it directly.\nDirect:   Cá bhfuil sé? (Where is he?)\nIndirect: Ní fhios dom cá bhfuil sé. (I don't know where he is.)\n\nCOMMON QUESTION WORDS IN INDIRECT QUESTIONS:\n  cé     — who:        Ní fhios dom cé a bhí ann.\n  cad/céard — what:   D'fhiafraigh sí céard a tharla.\n  cá     — where:     Ní thuigim cá bhfuil sé.\n  cathain — when:     Ní fhios dom cathain a thiocfaidh sé.\n  cén fáth — why:     Níl a fhios agam cén fáth ar ith sé é.\n  conas/cén chaoi — how: D'inis sé conas a rinne sé é.\n  cé mhéad — how many: Ní fhios dom cé mhéad a chosnaíonn sé.\n  cén — which/what:  Fiafraigh di cén leabhar a mhol sí.\n\nTHE VERB after the question word: uses the DIRECT RELATIVE form (usually lenition where applicable):\n  Ní fhios dom cé a rinne é. (I don't know who did it.) [rinne — lenited past]\n  Dúirt sí cén áit ar chónaigh sí. (She said which place she lived.)\n\nYES/NO INDIRECT QUESTIONS — use 'an' (eclipsis) or 'cé acu':\n  Ní fhios dom an mbeidh sé ann. (I don't know if he'll be there.)\n  Fiafraigh de an dtiocfaidh sí. (Ask him whether she will come.)\n  Ní cinnte dom an raibh sí ann. (I'm not sure if she was there.)\n\nNEGATIVE INDIRECT QUESTIONS — use 'nach':\n  Ní fhios dom nach bhfuil sé ann. (I don't know that he's not there.)\n\nUSEFUL PHRASES for indirect questions:\n  Ní fhios dom...          — I don't know...\n  Níl a fhios agam...      — I don't know... (slightly different nuance)\n  Níl mé cinnte...         — I'm not sure...\n  D'fhiafraigh sé...       — He asked...\n  Ní thuigim...            — I don't understand...\n  Tá mé ag iarraidh a fháil amach... — I'm trying to find out...",
+    "examples": [
+      {
+        "irish": "Ní fhios dom cé a dúirt é.",
+        "english": "I don't know who said it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'fhiafraigh sí cathain a thiocfainn.",
+        "english": "She asked when I would come.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní thuigim cén fáth ar imigh sé.",
+        "english": "I don't understand why he left.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ní fhios dom an mbeidh sé ann amárach.",
+        "english": "I don't know if he will be there tomorrow.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Innis dom conas a rinne tú é.",
+        "english": "Tell me how you did it.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Fiafraigh di céard atá uaithi.",
+        "english": "Ask her what she wants.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí mé ag iarraidh a fháil amach cá raibh sí.",
+        "english": "I was trying to find out where she was.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The phrase 'ní fhios dom' (I don't know) is one of the most useful frames for indirect questions. Note 'ní fhios' — this is a special copula construction meaning 'it is not known'. Also note: 'cé' (who) and 'cad/céard' (what) are followed by 'a' + dependent verb; 'cá' (where) triggers eclipsis directly on the verb (cá bhfuil, cá raibh, cá mbeidh).",
+    "see_also": [
+      "question-words",
+      "yes-no-answers",
+      "indirect-speech",
+      "relative-clauses",
+      "dependent-verb-forms"
+    ]
+  },
+  {
+    "id": "prospective-aspect",
+    "title": "The Prospective Aspect: ar tí, chun, le + Verbal Noun",
+    "category": "verbs",
+    "difficulty": "B2",
+    "tags": [
+      "prospective",
+      "ar tí",
+      "chun",
+      "le",
+      "about to",
+      "intending to",
+      "to be done",
+      "aspect",
+      "verbal noun"
+    ],
+    "summary": "Irish expresses intention and imminence through three constructions: ar tí (about to), chun (intending to/going to), and le + VN (to be done).",
+    "content": "Irish expresses different shades of future intention and imminence through verbal noun constructions. Together with the progressive (ag) and the perfect (tar éis), these form the Irish aspect system.\n\nAR TÍ + verbal noun — about to (imminent, unplanned):\n  Tá sé ar tí imeacht.      (He is about to leave.)\n  Bhí sí ar tí titim.        (She was about to fall.)\n  Tá an t-am ar tí a bheith suas. (The time is about to be up.)\n  Ar tí implies something is on the verge of happening — not necessarily planned.\n\nCHUN + verbal noun — intending to, going to, in order to (purposeful):\n  Tá mé chun dul ann.              (I am going to go there. / I intend to go.)\n  Tá sí chun an obair a chríochnú. (She is going to finish the work.)\n  Chuaigh sé chun cainte léi.      (He went to talk to her — purpose.)\n  Chun can express both intention and purpose (in order to).\n\nLE + verbal noun — to be done, needing to be done (obligation/necessity):\n  Tá an obair le déanamh.     (The work is to be done / needs to be done.)\n  Bhí litir le scríobh aige.  (He had a letter to write.)\n  Tá an bia le hullmhú.       (The food is to be prepared.)\n  Tá teach le díol acu.       (They have a house to sell.)\n  This construction is close in meaning to 'must be done' or 'needs to be done'.\n\nCOMBINED ASPECT SYSTEM overview:\n  Progressive:   Tá sé ag obair.           (He is working — in progress)\n  Perfect:       Tá sé tar éis oibriú.     (He has just worked — completed)\n  Prospective:   Tá sé ar tí oibriú.       (He is about to work — imminent)\n  Intentional:   Tá sé chun oibriú.        (He is going to work — planned)\n  Obligatory:    Tá obair le déanamh aige. (He has work to do — due)",
+    "examples": [
+      {
+        "irish": "Bhí mé ar tí glaoch ort.",
+        "english": "I was about to call you.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá siad chun an teach a dhíol.",
+        "english": "They are going to sell the house.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá neart le déanamh fós.",
+        "english": "There is plenty still to be done.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Chuaigh sí chun na cathrach chun siopadóireacht a dhéanamh.",
+        "english": "She went to the city in order to go shopping.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Bhí an traein ar tí imeacht nuair a shroich mé an stáisiún.",
+        "english": "The train was about to leave when I reached the station.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá litir le scríobh agam chuici.",
+        "english": "I have a letter to write to her.",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "Ar tí and chun are often interchangeable in casual speech, but ar tí carries stronger imminence ('right now, at this moment') while chun carries intention ('I'm planning to'). The le + VN construction is close to the modal 'must' and is used in both personal obligation (Tá orm é a dhéanamh) and impersonal obligation (Tá sé le déanamh) contexts.",
+    "see_also": [
+      "perfect-aspect",
+      "progressive-aspect",
+      "verbal-noun",
+      "modal-expressions",
+      "compound-prepositions"
+    ]
+  },
+  {
+    "id": "syncopation",
+    "title": "Syncopation in Polysyllabic Verb Stems",
+    "category": "verbs",
+    "difficulty": "C1",
+    "tags": [
+      "syncopation",
+      "sionacópáil",
+      "2nd conjugation",
+      "polysyllabic",
+      "ceangail",
+      "oscail",
+      "imir",
+      "stem change",
+      "verbal forms"
+    ],
+    "summary": "Some polysyllabic verbs drop the vowel from their final syllable (syncopate) when adding personal endings. Recognising this pattern is essential for C1 reading.",
+    "content": "SYNCOPATION (sionacópáil) is the dropping of the unstressed final vowel of a polysyllabic verb stem when personal endings are added. It mainly affects 2nd conjugation verbs whose stems end in -(a)il, -(a)ir, -(a)in, -(a)is.\n\nTHE PATTERN:\n  Dictionary form → syncopated stem (used with all tense endings except past 2sg/3sg)\n  ceangail → ceangl-    (bind)\n  oscail   → oscl-      (open)\n  imir     → imr-       (play)\n  inis     → ins-       (tell)\n  coigil   → coigl-     (save, spare)\n  foghlaim → foghla(i)m- (learn) — partial syncopation\n  freastail → freastl-  (serve, attend)\n  eitil    → eitl-      (fly)\n\nHOW IT APPEARS IN EACH TENSE:\n  PRESENT: syncopated stem + -ann/-eann\n    ceangail: ceanglann (not *ceangailann)\n    oscail:   osclaíonn (not *oscailíonn)\n    imir:     imríonn   (not *imireann)\n    inis:     insíonn   (not *iniseann)\n\n  FUTURE: syncopated stem + -óidh/-eoidh\n    ceangail: ceanglóidh\n    oscail:   osclóidh\n    imir:     imreoidh\n    inis:     inseoidh\n\n  CONDITIONAL: syncopated stem + -ódh/-eodh (3sg)\n    ceangail: cheanghlódh (would bind)\n    oscail:   d'osclódh   (would open)\n    imir:     d'imreodh   (would play)\n\n  PAST: NO syncopation — past uses the full dictionary form + lenition:\n    ceangail → cheangail  (bound — no syncopation)\n    oscail   → d'oscail   (opened — no syncopation)\n    imir     → d'imir     (played — no syncopation)\n\n  VERBAL NOUN: follows its own pattern (often not syncopated, or has different form)\n    ceangail → ceangal (VN) or ceangailt\n    oscail   → oscailt (VN)\n    imir     → imirt   (VN)\n    inis     → insint  (VN)",
+    "examples": [
+      {
+        "irish": "Ceanglann sé capall gach maidin.",
+        "english": "He ties up a horse every morning. (syncopated: ceangl-)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Osclaíonn sí an doras.",
+        "english": "She opens the door. (syncopated: oscl-)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Imríonn siad cluiche gach Satharn.",
+        "english": "They play a game every Saturday. (syncopated: imr-)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Inseoidh mé duit faoi.",
+        "english": "I will tell you about it. (syncopated future: ins-)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "D'oscail sé an bosca. (no syncopation in past)",
+        "english": "He opened the box.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ag imirt peile atá siad.",
+        "english": "It is playing football they are. (VN: imirt)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Eitlíonn na héin ó thuaidh.",
+        "english": "The birds fly northward. (syncopated: eitl-)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The past tense never syncopates — this is the key exception. If you see 'd'oscail', 'cheangail', or 'd'imir', you are looking at a past tense form. If you see 'osclaíonn', 'ceanglann', 'imríonn' — syncopated, present tense. The verbal noun forms (oscailt, imirt, insint) must be learned individually as they follow their own conventions.",
+    "see_also": [
+      "regular-verb-conjugation",
+      "verbal-noun",
+      "dependent-verb-forms",
+      "literary-verb-forms"
+    ]
+  },
+  {
+    "id": "defective-verbs",
+    "title": "Defective and Restricted Verbs",
+    "category": "verbs",
+    "difficulty": "C1",
+    "tags": [
+      "defective verbs",
+      "restricted verbs",
+      "arsa",
+      "dar",
+      "is cuimhin",
+      "is col",
+      "is eol",
+      "suppletive",
+      "quotative"
+    ],
+    "summary": "Several Irish verbs or verb-like constructions only appear in specific forms. Knowing these gaps prevents learners from constructing impossible forms.",
+    "content": "Some Irish constructions behave like verbs but are grammatically restricted — they only appear in certain tenses, persons, or forms.\n\nCOPULA-BASED 'MENTAL STATE' CONSTRUCTIONS:\nThese use the copula + adjective + preposition. They have no verbal noun and cannot be used progressively:\n  is cuimhin le  — to remember:  Is cuimhin liom é. (I remember it.) Past: Ba chuimhin liom é.\n  is eol do      — to know (a fact/place): Is eol dom cá bhfuil sé. Past: Ba eol dom.\n  is col do      — to be related to: Is col ceathar dúinn iad. (They are our first cousins.)\n  is oth le      — to regret, be sorry: Is oth liom sin. (I am sorry about that.) Past: Ba oth liom.\n  is léir do     — to be clear to, to perceive: Is léir dom é. (It is clear to me.)\n  is cuma le     — not to care: Is cuma liom. (I don't care.) Past: Ba chuma liom.\n  is fiú         — to be worth: Is fiú é a dhéanamh. (It's worth doing.)\n\nTHE QUOTATIVE 'ARSA' (said — in direct speech):\n  arsa is used ONLY for attributing direct speech in the past tense. It cannot be conjugated:\n  'Tá mé tuirseach,' arsa Máire.   ('I am tired,' said Máire.)\n  'Cá bhfuil tú?' arsa mise.       ('Where are you?' said I.)\n  'Tar isteach,' arsa sé.           ('Come in,' said he.)\n  arsa never takes person endings — it is invariable. It is followed by a pronoun or name.\n\nTHE FIXED FORM 'DAR':\n  dar liom / dar leat / dar leis, etc. — in my/your/his opinion; it seems to me:\n  Dar liom, tá sé fíor.  (In my opinion / it seems to me it is true.)\n  Dar Dia! / Dar mo choinsias! — By God! / By my conscience! (exclamations)\n  dar is defective — it only appears in these set phrases.\n\nSUPPLETIVE VERBAL NOUNS (irregular VN forms of common verbs):\n  téigh (go) — verbal noun: ag dul  (NOT *ag téamh)\n  tar  (come) — verbal noun: ag teacht (NOT *ag tara)\n  abair (say) — verbal noun: ag rá    (NOT *ag abairt)\n  feic (see) — verbal noun: ag feiceáil / ag féachaint\n  These must be learned as irregular forms.",
+    "examples": [
+      {
+        "irish": "'Tá ocras orm,' arsa an páiste.",
+        "english": "'I'm hungry,' said the child. (arsa — quotative)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is cuimhin liom an lá sin go maith.",
+        "english": "I remember that day well.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Dar liom, ní raibh sé ann in aon chor.",
+        "english": "In my opinion, he wasn't there at all.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Ba chuma léi faoin aimsir.",
+        "english": "She didn't care about the weather. (past of is cuma le)",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is oth liom é sin a rá.",
+        "english": "I am sorry to say that.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Is léir dom nach n-oibríonn sé.",
+        "english": "It is clear to me that it doesn't work.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Tá siad ag dul abhaile. (NOT *ag téamh)",
+        "english": "They are going home. (suppletive VN of téigh)",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The copula-based mental state constructions (is cuimhin, is eol, etc.) are semantically like verbs but grammatically copula sentences. They do not have a progressive form — you cannot say *tá mé ag cuimhneamh in the sense of 'I remember' (though tá mé ag cuimhneamh air means 'I am thinking about it/remembering it' — different nuance). The quotative arsa should not be confused with abair (to say) in its other forms.",
+    "see_also": [
+      "copula-is",
+      "copula-vs-bi",
+      "irregular-verbs",
+      "verbal-noun",
+      "advanced-copula"
+    ]
   }
 ]
