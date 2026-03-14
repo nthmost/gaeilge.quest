@@ -1157,7 +1157,7 @@
   {
     "id": "question-words",
     "title": "Question Words (Focail Ceisteacha)",
-    "category": "questions",
+    "category": "syntax",
     "difficulty": "A1",
     "tags": [
       "questions",
@@ -1350,7 +1350,7 @@
   {
     "id": "word-order-vso",
     "title": "Word Order: Verb-Subject-Object (VSO)",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "A1",
     "tags": [
       "word order",
@@ -1559,7 +1559,7 @@
   {
     "id": "negation",
     "title": "Negation: Ní, Níl, Ná, Nár",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "A1",
     "tags": [
       "negation",
@@ -1928,7 +1928,7 @@
   {
     "id": "conditional-sentences",
     "title": "Conditional Sentences (Dá… / Má…)",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "B1",
     "tags": [
       "conditional",
@@ -1992,7 +1992,7 @@
   {
     "id": "indirect-speech",
     "title": "Indirect Speech & Reported Clauses",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "B1",
     "tags": [
       "indirect speech",
@@ -2209,7 +2209,7 @@
   {
     "id": "cleft-sentences",
     "title": "Cleft Sentences (Is é / Is í … a …)",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "B2",
     "tags": [
       "cleft",
@@ -2434,7 +2434,7 @@
   {
     "id": "indirect-relative",
     "title": "Indirect Relative Clauses",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "B2",
     "tags": [
       "relative clause",
@@ -2583,7 +2583,7 @@
   {
     "id": "modal-expressions",
     "title": "Modal Expressions: Ability, Obligation, Permission",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "B2",
     "tags": [
       "modal",
@@ -3041,7 +3041,7 @@
   {
     "id": "complex-conjunctions",
     "title": "Complex Conjunctions: Concessive, Causal & Temporal",
-    "category": "sentence structure",
+    "category": "syntax",
     "difficulty": "C1",
     "tags": [
       "conjunctions",

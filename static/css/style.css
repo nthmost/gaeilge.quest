@@ -327,18 +327,23 @@ details[open] > .sidebar-toggle {
 
 .category-list li a {
   display: block;
-  padding: 0.4rem 0.75rem;
-  border-radius: var(--radius);
+  padding: 0.35rem 0.75rem;
+  border-radius: 0;
   color: var(--text);
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.15s;
+  font-size: 0.875rem;
+  transition: background 0.15s, color 0.15s;
 }
 
-.category-list li a:hover,
+.category-list li a:hover {
+  background: rgba(22, 155, 98, 0.12);
+  color: var(--green);
+}
+
 .category-list li a.active {
   background: var(--green);
   color: white;
+  font-weight: 600;
 }
 
 /* Main content */

@@ -1,9 +1,9 @@
 /* gaeilge.quest — main app JS */
 
 let constructions = [];
-let activeCategory = 'all';
+let activeCategories = new Set();   // empty = all
+let activeDifficulties = new Set(); // empty = all
 let activeDialect = 'all';
-let activeDifficulty = 'all';
 
 // Load constructions — use server-injected data if available, else fetch
 async function loadConstructions() {
@@ -16,7 +16,7 @@ async function loadConstructions() {
 
   // Pre-filter from URL param e.g. /?cat=verbs
   const params = new URLSearchParams(window.location.search);
-  if (params.get('cat')) activeCategory = params.get('cat');
+  if (params.get('cat')) activeCategories.add(params.get('cat'));
 
   renderCategories();
   renderDifficultyFilter();
@@ -25,41 +25,50 @@ async function loadConstructions() {
 }
 
 function renderCategories() {
-  const cats = ['all', ...new Set(constructions.map(c => c.category))];
+  const cats = [...new Set(constructions.map(c => c.category))].sort();
   const ul = document.getElementById('category-list');
   ul.innerHTML = cats.map(cat => `
-    <li><a href="#" class="cat-link ${cat === activeCategory ? 'active' : ''}" data-cat="${cat}">
-      ${cat === 'all' ? 'All topics' : capitalise(cat)}
+    <li><a href="#" class="cat-link ${activeCategories.has(cat) ? 'active' : ''}" data-cat="${cat}">
+      ${capitalise(cat)}
     </a></li>
   `).join('');
 
   ul.querySelectorAll('.cat-link').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
-      activeCategory = a.dataset.cat;
-      ul.querySelectorAll('.cat-link').forEach(x => x.classList.remove('active'));
-      a.classList.add('active');
+      const cat = a.dataset.cat;
+      if (activeCategories.has(cat)) {
+        activeCategories.delete(cat);
+        a.classList.remove('active');
+      } else {
+        activeCategories.add(cat);
+        a.classList.add('active');
+      }
       applyFilters();
     });
   });
 }
 
 function renderDifficultyFilter() {
-  const levels = ['all', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-  const labels = { all: 'All levels', A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2', C1: 'C1', C2: 'C2' };
+  const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
   const ul = document.getElementById('difficulty-list');
   ul.innerHTML = levels.map(d => `
-    <li><a href="#" class="cat-link ${d === activeDifficulty ? 'active' : ''}" data-diff="${d}">
-      ${labels[d]}
+    <li><a href="#" class="cat-link ${activeDifficulties.has(d) ? 'active' : ''}" data-diff="${d}">
+      ${d}
     </a></li>
   `).join('');
 
   ul.querySelectorAll('.cat-link').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
-      activeDifficulty = a.dataset.diff;
-      ul.querySelectorAll('.cat-link').forEach(x => x.classList.remove('active'));
-      a.classList.add('active');
+      const diff = a.dataset.diff;
+      if (activeDifficulties.has(diff)) {
+        activeDifficulties.delete(diff);
+        a.classList.remove('active');
+      } else {
+        activeDifficulties.add(diff);
+        a.classList.add('active');
+      }
       applyFilters();
     });
   });
@@ -223,12 +232,12 @@ function applyFilters() {
   const query = document.getElementById('search-input').value.toLowerCase().trim();
   let filtered = constructions;
 
-  if (activeCategory !== 'all') {
-    filtered = filtered.filter(c => c.category === activeCategory);
+  if (activeCategories.size > 0) {
+    filtered = filtered.filter(c => activeCategories.has(c.category));
   }
 
-  if (activeDifficulty !== 'all') {
-    filtered = filtered.filter(c => (c.difficulty || '') === activeDifficulty);
+  if (activeDifficulties.size > 0) {
+    filtered = filtered.filter(c => activeDifficulties.has(c.difficulty || ''));
   }
 
   if (query) {
