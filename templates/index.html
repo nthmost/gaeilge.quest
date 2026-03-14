@@ -66,20 +66,26 @@
 <!-- Main body -->
 <div class="site-body">
   <aside class="sidebar">
-    <h3>Topics</h3>
-    <ul class="category-list" id="category-list">
-      <!-- populated by JS -->
-    </ul>
+    <details class="sidebar-section" open>
+      <summary class="sidebar-toggle">Topics</summary>
+      <ul class="category-list" id="category-list">
+        <!-- populated by JS -->
+      </ul>
+    </details>
 
-    <h3 style="margin-top:1.5rem">Difficulty</h3>
-    <ul class="category-list" id="difficulty-list">
-      <!-- populated by JS -->
-    </ul>
+    <details class="sidebar-section">
+      <summary class="sidebar-toggle">CEFR Level</summary>
+      <ul class="category-list" id="difficulty-list">
+        <!-- populated by JS -->
+      </ul>
+    </details>
 
-    <h3 style="margin-top:1.5rem">Dialect</h3>
-    <div class="dialect-filter-bar" id="dialect-filter">
-      <!-- populated by JS -->
-    </div>
+    <details class="sidebar-section">
+      <summary class="sidebar-toggle">Dialect</summary>
+      <div class="dialect-filter-bar" id="dialect-filter">
+        <!-- populated by JS -->
+      </div>
+    </details>
   </aside>
 
   <main class="main-content">
