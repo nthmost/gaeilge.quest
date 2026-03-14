@@ -195,54 +195,58 @@ header {
 .btn-ask-hero:disabled { background: var(--muted); cursor: wait; }
 
 /* AI answer panel */
-.answer-panel {
-  display: none;
-  background: #1e2a1e;
-  border-bottom: 3px solid var(--green);
+/* AI answer card (shown in main window when no reference card matches) */
+.ai-answer-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--green);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
-.answer-panel.visible { display: block; }
-
-.answer-panel-inner {
-  padding: 1.25rem 1.5rem;
+.ai-answer-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  background: var(--dark);
+  padding: 0.65rem 1.1rem;
 }
 
-.answer-panel-label {
+.ai-answer-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--green);
-  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-.answer-panel-content {
-  color: rgba(255,255,255,0.9);
+.ai-answer-note {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.ai-answer-body {
+  padding: 1.25rem 1.5rem;
   font-size: 0.95rem;
-  line-height: 1.75;
-  white-space: pre-wrap;
+  line-height: 1.8;
+  color: var(--text);
 }
 
-.answer-panel-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.75rem;
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.35);
+.ai-answer-body p { margin-bottom: 0.75rem; }
+.ai-answer-body p:last-child { margin-bottom: 0; }
+.ai-answer-body h3, .ai-answer-body h4 { margin: 1rem 0 0.4rem; color: var(--dark); }
+.ai-answer-body ul, .ai-answer-body ol { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+.ai-answer-body li { margin-bottom: 0.3rem; }
+.ai-answer-body strong { color: var(--dark); }
+.ai-answer-body em { font-style: italic; }
+.ai-answer-body code {
+  background: var(--light);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  font-family: monospace;
+  font-size: 0.9em;
 }
-
-.answer-panel-close {
-  background: none;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: rgba(255,255,255,0.5);
-  border-radius: 4px;
-  padding: 0.15rem 0.5rem;
-  font-size: 0.75rem;
-  cursor: pointer;
-  transition: border-color 0.15s, color 0.15s;
-}
-
-.answer-panel-close:hover { border-color: rgba(255,255,255,0.5); color: white; }
+.ai-error { color: #c0392b; }
 
 /* Reference tiles */
 

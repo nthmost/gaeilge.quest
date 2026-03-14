@@ -258,16 +258,44 @@ function applyFilters() {
 
 // ── Ask Claude ─────────────────────────────────────────────────────────────
 
-async function askClaude(question) {
-  const panel = document.getElementById('answer-panel');
-  const content = document.getElementById('answer-panel-content');
-  const btn = document.getElementById('ask-btn-hero');
+function searchCards(query) {
+  const q = query.toLowerCase().trim();
+  if (!q) return [];
+  return constructions.filter(c =>
+    c.title.toLowerCase().includes(q) ||
+    c.summary.toLowerCase().includes(q) ||
+    c.content.toLowerCase().includes(q) ||
+    (c.tags || []).some(t => t.toLowerCase().includes(q)) ||
+    (c.examples || []).some(e =>
+      e.irish.toLowerCase().includes(q) || e.english.toLowerCase().includes(q)
+    )
+  );
+}
 
+async function askClaude(question) {
+  const btn = document.getElementById('ask-btn-hero');
+  const container = document.getElementById('constructions-container');
+
+  // Step 1: check our own content first
+  const matches = searchCards(question);
+  if (matches.length > 0) {
+    renderConstructions(matches);
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+  }
+
+  // Step 2: nothing in our reference — ask Claude
   btn.disabled = true;
   btn.textContent = 'Asking…';
-  content.textContent = '';
-  panel.classList.add('visible');
-  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  container.innerHTML = `<div class="ai-answer-card">
+    <div class="ai-answer-header">
+      <span class="ai-answer-label">Claude says</span>
+      <span class="ai-answer-note">No reference card found — here's a direct answer</span>
+    </div>
+    <div class="ai-answer-body" id="ai-answer-body"><em>Loading…</em></div>
+  </div>`;
+  container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   try {
     const resp = await fetch('/api/ask', {
@@ -275,20 +303,61 @@ async function askClaude(question) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question }),
     });
-
     if (!resp.ok) {
       const err = await resp.json().catch(() => ({}));
       throw new Error(err.error || `Server error ${resp.status}`);
     }
-
     const data = await resp.json();
-    content.textContent = data.answer;
+    document.getElementById('ai-answer-body').innerHTML = renderMarkdown(data.answer);
   } catch (err) {
-    content.textContent = `Couldn't get an answer: ${err.message}`;
+    document.getElementById('ai-answer-body').innerHTML =
+      `<p class="ai-error">Couldn't get an answer: ${escHtml(err.message)}</p>`;
   } finally {
     btn.disabled = false;
     btn.textContent = 'Ask Claude';
   }
+}
+
+// ── Markdown renderer ───────────────────────────────────────────────────────
+
+function renderMarkdown(md) {
+  const lines = md.split('\n');
+  const out = [];
+  let inList = false;
+  let listTag = '';
+
+  const inline = s => s
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*\n]+?)\*/g, '<em>$1</em>')
+    .replace(/`([^`\n]+?)`/g, '<code>$1</code>');
+
+  const closeList = () => {
+    if (inList) { out.push(`</${listTag}>`); inList = false; listTag = ''; }
+  };
+
+  for (const raw of lines) {
+    const line = raw.trimEnd();
+    const olM = line.match(/^(\d+)\.\s+(.+)/);
+    const ulM = line.match(/^[*\-]\s+(.+)/);
+
+    if (ulM) {
+      if (listTag !== 'ul') { closeList(); out.push('<ul>'); inList = true; listTag = 'ul'; }
+      out.push(`<li>${inline(ulM[1])}</li>`);
+    } else if (olM) {
+      if (listTag !== 'ol') { closeList(); out.push('<ol>'); inList = true; listTag = 'ol'; }
+      out.push(`<li>${inline(olM[2])}</li>`);
+    } else {
+      closeList();
+      if (line.startsWith('### '))      out.push(`<h4>${inline(line.slice(4))}</h4>`);
+      else if (line.startsWith('## '))  out.push(`<h3>${inline(line.slice(3))}</h3>`);
+      else if (line.startsWith('# '))   out.push(`<h3>${inline(line.slice(2))}</h3>`);
+      else if (line.trim() === '')      out.push('<br>');
+      else                              out.push(`<p>${inline(line)}</p>`);
+    }
+  }
+  closeList();
+  return out.join('\n');
 }
 
 // ── Init ───────────────────────────────────────────────────────────────────
@@ -315,9 +384,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (q) askClaude(q);
   });
 
-  document.getElementById('answer-panel-close').addEventListener('click', () => {
-    document.getElementById('answer-panel').classList.remove('visible');
-  });
 });
 
 // ── Utilities ──────────────────────────────────────────────────────────────

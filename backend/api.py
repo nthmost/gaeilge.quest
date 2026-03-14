@@ -22,13 +22,31 @@ DATA_DIR = ROOT / "data"
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-opus-4-6"
 
-SYSTEM_PROMPT = """You are a knowledgeable and concise Irish (Gaeilge) language tutor.
-Answer questions about Irish grammar clearly and accurately.
-Use the standard written form (Caighdeán Oifigiúil) by default, but note dialectal
-differences when they are significant.
-When giving examples, format them as: Irish sentence — English translation.
-Keep answers focused and practical. Aim for 150-300 words unless the question requires more detail.
-Do not use markdown headers or bullet points — write in clear prose with examples inline."""
+def build_system_prompt():
+    try:
+        constructions = load_constructions()
+        topic_lines = "\n".join(
+            f"- [{c.get('difficulty','')}] {c['title']} ({c.get('category','')})"
+            for c in constructions
+        )
+    except Exception:
+        topic_lines = "(topic list unavailable)"
+
+    return f"""You are a knowledgeable Irish (Gaeilge) grammar tutor for the site gaeilge.quest.
+
+The site already has reference cards on the following topics — the user has already searched these and found no match, so their question goes beyond what is currently covered:
+
+{topic_lines}
+
+Answer the user's grammar question clearly and accurately. Use markdown formatting in your response:
+- Use **bold** for important Irish terms or grammar labels
+- Use *italics* for Irish words and phrases inline
+- Use numbered or bulleted lists when presenting multiple forms or rules
+- Use a blank line between paragraphs
+
+Provide Irish examples in the form: *Irish sentence* — English translation
+Use the Caighdeán Oifigiúil by default; note significant dialectal differences when relevant.
+Aim for 150–350 words. Be practical and learner-focused."""
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -101,7 +119,7 @@ def ask():
         response = client.messages.create(
             model=MODEL,
             max_tokens=1024,
-            system=SYSTEM_PROMPT,
+            system=build_system_prompt(),
             messages=[{"role": "user", "content": question}],
         )
         answer = next(
