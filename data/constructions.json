@@ -3116,5 +3116,354 @@
       "relative-clauses",
       "habitual-past"
     ]
+  },
+  {
+    "id": "lit-an-toilanach",
+    "title": "An tOileánach — Tomás Ó Criomhthain",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "autobiography",
+      "Munster",
+      "Blasket Islands",
+      "Ó Criomhthain",
+      "prose",
+      "20th century"
+    ],
+    "summary": "The autobiography of a Blasket Islander, written in Munster Irish. One of the foundational texts of modern Irish literature. First published 1929.",
+    "content": "Tomás Ó Criomhthain (1856–1937) was a native speaker from the Great Blasket Island off the Kerry coast. At the urging of scholars who recognised that his way of life — and language — was vanishing, he wrote his autobiography. The result is a masterpiece of unselfconscious prose: vivid, laconic, and deeply rooted in the rhythms of island life.\n\nLanguage: Classic Munster Irish (Corca Dhuibhne/Kerry dialect). Rich in idiomatic expression, with archaic forms not found in modern spoken Irish. Heavy use of synthetic verb forms. The vocabulary of fishing, farming, weather, and community.\n\nWhy read it: Ó Criomhthain's style is direct and unadorned — he never writes a word more than is needed. The prose has the quality of speech transcribed by a master. For learners, it is a window into both the language and the world it described.\n\nThe final line of the book is among the most quoted in Irish literature:\n  'Ní bheidh ár leithéidí arís ann.'\n  (Our like will not be there again.)\n\nWhere to read: Available from Clóchomhar (Irish) and Oxford University Press (English translation by Robin Flower, 'The Islandman'). The Irish text is in print and widely available.",
+    "examples": [
+      {
+        "irish": "Ní bheidh ár leithéidí arís ann.",
+        "english": "Our like will not be there again.",
+        "dialect": "munster",
+        "note": "The famous closing line"
+      },
+      {
+        "irish": "Ní raibh aon bhád ag imeacht an lá sin agus ní raibh súil agam le haon bhád.",
+        "english": "There was no boat going that day and I had no expectation of any boat.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Is iomaí lá a bhíos ag féachaint ar an bhfarraige agus í ag gluaiseacht is ag borradh.",
+        "english": "Many a day I would be watching the sea as it moved and swelled.",
+        "dialect": "munster",
+        "note": "Note the synthetic past habitual 'bhíos' (I used to be) — Munster 1sg form"
+      },
+      {
+        "irish": "Bíodh sin mar atá, ní hé an duine sona an duine a bhíonn gan bhuaireamh.",
+        "english": "Be that as it may, the happy person is not the one who is without trouble.",
+        "dialect": "munster"
+      }
+    ],
+    "notes": "Best approached after solid B2/C1 Munster Irish. The synthetic verb forms (bhíos, chonacs, chualamar) will be unfamiliar to learners of Standard Irish but become readable quickly. Robin Flower's English translation is beautiful in its own right and useful as a crib. Séamas Ó Duilearga's scholarly edition has glosses.",
+    "see_also": [
+      "lit-fiche-blian",
+      "lit-peig",
+      "dialects"
+    ]
+  },
+  {
+    "id": "lit-peig",
+    "title": "Peig — Peig Sayers",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "autobiography",
+      "Munster",
+      "Blasket Islands",
+      "Peig Sayers",
+      "oral tradition",
+      "20th century"
+    ],
+    "summary": "The autobiography of storyteller Peig Sayers, dictated in Kerry Irish and transcribed by her son. Rich in oral formulaic expression and seanfhocail. First published 1936.",
+    "content": "Peig Sayers (1873–1958) was one of the greatest traditional storytellers (seanchaí) of the twentieth century, also from the Great Blasket Island. Unlike Ó Criomhthain, she did not write — her autobiography was dictated to her son Micheál and transcribed. This gives the prose a different quality: the rhythms of oral storytelling, with its formulaic phrases, rhetorical questions, and direct address to the listener.\n\nFor decades, Peig was compulsory on the Irish Leaving Certificate syllabus. This association — and the unrelenting bleakness of much of the narrative — made it notorious. In fact, read without the pressure of exams, it is a remarkable document of an oral tradition that had survived continuously from medieval Ireland.\n\nLanguage: Rich Munster Irish (Kerry). Extremely idiomatic. Full of seanfhocail (proverbs), which Peig deployed constantly in conversation. More syntactically complex than Ó Criomhthain — longer sentences, more subordinate clauses.\n\nWhere to read: In print from An Sagart. English translation by Bryan MacMahon ('Peig: The Autobiography of Peig Sayers of the Great Blasket Island').",
+    "examples": [
+      {
+        "irish": "Ní bhíonn an rath ach mar a mbíonn an smacht.",
+        "english": "Prosperity is only where there is discipline. (proverb she quotes)",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Is minic a bhí mé ag machnamh ar an saol is ar an mbás.",
+        "english": "Many a time I was thinking about life and death.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Ó! a dhuine chóir, is í an tsláinte an rud is fearr ar domhan.",
+        "english": "Oh! good person, health is the best thing in the world.",
+        "dialect": "munster",
+        "note": "Vocative 'a dhuine chóir' — direct address typical of oral style"
+      },
+      {
+        "irish": "Tá sé ráite go minic: 'Is glas iad na cnoic i bhfad uainn.'",
+        "english": "It is often said: 'Far-away hills are green.'",
+        "dialect": "munster",
+        "note": "Classic seanfhocal — proverb"
+      }
+    ],
+    "notes": "The oral formulaic style is the key feature. Peig addresses the reader directly ('a dhuine chóir'), uses proverbs as punctuation, and structures narratives around traditional storytelling patterns. For learners of seanfhocail and rhetorical Irish, it is unparalleled. The notoriety as a school text is a distraction — approach it on its own terms.",
+    "see_also": [
+      "lit-an-toilanach",
+      "lit-fiche-blian",
+      "dialects"
+    ]
+  },
+  {
+    "id": "lit-fiche-blian",
+    "title": "Fiche Blian ag Fás — Muiris Ó Súilleabháin",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "autobiography",
+      "Munster",
+      "Blasket Islands",
+      "Ó Súilleabháin",
+      "prose",
+      "20th century"
+    ],
+    "summary": "A lyrical memoir of growing up on the Great Blasket Island, written in vivid, youthful prose. Often considered the most accessible and joyful of the Blasket texts. First published 1933.",
+    "content": "Muiris Ó Súilleabháin (1904–1950) wrote 'Fiche Blian ag Fás' (Twenty Years A-Growing) while still a young man, at the encouragement of George Thomson, a Cambridge classicist who had spent time on the island. The book was simultaneously published in Irish and in English translation by Moya Llewelyn Davies and George Thomson, with a preface by E.M. Forster.\n\nUnlike the older Blasket autobiographers, Muiris writes with the exuberance of youth. The prose is lyrical, sometimes poetic, rich in sensory detail, and lit by his obvious delight in language and story.\n\nLanguage: Munster Irish (Kerry). Syntactically somewhat more accessible than Ó Criomhthain's more lapidary style, though equally idiomatic. Good use of direct speech.\n\nForster's preface called it 'an account of neolithic civilisation from the inside'. Whatever one thinks of that framing, the book captures a vanished world with extraordinary freshness.\n\nWhere to read: In print from Clóchomhar (Irish). English translation widely available.",
+    "examples": [
+      {
+        "irish": "Bhí an lá breá, an ghrian ag taitneamh go glé ar an uisce.",
+        "english": "The day was fine, the sun shining brightly on the water.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Tháinig áthas orm nár airigh mé a leithéid riamh roimhe.",
+        "english": "A joy came upon me the like of which I had never felt before.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Ní raibh sé de nós againn morán cainte a dhéanamh ar an ábhar sin.",
+        "english": "It was not our custom to say much on that subject.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Is é mo thuairim go raibh gach uile dhuine ar an oileán sona sásta.",
+        "english": "It is my opinion that every single person on the island was happy and content.",
+        "dialect": "munster"
+      }
+    ],
+    "notes": "The most accessible starting point of the three Blasket autobiographies — the youthful voice makes it easier to stay with. E.M. Forster's English-language preface is worth reading for context. Muiris later emigrated to the Irish mainland and drowned in 1950. The book stands as a document of a world that effectively ended when the island was evacuated in 1953.",
+    "see_also": [
+      "lit-an-toilanach",
+      "lit-peig"
+    ]
+  },
+  {
+    "id": "lit-cre-na-cille",
+    "title": "Cré na Cille — Máirtín Ó Cadhain",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "novel",
+      "Connacht",
+      "Connemara",
+      "Ó Cadhain",
+      "modernism",
+      "20th century",
+      "stream of consciousness"
+    ],
+    "summary": "A modernist novel set entirely among the dead in a Connemara graveyard. Considered the greatest prose work in Irish. Demands fluency and comfort with Connemara dialect. First published 1949.",
+    "content": "Máirtín Ó Cadhain (1906–1970) was a native speaker from Connemara who became a professor of Irish at Trinity College Dublin. 'Cré na Cille' (Graveyard Clay / The Dirty Dust) is the undisputed masterpiece of Irish-language fiction.\n\nThe entire novel takes place underground in a Connemara graveyard, where the dead gossip, quarrel, and obsess over the world above. There is no narrator — only voices. The technique is close to what Beckett was doing at exactly the same time, and the two writers were aware of each other.\n\nLanguage: Connemara Irish — the Cois Fharraige dialect — at its most dense and idiomatic. Enormous vocabulary, rapid register shifts, satire, poetry, and profanity all mixed together. It is not a book for learners who are not already fluent; it is a book for those who want to understand what Irish can do.\n\nBruno Mac Con Iomaire and Tim Robinson's English translation ('The Dirty Dust', 2015) finally made it accessible to non-Irish readers and is worth reading alongside the original.\n\nWhere to read: In print from An Clóchomhar. English translation from Yale University Press.",
+    "examples": [
+      {
+        "irish": "Murar tháinig sé anseo fós, tiocfaidh sé.",
+        "english": "If he hasn't come here yet, he will come.",
+        "dialect": "connacht",
+        "note": "A voice from the grave, waiting for a new arrival"
+      },
+      {
+        "irish": "Ach an tsíocháin! An tsíocháin! Tá sí chomh gann anseo agus a bhí sí thuas.",
+        "english": "But peace! Peace! It is as scarce here as it was above.",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Cén mhaith dom labhairt? Ní éisteann aon duine liom.",
+        "english": "What good is it for me to speak? No one listens to me.",
+        "dialect": "connacht"
+      },
+      {
+        "irish": "Ní raibh mé chomh sona riamh — ach anois, b'fhéidir.",
+        "english": "I was never so happy — but now, perhaps.",
+        "dialect": "connacht"
+      }
+    ],
+    "notes": "Do not attempt without C1+ Irish. The voices are dense, overlapping, and assume knowledge of Connemara social structures. The reward is extraordinary — Ó Cadhain's range of register, from high rhetoric to bitter comedy, has no equal in modern Irish. The English translation by Mac Con Iomaire and Robinson is the best English prose written from an Irish-language source.",
+    "see_also": [
+      "dialects",
+      "lit-an-toilanach"
+    ]
+  },
+  {
+    "id": "lit-curt-mhean-oiche",
+    "title": "Cúirt an Mheán Oíche — Brian Merriman",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "poetry",
+      "Munster",
+      "Clare",
+      "Merriman",
+      "18th century",
+      "aisling",
+      "satire"
+    ],
+    "summary": "An 18th-century comic-satirical poem in which the women of Ireland put men on trial for failing to marry them. Ribald, brilliant, and one of the longest poems in Irish. Written c. 1780.",
+    "content": "Brian Merriman (c. 1747–1805) was a Clare schoolmaster who wrote this 1,026-line poem — the longest poem in Irish — around 1780. It was not published in print until 1904, having circulated in manuscript. It uses the aisling (vision poem) form, in which the poet falls asleep and is visited by a supernatural figure — here, Aoibheall, queen of the Munster fairies, who presides over a court of women prosecuting Irish men.\n\nThe poem is comic, satirical, sexually frank, and formally accomplished. It mocks clerical celibacy, male laziness, and the institution of marriage with equal relish.\n\nLanguage: East Clare Irish of the late 18th century — close to modern Munster Irish but with archaic forms and a heightened, bardic register. The verse form is syllabic with internal rhyme, quite different from English stress-metre.\n\nWhere to read: The standard edition is Dáithí Ó hÓgáin's. Frank O'Connor's English translation ('The Midnight Court') is famous and free-spirited. Ciaran Carson's translation is more recent and more literal.\n\nFamous opening lines:\n  Ba gnáth mé ag siúl le ciumhais na habhann\n  Ar bháinseach úr is an drúcht go trom…",
+    "examples": [
+      {
+        "irish": "Ba gnáth mé ag siúl le ciumhais na habhann / Ar bháinseach úr is an drúcht go trom.",
+        "english": "I used to walk along the river's edge / On fresh meadow with the dew heavy.",
+        "dialect": "munster",
+        "note": "Opening lines — the standard aisling setting"
+      },
+      {
+        "irish": "Is fada liom féin mar tháinig an scéal / Go hóg gan chéile mé ag méadú i ngéibheann.",
+        "english": "Long it seems to me how the tale has come / That I am young without a spouse, growing in distress.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Táimid i bpian is i bpurgadóir / Ag fanacht le fear nach bhfuil i bhfonn orainn.",
+        "english": "We are in pain and in purgatory / Waiting for a man who has no inclination towards us.",
+        "dialect": "munster",
+        "note": "The women's complaint"
+      }
+    ],
+    "notes": "The sexual frankness of the poem shocked 19th-century editors — the first printed edition omitted 'offensive' passages. Read whole or not at all. The Frank O'Connor English version takes liberties but captures the spirit. For learners of literary Munster Irish, the verse form is worth studying: the couplets rhyme on stressed vowels, not word-endings.",
+    "see_also": [
+      "dialects",
+      "lit-nuala-ni-dhomhnaill"
+    ]
+  },
+  {
+    "id": "lit-nuala-ni-dhomhnaill",
+    "title": "Nuala Ní Dhomhnaill — Selected Poems",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "poetry",
+      "Munster",
+      "contemporary",
+      "Ní Dhomhnaill",
+      "feminist",
+      "mythology",
+      "20th century"
+    ],
+    "summary": "The foremost contemporary Irish-language poet. Her work draws on mythology, feminism, and the unconscious in rich, accessible Munster Irish. Essential for anyone serious about Irish literature.",
+    "content": "Nuala Ní Dhomhnaill (born 1952) grew up partly in the Kerry Gaeltacht and is the most widely translated Irish-language poet alive. Her work is grounded in the Munster oral tradition but reaches toward surrealism, feminist mythology, and the erotic in ways that are entirely contemporary.\n\nShe has been particularly important for making Irish-language poetry visible internationally through facing-page translations — by Seamus Heaney, Paul Muldoon, Ciaran Carson, and others — in volumes like 'The Astrakhan Cloak' and 'The Water Horse'.\n\nKey collections:\n  Féar Suaithinseach (1984)\n  Feis (1991)\n  Cead Aighnis (1998)\n  The Fifty Minute Mermaid (2007)\n\nLanguage: Contemporary Munster Irish with strong oral roots. More accessible than the Blasket writers — the syntax is modern, the vocabulary alive. An excellent place to develop a feeling for the music of Munster Irish.\n\nSignature poems: 'An Mhaighdean Mhara' (The Mermaid), 'Ceist na Teangan' (The Language Issue), 'Féar Suaithinseach' (Miraculous Grass), 'Mo Mháthair' (My Mother).",
+    "examples": [
+      {
+        "irish": "Cuirim mo dhóchas ar snámh / i mbáidín teangan / faoi mar a leagfá naíonán / i gcliabhán.",
+        "english": "I place my hope on the water / in a little boat / of the language, / the way a body might put / an infant",
+        "dialect": "munster",
+        "note": "Opening of 'Ceist na Teangan' (The Language Issue) — her most anthologised poem"
+      },
+      {
+        "irish": "Is tú mo chuid den tsaol, a chuid / a chumann is a stór.",
+        "english": "You are my portion of the world, my share / my darling and my treasure.",
+        "dialect": "munster"
+      },
+      {
+        "irish": "Tá tú ag teacht isteach orm mar a thagann an fharraige / isteach ar thrá.",
+        "english": "You are coming in on me like the sea / comes in on a strand.",
+        "dialect": "munster"
+      }
+    ],
+    "notes": "The facing-page translation volumes are the ideal way in — read the Irish, look at the English, go back to the Irish. Seamus Heaney's translations in 'The Astrakhan Cloak' are particularly fine. 'Ceist na Teangan' (The Language Issue) is the essential starting poem — it addresses the precariousness of the Irish language directly and memorably.",
+    "see_also": [
+      "lit-o-riordain",
+      "dialects"
+    ]
+  },
+  {
+    "id": "lit-o-riordain",
+    "title": "Seán Ó Ríordáin — Selected Poems",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "poetry",
+      "Munster",
+      "existential",
+      "Ó Ríordáin",
+      "20th century",
+      "modernist"
+    ],
+    "summary": "The most important Irish-language modernist poet. Dense, philosophical, and rooted in an anguished Munster Irish. Demands close reading and comfort with complex syntax.",
+    "content": "Seán Ó Ríordáin (1916–1977) was a Cork native who spent much of his adult life ill with tuberculosis. Out of that isolation he produced three collections of poetry that transformed what Irish-language poetry could do — bringing existentialism, self-consciousness about language, and a radical interiority that had no precedent in the tradition.\n\nHis diary (published posthumously) is also essential reading — in it he works out his ideas about language, identity, and the relationship between Irish and English in a voice of extraordinary honesty.\n\nKey collections:\n  Eireaball Spideoige (1952) — Robin's Tail\n  Brosna (1964)\n  Línte Liombó (1971)\n\nLanguage: Dense, syntactically complex Munster Irish. He coinages new words, bends syntax to his needs, and refuses the expected. Not an entry-level text — but rewards the effort immensely.\n\nSignature poems: 'Adhlacadh Mo Mháthar' (My Mother's Burial), 'Saoirse' (Freedom), 'Fill Arís' (Return Again), 'Claíomh Solais' (Sword of Light), 'Oíche Nollag' (Christmas Night).",
+    "examples": [
+      {
+        "irish": "Táim i gcathair idirdhealaithe, / I gcathair na n-athfhriotal.",
+        "english": "I am in a city of distinctions, / In a city of echoes.",
+        "dialect": "munster",
+        "note": "From 'Fill Arís' — on the position of the Irish speaker"
+      },
+      {
+        "irish": "Ná clois le glór na Gaeilge, / Ach éist le ciúnas na Gaeilge.",
+        "english": "Don't listen to the sound of Irish, / But listen to the silence of Irish.",
+        "dialect": "munster",
+        "note": "On the deeper reality of the language — one of his most quoted lines"
+      },
+      {
+        "irish": "Is fearr liom bheith im' dheoraí / ná fanacht mar seo im' cheartlár.",
+        "english": "I prefer to be an exile / than to remain like this at my centre.",
+        "dialect": "munster"
+      }
+    ],
+    "notes": "Approach after Ní Dhomhnaill — she is more accessible. Ó Ríordáin rewards slow, repeated reading. The bilingual edition with translations by Greg Delanty and Seán Ó Coileáin is the best introduction. His famous image of the poet as 'cat i measc madraí' (a cat among dogs) — the Irish speaker in an English world — runs through all his work.",
+    "see_also": [
+      "lit-nuala-ni-dhomhnaill",
+      "dialects"
+    ]
+  },
+  {
+    "id": "lit-an-giall",
+    "title": "An Giall — Brendan Behan",
+    "category": "literature",
+    "difficulty": "C2",
+    "tags": [
+      "literature",
+      "drama",
+      "theatre",
+      "Behan",
+      "Dublin Irish",
+      "20th century",
+      "Leinster",
+      "political"
+    ],
+    "summary": "Brendan Behan's play about an English soldier held hostage by the IRA, written first in Irish. The Irish original is sharper and more political than the later English adaptation 'The Hostage'.",
+    "content": "Brendan Behan (1923–1964) wrote 'An Giall' in Irish in 1957, at the request of Gael Linn and the director Tomás Mac Anna for the Damer Theatre in Dublin. The following year he adapted and expanded it as 'The Hostage' for Joan Littlewood's Theatre Workshop in London — transforming a taut political drama into a more expansive, music-hall influenced piece.\n\nThe Irish original is in many ways a stronger play: tighter, more politically serious, more genuinely bilingual in its treatment of language as subject matter. An English soldier held in a Dublin boarding house while an IRA man awaits execution — the Irish and English languages themselves become part of the drama.\n\nBehan was a native Dublin Irish speaker (he had learned it in Borstal from Kerry prisoners) and the play's Irish has a distinctive Dublin flavour — colloquial, urban, marked by English loanwords and syntax, quite unlike the Gaeltacht varieties.\n\nLanguage: Dublin Hiberno-Irish. Colloquial, full of English loanwords, fast-moving dialogue. A useful corrective to an over-literary view of what Irish is — this is the language of a city man who learned it unconventionally.\n\nWhere to read/see: Published by Chomhairle na Gaeilge. The An Giall / The Hostage volume from Gallery Press includes both versions.",
+    "examples": [
+      {
+        "irish": "Is Sasanach mise, ach ní naimhde muid go léir.",
+        "english": "I am English, but we are not all enemies.",
+        "dialect": "standard",
+        "note": "The hostage speaking — the central tension of the play"
+      },
+      {
+        "irish": "Tá an Ghaeilge chomh maith le haon teanga eile ar domhan.",
+        "english": "Irish is as good as any other language in the world.",
+        "dialect": "standard"
+      },
+      {
+        "irish": "Cén fáth nach bhféadfaimis a bheith ina gcairde?",
+        "english": "Why couldn't we be friends?",
+        "dialect": "standard"
+      }
+    ],
+    "notes": "The comparison between 'An Giall' and 'The Hostage' is itself a literary study in what translation does to a work. Behan's Irish was unconventional — he had absorbed it from Kerry speakers and it has a different music from either Munster or Connacht literary Irish. For learners who want a non-Gaeltacht model of literary Irish, this is valuable.",
+    "see_also": [
+      "dialects",
+      "lit-cre-na-cille"
+    ]
   }
 ]
