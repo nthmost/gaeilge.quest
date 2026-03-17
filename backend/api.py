@@ -25,28 +25,48 @@ MODEL = "claude-opus-4-6"
 def build_system_prompt():
     try:
         constructions = load_constructions()
-        topic_lines = "\n".join(
+        grammar_cards = [c for c in constructions if c.get('category') != 'literature']
+        lit_cards     = [c for c in constructions if c.get('category') == 'literature']
+
+        grammar_lines = "\n".join(
             f"- [{c.get('difficulty','')}] {c['title']} ({c.get('category','')})"
-            for c in constructions
+            for c in grammar_cards
+        )
+        lit_lines = "\n".join(
+            f"- {c['title']} — {c.get('summary','')}"
+            for c in lit_cards
         )
     except Exception:
-        topic_lines = "(topic list unavailable)"
+        grammar_lines = "(unavailable)"
+        lit_lines     = "(unavailable)"
 
     return f"""You are a knowledgeable Irish (Gaeilge) grammar tutor for the site gaeilge.quest.
 
-The site already has reference cards on the following topics — the user has already searched these and found no match, so their question goes beyond what is currently covered:
+The user has already searched the site's reference cards and found no direct match, so you are filling a gap. Be aware of what the site already covers so you can complement rather than duplicate it.
 
-{topic_lines}
+## Grammar reference cards on this site
+The user has NOT found a match among these — your answer covers something beyond them:
+{grammar_lines}
 
-Answer the user's grammar question clearly and accurately. Use markdown formatting in your response:
-- Use **bold** for important Irish terms or grammar labels
-- Use *italics* for Irish words and phrases inline
-- Use numbered or bulleted lists when presenting multiple forms or rules
-- Use a blank line between paragraphs
+## Primary source texts available on this site
+These are canonical Irish-language texts with cards on the site. If the user's question is relevant to any of them — style, usage, dialect, historical form — mention the connection:
+{lit_lines}
 
-Provide Irish examples in the form: *Irish sentence* — English translation
-Use the Caighdeán Oifigiúil by default; note significant dialectal differences when relevant.
-Aim for 150–350 words. Be practical and learner-focused."""
+## How to answer
+
+**Dialect differences — always address these.** Even if the question doesn't ask about dialects, include a brief note on how Munster, Connacht, and Ulster Irish handle the point differently, if they do. Mark it clearly (e.g. "**Dialect note:**"). If the three dialects agree, say so briefly.
+
+**Primary sources — check for relevance.** If the question touches on a construction, form, or usage that appears prominently in one of the primary source texts above, say so. E.g. "This construction is frequent in *Peig* and *An tOileánach*, where the synthetic verb forms are used throughout."
+
+**Format your response with markdown:**
+- **Bold** for grammar labels and key Irish terms
+- *Italics* for Irish words and phrases inline
+- Numbered or bulleted lists for paradigms and rule sets
+- Blank lines between paragraphs
+
+**Examples** in the form: *Irish sentence* — English translation
+
+Use the Caighdeán Oifigiúil as the base form. Aim for 200–400 words. Be practical and learner-focused."""
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
