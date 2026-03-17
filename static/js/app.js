@@ -284,11 +284,11 @@ async function askClaude(question) {
     return;
   }
 
-  // Step 2: nothing in our reference — ask Claude
+  // Step 2: nothing in our reference — stream from the API
   btn.disabled = true;
   btn.textContent = 'Searching…';
 
-  container.innerHTML = `
+  const harpHtml = `
     <div class="harp-loader">
       <div class="harp-frame">
         <div class="harp-string s1"></div>
@@ -302,6 +302,16 @@ async function askClaude(question) {
       </div>
       <p class="harp-label">Consulting the grammar reference…</p>
     </div>`;
+
+  const answerCardHtml = `<div class="ai-answer-card">
+    <div class="ai-answer-header">
+      <span class="ai-answer-label">Grammar Assistant</span>
+      <span class="ai-answer-note">AI-generated answer, informed by gaeilge.quest's curated reference</span>
+    </div>
+    <div class="ai-answer-body" id="ai-answer-body"></div>
+  </div>`;
+
+  container.innerHTML = harpHtml;
   container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   try {
@@ -310,23 +320,48 @@ async function askClaude(question) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question }),
     });
+
     if (!resp.ok) {
       const err = await resp.json().catch(() => ({}));
       throw new Error(err.error || `Server error ${resp.status}`);
     }
-    const data = await resp.json();
-    container.innerHTML = `<div class="ai-answer-card">
-      <div class="ai-answer-header">
-        <span class="ai-answer-label">Grammar Assistant</span>
-        <span class="ai-answer-note">AI-generated answer, informed by gaeilge.quest's curated reference</span>
-      </div>
-      <div class="ai-answer-body">${renderMarkdown(data.answer)}</div>
-    </div>`;
+
+    // Switch from harp to answer card as soon as stream begins
+    container.innerHTML = answerCardHtml;
+    const answerBody = document.getElementById('ai-answer-body');
+
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let sseBuffer = '';
+    let fullText = '';
+
+    outer: while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      sseBuffer += decoder.decode(value, { stream: true });
+      const lines = sseBuffer.split('\n');
+      sseBuffer = lines.pop(); // hold incomplete last line
+
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        const payload = line.slice(6).trim();
+        if (payload === '[DONE]') break outer;
+        try {
+          const msg = JSON.parse(payload);
+          if (msg.error) throw new Error(msg.error);
+          if (msg.text) {
+            fullText += msg.text;
+            answerBody.innerHTML = renderMarkdown(fullText);
+          }
+        } catch (parseErr) {
+          if (parseErr.message) throw parseErr;
+        }
+      }
+    }
   } catch (err) {
     container.innerHTML = `<div class="ai-answer-card">
-      <div class="ai-answer-header">
-        <span class="ai-answer-label">Grammar Assistant</span>
-      </div>
+      <div class="ai-answer-header"><span class="ai-answer-label">Grammar Assistant</span></div>
       <div class="ai-answer-body"><p class="ai-error">Couldn't get an answer: ${escHtml(err.message)}</p></div>
     </div>`;
   } finally {

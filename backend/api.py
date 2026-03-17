@@ -9,7 +9,7 @@ import json
 import logging
 from pathlib import Path
 
-from flask import Flask, jsonify, request, send_from_directory, render_template
+from flask import Flask, Response, jsonify, request, send_from_directory, render_template, stream_with_context
 import anthropic
 
 # ── Config ────────────────────────────────────────────────────────────────────
@@ -20,7 +20,26 @@ TEMPLATE_DIR = ROOT / "templates"
 DATA_DIR = ROOT / "data"
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-MODEL = "claude-opus-4-6"
+MODEL = "claude-haiku-4-5-20251001"
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+log = logging.getLogger(__name__)
+
+# ── Data loaders ──────────────────────────────────────────────────────────────
+
+def load_constructions():
+    with open(DATA_DIR / "constructions.json") as f:
+        return json.load(f)
+
+def load_verbs():
+    with open(DATA_DIR / "verbs.json") as f:
+        return json.load(f)
+
+def load_preps():
+    with open(DATA_DIR / "preps.json") as f:
+        return json.load(f)
+
+# ── System prompt (built once at startup) ────────────────────────────────────
 
 def build_system_prompt():
     try:
@@ -68,26 +87,19 @@ These are canonical Irish-language texts with cards on the site. If the user's q
 
 Use the Caighdeán Oifigiúil as the base form. Aim for 200–400 words. Be practical and learner-focused."""
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-log = logging.getLogger(__name__)
+# Cache at module load — rebuilt on process restart when data changes
+_SYSTEM_PROMPT = None
+
+def get_system_prompt():
+    global _SYSTEM_PROMPT
+    if _SYSTEM_PROMPT is None:
+        _SYSTEM_PROMPT = build_system_prompt()
+    return _SYSTEM_PROMPT
 
 # ── App ───────────────────────────────────────────────────────────────────────
 
 app = Flask(__name__, static_folder=str(STATIC_DIR), template_folder=str(TEMPLATE_DIR))
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY) if ANTHROPIC_API_KEY else None
-
-def load_constructions():
-    with open(DATA_DIR / "constructions.json") as f:
-        return json.load(f)
-
-def load_verbs():
-    with open(DATA_DIR / "verbs.json") as f:
-        return json.load(f)
-
-def load_preps():
-    with open(DATA_DIR / "preps.json") as f:
-        return json.load(f)
-
 
 # ── Routes ────────────────────────────────────────────────────────────────────
 
@@ -116,7 +128,7 @@ def static_files(filename):
 
 @app.route("/data/constructions.json")
 def constructions_data():
-    return send_file(DATA_DIR / "constructions.json", mimetype="application/json")
+    return send_from_directory(DATA_DIR, "constructions.json", mimetype="application/json")
 
 
 @app.route("/api/ask", methods=["POST"])
@@ -135,28 +147,33 @@ def ask():
 
     log.info("Ask: %s", question[:100])
 
-    try:
-        response = client.messages.create(
-            model=MODEL,
-            max_tokens=1024,
-            system=build_system_prompt(),
-            messages=[{"role": "user", "content": question}],
-        )
-        answer = next(
-            (block.text for block in response.content if block.type == "text"),
-            "No answer returned.",
-        )
-        return jsonify({"answer": answer})
+    def generate():
+        try:
+            with client.messages.stream(
+                model=MODEL,
+                max_tokens=1024,
+                system=get_system_prompt(),
+                messages=[{"role": "user", "content": question}],
+            ) as stream:
+                for text in stream.text_stream:
+                    yield f"data: {json.dumps({'text': text})}\n\n"
+            yield "data: [DONE]\n\n"
+        except anthropic.RateLimitError:
+            yield f"data: {json.dumps({'error': 'Too many requests — please try again in a moment.'})}\n\n"
+        except anthropic.AuthenticationError:
+            yield f"data: {json.dumps({'error': 'AI service authentication error.'})}\n\n"
+        except Exception as exc:
+            log.exception("Stream error: %s", exc)
+            yield f"data: {json.dumps({'error': 'Something went wrong. Please try again.'})}\n\n"
 
-    except anthropic.RateLimitError:
-        log.warning("Rate limited by Anthropic API")
-        return jsonify({"error": "Too many requests — please try again in a moment."}), 429
-    except anthropic.AuthenticationError:
-        log.error("Anthropic authentication failed")
-        return jsonify({"error": "AI service authentication error."}), 500
-    except Exception as exc:
-        log.exception("Unexpected error in /api/ask: %s", exc)
-        return jsonify({"error": "Something went wrong. Please try again."}), 500
+    return Response(
+        stream_with_context(generate()),
+        mimetype="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",   # tell nginx not to buffer the stream
+        },
+    )
 
 
 @app.route("/api/health")
@@ -164,6 +181,7 @@ def health():
     return jsonify({
         "status": "ok",
         "ai_configured": client is not None,
+        "model": MODEL,
     })
 
 
