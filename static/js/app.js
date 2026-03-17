@@ -286,15 +286,22 @@ async function askClaude(question) {
 
   // Step 2: nothing in our reference — ask Claude
   btn.disabled = true;
-  btn.textContent = 'Asking…';
+  btn.textContent = 'Searching…';
 
-  container.innerHTML = `<div class="ai-answer-card">
-    <div class="ai-answer-header">
-      <span class="ai-answer-label">Claude says</span>
-      <span class="ai-answer-note">No reference card found — here's a direct answer</span>
-    </div>
-    <div class="ai-answer-body" id="ai-answer-body"><em>Loading…</em></div>
-  </div>`;
+  container.innerHTML = `
+    <div class="harp-loader">
+      <div class="harp-frame">
+        <div class="harp-string s1"></div>
+        <div class="harp-string s2"></div>
+        <div class="harp-string s3"></div>
+        <div class="harp-string s4"></div>
+        <div class="harp-string s5"></div>
+        <div class="harp-string s6"></div>
+        <div class="harp-string s7"></div>
+        <div class="harp-string s8"></div>
+      </div>
+      <p class="harp-label">Consulting the grammar reference…</p>
+    </div>`;
   container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   try {
@@ -308,13 +315,23 @@ async function askClaude(question) {
       throw new Error(err.error || `Server error ${resp.status}`);
     }
     const data = await resp.json();
-    document.getElementById('ai-answer-body').innerHTML = renderMarkdown(data.answer);
+    container.innerHTML = `<div class="ai-answer-card">
+      <div class="ai-answer-header">
+        <span class="ai-answer-label">Grammar Assistant</span>
+        <span class="ai-answer-note">AI-generated answer, informed by gaeilge.quest's curated reference</span>
+      </div>
+      <div class="ai-answer-body">${renderMarkdown(data.answer)}</div>
+    </div>`;
   } catch (err) {
-    document.getElementById('ai-answer-body').innerHTML =
-      `<p class="ai-error">Couldn't get an answer: ${escHtml(err.message)}</p>`;
+    container.innerHTML = `<div class="ai-answer-card">
+      <div class="ai-answer-header">
+        <span class="ai-answer-label">Grammar Assistant</span>
+      </div>
+      <div class="ai-answer-body"><p class="ai-error">Couldn't get an answer: ${escHtml(err.message)}</p></div>
+    </div>`;
   } finally {
     btn.disabled = false;
-    btn.textContent = 'Ask Claude';
+    btn.textContent = 'Search';
   }
 }
 
@@ -374,6 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   searchInput.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
+      e.preventDefault();
       const q = searchInput.value.trim();
       if (q) askClaude(q);
     }
