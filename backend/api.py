@@ -96,6 +96,25 @@ def get_system_prompt():
         _SYSTEM_PROMPT = build_system_prompt()
     return _SYSTEM_PROMPT
 
+# Response cache — keyed by normalised question, capped at 256 entries (FIFO)
+_RESPONSE_CACHE: dict[str, str] = {}
+_CACHE_MAX = 256
+
+def cache_key(question: str) -> str:
+    return question.lower().strip()
+
+def cache_get(question: str) -> str | None:
+    return _RESPONSE_CACHE.get(cache_key(question))
+
+def cache_set(question: str, answer: str) -> None:
+    key = cache_key(question)
+    if key in _RESPONSE_CACHE:
+        return
+    if len(_RESPONSE_CACHE) >= _CACHE_MAX:
+        # drop oldest entry
+        _RESPONSE_CACHE.pop(next(iter(_RESPONSE_CACHE)))
+    _RESPONSE_CACHE[key] = answer
+
 # ── App ───────────────────────────────────────────────────────────────────────
 
 app = Flask(__name__, static_folder=str(STATIC_DIR), template_folder=str(TEMPLATE_DIR))
@@ -147,7 +166,21 @@ def ask():
 
     log.info("Ask: %s", question[:100])
 
+    # Serve from cache if available (replay as a single chunk + DONE)
+    cached = cache_get(question)
+    if cached:
+        log.info("Cache hit for: %s", question[:60])
+        def replay():
+            yield f"data: {json.dumps({'text': cached})}\n\n"
+            yield "data: [DONE]\n\n"
+        return Response(
+            replay(),
+            mimetype="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
     def generate():
+        full_text = []
         try:
             with client.messages.stream(
                 model=MODEL,
@@ -156,7 +189,9 @@ def ask():
                 messages=[{"role": "user", "content": question}],
             ) as stream:
                 for text in stream.text_stream:
+                    full_text.append(text)
                     yield f"data: {json.dumps({'text': text})}\n\n"
+            cache_set(question, "".join(full_text))
             yield "data: [DONE]\n\n"
         except anthropic.RateLimitError:
             yield f"data: {json.dumps({'error': 'Too many requests — please try again in a moment.'})}\n\n"
@@ -171,7 +206,7 @@ def ask():
         mimetype="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
-            "X-Accel-Buffering": "no",   # tell nginx not to buffer the stream
+            "X-Accel-Buffering": "no",
         },
     )
 
