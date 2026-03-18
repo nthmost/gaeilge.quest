@@ -53,7 +53,7 @@ When the user searches and finds no matching card, the assistant:
 3. Complements rather than duplicates existing cards — it receives the full card list as context
 4. Streams the response token-by-token for fast perceived latency
 
-Model: `claude-haiku-4-5-20251001`. System prompt cached at startup.
+Model: `claude-haiku-4-5-20251001`. System prompt cached at startup. Responses cached in memory (256-entry FIFO, normalised key) — repeated questions are served instantly with no API call.
 
 ## Deployment
 
@@ -74,7 +74,8 @@ See `CLAUDE.md` for the full list. Key locked-in choices:
 
 - **Synthetic verb forms are default** — analytic is opt-in. Nobody in any dialect actually speaks the standard analytic.
 - **Default tenses:** Present, Past, Future. Past Habitual / Conditional / Imperative are opt-in toggles.
-- **Tags are search-only** — not clickable filters. Sidebar filters (Topics, CEFR Level, Dialect) are multi-select toggles with AND logic.
+- **Tags are search-only** — not clickable filters. Sidebar filters (Topics, CEFR Level, Dialect) are collapsible dropdowns with multi-select AND logic: selecting A1 + Verbs shows only A1 verb cards.
+- **Layout is left-flush** — no centered max-width container; content fills the screen from the left edge.
 - **Irish tricolor palette:** `--green: #169b62`, `--orange: #ff883e`, `--dark: #1a1a2e`
 
 ## Content notes
