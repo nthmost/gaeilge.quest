@@ -19,13 +19,48 @@ backend/api.py          Flask app — routes + /api/ask (Claude API)
 data/constructions.json Grammar reference data
 data/verbs.json         Verb conjugation paradigms (all 22 verbs)
 data/SCHEMA.md          Schema docs for constructions.json
+data/sources.json       Primary-source bibliographic metadata (see Sources tab below)
+data/sources_index/     Built TF-IDF retrieval index (chunks.json, tfidf.joblib, matrix.npz) — committed, built by tools/build_index.py
 templates/index.html    Main grammar reference page
 templates/verbs.html    Verb conjugation page
+templates/sources.html  Primary sources list page
 static/css/style.css    Global styles (including .header-nav, .nav-link)
 static/css/verbs.css    Verb page styles only
 static/js/app.js        Grammar page JS
 static/js/verbs.js      Verb page JS
+tools/build_index.py    Offline index builder — reads sources_pdfs/ (git-ignored, not deployed), writes data/sources_index/
 ```
+
+## Sources tab + primary-source RAG
+
+The `/sources` page lists public-domain Irish/Celtic linguistics reference
+works (grammars, dictionaries — see `data/sources.json`), each citing and
+linking to its Internet Archive page. Only genuinely public-domain works
+(pre-1930 US publication, or explicitly PD/openly-licensed) belong here —
+same rule as the private `gaeilge.nthmost.net` books section this list was
+ported from. The PDFs themselves are not hosted on this server; link out to
+Internet Archive instead.
+
+`/api/ask` is grounded in these works via a small retrieval pipeline:
+`tools/build_index.py` OCR-extracts text per page (PyMuPDF), chunks it
+(~250 words, 40-word overlap), and fits a `TfidfVectorizer` over all chunks
+— chosen over dense/neural embeddings because morrigan is a small VPS with
+tight disk (historically ~94% full); scikit-learn + scipy + numpy is a much
+lighter dependency than a sentence-transformer + torch stack, and TF-IDF
+works well here since questions tend to use the same grammatical
+terminology the source texts use. `retrieve_passages()` in `backend/api.py`
+cosine-matches the question against the chunk matrix and the top matches
+(above `RAG_MIN_SCORE`) are appended to the system prompt as "Retrieved
+passages" with title/author/page, so Claude can cite them — it's instructed
+not to force a citation when nothing's actually relevant, and never to
+fabricate one.
+
+To add/remove a source: edit `data/sources.json`, drop (or remove) the PDF
+in `sources_pdfs/` (git-ignored — re-download it locally when rebuilding),
+then `./tools/build_index.py` and commit the regenerated `data/sources_index/`.
+Requires `scikit-learn==1.9.1` (or whatever's pinned in `requirements.txt`)
+to match between the build venv and the deployed venv on morrigan, since
+`tfidf.joblib` is a pickled vectorizer.
 
 ## Design Decisions — Do Not Change Without Discussion
 

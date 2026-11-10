@@ -11,6 +11,9 @@ from pathlib import Path
 
 from flask import Flask, Response, jsonify, request, send_from_directory, render_template, stream_with_context
 import anthropic
+import joblib
+from scipy import sparse
+from sklearn.metrics.pairwise import cosine_similarity
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
@@ -18,9 +21,13 @@ ROOT = Path(__file__).parent.parent
 STATIC_DIR = ROOT / "static"
 TEMPLATE_DIR = ROOT / "templates"
 DATA_DIR = ROOT / "data"
+INDEX_DIR = DATA_DIR / "sources_index"
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
+
+RAG_TOP_K = 5
+RAG_MIN_SCORE = 0.08
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -38,6 +45,49 @@ def load_verbs():
 def load_preps():
     with open(DATA_DIR / "preps.json") as f:
         return json.load(f)
+
+def load_sources():
+    with open(DATA_DIR / "sources.json") as f:
+        return json.load(f)
+
+# ── RAG retrieval over primary-source texts ──────────────────────────────────
+# Index built offline by tools/build_index.py (TF-IDF over chunked page text
+# from the public-domain PDFs listed in data/sources.json).
+
+_RAG = None  # lazily loaded: {"vectorizer", "matrix", "chunks"}
+
+def load_rag_index():
+    global _RAG
+    if _RAG is not None:
+        return _RAG
+    try:
+        vectorizer = joblib.load(INDEX_DIR / "tfidf.joblib")
+        matrix = sparse.load_npz(INDEX_DIR / "matrix.npz")
+        chunks = json.loads((INDEX_DIR / "chunks.json").read_text())
+        _RAG = {"vectorizer": vectorizer, "matrix": matrix, "chunks": chunks}
+        log.info("Loaded RAG index: %d chunks", len(chunks))
+    except Exception:
+        log.exception("Could not load RAG index — primary-source retrieval disabled")
+        _RAG = {"vectorizer": None, "matrix": None, "chunks": []}
+    return _RAG
+
+
+def retrieve_passages(question, top_k=RAG_TOP_K):
+    rag = load_rag_index()
+    if rag["vectorizer"] is None or not rag["chunks"]:
+        return []
+
+    query_vec = rag["vectorizer"].transform([question])
+    scores = cosine_similarity(query_vec, rag["matrix"])[0]
+    ranked = scores.argsort()[::-1][:top_k]
+
+    passages = []
+    for idx in ranked:
+        if scores[idx] < RAG_MIN_SCORE:
+            continue
+        chunk = rag["chunks"][idx]
+        passages.append({**chunk, "score": float(scores[idx])})
+    return passages
 
 # ── System prompt (built once at startup) ────────────────────────────────────
 
@@ -59,6 +109,15 @@ def build_system_prompt():
         grammar_lines = "(unavailable)"
         lit_lines     = "(unavailable)"
 
+    try:
+        sources = load_sources()
+        source_lines = "\n".join(
+            f"- *{s['title']}* ({s['author']}, {s['year']}) — {s.get('topic', '')}"
+            for s in sources
+        )
+    except Exception:
+        source_lines = "(unavailable)"
+
     return f"""You are a knowledgeable Irish (Gaeilge) grammar tutor for the site gaeilge.quest.
 
 The user has already searched the site's reference cards and found no direct match, so you are filling a gap. Be aware of what the site already covers so you can complement rather than duplicate it.
@@ -70,6 +129,22 @@ The user has NOT found a match among these — your answer covers something beyo
 ## Primary source texts available on this site
 These are canonical Irish-language texts with cards on the site. If the user's question is relevant to any of them — style, usage, dialect, historical form — mention the connection:
 {lit_lines}
+
+## Linguistic reference works (listed on the site's Sources tab)
+Public-domain grammars and dictionaries of Irish and Celtic:
+{source_lines}
+
+For each question, relevant passages retrieved from these works (if any) are
+appended below as "## Retrieved passages". These are real excerpts, OCR'd
+from page scans of the works above — OCR errors (odd spacing, misread
+diacritics) may appear; use your judgment to read through them. When a
+retrieved passage genuinely supports or informs your answer, say so and name
+the source and page, e.g. "(Thurneysen, *Handbuch des Alt-Irischen*, p. 312)".
+Don't force a citation if the passages aren't actually relevant — these are
+19th/early-20th-century historical and comparative grammars, so they often
+speak to Old Irish or cross-Celtic forms rather than the modern standard;
+note that distinction when it matters. Never fabricate a citation to a
+source or page you weren't given.
 
 ## How to answer
 
@@ -140,6 +215,11 @@ def preps():
     return render_template("preps.html", preps_json=json.dumps(preps_data))
 
 
+@app.route("/sources")
+def sources():
+    return render_template("sources.html", sources=load_sources())
+
+
 @app.route("/static/<path:filename>")
 def static_files(filename):
     return send_from_directory(STATIC_DIR, filename)
@@ -179,13 +259,24 @@ def ask():
             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
         )
 
+    passages = retrieve_passages(question)
+    if passages:
+        log.info("Retrieved %d passage(s) for: %s", len(passages), question[:60])
+        passages_block = "\n\n".join(
+            f'[{i+1}] {p["title"]} ({p["author"]}), p.{p["page"]}:\n"{p["text"]}"'
+            for i, p in enumerate(passages)
+        )
+        system_prompt = f"{get_system_prompt()}\n\n## Retrieved passages\n{passages_block}"
+    else:
+        system_prompt = get_system_prompt()
+
     def generate():
         full_text = []
         try:
             with client.messages.stream(
                 model=MODEL,
                 max_tokens=1024,
-                system=get_system_prompt(),
+                system=system_prompt,
                 messages=[{"role": "user", "content": question}],
             ) as stream:
                 for text in stream.text_stream:

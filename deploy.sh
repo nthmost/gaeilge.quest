@@ -18,6 +18,7 @@ rsync -avz --delete \
   --exclude '.git' \
   --exclude 'venv' \
   --exclude '.env' \
+  --exclude 'sources_pdfs' \
   . nthmost@${REMOTE}:${REMOTE_DIR}/
 
 echo "=== Installing/updating Python dependencies ==="

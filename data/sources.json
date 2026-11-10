@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "zeuss-grammatica-celtica",
+    "title": "Grammatica Celtica",
+    "author": "Johann Kaspar Zeuss (2nd ed., ed. Hermann Ebel)",
+    "year": 1871,
+    "language": "Latin",
+    "filename": "grammaticaceltica02zeus.pdf",
+    "topic": "Comparative Celtic grammar — the foundational work of Celtic philology, comparing Old Irish, Welsh, Cornish, Breton and Gaulish.",
+    "source_url": "https://archive.org/details/grammaticaceltica02zeus",
+    "source_label": "Internet Archive",
+    "license": ""
+  },
+  {
+    "slug": "thurneysen-handbuch",
+    "title": "Handbuch des Alt-Irischen: Grammatik, Texte und Wörterbuch (Teil I)",
+    "author": "Rudolf Thurneysen",
+    "year": 1909,
+    "language": "German",
+    "filename": "handbuchdesaltir01thur.pdf",
+    "topic": "The standard reference grammar of Old Irish — phonology, morphology, and texts with glossary.",
+    "source_url": "https://archive.org/details/handbuchdesaltir01thur",
+    "source_label": "Internet Archive",
+    "license": ""
+  },
+  {
+    "slug": "strachan-old-irish-paradigms",
+    "title": "Old-Irish Paradigms and Selections from the Old-Irish Glosses",
+    "author": "John Strachan",
+    "year": 1909,
+    "language": "English/Old Irish",
+    "filename": "oldirishparadigm00stra.pdf",
+    "topic": "Old Irish verb and noun paradigm tables, with annotated glosses — a teaching grammar.",
+    "source_url": "https://archive.org/details/oldirishparadigm00stra",
+    "source_label": "Internet Archive (scan by National Library of Scotland)",
+    "license": "CC BY-NC-SA 2.5 (Scotland) — noncommercial use only"
+  },
+  {
+    "slug": "dinneen-foclóir",
+    "title": "Foclóir Gaedhilge agus Béarla: An Irish-English Dictionary",
+    "author": "Patrick S. Dinneen",
+    "year": 1904,
+    "language": "Irish/English",
+    "filename": "b2486285x.pdf",
+    "topic": "The classic Irish-English dictionary — headwords, idioms, dialect usage notes, and example sentences.",
+    "source_url": "https://archive.org/details/b2486285x",
+    "source_label": "Internet Archive",
+    "license": ""
+  },
+  {
+    "slug": "pedersen-vergleichende-grammatik-1",
+    "title": "Vergleichende Grammatik der keltischen Sprachen (Band I)",
+    "author": "Holger Pedersen",
+    "year": 1909,
+    "language": "German",
+    "filename": "vergleichendegra00pede.pdf",
+    "topic": "Comparative grammar of the Celtic languages, volume I — phonology and word formation across the Celtic family.",
+    "source_url": "https://archive.org/details/vergleichendegra00pede",
+    "source_label": "Internet Archive",
+    "license": ""
+  },
+  {
+    "slug": "pedersen-vergleichende-grammatik-2",
+    "title": "Vergleichende Grammatik der keltischen Sprachen (Band II)",
+    "author": "Holger Pedersen",
+    "year": 1909,
+    "language": "German",
+    "filename": "vergleichendegra02pede.pdf",
+    "topic": "Comparative grammar of the Celtic languages, volume II — morphology and syntax across the Celtic family.",
+    "source_url": "https://archive.org/details/vergleichendegra02pede",
+    "source_label": "Internet Archive",
+    "license": ""
+  },
+  {
+    "slug": "ogrowney-simple-lessons",
+    "title": "Revised Simple Lessons in Irish, Giving the Pronunciation of Each Word",
+    "author": "Eugene O'Growney",
+    "year": 1901,
+    "language": "Irish/English",
+    "filename": "revisedsimpleles00ogro.pdf",
+    "topic": "An early beginner's course in Irish, with pronunciation guidance for each word — the Gaelic League's primer.",
+    "source_url": "https://archive.org/details/revisedsimpleles00ogro",
+    "source_label": "Internet Archive",
+    "license": ""
+  }
+]

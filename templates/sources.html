@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary Sources — gaeilge.quest</title>
+  <meta name="description" content="Public-domain Irish and Celtic linguistics reference works used to ground the AI assistant's answers — grammars, dictionaries, and primers.">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">gaeilge<span>.quest</span></a>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">Grammar</a>
+      <div class="nav-item">
+        <a href="/verbs" class="nav-link">Verbs</a>
+        <div class="nav-dropdown-menu"><div class="nav-dropdown-inner">
+          <a href="/?cat=verbs" class="nav-dropdown-item">Grammar</a>
+          <a href="/verbs" class="nav-dropdown-item">Tables</a>
+        </div></div>
+      </div>
+      <div class="nav-item">
+        <a href="/preps" class="nav-link">Prepositions</a>
+        <div class="nav-dropdown-menu"><div class="nav-dropdown-inner">
+          <a href="/preps" class="nav-dropdown-item">Tables</a>
+        </div></div>
+      </div>
+      <a href="/sources" class="nav-link active">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<div class="sources-body">
+  <div class="sources-hero">
+    <h1>Primary Sources</h1>
+    <p>
+      Classic, public-domain grammars and dictionaries of Irish and the
+      Celtic languages. The AI assistant draws on these directly when
+      answering a question — it retrieves and cites the relevant passages
+      rather than relying on general knowledge alone.
+    </p>
+  </div>
+
+  <ul class="sources-list">
+    {% for s in sources %}
+    <li class="sources-item">
+      <h3>{{ s.title }}</h3>
+      <p class="sources-meta">{{ s.author }} · {{ s.year }} · {{ s.language }}</p>
+      <p class="sources-topic">{{ s.topic }}</p>
+      <p class="sources-link">
+        <a href="{{ s.source_url }}" rel="noopener">View on {{ s.source_label }}</a>
+        {% if s.license %}<span class="sources-license"> — {{ s.license }}</span>{% endif %}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<footer>
+  <p>
+    <strong>gaeilge.quest</strong> — an Irish grammar reference for learners.
+    Content is curated by hand; AI answers are provided by
+    <a href="https://anthropic.com" rel="noopener">Anthropic Claude</a>.
+    <br>Mistakes? <a href="mailto:naomi@nthmost.com">let me know</a>.
+  </p>
+</footer>
+
+</body>
+</html>

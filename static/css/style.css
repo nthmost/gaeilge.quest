@@ -722,6 +722,60 @@ footer {
 
 footer a { color: var(--green); text-decoration: none; }
 
+/* Sources page */
+.sources-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.sources-hero h1 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.sources-hero p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.sources-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.sources-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sources-item h3 {
+  margin: 0 0 0.25rem;
+  color: var(--text);
+}
+
+.sources-meta {
+  color: var(--green);
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 0 0 0.4rem;
+}
+
+.sources-topic {
+  color: var(--text);
+  margin: 0 0 0.4rem;
+}
+
+.sources-link {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.sources-license {
+  color: var(--muted);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .site-body { grid-template-columns: 1fr; }
